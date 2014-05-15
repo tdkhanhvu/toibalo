@@ -1,0 +1,71 @@
+.savesHover .copy_test_3 .gradient {
+font-size: .95em;
+}
+
+.button_2011_grn .gradient {
+display: block;
+overflow: visible;
+margin: 1px 0 0;
+padding: 5px 12px;
+border: none;
+font: bold 1.0835em/1.0835em Arial,Tahoma,"Bitstream Vera Sans",sans-serif;
+color: #fff;
+text-shadow: 1px 1px 0 #548725;
+white-space: nowrap;
+cursor: pointer;
+float: left;
+}
+
+.sprite-gradient1x32_grn, .sprite-btnLtGrn {
+background-color: #3AA231;
+background-position: left -946px;
+background-position: 0 100%;
+background-repeat: repeat-x;
+}
+
+.savesHover .button_2011_grn .gradient .saves-hover-txt, .savesHover .button_2011_grn .gradient .saves-hover-txt-saved {
+display: inline-block;
+margin: 3px 5px 0 1px;
+padding-right: 1px;
+float: left;
+}
+
+.sprite-suitcase_white {
+background-image: url('../../images/icon/saves_pack-v2086a47f9961a2cf575e1007c8d25954.png');
+background-position: left -298px;
+width: 13px;
+height: 10px;
+display: inline-block;
+float: left;
+margin: 2px 3px 0 7px;
+}
+
+.savesHover {
+display: block;
+position: relative;
+margin: 0 4px 0 28px;
+padding: 0;
+float: right;
+}
+
+.savesHover .button_2011_grn {
+height: 17px;
+font-size: 10px;
+margin-right: 4px;
+font-family: Arial,Helvetica,Sans-Serif;
+}
+
+.button_2011_grn {
+display: inline;
+height: 100%;
+overflow: hidden;
+margin-right: 10px;
+border: 1px solid #478022;
+background-color: #a4d47a;
+float: left;
+}
+
+.savesHover .button_2011_grn .gradient {
+height: 17px;
+padding: 0;
+}

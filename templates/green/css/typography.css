@@ -1,0 +1,712 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5, h6 {
+    font-size: 14px;
+}
+
+.box-warning, .box-download, .box-hint, .box-info, .box-quote, .box-key, .box-video, .box-music {
+    padding: 15px 15px 15px 80px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    margin: 15px 0;
+}
+
+.box-warning {
+    background: url(../images/tools/box_warning.png) 28px center no-repeat #FFDFDF;
+    border-color: #FEABAB;
+}
+
+.box-info {
+    background: url(../images/tools/box_info.png) 28px center no-repeat #DBE7F8;
+    border-color: #B7D2F2;
+}
+
+.box-download {
+    background: url(../images/tools/box_download.png) 28px center no-repeat #F2F9E5;
+    border-color: #D0E6A4;
+}
+
+.box-hint {
+    background: url(../images/tools/box_hint.png) 28px center no-repeat #FFFFD5;
+    border-color: #FEE283;
+}
+
+.box-quote {
+    background: url(../images/tools/box_quote.png) 28px center no-repeat #FEF8E1;
+    border-color: #FDDB64;
+}
+
+.box-key {
+    background: url(../images/tools/box_key.png) 28px center no-repeat #F8F8F8;
+    border-color: #CACACA;
+}
+
+.box-video {
+    background: url(../images/tools/box_video.png) 28px center no-repeat #F8F8F8;
+    border-color: #CACACA;
+}
+
+.box-music {
+    background: url(../images/tools/box_music.png) 28px center no-repeat #F8F8F8;
+    border-color: #CACACA;
+}
+
+.list-icon,
+.list-bullet,
+.list-digit {
+    list-style: none;
+    padding: 0;
+}
+
+.list-bullet li,
+.list-digit li,
+.list-icon li {
+    position: relative;
+    padding-left: 27px;
+    margin: 7px 0;
+}
+
+.list-bullet li span.bullet,
+.list-digit li span.digit,
+.list-icon li span[class*="icon-"] {
+    position: absolute;
+    height: 20px;
+    display: block;
+    left: 0;
+    top: 0;
+    background-size: 20px;
+    width: 20px;
+}
+
+.list-bullet li span.bullet,
+.list-digit li span.digit {
+    text-align: center;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.list-bullet li span.bullet {
+    color: #fff;
+}
+
+.list-digit li span.digit {
+    font-size: 20px;
+}
+
+span.icon-quote {
+    background: url(../images/tools/box_quote.png) center center no-repeat;
+}
+
+span.icon-info {
+    background: url(../images/tools/box_info.png) center center no-repeat;
+    background-size: 14px !important;
+}
+
+span.icon-warning {
+    background: url(../images/tools/box_warning.png) center center no-repeat;
+}
+
+span.icon-key {
+    background: url(../images/tools/box_key.png) center center no-repeat;
+}
+
+span.icon-music {
+    background: url(../images/tools/box_music.png) center center no-repeat;
+    background-size: 14px !important;
+}
+
+span.icon-video {
+    background: url(../images/tools/box_video.png) center center no-repeat;
+}
+
+span.icon-download {
+    background: url(../images/tools/box_download.png) center center no-repeat;
+}
+
+span.icon-hint {
+    background: url(../images/tools/box_hint.png) center center no-repeat;
+    background-size: 12px !important;
+}
+
+table tr:hover th {
+    color: #444 !important;
+}
+
+.table.black tr th,
+.table.orange tr th,
+.table.blue tr th,
+.table.pink tr th,
+.table.red tr th {
+    color: #fff;
+}
+
+input[type="submit"],
+.link-button,
+.button,
+.readmore,
+div.itemCommentsForm form input#submitCommentButton {
+    background: #df2e37;
+    padding: 4px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff !important;
+    display: inline;
+    border: none;
+    text-decoration: none !important;
+}
+
+input[type="submit"]:hover,
+.link-button:hover,
+.button:hover,
+.readmore:hover {
+    color: #fff;
+    background: #1e1e1e;
+}
+
+.link-black,
+.list-black .bullet,
+.table.black tr th {
+    background: #333333;
+}
+
+.link-blue,
+.list-blue .bullet,
+.table.blue tr th {
+    background: #6699FF;
+}
+
+.link-organe,
+.list-orange .bullet,
+.table.orange tr th {
+    background: #FF9900;
+}
+
+.link-red,
+.list-red .bullet,
+.table.red tr th {
+    background: #FF0033;
+}
+
+.link-pink,
+.list-pink .bullet,
+.table.pink tr th {
+    background: #FF6699;
+}
+
+.list-black .digit {
+    color: #333333;
+}
+
+.list-blue .digit {
+    color: #6699FF;
+}
+
+.list-orange .digit {
+    color: #FF9900;
+}
+
+.list-red .digit {
+    color: #FF0033;
+}
+
+.list-pink .digit {
+    color: #FF6699;
+}
+
+.link-button[class*="icon-"] {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 11px center;
+}
+
+.link-button.icon-hint {
+    background-image: url(../images/tools/box_hint_white.png);
+}
+
+.link-button.icon-download {
+    background-image: url(../images/tools/box_download_white.png);
+}
+
+.link-button.icon-quote {
+    background-image: url(../images/tools/box_quote_white.png);
+}
+
+.link-button.icon-video {
+    background-image: url(../images/tools/box_video_white.png);
+}
+
+.link-button.icon-music {
+    background-image: url(../images/tools/box_music_white.png);
+}
+
+div[class*="icons-"] {
+    text-indent: -9999px;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    background: url(../images/st_theme/icons/icons-typo.png) no-repeat #424242;
+}
+
+div[class*="icons-"]:hover {
+    background-color: #df2e37;
+}
+
+.css3-effect div[class*="icons-"],
+.css3-effect div[class*="icons-"]:hover {
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+div.icons-facebook {
+    background-position: 13px 13px;
+}
+
+div.icons-linked {
+    background-position: -54px 13px;
+}
+
+div.icons-twitter {
+    background-position: -123px 13px;
+}
+
+div.icons-dribbbled {
+    background-position: -193px 14px;
+}
+
+div.icons-instagram {
+    background-position: -265px 15px;
+}
+
+div.icons-youtube {
+    background-position: -334px 13px;
+}
+
+div.icons-meter {
+    background-position: 15px -54px;
+}
+
+div.icons-gear {
+    background-position: -55px -55px;
+}
+
+div.icons-place {
+    background-position: -124px -55px;
+}
+
+div.icons-person {
+    background-position: -192px -55px
+}
+
+div.icons-bag {
+    background-position: -264px -54px;
+}
+
+div.icons-image {
+    background-position: -334px -54px;
+}
+
+.st-price-table {
+    background: #f0f0f0;
+    width: 98%;
+    text-align: center;
+    padding: 10px 0 23px;
+}
+
+.st-price-table h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.st-price-table .price:after {
+    width: 103px;
+    height: 103px;
+    border-radius: 50%;
+    background: #424242;
+    display: block;
+    content: '';
+    margin: -60px 0 0;
+}
+
+.st-price-table .price {
+    width: 103px;
+    height: 81px;
+    font-size: 45px;
+    position: relative;
+    margin: 62px auto 0;
+    color: #fff;
+    font-family: 'OpenSansSemibold';
+    letter-spacing: -3px;
+}
+
+.st-price-table .option {
+    display: block;
+    margin: 18px 0;
+    font-family: 'OpenSansSemibold';
+    font-size: 14px;
+}
+
+.st-price-table .button {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.st-price-table:hover h1 {
+    color: #df2e37;
+}
+
+.st-price-table:hover .price:after {
+    background-color: #df2e37;
+}
+
+.st-price-table:hover h1,
+.st-price-table h1,
+.css3-effect .st-price-table .price:after,
+.css3-effect .st-price-table:hover .price:after {
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+} 
+/*========== HEADING ==============*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'cabinsemibold';
+    font-weight: 999;
+    color: #444;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+/*============== ICON ==============*/
+[class*="social-icon-normal"] {
+    background: url(../images/st_theme/icons/icons-social-white.png) no-repeat #ccc;
+    width: 40px;
+    height: 40px;
+    content: '';
+    display: inline-block;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+    background-size: 500px;
+}
+
+.social-icon-normal-facebook {
+    background-position: -36px 10px;
+}
+
+.social-icon-normal-facebook:hover {
+    background-color: #4671AD;
+}
+
+.social-icon-normal-twitter {
+    background-position: 11px 10px;
+}
+
+.social-icon-normal-twitter:hover {
+    background-color: #48C4D2;
+}
+
+.social-icon-normal-google {
+    background-position: -133px 13px;
+}
+
+.social-icon-normal-google:hover {
+    background-color: #D94A39;
+}
+
+.social-icon-normal-dribbble {
+    background-position: -182px 12px;
+}
+
+.social-icon-normal-dribbble:hover {
+    background-color: #EF5B92;
+}
+
+.social-icon-normal-behance {
+    background-position: -279px 12px;
+}
+
+.social-icon-normal-behance:hover {
+    background-color: #008EFF;
+}
+
+/* ===== FONT ICON =====*/
+[class*="linecons-"] {
+    font-family: 'linecons';
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    background: #ddd;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+[class*="linecons-"]:before {
+    font-family: 'linecons';
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #bbb;
+    line-height: 120px;
+    vertical-align: middle;
+}
+
+.linecons-pen:before {
+    content: "\e00f";
+}
+
+.linecons-display:before {
+    content: "\e011";
+}
+
+.linecons-bulb:before {
+    content: "\e00e";
+}
+
+.linecons-settings:before {
+    content: "\e00a";
+}
+
+.linecons-heart:before {
+    content: "\e000";
+}
+
+.linecons-params:before {
+    content: "\e01f";
+}
+
+.linecons-tv:before {
+    content: "\e003";
+}
+
+.linecons-settings:before {
+    content: "\e00a";
+}
+
+.linecons-heart:before {
+    content: "\e000";
+}
+
+.linecons-cloud:before {
+    content: "\e001";
+}
+
+.linecons-star:before {
+    content: "\e002";
+}
+
+.linecons-tv:before {
+    content: "\e003";
+}
+
+.linecons-sound:before {
+    content: "\e004";
+}
+
+.linecons-video:before {
+    content: "\e005";
+}
+
+.linecons-trash:before {
+    content: "\e006";
+}
+
+.linecons-user:before {
+    content: "\e007";
+}
+
+.linecons-key:before {
+    content: "\e008";
+}
+
+.linecons-search:before {
+    content: "\e009";
+}
+
+.linecons-settings:before {
+    content: "\e00a";
+}
+
+.linecons-camera:before {
+    content: "\e00b";
+}
+
+.linecons-tag:before {
+    content: "\e00c";
+}
+
+.linecons-lock:before {
+    content: "\e00d";
+}
+
+.linecons-bulb:before {
+    content: "\e00e";
+}
+
+.linecons-pen:before {
+    content: "\e00f";
+}
+
+.linecons-diamond:before {
+    content: "\e010";
+}
+
+.linecons-display:before {
+    content: "\e011";
+}
+
+.linecons-location:before {
+    content: "\e012";
+}
+
+.linecons-eye:before {
+    content: "\e013";
+}
+
+.linecons-bubble:before {
+    content: "\e014";
+}
+
+.linecons-stack:before {
+    content: "\e015";
+}
+
+.linecons-cup:before {
+    content: "\e016";
+}
+
+.linecons-phone:before {
+    content: "\e017";
+}
+
+.linecons-news:before {
+    content: "\e018";
+}
+
+.linecons-mail:before {
+    content: "\e019";
+}
+
+.linecons-like:before {
+    content: "\e01a";
+}
+
+.linecons-photo:before {
+    content: "\e01b";
+}
+
+.linecons-note:before {
+    content: "\e01c";
+}
+
+.linecons-clock:before {
+    content: "\e01d";
+}
+
+.linecons-paperplane:before {
+    content: "\e01e";
+}
+
+.linecons-params:before {
+    content: "\e01f";
+}
+
+.linecons-banknote:before {
+    content: "\e020";
+}
+
+.linecons-data:before {
+    content: "\e021";
+}
+
+.linecons-music:before {
+    content: "\e022";
+}
+
+.linecons-megaphone:before {
+    content: "\e023";
+}
+
+.linecons-study:before {
+    content: "\e024";
+}
+
+.linecons-lab:before {
+    content: "\e025";
+}
+
+.linecons-food:before {
+    content: "\e026";
+}
+
+.linecons-t-shirt:before {
+    content: "\e027";
+}
+
+.linecons-fire:before {
+    content: "\e028";
+}
+
+.linecons-clip:before {
+    content: "\e029";
+}
+
+.linecons-shop:before {
+    content: "\e02a";
+}
+
+.linecons-calendar:before {
+    content: "\e02b";
+}
+
+.linecons-vallet:before {
+    content: "\e02c";
+}
+
+.linecons-vynil:before {
+    content: "\e02d";
+}
+
+.linecons-truck:before {
+    content: "\e02e";
+}
+
+.linecons-world:before {
+    content: "\e02f";
+}

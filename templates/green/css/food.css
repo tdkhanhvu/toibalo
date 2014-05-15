@@ -1,0 +1,72 @@
+div.thumb{
+    position:relative;
+	width:240px;
+	height:360px;
+/* 	margin:30px 40px; */
+	overflow:hidden;
+	border:5px solid #313131;
+	float:left;
+}
+div.divLeft, div.divRight{
+	width:130px;
+	height:240px;
+	overflow:hidden;
+	position:relative;
+    top:-160px;
+	overflow:hidden;
+	float:left;
+}
+div.divLeft{
+	margin-right:-10px;
+}
+div.divLeftImage{
+	width:120px;
+	height:100%;
+	float:left;
+}
+div.divLeftShadow{
+	width:10px;
+	height:100%;
+	float:left;
+	background:transparent url('http://www.nitinh.com/static/another_thumb/shadow.png') repeat-y 0 0;
+}
+div.divRight{
+	width:120px;
+	background-position:-120px 0;
+}
+.thumbnail-shadow {
+	float:left;
+	height:33px;
+	position:relative;
+	top: -400px;
+	width:100%;
+}
+
+div.someContent{
+	position:relative;
+    width:240px;
+	height:150px;
+	padding:10px 0px 0px;
+	font-size:12px;
+	font-family:Arial;
+	text-align:justify;
+}
+div.someContent div.content{
+	color:#212180;
+	height:126px;
+	font-size:11px;
+	padding:0 10px 0 20px;
+}
+div.someContent div.more{
+	bottom:0;
+	float:right;
+	height:16px;
+	padding:5px 5px 3px 20px;
+	position:relative;
+	right:0;
+	width:45px;
+}
+/* a:link, a:hover,a:active, a:visited{
+	color:#2F9DFF;
+	text-decoration:none;
+} */
