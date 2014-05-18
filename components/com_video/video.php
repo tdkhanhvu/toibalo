@@ -53,7 +53,7 @@
         </div>
     </div>
     <!-- #wrapper -->
-
+    <a id="avatar-go-to-top" href="?option=com_diadiem" style="display: block;"><span></span></a>
 <script src="./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
 <script>
     jQuery.noConflict();

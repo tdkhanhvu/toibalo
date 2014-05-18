@@ -80,7 +80,8 @@
 
         window.onPlayerStateChange = function (state) {
             if (state.data === 0 && options.repeat) { // video ended and repeat option is set true
-                player.seekTo(options.start); // restart
+                //player.seekTo(options.start); // restart
+                window.location.replace("?option=com_diadiem");
             }
         }
 
