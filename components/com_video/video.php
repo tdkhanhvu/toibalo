@@ -30,16 +30,20 @@
             </p>
 			<div class="span3">
 				<div class="black-50 span3">
-					<h2>Thành Phố Về Đêm</h2>
-					<p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>
-					<p>Bạn nên thử ra chợ Bến Thành vào buổi tối và hòa mình vào những gánh hàng rong với đa dạng các loại đồ ăn vặt</p>
-				</div>
+					<h2>Thành Phố Về Đêm<button type="button" id="button" style="position:relative;right:-20px;top:-5px;">X</button></h2>
+                    <div>
+					    <p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>
+					    <p>Bạn nên thử ra chợ Bến Thành vào buổi tối và hòa mình vào những gánh hàng rong với đa dạng các loại đồ ăn vặt</p>
+                    </div>
+                </div>
 			
 				<div class="black-50 span3">
-					<h2>Thành Phố Về Đêm</h2>
-					<p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>
-					<p>Bạn nên thử ra chợ Bến Thành vào buổi tối và hòa mình vào những gánh hàng rong với đa dạng các loại đồ ăn vặt</p>
-				</div>
+					<h2>Gánh Hàng Rong<button type="button" id="button" style="position:relative;right:-20px;top:-5px;">X</button></h2>
+                    <div>
+					    <p>Sài Gòn nổi bật với những món ăn vặt nổi tiếng như xôi mặn, xôi vò, bánh tráng trộn, mì gõ...</p>
+					    <p>Hãy thử ghé vào một gánh hàng rong bất kì và thương thức thử những món đặc trưng này của Sài Gòn. Giá cả rất là phải chăng</p>
+				    </div>
+                </div>
 			</div>
 			
         </div>
@@ -50,7 +54,7 @@
     </div>
     <!-- #wrapper -->
 
-<script src="/green/./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
+<script src="./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
 <script>
     jQuery.noConflict();
     (function ($) {
@@ -59,6 +63,13 @@
             $('#wrapper').tubular(options);
             // f-UGhWj1xww cool sepia hd
             // 49SKbS7Xwf4 beautiful barn sepia
+
+            $( ":button" ).click(function() {
+                var temp = $(this).parent().parent().find('div');
+                if (temp.css('display') == 'block')
+                    temp.css('display','none');
+                else temp.css('display','block');
+            });
         });
     })(jQuery);
 </script>

@@ -738,6 +738,8 @@ jQuery.noConflict();
 
                 category = $(this).attr("class").replace('item', '').replace('active', '').trim();
                 cat_all_item = $('.' + category);
+
+                $('.item-content').removeClass('active');
                 item_content = $('div[category="' + category + '"]');
                 eindex = cat_all_item.index(this);
                 count = cat_all_item.length;
@@ -746,7 +748,7 @@ jQuery.noConflict();
                     scrollTop: our_work - menuH + our_work_H + offset
                 }, 1000, function () {
                     $(this).addClass('active');
-                    item_content.removeClass('active');
+                    //item_content.removeClass('active');
                     item_content.eq(eindex).addClass('active');
                 });
 
