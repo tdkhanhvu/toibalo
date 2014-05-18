@@ -50,7 +50,7 @@
     </div>
     <!-- #wrapper -->
 
-<script src="/green/./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
+<script src="./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
 <script>
     jQuery.noConflict();
     (function ($) {
