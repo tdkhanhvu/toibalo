@@ -77,7 +77,7 @@ defined('_JEXEC') or die;
                             <h1 class="st-heading">Đặc trưng</h1>
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
-                            <div class="st-layer-slider " style="width: 100%; height: 345px;" id="dactrung_slide">
+                            <div class="st-layer-slider " style="width: 100%;max-height:none;" id="dactrung_slide">
                                 <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
                                 <ul class="sequence-pagination">
@@ -85,16 +85,16 @@ defined('_JEXEC') or die;
                                     <li class=""><span></span></li>
                                 </ul>
                                 <ul class="sequence-canvas">
-                                    <li class="animate-in" style="z-index: 2; opacity: 1;">
-                                        <div class="row-fluid">
-                                            <div class="span3">
+                                    <li class="animate-in" style="z-index: 2; opacity: 1;position:relative;">
+                                        <div class="row-fluid" style="position:relative;">
+                                            <div class="span3" style="float:left;">
                                                 <div class="st-icon-star">&nbsp;</div>
                                                 <div class="title">Nơi đến ưa thích</div>
                                                 <div class="content">9/10 du khách tới du lịch Việt Nam đều dành thời gian thăm quan
                                                     Sài Gòn
                                                 </div>
                                             </div>
-                                            <div class="span3">
+                                            <div class="span3" style="float:left;">
                                                 <div class="st-icon-food">&nbsp;</div>
                                                 <div class="title">Ẩm thực</div>
                                                 <div class="content">Là nơi hội tụ ẩm thực cả nước nói chung và miền Tây Nam Bô nói
@@ -102,6 +102,26 @@ defined('_JEXEC') or die;
                                                     Món ăn nổi tiêng nhất phải kể tới cơm tấm, hủ tiếu, bánh tráng trộn.
                                                 </div>
                                             </div>
+                                            <div class="span3" style="float:left;">
+                                                <div class="st-icon-cup">&nbsp;</div>
+                                                <div class="title">Cà phê bệt</div>
+                                                <div class="content">Một nét đặc trưng thú vị với ly cà phê bệt ở góc nhà thờ Đức Bà
+                                                </div>
+                                            </div>
+                                            <div class="span3" style="float:left;">
+                                                <div class="st-icon-camera">&nbsp;</div>
+                                                <div class="title">Kiến trúc Pháp</div>
+                                                <div class="content">Với những công trình mang đậm kiến trúc thòi Pháp thuộc như Nhà
+                                                    Thờ Đức Bà, Bưu Điện Thành Phố, Dinh Độc Lập...
+                                                    Sài Gòn là địa điểm thích hợp cho các bạn trẻ muốn lưu giữ lại những bức ảnh đẹp
+                                                    trong suốt chuyến đi của mình
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="animate-out" style="opacity: 1; z-index: 1;position:relative;top:-330px;left:0px">
+                                        <div class="row-fluid" style="position:relative;">
                                             <div class="span3">
                                                 <div class="st-icon-cup">&nbsp;</div>
                                                 <div class="title">Cà phê bệt</div>
@@ -120,26 +140,7 @@ defined('_JEXEC') or die;
                                         </div>
 
                                     </li>
-                                    <li class="animate-out" style="opacity: 1; z-index: 1;">
-                                        <div class="row-fluid">
-                                            <div class="span3">
-                                                <div class="st-icon-cup">&nbsp;</div>
-                                                <div class="title">Cà phê bệt</div>
-                                                <div class="content">Một nét đặc trưng thú vị với ly cà phê bệt ở góc nhà thờ Đức Bà
-                                                </div>
-                                            </div>
-                                            <div class="span3">
-                                                <div class="st-icon-camera">&nbsp;</div>
-                                                <div class="title">Kiến trúc Pháp</div>
-                                                <div class="content">Với những công trình mang đậm kiến trúc thòi Pháp thuộc như Nhà
-                                                    Thờ Đức Bà, Bưu Điện Thành Phố, Dinh Độc Lập...
-                                                    Sài Gòn là địa điểm thích hợp cho các bạn trẻ muốn lưu giữ lại những bức ảnh đẹp
-                                                    trong suốt chuyến đi của mình
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                    </li>
                                 </ul>
                             </div>
                        </div>
@@ -314,7 +315,7 @@ defined('_JEXEC') or die;
                             <h1 class="st-heading">Cảm nghĩ</h1>
 
                             <p class="st-sub-heading" style="margin-bottom:15px;">Sài Gòn trong tim mỗi người là...</p>
-                            <div class="st-layer-slider " style="width: 100%;height:600px;" id="camnghi_slide">
+                            <div class="st-layer-slider span12" style="width: 100%;height:600px;margin-left:0px;" id="camnghi_slide">
                                 <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
                                 <ul class="sequence-pagination">
@@ -973,7 +974,7 @@ jQuery.noConflict();
     jQuery.noConflict();
     (function($){
         $(document).ready(function(){
-            var layerOptions = {"width":"100%","height":"345px","cols":"4","effects":"breaking_news","layout":"_slide.php","html":true,"autoPlay":false,"autoPlayDelay":"3000","nav":true,"pagination":true};
+            var layerOptions = {"width":"100%","height":"auto","cols":"4","effects":"breaking_news","layout":"_slide.php","html":true,"autoPlay":false,"autoPlayDelay":"3000","nav":true,"pagination":true};
 
             if (layerOptions.nav) {
                 layerOptions.nextButton = "#dactrung_slide .sequence-next";
