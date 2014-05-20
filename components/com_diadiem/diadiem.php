@@ -77,39 +77,72 @@ defined('_JEXEC') or die;
                             <h1 class="st-heading">Đặc trưng</h1>
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
-                            <div class="row-fluid">
-                                <div class="span3">
-                                    <div class="st-icon-star">&nbsp;</div>
-                                    <div class="title">Nơi đến ưa thích</div>
-                                    <div class="content">9/10 du khách tới du lịch Việt Nam đều dành thời gian thăm quan
-                                        Sài Gòn
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-food">&nbsp;</div>
-                                    <div class="title">Ẩm thực</div>
-                                    <div class="content">Là nơi hội tụ ẩm thực cả nước nói chung và miền Tây Nam Bô nói
-                                        riêng.
-                                        Món ăn nổi tiêng nhất phải kể tới cơm tấm, hủ tiếu, bánh tráng trộn.
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-cup">&nbsp;</div>
-                                    <div class="title">Cà phê bệt</div>
-                                    <div class="content">Một nét đặc trưng thú vị với ly cà phê bệt ở góc nhà thờ Đức Bà
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-camera">&nbsp;</div>
-                                    <div class="title">Kiến trúc Pháp</div>
-                                    <div class="content">Với những công trình mang đậm kiến trúc thòi Pháp thuộc như Nhà
-                                        Thờ Đức Bà, Bưu Điện Thành Phố, Dinh Độc Lập...
-                                        Sài Gòn là địa điểm thích hợp cho các bạn trẻ muốn lưu giữ lại những bức ảnh đẹp
-                                        trong suốt chuyến đi của mình
-                                    </div>
-                                </div>
+                            <div class="st-layer-slider " style="width: 100%; height: 345px;" id="dactrung_slide">
+                                <div class="sequence-prev"></div>
+                                <div class="sequence-next"></div>
+                                <ul class="sequence-pagination">
+                                    <li class="current"><span></span></li>
+                                    <li class=""><span></span></li>
+                                </ul>
+                                <ul class="sequence-canvas">
+                                    <li class="animate-in" style="z-index: 2; opacity: 1;">
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <div class="st-icon-star">&nbsp;</div>
+                                                <div class="title">Nơi đến ưa thích</div>
+                                                <div class="content">9/10 du khách tới du lịch Việt Nam đều dành thời gian thăm quan
+                                                    Sài Gòn
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="st-icon-food">&nbsp;</div>
+                                                <div class="title">Ẩm thực</div>
+                                                <div class="content">Là nơi hội tụ ẩm thực cả nước nói chung và miền Tây Nam Bô nói
+                                                    riêng.
+                                                    Món ăn nổi tiêng nhất phải kể tới cơm tấm, hủ tiếu, bánh tráng trộn.
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="st-icon-cup">&nbsp;</div>
+                                                <div class="title">Cà phê bệt</div>
+                                                <div class="content">Một nét đặc trưng thú vị với ly cà phê bệt ở góc nhà thờ Đức Bà
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="st-icon-camera">&nbsp;</div>
+                                                <div class="title">Kiến trúc Pháp</div>
+                                                <div class="content">Với những công trình mang đậm kiến trúc thòi Pháp thuộc như Nhà
+                                                    Thờ Đức Bà, Bưu Điện Thành Phố, Dinh Độc Lập...
+                                                    Sài Gòn là địa điểm thích hợp cho các bạn trẻ muốn lưu giữ lại những bức ảnh đẹp
+                                                    trong suốt chuyến đi của mình
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="animate-out" style="opacity: 1; z-index: 1;">
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <div class="st-icon-cup">&nbsp;</div>
+                                                <div class="title">Cà phê bệt</div>
+                                                <div class="content">Một nét đặc trưng thú vị với ly cà phê bệt ở góc nhà thờ Đức Bà
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="st-icon-camera">&nbsp;</div>
+                                                <div class="title">Kiến trúc Pháp</div>
+                                                <div class="content">Với những công trình mang đậm kiến trúc thòi Pháp thuộc như Nhà
+                                                    Thờ Đức Bà, Bưu Điện Thành Phố, Dinh Độc Lập...
+                                                    Sài Gòn là địa điểm thích hợp cho các bạn trẻ muốn lưu giữ lại những bức ảnh đẹp
+                                                    trong suốt chuyến đi của mình
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -124,58 +157,98 @@ defined('_JEXEC') or die;
                             <h1 class="st-heading">Tham quan</h1>
 
                             <p class="st-sub-heading">Những nơi không nên bỏ lỡ</p>
+                            <div class="st-layer-slider " style="width: 100%; height: 345px;" id="thamquan_slide">
+                                <div class="sequence-prev"></div>
+                                <div class="sequence-next"></div>
+                                <ul class="sequence-pagination">
+                                    <li class="current"><span></span></li>
+                                    <li class=""><span></span></li>
+                                </ul>
+                                <ul class="sequence-canvas">
+                                    <li class="animate-in" style="z-index: 2; opacity: 1;">
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <div class="content"><img class="circular"
+                                                                          src="./templates/green/images/nha_tho_duc_ba.jpg"
+                                                                          border="0"
+                                                                          alt=""><br>
 
-                            <div class="row-fluid">
-                                <div class="span3">
-                                    <div class="content"><img class="circular"
-                                                              src="./templates/green/images/nha_tho_duc_ba.jpg"
-                                                              border="0"
-                                                              alt=""><br>
+                                                    <div class="detail">
+                                                        <h2 class="title">Nhà thờ Đức Bà</h2>
 
-                                        <div class="detail">
-                                            <h2 class="title">Nhà thờ Đức Bà</h2>
+                                                        <p class="desc">Được Pháp xây dựng vào năm 1920</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="content"><img class="circular"
+                                                                          src="./templates/green/images/dinh_doc_lap.jpg" border="0"
+                                                                          alt=""><br>
 
-                                            <p class="desc">Được Pháp xây dựng vào năm 1920</p>
+                                                    <div class="detail">
+                                                        <h2 class="title">Dinh Độc Lập</h2>
+
+                                                        <p class="desc">Biểu tượng của sự thống nhất đất nước</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="content"><img class="circular"
+                                                                          src="./templates/green/images/cho_ben_thanh.jpg"
+                                                                          border="0"
+                                                                          alt=""><br>
+
+                                                    <div class="detail">
+                                                        <h2 class="title">Chợ Bến Thành</h2>
+
+                                                        <p class="desc">Biểu tượng của Sài Gòn</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="content"><img class="circular"
+                                                                          src="./templates/green/images/ben_nha_rong.jpg" border="0"
+                                                                          alt=""><br>
+
+                                                    <div class="detail">
+                                                        <h2 class="title">Bến Nhà Rồng</h2>
+
+                                                        <p class="desc">Nơi Bác ra đi tìm đường cứu nước</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="content"><img class="circular"
-                                                              src="./templates/green/images/dinh_doc_lap.jpg" border="0"
-                                                              alt=""><br>
+                                    </li>
+                                    <li class="animate-out" style="opacity: 1; z-index: 1;">
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <div class="content"><img class="circular"
+                                                                          src="./templates/green/images/cho_ben_thanh.jpg"
+                                                                          border="0"
+                                                                          alt=""><br>
 
-                                        <div class="detail">
-                                            <h2 class="title">Dinh Độc Lập</h2>
+                                                    <div class="detail">
+                                                        <h2 class="title">Chợ Bến Thành</h2>
 
-                                            <p class="desc">Biểu tượng của sự thống nhất đất nước</p>
+                                                        <p class="desc">Biểu tượng của Sài Gòn</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="content"><img class="circular"
+                                                                          src="./templates/green/images/ben_nha_rong.jpg" border="0"
+                                                                          alt=""><br>
+
+                                                    <div class="detail">
+                                                        <h2 class="title">Bến Nhà Rồng</h2>
+
+                                                        <p class="desc">Nơi Bác ra đi tìm đường cứu nước</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="content"><img class="circular"
-                                                              src="./templates/green/images/cho_ben_thanh.jpg"
-                                                              border="0"
-                                                              alt=""><br>
-
-                                        <div class="detail">
-                                            <h2 class="title">Chợ Bến Thành</h2>
-
-                                            <p class="desc">Biểu tượng của Sài Gòn</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="content"><img class="circular"
-                                                              src="./templates/green/images/ben_nha_rong.jpg" border="0"
-                                                              alt=""><br>
-
-                                        <div class="detail">
-                                            <h2 class="title">Bến Nhà Rồng</h2>
-
-                                            <p class="desc">Nơi Bác ra đi tìm đường cứu nước</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -240,93 +313,151 @@ defined('_JEXEC') or die;
                         <div class="st-team onepage-disappear" position="item-106">
                             <h1 class="st-heading">Cảm nghĩ</h1>
 
-                            <p class="st-sub-heading">Sài Gòn trong tim mỗi người là...</p>
+                            <p class="st-sub-heading" style="margin-bottom:15px;">Sài Gòn trong tim mỗi người là...</p>
+                            <div class="st-layer-slider " style="width: 100%;height:600px;" id="camnghi_slide">
+                                <div class="sequence-prev"></div>
+                                <div class="sequence-next"></div>
+                                <ul class="sequence-pagination">
+                                    <li class="current"><span></span></li>
+                                    <li class=""><span></span></li>
+                                </ul>
+                                <ul class="sequence-canvas">
+                                    <li class="animate-in" style="z-index: 2; opacity: 1;">
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <div class="inner">
+                                                    <div class="avatar"><img class="circular"
+                                                                             src="./templates/green/images/dan_ha_noi.jpg"
+                                                                             border="0"
+                                                                             alt=""></div>
+                                                    <h3 class="title">Nguyễn Duy Long</h3>
 
-                            <div class="row-fluid">
-                                <div class="span3">
-                                    <div class="inner">
-                                        <div class="avatar"><img class="circular"
-                                                                 src="./templates/green/images/dan_ha_noi.jpg"
-                                                                 border="0"
-                                                                 alt=""></div>
-                                        <h3 class="title">Nguyễn Duy Long</h3>
+                                                    <div class="role">Hà Nội</div>
+                                                    <!--                                        <div class="social"><a class="facebook"
+                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="twitter"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="linkedin"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                            </div>-->
+                                                    <div class="desc">Mình thích ngồi uống cà phê bệt ở nhà thờ Đức Bà và ngắm nhìn
+                                                        mọi người đi lại.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="inner">
+                                                    <div class="avatar"><img class="circular"
+                                                                             src="./templates/green/images/nguoi_hue.jpg" border="0"
+                                                                             alt=""></div>
+                                                    <h3 class="title">Trần Nhật Trung</h3>
 
-                                        <div class="role">Hà Nội</div>
-                                        <!--                                        <div class="social"><a class="facebook"
-                                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="twitter"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="linkedin"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                </div>-->
-                                        <div class="desc">Mình thích ngồi uống cà phê bệt ở nhà thờ Đức Bà và ngắm nhìn
-                                            mọi người đi lại.
+                                                    <div class="role">Huế</div>
+                                                    <!--                                        <div class="social"><a class="facebook"
+                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="twitter"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="linkedin"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                            </div>-->
+                                                    <div class="desc">Tôi rất ít khi về Việt Nam, mà một khi về là phải ghé ngang
+                                                        Sài Gòn nắm tay phát
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="inner">
+                                                    <div class="avatar"><img class="circular"
+                                                                             src="./templates/green/images/nguoi_da_nang.jpg"
+                                                                             border="0"
+                                                                             alt=""></div>
+                                                    <h3 class="title">Mai Đình Anh</h3>
+
+                                                    <div class="role">Đà Nẵng</div>
+                                                    <!--                                        <div class="social"><a class="facebook"
+                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="twitter"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="linkedin"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                            </div>-->
+                                                    <div class="desc">Nếu bạn chưa từng ngắm nhìn và tận hưởng cơn mưa Sài Gòn vào
+                                                        một bữa chiều oi bức là xem như bạn chưa biết gì về Sài Gòn
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="inner">
+                                                    <div class="avatar"><img class="circular"
+                                                                             src="./templates/green/images/nguoi_ho_chi_minh.jpg"
+                                                                             border="0"
+                                                                             alt=""></div>
+                                                    <h3 class="title">Trần Đoàn Khánh Vũ</h3>
+
+                                                    <div class="role">Hồ Chí Minh</div>
+                                                    <!--                                        <div class="social"><a class="facebook"
+                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="twitter"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="linkedin"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                            </div>-->
+                                                    <div class="desc">Thời tiết Sài Gòn như một cô gái đỏng đảnh tính khí thất
+                                                        thường, lúc thì nắng gay gắt, rồi lại mưa ào ạt.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="inner">
-                                        <div class="avatar"><img class="circular"
-                                                                 src="./templates/green/images/nguoi_hue.jpg" border="0"
-                                                                 alt=""></div>
-                                        <h3 class="title">Trần Nhật Trung</h3>
+                                    </li>
+                                    <li class="animate-out" style="opacity: 1; z-index: 1;">
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <div class="inner">
+                                                    <div class="avatar"><img class="circular"
+                                                                             src="./templates/green/images/nguoi_da_nang.jpg"
+                                                                             border="0"
+                                                                             alt=""></div>
+                                                    <h3 class="title">Mai Đình Anh</h3>
 
-                                        <div class="role">Huế</div>
-                                        <!--                                        <div class="social"><a class="facebook"
-                                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="twitter"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="linkedin"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                </div>-->
-                                        <div class="desc">Tôi rất ít khi về Việt Nam, mà một khi về là phải ghé ngang
-                                            Sài Gòn nắm tay phát
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="inner">
-                                        <div class="avatar"><img class="circular"
-                                                                 src="./templates/green/images/nguoi_da_nang.jpg"
-                                                                 border="0"
-                                                                 alt=""></div>
-                                        <h3 class="title">Mai Đình Anh</h3>
+                                                    <div class="role">Đà Nẵng</div>
+                                                    <!--                                        <div class="social"><a class="facebook"
+                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="twitter"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="linkedin"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                            </div>-->
+                                                    <div class="desc">Nếu bạn chưa từng ngắm nhìn và tận hưởng cơn mưa Sài Gòn vào
+                                                        một bữa chiều oi bức là xem như bạn chưa biết gì về Sài Gòn
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="span3">
+                                                <div class="inner">
+                                                    <div class="avatar"><img class="circular"
+                                                                             src="./templates/green/images/nguoi_ho_chi_minh.jpg"
+                                                                             border="0"
+                                                                             alt=""></div>
+                                                    <h3 class="title">Trần Đoàn Khánh Vũ</h3>
 
-                                        <div class="role">Đà Nẵng</div>
-                                        <!--                                        <div class="social"><a class="facebook"
-                                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="twitter"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="linkedin"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                </div>-->
-                                        <div class="desc">Nếu bạn chưa từng ngắm nhìn và tận hưởng cơn mưa Sài Gòn vào
-                                            một bữa chiều oi bức là xem như bạn chưa biết gì về Sài Gòn
+                                                    <div class="role">Hồ Chí Minh</div>
+                                                    <!--                                        <div class="social"><a class="facebook"
+                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="twitter"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                                <a class="linkedin"
+                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
+                                                                                            </div>-->
+                                                    <div class="desc">Thời tiết Sài Gòn như một cô gái đỏng đảnh tính khí thất
+                                                        thường, lúc thì nắng gay gắt, rồi lại mưa ào ạt.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="inner">
-                                        <div class="avatar"><img class="circular"
-                                                                 src="./templates/green/images/nguoi_ho_chi_minh.jpg"
-                                                                 border="0"
-                                                                 alt=""></div>
-                                        <h3 class="title">Trần Đoàn Khánh Vũ</h3>
-
-                                        <div class="role">Hồ Chí Minh</div>
-                                        <!--                                        <div class="social"><a class="facebook"
-                                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="twitter"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                    <a class="linkedin"
-                                                                                       href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                </div>-->
-                                        <div class="desc">Thời tiết Sài Gòn như một cô gái đỏng đảnh tính khí thất
-                                            thường, lúc thì nắng gay gắt, rồi lại mưa ào ạt.
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -838,6 +969,77 @@ jQuery.noConflict();
             }
         });
     })(jQuery)
+
+    jQuery.noConflict();
+    (function($){
+        $(document).ready(function(){
+            var layerOptions = {"width":"100%","height":"345px","cols":"4","effects":"breaking_news","layout":"_slide.php","html":true,"autoPlay":false,"autoPlayDelay":"3000","nav":true,"pagination":true};
+
+            if (layerOptions.nav) {
+                layerOptions.nextButton = "#dactrung_slide .sequence-next";
+                layerOptions.prevButton = "#dactrung_slide .sequence-prev";
+            }
+
+            //layerOptions.preventDelayWhenReversingAnimations = true;
+            //layerOptions.transitionThreshold = 3000;
+
+            if (layerOptions.pagination) { layerOptions.pagination = "#dactrung_slide .sequence-pagination" }
+            var optionsdactrung_slide = layerOptions;
+
+            var mySequencedactrung_slide = $("#dactrung_slide").sequence(optionsdactrung_slide).data("sequence");
+        });
+    })(jQuery);
+
+    jQuery.noConflict();
+    (function($){
+        $(document).ready(function(){
+            var layerOptions = {"width":"100%","height":"345px","cols":"4","effects":"breaking_news","layout":"_slide.php","html":true,"autoPlay":false,"autoPlayDelay":"3000","nav":true,"pagination":true};
+
+            if (layerOptions.nav) {
+                layerOptions.nextButton = "#thamquan_slide .sequence-next";
+                layerOptions.prevButton = "#thamquan_slide .sequence-prev";
+            }
+
+            //layerOptions.preventDelayWhenReversingAnimations = true;
+            //layerOptions.transitionThreshold = 3000;
+
+            if (layerOptions.pagination) { layerOptions.pagination = "#thamquan_slide .sequence-pagination" }
+            var optionsthamquan_slide = layerOptions;
+
+            var mySequencethamquan_slide = $("#thamquan_slide").sequence(optionsthamquan_slide).data("sequence");
+        });
+    })(jQuery);
+
+    jQuery.noConflict();
+    (function($){
+        $(document).ready(function(){
+            var layerOptions = {"width":"100%","height":"800px","cols":"4","effects":"breaking_news","layout":"_slide.php","html":true,"autoPlay":false,"autoPlayDelay":"3000","nav":true,"pagination":true};
+
+            if (layerOptions.nav) {
+                layerOptions.nextButton = "#camnghi_slide .sequence-next";
+                layerOptions.prevButton = "#camnghi_slide .sequence-prev";
+            }
+
+            //layerOptions.preventDelayWhenReversingAnimations = true;
+            //layerOptions.transitionThreshold = 3000;
+
+            if (layerOptions.pagination) { layerOptions.pagination = "#camnghi_slide .sequence-pagination" }
+            var optionscamnghi_slide = layerOptions;
+
+            var mySequencecamnghi_slide = $("#camnghi_slide").sequence(optionscamnghi_slide).data("sequence");
+        });
+    })(jQuery);
+
+
+    window.addEvent('domready', function() {
+
+        SqueezeBox.initialize({});
+        SqueezeBox.assign($$('a.modal'), {
+            parse: 'rel'
+        });
+    });
+
+
 </script>
 <script type="text/javascript">
     jQuery.noConflict();

@@ -21,7 +21,16 @@
 			.black-50 p{
 				margin: 5px 0;
 			}
-			
+
+            .up {
+                background-image: url('./templates/green/images/minimize.png');
+                background-size:contain;
+            }
+
+            .down {
+                background-image: url('./templates/green/images/maximize.png');
+                background-size:contain;
+            }
 		</style>
         <div id="main">
             <p id="video-controls" class="black-65">
@@ -30,7 +39,8 @@
             </p>
 			<div class="span3">
 				<div class="black-50 span3">
-					<h2>Thành Phố Về Đêm<button type="button" id="button" style="position:relative;right:-20px;top:-5px;">X</button></h2>
+					<h2 style="display:inline;">Thành Phố Về Đêm</h2>
+                    <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
                     <div>
 					    <p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>
 					    <p>Bạn nên thử ra chợ Bến Thành vào buổi tối và hòa mình vào những gánh hàng rong với đa dạng các loại đồ ăn vặt</p>
@@ -38,7 +48,8 @@
                 </div>
 			
 				<div class="black-50 span3">
-					<h2>Gánh Hàng Rong<button type="button" id="button" style="position:relative;right:-20px;top:-5px;">X</button></h2>
+					<h2 style="display:inline;">Gánh Hàng Rong</h2>
+                    <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
                     <div>
 					    <p>Sài Gòn nổi bật với những món ăn vặt nổi tiếng như xôi mặn, xôi vò, bánh tráng trộn, mì gõ...</p>
 					    <p>Hãy thử ghé vào một gánh hàng rong bất kì và thương thức thử những món đặc trưng này của Sài Gòn. Giá cả rất là phải chăng</p>
@@ -64,11 +75,20 @@
             // f-UGhWj1xww cool sepia hd
             // 49SKbS7Xwf4 beautiful barn sepia
 
-            $( ":button" ).click(function() {
-                var temp = $(this).parent().parent().find('div');
-                if (temp.css('display') == 'block')
+            $( ".toogle" ).click(function() {
+                var temp = $(this).parent().find('div').eq(1);
+
+                if (temp.css('display') == 'block') {
                     temp.css('display','none');
-                else temp.css('display','block');
+                    $(this).addClass('down');
+                    $(this).removeClass('up');
+                }
+                else
+                {
+                    temp.css('display','block');
+                    $(this).addClass('up');
+                    $(this).removeClass('down');
+                }
             });
         });
     })(jQuery);
