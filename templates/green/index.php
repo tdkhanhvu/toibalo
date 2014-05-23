@@ -23,7 +23,6 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css')
 $doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/Button/button.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/food.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker_layout.css');
 
@@ -136,10 +135,10 @@ $option =  JRequest::getVar('option'); // De phan loai trang
                                     <a class=".st-home" href="#">Tham Quan</a>
                                 </li>
                                 <li class="item-106">
-                                    <a class=".st-team" href="#">Lời Khuyên</a>
+                                    <a class="#st-advice" href="#">Lời Khuyên</a>
                                 </li>
                                 <li class="item-107">
-                                    <a class=".st-food" href="#">Ẩm Thực</a>
+                                    <a class="#st-food" href="#">Ẩm Thực</a>
                                 </li>
                                 <li class="item-108">
                                     <a class="#avatar-body-bottom-block" href="#">Chi Phí</a>

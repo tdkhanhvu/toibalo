@@ -17,11 +17,23 @@ defined('_JEXEC') or die;
         filter:alpha(opacity=40); /* For IE8 and earlier */
     }
 
-    .vote-div {
-        width: 20px;
-        position: absolute;
-        top: 10px;
-        right: 60px;
+    .vote-div img{
+        border: 5px solid green;
+    }
+
+    /*[class*="span"] {*/
+    .span3 {
+        margin-left:0px;
+    }
+
+    #st-food div.title {
+        margin:0px;
+        font-size: 130%;
+        color: #112FA7;
+    }
+
+    #st-food img {
+        border: 5px solid green;
     }
 </style>
 
@@ -526,41 +538,11 @@ defined('_JEXEC') or die;
 
                 <div class="custom">
                     <div class="st-onepage">
-                        <div class="st-team onepage-disappear" position="item-106">
+                        <div class="st-team onepage-disappear" position="item-106" id="st-advice">
                             <h1 class="st-heading">Lời khuyên</h1>
 
                             <p class="st-sub-heading">Để chuyến du lịch thú vị hơn</p>
                             <div class="row-fluid">
-                                <div class="span3">
-                                    <div class="st-icon-star">&nbsp;</div>
-                                    <div class="vote-div" track="1"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Chợ đêm Bến Thành</div>
-                                    <div class="content">Bạn nên dành thời gian ghé qua khu chợ đêm nổi tiếng với các món hàng hóa độc đáo và những món ăn vặt tuyệt cú mèo như các loại xôi, phở...
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-food">&nbsp;</div>
-                                    <div class="vote-div" track="2"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Bánh tráng trộn</div>
-                                    <div class="content">Teen Sài Gòn hay ghé góc phố Nguyễn Thái Học và Trần Hưng Đạo để thưởng thức những bịch bánh tráng trôn ngon tuyệt cú mèo
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-cup">&nbsp;</div>
-                                    <div class="vote-div" track="3"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Phố Tây Phạm Ngũ Lão</div>
-                                    <div class="content">Hòa mình vào khu phố của những khách Tây Ba Lô trên đoạn Phạm Ngũ Lão và Bùi Viện. Nơi Tây Ba Lô gặp gỡ Ta Ba Lô
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-camera">&nbsp;</div>
-                                    <div class="vote-div" track="4"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Nơi chụp ảnh</div>
-                                    <div class="content">Khu vực xung quanh nhà thờ Đức Bà, dinh Độc Lập, Bưu Điện Thành Phố là địa điểm ưa thích của các bạn trẻ để lưu giữ lại hình ảnh xưa và nay của Sài Gòn.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row-fluid hidden">
                                 <div class="span3">
                                     <div class="st-icon-star">&nbsp;</div>
                                     <div class="vote-div" track="1"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
@@ -606,72 +588,47 @@ defined('_JEXEC') or die;
 
                 <div class="custom">
                     <div class="st-onepage">
-                        <div class="st-food onepage-disappear" position="item-107">
+                        <div class="st-team onepage-disappear" position="item-107" id="st-food">
                             <h1 class="st-heading" style="color:green">Ẩm Thực</h1>
 
                             <p class="st-sub-heading" style="color:blue">Món ngon không nên bỏ lỡ</p>
-                            <div class="span3">
-                                <div class="thumb">
-                                    <div class="someContent">
-                                        <div class="content" style="width:200px;">Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này.</div>
-
+                            <div class="row-fluid">
+                                <div class="span3">
+                                    <div><img src="./templates/green/images/com_tam.jpg"/></div>
+                                    <div class="title">
+                                        <h2>Cơm Tấm</h2>
+                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                     </div>
-                                    <div class="divLeft" style="left:0px">
-                                        <div class="divLeftImage" style="background:url(./templates/green/images/com_tam.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                        <div class="divLeftShadow"></div>
+                                    <div class="content">Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này.
                                     </div>
-                                    <div class="divRight" style="left:0px;background-image:url(./templates/green/images/com_tam.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                    <img class="thumbnail-shadow" alt="bottom" src="http://www.nitinh.com/static/another_thumb/thumbnail-shadow.png"/>
-                                    <div style="position: absolute;bottom: 60px;width:100%"><h2 style="color: green">Cơm Tấm</h2></div>
-                                    <div class="vote-div" track="3" style="top:250px;right:20px"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                 </div>
-                            </div>
-                            <div class="span3">
-                                <div class="thumb">
-                                    <div class="someContent">
-                                        <div class="content" style="width:200px;">Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng</div>
-
+                                <div class="span3">
+                                    <div><img src="./templates/green/images/hu_tieu_nam_vang.jpg"/></div>
+                                    <div class="title">
+                                        <h2>Hủ Tiếu Nam Vang</h2>
+                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                     </div>
-                                    <div class="divLeft" style="left:0px">
-                                        <div class="divLeftImage" style="background:url(./templates/green/images/hu_tieu_nam_vang.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                        <div class="divLeftShadow"></div>
+                                    <div class="content">Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng
                                     </div>
-                                    <div class="divRight" style="left:0px;background-image:url(./templates/green/images/hu_tieu_nam_vang.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                    <img class="thumbnail-shadow" alt="bottom" src="http://www.nitinh.com/static/another_thumb/thumbnail-shadow.png"/>
-                                    <div style="position: absolute;bottom: 60px;width:100%"><h2 style="color: green">Hủ Tíu Nam Vang</h2></div>
-                                    <div class="vote-div" track="3" style="top:250px;right:20px"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                 </div>
-                            </div>
-                            <div class="span3">
-                                <div class="thumb">
-                                    <div class="someContent">
-                                        <div class="content" style="width:200px;">Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua)</div>
-
+                                <div class="span3">
+                                    <div><img src="./templates/green/images/banh_khot.jpg"/></div>
+                                    <div class="title">
+                                        <h2>Bánh Khọt</h2>
+                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                     </div>
-                                    <div class="divLeft" style="left:0px">
-                                        <div class="divLeftImage" style="background:url(./templates/green/images/banh_khot.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                        <div class="divLeftShadow"></div>
+                                    <div class="content">
+                                        Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua)
                                     </div>
-                                    <div class="divRight" style="left:0px;background-image:url(./templates/green/images/banh_khot.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                    <img class="thumbnail-shadow" alt="bottom" src="http://www.nitinh.com/static/another_thumb/thumbnail-shadow.png"/>
-                                    <div style="position: absolute;bottom: 60px;width:100%"><h2 style="color: green">Bánh Khọt</h2></div>
-                                    <div class="vote-div" track="3" style="top:250px;right:20px"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                 </div>
-                            </div>
-                            <div class="span3">
-                                <div class="thumb">
-                                    <div class="someContent">
-                                        <div class="content" style="width:200px;">Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu</div>
-
+                                <div class="span3">
+                                    <div><img src="./templates/green/images/sau_rieng.jpg"/></div>
+                                    <div class="title">
+                                        <h2>Sầu Riêng</h2>
+                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                     </div>
-                                    <div class="divLeft" style="left:0px">
-                                        <div class="divLeftImage" style="background:url(./templates/green/images/sau_rieng.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                        <div class="divLeftShadow"></div>
+                                    <div class="content">Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu
                                     </div>
-                                    <div class="divRight" style="left:0px;background-image:url(./templates/green/images/sau_rieng.jpg);background-repeat:no-repeat;background-size:200% 100%"></div>
-                                    <img class="thumbnail-shadow" alt="bottom" src="http://www.nitinh.com/static/another_thumb/thumbnail-shadow.png"/>
-                                    <div style="position: absolute;bottom: 60px;width:100%"><h2 style="color: green">Sầu Riêng</h2></div>
-                                    <div class="vote-div" track="3" style="top:250px;right:20px"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
                                 </div>
                             </div>
                         </div>
@@ -764,45 +721,50 @@ defined('_JEXEC') or die;
     <div id="total_cost" class="cost">0</div>
 </div>
 <hr style="border-top: 1px solid #030303;border-bottom: 1px solid #000000;"/>
-<div id="vehicle">
-    <div class="cost_title">Đi tới đây</div>
-    <ul id="vehicle_option">
-        <li cost="0" class="vehicle_active">
-            <img src="./templates/green/images/budget/nocost.png" />
-        </li>
-        <li cost="500">
-            <img src="./templates/green/images/transport/coach.png" alt="coach" />
-        </li>
-        <li cost="900">
-            <img src="./templates/green/images/transport/ship.png" />
-        </li>
-        <li cost="1100">
-            <img src="./templates/green/images/transport/train.png" />
-        </li>
-        <li cost="2000">
-            <img src="./templates/green/images/transport/airplane.png" />
-        </li>
-    </ul>
+<div id="vehicle" class="span12">
+    <div class="span12">
+        <div class="cost_title span12">Đi tới đây</div>
 
-    <div id="vehicle_cost" class="cost">0</div>
+        <div class="span11">
+            <ul id="vehicle_option">
+                <li cost="0" class="vehicle_active">
+                    <img src="./templates/green/images/budget/nocost.png" />
+                </li>
+                <li cost="500">
+                    <img src="./templates/green/images/transport/coach.png" alt="coach" />
+                </li>
+                <li cost="900">
+                    <img src="./templates/green/images/transport/ship.png" />
+                </li>
+                <li cost="1100">
+                    <img src="./templates/green/images/transport/train.png" />
+                </li>
+                <li cost="2000">
+                    <img src="./templates/green/images/transport/airplane.png" />
+                </li>
+            </ul>
 
-    <div id="vehicle_info" class="accordion">
-        <h3>Thông tin</h3>
-        <div>
-            <p>
-                Xe buýt: các bến xe lớn như Miền Đông, Miền Tây
-            </p>
-            <p>
-                Thuyền: Cập vào bến cảng Sài Gòn
-            </p>
-            <p>
-                Xe lửa: Tới Ga Hòa Hưng
-            </p>
-            <p>
-                Máy bay: Sân bay Tân Sơn Nhất
-            </p>
+            <div id="vehicle_info" class="accordion">
+                <h3>Thông tin</h3>
+                <div>
+                    <p>
+                        Xe buýt: các bến xe lớn như Miền Đông, Miền Tây
+                    </p>
+                    <p>
+                        Thuyền: Cập vào bến cảng Sài Gòn
+                    </p>
+                    <p>
+                        Xe lửa: Tới Ga Hòa Hưng
+                    </p>
+                    <p>
+                        Máy bay: Sân bay Tân Sơn Nhất
+                    </p>
+                </div>
+            </div>
         </div>
+        <div id="vehicle_cost" class="cost span1">0</div>
     </div>
+
 
     <br class="clear" />
 </div>
@@ -1369,28 +1331,6 @@ jQuery.noConflict();
     });
     $("#slideshow").attr("src", "./templates/green/attraction.php");
 })(jQuery)
-</script>
-<script type="text/javascript">
-    window.addEvent('domready',function(){
-        $$('div.thumb').each(function(div){
-
-            div.getElement('div.someContent').set('tween', {duration:'700'});
-            div.getElement('div.divLeft').set('tween', {duration: '450'});
-            div.getElement('div.divRight').set('tween', {duration: '450'});
-
-            div.addEvent('mouseenter',function(e){
-                this.getElement('div.divLeft').tween('left','-115px')
-                this.getElement('div.divRight').tween('left','115px')
-                this.getElement('div.someContent').tween("background-position", "-20px 0px");
-            })
-            div.addEvent('mouseleave',function(e){
-                this.getElement('div.divLeft').tween('left','0px')
-                this.getElement('div.divRight').tween('left','0px')
-                this.getElement('div.someContent').tween("background-position", "0px -190px");
-
-            })
-        })
-    })
 </script>
 <script type="text/javascript">
     jQuery.noConflict();

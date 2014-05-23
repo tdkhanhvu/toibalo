@@ -20,7 +20,7 @@ caption,th {
 	text-align:left;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
+/* 	font-size:100%; */
 	font-weight:normal;
 }
 q:before,q:after {
@@ -45,7 +45,7 @@ body {
 	text-align: left;
 }
 h1 {
-	font-size: 21px;
+/* 	font-size: 21px; */
 	height: 47px;
 	line-height: 47px;
 	text-transform: uppercase;
