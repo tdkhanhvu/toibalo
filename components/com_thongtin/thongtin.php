@@ -14,51 +14,7 @@ defined('_JEXEC') or die;
         }
     }
 
-    @media (max-width: 400px) {
-        .transport_detail div:first-child {
-            width:0%;
-        }
-        .transport_detail div:first-child img{
-            display: none;
-        }
 
-        .transport_detail div:last-child {
-            width:100%;
-        }
-
-        .itinerary_info > span:first-child {
-            font-size:12px;
-        }
-
-        .itinerary_info > span:last-child {
-            font-size:20px;
-        }
-    }
-
-    @media (min-width: 401px) {
-        .transport_detail div:first-child {
-            width:20%;
-            float:left;
-        }
-
-        .transport_detail div:first-child img
-        {
-            margin-right:20px;
-        }
-
-        .transport_detail div:last-child {
-            width:80%;
-            float:left;
-        }
-
-        .itinerary_info > span:first-child {
-            font-size:2vw;
-        }
-
-        .itinerary_info > span:last-child {
-            font-size:4vw;
-        }
-    }
     .itinerary_info:last-child {
         text-align:right;
     }
@@ -130,19 +86,6 @@ defined('_JEXEC') or die;
 
     .transport div span:last-child{
         font-size:300%;
-    }
-
-    .transport_detail {
-        margin-left:0px;
-    }
-
-    .transport_detail div:last-child {
-        display:table;
-    }
-
-    .transport_detail div:last-child p {
-        display: table-cell;
-        vertical-align: middle;
     }
 
     .box_title {

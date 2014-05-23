@@ -21,11 +21,6 @@ defined('_JEXEC') or die;
         border: 5px solid green;
     }
 
-    /*[class*="span"] {*/
-    .span3 {
-        margin-left:0px;
-    }
-
     #st-food div.title {
         margin:0px;
         font-size: 130%;
@@ -47,78 +42,6 @@ defined('_JEXEC') or die;
             <div class="st-onepage">
 
                 <div style="width:400px">
-                    <p style="width:230px;float:left">Nơi xuất phát</p>
-                    <select id="e1" style="width:230px;float:left">
-                        <option value="Ba_Ria">Bà Rịa</option>
-                        <option value="Bac_Giang">Bắc Giang</option>
-                        <option value="Bac_Lieu">Bạc Liêu</option>
-                        <option value="Bac_Ninh">Bắc Ninh</option>
-                        <option value="Bao_Loc">Bảo Lộc</option>
-                        <option value="Ben_Tre">Bến Tre</option>
-                        <option value="Bien_Hoa">Biên Hòa</option>
-                        <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
-                        <option value="Ca_Mau">Cà Mau</option>
-                        <option value="Cam_Pha">Cẩm Phả</option>
-                        <option value="Can_Tho">Cần Thơ</option>
-                        <option value="Cam_Ranh">Cam Ranh</option>
-                        <option value="Cao_Bang">Cao Bằng</option>
-                        <option value="Cao_Lanh">Cao Lãnh</option>
-                        <option value="Chau_Doc">Châu Đốc</option>
-                        <option value="Da_Lat">Đà Lạt</option>
-                        <option value="Da_nẵng">Đà Nẵng</option>
-                        <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
-                        <option value="Dong_Ha">Đông Hà</option>
-                        <option value="Dong_Hoi">Đồng Hới</option>
-                        <option value="Ha_Giang">Hà Giang</option>
-                        <option value="Ha_Noi">Hà Nội</option>
-                        <option value="Ha_Long">Hạ Long</option>
-                        <option value="Ha_Tinh">Hà Tĩnh</option>
-                        <option value="Hai_Duong">Hải Dương</option>
-                        <option value="Hai_Phong">Hải Phòng</option>
-                        <option value="Hoa_Binh">Hòa Bình</option>
-                        <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
-                        <option value="Hoi_An">Hội An</option>
-                        <option value="Hue">Huế</option>
-                        <option value="Hung_Yen">Hưng Yên</option>
-                        <option value="Kon_Tum">Kon Tum</option>
-                        <option value="Lai_Chau">Lai Châu</option>
-                        <option value="Lang_Son">Lạng Sơn</option>
-                        <option value="Lao_Cai">Lào Cai</option>
-                        <option value="Long_Xuyen">Long Xuyên</option>
-                        <option value="Mong_Cai">Móng Cái</option>
-                        <option value="My_Tho">Mỹ Tho</option>
-                        <option value="Nam_Dinh">Nam Định</option>
-                        <option value="Nha_Trang">Nha Trang</option>
-                        <option value="Ninh_Binh">Ninh Bình</option>
-                        <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
-                        <option value="Phan_Thiet">Phan Thiết</option>
-                        <option value="Phu_Ly">Phủ Lý</option>
-                        <option value="Pleiku">Pleiku</option>
-                        <option value="Quang_Ngai">Quảng Ngãi</option>
-                        <option value="Quy_Nhon">Quy Nhơn</option>
-                        <option value="Rach_Gia">Rạch Giá</option>
-                        <option value="Sa_Dec">Sa Đéc</option>
-                        <option value="Soc_Trang">Sóc Trăng</option>
-                        <option value="Son_La">Sơn La</option>
-                        <option value="Tam_Ky">Tam Kỳ</option>
-                        <option value="Tan_An">Tân An</option>
-                        <option value="Tay_Ninh">Tây Ninh</option>
-                        <option value="Thai_Binh">Thái Bình</option>
-                        <option value="Thai_Nguyen">Thái Nguyên</option>
-                        <option value="Thanh_Hoa">Thanh Hóa</option>
-                        <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
-                        <option value="Tra_Vinh">Trà Vinh</option>
-                        <option value="Tuy_Hoa">Tuy Hòa</option>
-                        <option value="Tuyen_Quang">Tuyên Quang</option>
-                        <option value="Uong_Bi">Uông Bí</option>
-                        <option value="Vi_Thanh">Vị Thanh</option>
-                        <option value="Viet_Tri">Việt Trì</option>
-                        <option value="Vinh">Vinh</option>
-                        <option value="Vinh_Long">Vĩnh Long</option>
-                        <option value="Vinh_Yen">Vĩnh Yên</option>
-                        <option value="Vung_Tau">Vũng Tàu</option>
-                        <option value="Yen_Bai">Yên Bái</option>
-                    </select>
                     <p style="width:230px;float:left">Thời gian đi</p>
                     <div style="float:left" id="widget">
                         <div id="widgetField">
@@ -140,90 +63,6 @@ defined('_JEXEC') or die;
 <div class="custom">
 <div class="st-onepage">
 <div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
-<div id="transport">
-    <div>
-        <div style="height:96%; width:100%;background-color:rgb(240, 223, 225);border:5px groove #FAB6C3">
-            <div style="width:20%;float:left;">
-
-                <p><img src="./templates/green/images/transport/airplane.png"</p>
-            </div>
-            <div style="width:76%;float:left;">
-                <div class="parent">
-                    <p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar
-                        , VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là
-                        11h đêm.</p>
-                    <br/>
-                    <p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian
-                        đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div style="height:96%; width:100%;background-color:rgb(231, 203, 236);border:5px groove #E094EE">
-            <div style="width:20%;float:left;">
-                <p><img src="./templates/green/images/transport/train.png"</p>
-            </div>
-            <div style="width:76%;float:left;">
-                <div class="parent">
-                    <p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.
-                        Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p>
-                    <br/>
-                    <p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.
-                        Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div style="height:96%; width:100%;background-color:rgb(220, 212, 236);border:5px groove #AE8FBD">
-            <div style="width:20%;float:left;">
-                <p><img src="./templates/green/images/transport/coach.png"</p>
-            </div>
-            <div style="width:76%;float:left;">
-                <div class="parent">
-                    <p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h.
-                        Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p>
-                    <br/>
-                    <p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân.
-                        Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div style="height:96%; width:100%;background-color:rgb(207, 234, 247);border:5px groove #6882D3">
-            <div style="width:20%;float:left;">
-                <p><img src="./templates/green/images/transport/ship.png"</p>
-            </div>
-            <div style="width:76%;float:left;">
-                <div class="parent">
-                    <p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h.
-                        Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p>
-                    <br/>
-                    <p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.
-                        Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div style="height:96%; width:100%;background-color:rgb(207, 234, 247);border:5px groove #6882D3">
-            <div style="width:20%;float:left;">
-                <p><img src="./templates/green/images/transport/motorbike.png"</p>
-            </div>
-            <div style="width:76%;float:left;">
-                <div class="parent">
-                    <p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có
-                        các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p>
-                    <br/>
-                    <p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân
-                        trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div id="info">
 <div>
     <div style="height:96%; width:100%;background-color:rgb(240, 223, 225);border:5px groove #FAB6C3">
@@ -481,6 +320,215 @@ defined('_JEXEC') or die;
 </div>
 
 </div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="avatar-full-2-block">
+<div class="avatar-wrapper block-default-width">
+<div class="avatar-module ">
+<div class="module-content">
+
+
+<div class="custom">
+<div class="st-onepage">
+<div class="st-projects onepage-appear" position="item-101" id="transportation">
+    <div class="span3" style="margin-bottom:20px;">
+        <h2>Xuất Phát</h2>
+    </div>
+    <div class="span3 offset1" style="margin-bottom:20px;">
+        <select id="city_start" style="width:100%">
+            <option value="Ba_Ria">Bà Rịa</option>
+            <option value="Bac_Giang">Bắc Giang</option>
+            <option value="Bac_Lieu">Bạc Liêu</option>
+            <option value="Bac_Ninh">Bắc Ninh</option>
+            <option value="Bao_Loc">Bảo Lộc</option>
+            <option value="Ben_Tre">Bến Tre</option>
+            <option value="Bien_Hoa">Biên Hòa</option>
+            <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
+            <option value="Ca_Mau">Cà Mau</option>
+            <option value="Cam_Pha">Cẩm Phả</option>
+            <option value="Can_Tho">Cần Thơ</option>
+            <option value="Cam_Ranh">Cam Ranh</option>
+            <option value="Cao_Bang">Cao Bằng</option>
+            <option value="Cao_Lanh">Cao Lãnh</option>
+            <option value="Chau_Doc">Châu Đốc</option>
+            <option value="Da_Lat">Đà Lạt</option>
+            <option value="Da_nẵng">Đà Nẵng</option>
+            <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
+            <option value="Dong_Ha">Đông Hà</option>
+            <option value="Dong_Hoi">Đồng Hới</option>
+            <option value="Ha_Giang">Hà Giang</option>
+            <option value="Ha_Noi">Hà Nội</option>
+            <option value="Ha_Long">Hạ Long</option>
+            <option value="Ha_Tinh">Hà Tĩnh</option>
+            <option value="Hai_Duong">Hải Dương</option>
+            <option value="Hai_Phong">Hải Phòng</option>
+            <option value="Hoa_Binh">Hòa Bình</option>
+            <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
+            <option value="Hoi_An">Hội An</option>
+            <option value="Hue">Huế</option>
+            <option value="Hung_Yen">Hưng Yên</option>
+            <option value="Kon_Tum">Kon Tum</option>
+            <option value="Lai_Chau">Lai Châu</option>
+            <option value="Lang_Son">Lạng Sơn</option>
+            <option value="Lao_Cai">Lào Cai</option>
+            <option value="Long_Xuyen">Long Xuyên</option>
+            <option value="Mong_Cai">Móng Cái</option>
+            <option value="My_Tho">Mỹ Tho</option>
+            <option value="Nam_Dinh">Nam Định</option>
+            <option value="Nha_Trang">Nha Trang</option>
+            <option value="Ninh_Binh">Ninh Bình</option>
+            <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
+            <option value="Phan_Thiet">Phan Thiết</option>
+            <option value="Phu_Ly">Phủ Lý</option>
+            <option value="Pleiku">Pleiku</option>
+            <option value="Quang_Ngai">Quảng Ngãi</option>
+            <option value="Quy_Nhon">Quy Nhơn</option>
+            <option value="Rach_Gia">Rạch Giá</option>
+            <option value="Sa_Dec">Sa Đéc</option>
+            <option value="Soc_Trang">Sóc Trăng</option>
+            <option value="Son_La">Sơn La</option>
+            <option value="Tam_Ky">Tam Kỳ</option>
+            <option value="Tan_An">Tân An</option>
+            <option value="Tay_Ninh">Tây Ninh</option>
+            <option value="Thai_Binh">Thái Bình</option>
+            <option value="Thai_Nguyen">Thái Nguyên</option>
+            <option value="Thanh_Hoa">Thanh Hóa</option>
+            <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
+            <option value="Tra_Vinh">Trà Vinh</option>
+            <option value="Tuy_Hoa">Tuy Hòa</option>
+            <option value="Tuyen_Quang">Tuyên Quang</option>
+            <option value="Uong_Bi">Uông Bí</option>
+            <option value="Vi_Thanh">Vị Thanh</option>
+            <option value="Viet_Tri">Việt Trì</option>
+            <option value="Vinh">Vinh</option>
+            <option value="Vinh_Long">Vĩnh Long</option>
+            <option value="Vinh_Yen">Vĩnh Yên</option>
+            <option value="Vung_Tau">Vũng Tàu</option>
+            <option value="Yen_Bai">Yên Bái</option>
+        </select>
+    </div>
+    <div class="span3 offset1" style="margin-bottom:20px;">
+        <select id="transport_start" style="width:100%">
+            <option value="airplane">Máy Bay</option>
+            <option value="train">Xe Lửa</option>
+            <option value="coach">Xe Khách</option>
+            <option value="ship">Tàu Thủy</option>
+            <option value="motorbike">Xe Máy</option>
+        </select>
+    </div>
+    <div class="span12 transport_detail" id="transport_start_info" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;width:99.2%;margin-bottom:20px;">
+        <div>
+            <img id="transport_start_img" src="./templates/green/images/transport/airplane.png"/>
+        </div>
+        <div id="transport_start_txt">
+            <p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="span3" style="margin-bottom:20px;">
+        <h2>Trở Về</h2>
+    </div>
+    <div class="span3 offset1" style="margin-bottom:20px;">
+        <select id="city_end" style="width:100%">
+            <option value="Ba_Ria">Bà Rịa</option>
+            <option value="Bac_Giang">Bắc Giang</option>
+            <option value="Bac_Lieu">Bạc Liêu</option>
+            <option value="Bac_Ninh">Bắc Ninh</option>
+            <option value="Bao_Loc">Bảo Lộc</option>
+            <option value="Ben_Tre">Bến Tre</option>
+            <option value="Bien_Hoa">Biên Hòa</option>
+            <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
+            <option value="Ca_Mau">Cà Mau</option>
+            <option value="Cam_Pha">Cẩm Phả</option>
+            <option value="Can_Tho">Cần Thơ</option>
+            <option value="Cam_Ranh">Cam Ranh</option>
+            <option value="Cao_Bang">Cao Bằng</option>
+            <option value="Cao_Lanh">Cao Lãnh</option>
+            <option value="Chau_Doc">Châu Đốc</option>
+            <option value="Da_Lat">Đà Lạt</option>
+            <option value="Da_nẵng">Đà Nẵng</option>
+            <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
+            <option value="Dong_Ha">Đông Hà</option>
+            <option value="Dong_Hoi">Đồng Hới</option>
+            <option value="Ha_Giang">Hà Giang</option>
+            <option value="Ha_Noi">Hà Nội</option>
+            <option value="Ha_Long">Hạ Long</option>
+            <option value="Ha_Tinh">Hà Tĩnh</option>
+            <option value="Hai_Duong">Hải Dương</option>
+            <option value="Hai_Phong">Hải Phòng</option>
+            <option value="Hoa_Binh">Hòa Bình</option>
+            <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
+            <option value="Hoi_An">Hội An</option>
+            <option value="Hue">Huế</option>
+            <option value="Hung_Yen">Hưng Yên</option>
+            <option value="Kon_Tum">Kon Tum</option>
+            <option value="Lai_Chau">Lai Châu</option>
+            <option value="Lang_Son">Lạng Sơn</option>
+            <option value="Lao_Cai">Lào Cai</option>
+            <option value="Long_Xuyen">Long Xuyên</option>
+            <option value="Mong_Cai">Móng Cái</option>
+            <option value="My_Tho">Mỹ Tho</option>
+            <option value="Nam_Dinh">Nam Định</option>
+            <option value="Nha_Trang">Nha Trang</option>
+            <option value="Ninh_Binh">Ninh Bình</option>
+            <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
+            <option value="Phan_Thiet">Phan Thiết</option>
+            <option value="Phu_Ly">Phủ Lý</option>
+            <option value="Pleiku">Pleiku</option>
+            <option value="Quang_Ngai">Quảng Ngãi</option>
+            <option value="Quy_Nhon">Quy Nhơn</option>
+            <option value="Rach_Gia">Rạch Giá</option>
+            <option value="Sa_Dec">Sa Đéc</option>
+            <option value="Soc_Trang">Sóc Trăng</option>
+            <option value="Son_La">Sơn La</option>
+            <option value="Tam_Ky">Tam Kỳ</option>
+            <option value="Tan_An">Tân An</option>
+            <option value="Tay_Ninh">Tây Ninh</option>
+            <option value="Thai_Binh">Thái Bình</option>
+            <option value="Thai_Nguyen">Thái Nguyên</option>
+            <option value="Thanh_Hoa">Thanh Hóa</option>
+            <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
+            <option value="Tra_Vinh">Trà Vinh</option>
+            <option value="Tuy_Hoa">Tuy Hòa</option>
+            <option value="Tuyen_Quang">Tuyên Quang</option>
+            <option value="Uong_Bi">Uông Bí</option>
+            <option value="Vi_Thanh">Vị Thanh</option>
+            <option value="Viet_Tri">Việt Trì</option>
+            <option value="Vinh">Vinh</option>
+            <option value="Vinh_Long">Vĩnh Long</option>
+            <option value="Vinh_Yen">Vĩnh Yên</option>
+            <option value="Vung_Tau">Vũng Tàu</option>
+            <option value="Yen_Bai">Yên Bái</option>
+        </select>
+    </div>
+    <div class="span3 offset1" style="margin-bottom:20px;">
+        <select id="transport_end" style="width:100%">
+            <option value="airplane">Máy Bay</option>
+            <option value="train">Xe Lửa</option>
+            <option value="coach">Xe Khách</option>
+            <option value="ship">Tàu Thủy</option>
+            <option value="motorbike">Xe Máy</option>
+        </select>
+    </div>
+    <div class="span12 transport_detail" id="transport_end_info" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;width:99.2%;">
+        <div>
+            <img id="transport_end_img" src="./templates/green/images/transport/airplane.png"/>
+        </div>
+        <div id="transport_end_txt">
+            <p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+
 </div>
 </div>
 </div>
@@ -530,6 +578,12 @@ defined('_JEXEC') or die;
 
     </div>
 </div>
+<style>
+    /*[class*="span"] {*/
+    #st-advice .span3 {
+        margin-left:0px;
+    }
+</style>
 <div id="avatar-full-4-block">
     <div class="avatar-wrapper block-default-width">
         <div class="avatar-module ">
@@ -711,7 +765,7 @@ defined('_JEXEC') or die;
 <div id="cost_info">
 <div id="summary">
     <div class="cost_title" style="position:absolute;">
-        Tổng chi phí &nbsp;<select id="e2" style="width:50px;">
+        Tổng chi phí &nbsp;<select id="day_list" style="width:50px;">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -1037,14 +1091,87 @@ jQuery.noConflict();
         });
         $('#widgetCalendar div.datepicker').css('position', 'absolute');
 
-        $("#e1").select2();
-        $("#e1").on("change", function(e) { $("#city").text($("#e1").select2("data").text);
+        $("#city_start").select2();
+        $("#city_start").on("change", function(e) { $("#city").text($("#city_start").select2("data").text);
             //alert(e.val + ' ' + e.added + ' ' +e.removed)
         });
-        $("#e2").select2();
-        $("#e2").on("change", function(e) {
-            day = parseInt($("#e2").select2("data").text);
+        $("#day_list").select2();
+        $("#day_list").on("change", function(e) {
+            day = parseInt($("#day_list").select2("data").text);
             recalculateTotalCost();
+        });
+
+        $("#day_list").select2();
+
+        $("#city_end").select2();
+
+        function formatResult(item) {
+            if (!item.id)
+                return item.text;
+
+            return "<img src='./templates/green/images/transport/" + item.id + ".png'/>" + item.text;
+        }
+
+        function formatSelection(item) {
+            return item.text;
+        }
+
+        $("#transport_start").select2({
+            formatResult: formatResult,
+            formatSelection: formatSelection,
+            escapeMarkup: function(m) { return m; }
+        });
+
+        $("#transport_end").select2({
+            formatResult: formatResult,
+            formatSelection: formatSelection,
+            escapeMarkup: function(m) { return m; }
+        });
+
+        $("#transport_start").on("change", function(e) {
+            var transport_start_id = $("#transport_start").select2("data").id;
+            $("#transport_start_img").attr("src","./templates/green/images/transport/" + transport_start_id + ".png");
+
+            switch (transport_start_id) {
+                case 'airplane':
+                    $("#transport_start_txt").html("<p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>");
+                    break;
+                case 'train':
+                    $("#transport_start_txt").html("<p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>");
+                    break;
+                case 'coach':
+                    $("#transport_start_txt").html("<p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>");
+                    break;
+                case 'ship':
+                    $("#transport_start_txt").html("<p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>");
+                    break;
+                case 'motorbike':
+                    $("#transport_start_txt").html("<p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>");
+                    break;
+            }
+        });
+
+        $("#transport_end").on("change", function(e) {
+            var transport_end_id = $("#transport_end").select2("data").id;
+            $("#transport_end_img").attr("src","./templates/green/images/transport/" + transport_end_id + ".png");
+
+            switch (transport_end_id) {
+                case 'airplane':
+                    $("#transport_end_txt").html("<p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>");
+                    break;
+                case 'train':
+                    $("#transport_end_txt").html("<p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>");
+                    break;
+                case 'coach':
+                    $("#transport_end_txt").html("<p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>");
+                    break;
+                case 'ship':
+                    $("#transport_end_txt").html("<p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>");
+                    break;
+                case 'motorbike':
+                    $("#transport_end_txt").html("<p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>");
+                    break;
+            }
         });
 
         $("#info").zAccordion({
@@ -1055,14 +1182,7 @@ jQuery.noConflict();
             height: 320,
             trigger: "mouseover"
         });
-        $("#transport").zAccordion({
-            startingSlide: 1,
-            auto: false,
-            tabWidth: "10%",
-            width: "100%",
-            height: 220,
-            trigger: "click"
-        });
+
         window.addEventListener("message", receiveMessage, false);
 
         function checkButton() {

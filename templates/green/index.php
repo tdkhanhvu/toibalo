@@ -129,7 +129,10 @@ $option =  JRequest::getVar('option'); // De phan loai trang
 								</li>
                             <?php } else if ($option == 'com_lichtrinh') { ?>
                                 <li class="item-104 current active">
-                                    <a class=".st-projects"	href="#">Xuất Phát</a>
+                                    <a class=".st-projects"	href="#">Thời Điểm</a>
+                                </li>
+                                <li class="item-101">
+                                    <a class="#transportation" href="#">Phương Tiện</a>
                                 </li>
                                 <li class="item-105">
                                     <a class=".st-home" href="#">Tham Quan</a>
