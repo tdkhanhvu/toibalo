@@ -31,6 +31,10 @@
                 background-image: url('./templates/green/images/maximize.png');
                 background-size:contain;
             }
+
+            .toogle {
+                cursor: pointer;
+            }
 		</style>
         <div id="main">
             <p id="video-controls" class="black-65">
