@@ -91,7 +91,7 @@
             };
             function mouseOverHandler(selector, animationType){
             	selector.on('mouseover',function(eventObject){
-					window.parent.postMessage($(this).find('img').attr('attractionId'),'*');
+					changeAttractionInfo($(this).find('img').attr('attractionId'));
 					showTooltip(selector, animationType);
 				});
             	selector.on('mouseout', function (eventObject) {

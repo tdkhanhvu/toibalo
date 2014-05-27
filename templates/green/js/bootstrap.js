@@ -1323,6 +1323,9 @@
             this.$element[dimension](0)
             this.transition('addClass', $.Event('show'), 'shown')
             $.support.transition && this.$element[dimension](this.$element[0][scroll])
+			
+			if(this.$element.css('border'))
+				this.$element.css('border', this.$element.css('border').replace('0px','5px'))
         }, hide: function () {
             var dimension
             if (this.transitioning || !this.$element.hasClass('in')) return
@@ -1330,6 +1333,9 @@
             this.reset(this.$element[dimension]())
             this.transition('removeClass', $.Event('hide'), 'hidden')
             this.$element[dimension](0)
+			
+			if(this.$element.css('border'))
+				this.$element.css('border', this.$element.css('border').replace('5px','0px'))
         }, reset: function (size) {
             var dimension = this.dimension()
 

@@ -262,8 +262,8 @@ input.inputDate {
 	left: 0;
 	height: 0px;
 	overflow: hidden;
-	width: 588px;
-	background: #B9B9B9;
+	width: 100%;
+	background: #101B3D;
 }
 #widgetCalendar .datepicker {
 	position: absolute;

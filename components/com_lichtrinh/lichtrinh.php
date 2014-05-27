@@ -30,32 +30,16 @@ defined('_JEXEC') or die;
     #st-food img {
         border: 5px solid green;
     }
+
+    #transport_start > li > a > div,#transport_end > li > a > div  {
+        width:50px;
+        height:50px;
+        background-size: contain;
+    }
 </style>
 
 <div id="avatar-full-2-block">
 <div class="avatar-wrapper block-default-width">
-<div class="avatar-module ">
-    <div class="module-content">
-
-
-        <div class="custom">
-            <div class="st-onepage">
-
-                <div style="width:400px">
-                    <p style="width:230px;float:left">Thời gian đi</p>
-                    <div style="float:left" id="widget">
-                        <div id="widgetField">
-                            <span>28 July, 2008 &divide; 31 July, 2008</span>
-                            <a href="#">Select date range</a>
-                        </div>
-                        <div id="widgetCalendar">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="avatar-module ">
 <div class="module-content">
 
@@ -63,262 +47,336 @@ defined('_JEXEC') or die;
 <div class="custom">
 <div class="st-onepage">
 <div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
-<div id="info">
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(240, 223, 225);border:5px groove #FAB6C3">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">1</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/red_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/high.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Thời tiết khô và nóng, có khi lên tới 39 độ vào ban ngày.
-                    Du khách được khuyến cáo không nên ra đường vào bữa trưa</p>
+    <div class="span6 offset3">
+        <p style="width:230px;float:left">Thời gian đi</p>
+        <div style="float:left" id="widget">
+            <div id="widgetField">
+                <span>28 July, 2008 &divide; 31 July, 2008</span>
+                <a href="#">Select date range</a>
             </div>
-            <div class="parent">
-                <p class="info child">Thời gian giữa tết tây và tết ta nên lượng du khách đổ tới Sài Gòn khá đông</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả khá là đắt đỏ, tăng gấp rưỡi so với các tháng khác</p>
+            <div id="widgetCalendar" style="z-index:999;">
             </div>
         </div>
     </div>
+    <div class="panel-group span13" id="accordion" style="margin-top:20px;">
+        <div class="span6" style="margin-left:0px;">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a1" data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">1</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse" style="width:95%;background-color:rgb(240, 223, 225);border:0px groove #FAB6C3;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Thời tiết khô và nóng, có khi lên tới 39 độ vào ban ngày.
+                                Du khách được khuyến cáo không nên ra đường vào bữa trưa</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Thời gian giữa tết tây và tết ta nên lượng du khách đổ tới Sài Gòn khá đông</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả khá là đắt đỏ, tăng gấp rưỡi so với các tháng khác</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">2</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" style="width:95%;background-color:rgb(231, 203, 236);border:0px groove #E094EE;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Thời tiết bắt đầu đỡ hơn so với tháng Giêng.</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Đa phần du khách tới Sài Gòn vào mùa này để tận hưởng Tết Cổ Truyền</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả leo thang, đắt gấp đôi trong năm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a3" data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">3</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" style="width:95%;background-color:rgb(220, 212, 236);border:0px groove #AE8FBD;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Khí hậu bớt oi bức, bắt đầu xuất hiện vài cơn mưa lất phất</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Sau đợt tết, du khách bắt đầu trở về nước</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a4" data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">4</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse" style="width:95%;background-color:rgb(207, 234, 247);border:0px groove #6882D3;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Trời mát, hay xuất hiện mưa buổi chiều</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Đợt không cao điểm trong năm cho du lịch</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a5" data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">5</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse" style="width:95%;background-color:rgb(150, 233, 210);border:0px groove #32C5B4;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Trời mát, hay xuất hiện mưa buổi chiều</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Đợt không cao điểm trong năm cho du lịch</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a6" data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">6</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/low.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse" style="width:95%;background-color:rgb(207, 234, 247);border:0px groove #98bf21;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Mưa nhiều và thường xuyên trong ngày</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Ít du khách tới Sài Gòn vào thời điểm này</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả thấp so với trong năm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span6 offset1" >
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a7" data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">7</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/low.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse" style="width:95%;background-color:rgb(176, 219, 197);border:0px groove #35D64F;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Mưa với tần suất lớn. Có ngày mưa hơn 12h</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Ít du khách tới Sài Gòn vào thời điểm này</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả rất thấp do hàng hóa dồi dào</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a8" data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">8</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/low.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse" style="width:95%;background-color:rgb(150, 228, 153);border:0px groove #1B9725;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Mưa bắt đầu ngớt dần, nhưng khí hậu vẫn khá ẩm ướt</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Vẫn chưa có nhiều du khách tới</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Giá cả rất thấp do hàng hóa dồi dào</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a9" data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">9</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse9" class="panel-collapse collapse" style="width:95%;background-color:rgb(168, 214, 142);border:0px groove #A1C03F;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Thời tiết chuyển sang khô ráo, hơi se se lạnh</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Du khách bắt đầu quay lại Sài Gòn</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Già cả tăng cao trở lại</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a10" data-toggle="collapse" data-parent="#accordion" href="#collapse10" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">10</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse10" class="panel-collapse collapse" style="width:95%;background-color:rgb(209, 224, 159);border:0px groove #D8CB35;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Già cả tăng cao trở lại</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a11" data-toggle="collapse" data-parent="#accordion" href="#collapse11" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">11</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse" style="width:95%;background-color:rgb(224, 198, 159);border:0px groove #D89D35;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Già cả tăng cao trở lại</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a id="a12" data-toggle="collapse" data-parent="#accordion" href="#collapse12" class="collapsed">
+                            <div style="width:50px;float:left;margin-top:20px;">12</div>
+                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
+                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
+                            <div style="clear:both;"></div>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse12" class="panel-collapse collapse" style="width:95%;background-color:rgb(224, 175, 159);border:0px groove #C5632C;">
+                    <div class="panel-body">
+                        <div class="parent">
+                            <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
+                        </div>
+                        <div class="parent">
+                            <p class="info child">Già cả tăng cao trở lại</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(231, 203, 236);border:5px groove #E094EE">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">2</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/red_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/high.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Thời tiết bắt đầu đỡ hơn so với tháng Giêng.</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Đa phần du khách tới Sài Gòn vào mùa này để tận hưởng Tết Cổ Truyền</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả leo thang, đắt gấp đôi trong năm</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(220, 212, 236);border:5px groove #AE8FBD">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">3</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/yellow_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/medium.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Khí hậu bớt oi bức, bắt đầu xuất hiện vài cơn mưa lất phất</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Sau đợt tết, du khách bắt đầu trở về nước</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(207, 234, 247);border:5px groove #6882D3">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">4</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/yellow_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/medium.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Trời mát, hay xuất hiện mưa buổi chiều</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Đợt không cao điểm trong năm cho du lịch</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(150, 233, 210);border:5px groove #32C5B4">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">5</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/green_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/medium.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Trời mát, hay xuất hiện mưa buổi chiều</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Đợt không cao điểm trong năm cho du lịch</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(207, 234, 247);border:5px groove #98bf21">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">6</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/green_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/low.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Mưa nhiều và thường xuyên trong ngày</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Ít du khách tới Sài Gòn vào thời điểm này</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả thấp so với trong năm</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(176, 219, 197);border:5px groove #35D64F">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">7</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/green_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/low.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Mưa với tần suất lớn. Có ngày mưa hơn 12h</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Ít du khách tới Sài Gòn vào thời điểm này</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả rất thấp do hàng hóa dồi dào</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(150, 228, 153);border:5px groove #1B9725">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">8</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/green_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/low.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Mưa bắt đầu ngớt dần, nhưng khí hậu vẫn khá ẩm ướt</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Vẫn chưa có nhiều du khách tới</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Giá cả rất thấp do hàng hóa dồi dào</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(168, 214, 142);border:5px groove #A1C03F">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">9</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/yellow_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/medium.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Thời tiết chuyển sang khô ráo, hơi se se lạnh</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Du khách bắt đầu quay lại Sài Gòn</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Già cả tăng cao trở lại</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(209, 224, 159);border:5px groove #D8CB35">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">10</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/yellow_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/high.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Già cả tăng cao trở lại</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(224, 198, 159);border:5px groove #D89D35">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">11</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/red_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/high.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Già cả tăng cao trở lại</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div>
-    <div style="height:96%; width:100%;background-color:rgb(224, 175, 159);border:5px groove #C5632C">
-        <div style="width:10%;float:left;">
-            <p class="monthinfo">12</p>
-            <p class="icon-sun weathericon"></p>
-            <p class="info"><img src="./templates/green/images/crowded/red_star.png"</p>
-            <p class="info"><img src="./templates/green/images/money/high.png"</p>
-        </div>
-        <div style="width:88%;float:left;">
-            <div class="parent">
-                <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
-            </div>
-            <div class="parent">
-                <p class="info child">Già cả tăng cao trở lại</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
 </div>
 
 </div>
@@ -338,11 +396,12 @@ defined('_JEXEC') or die;
 <div class="custom">
 <div class="st-onepage">
 <div class="st-projects onepage-appear" position="item-101" id="transportation">
-    <div class="span3" style="margin-bottom:20px;">
-        <h2>Xuất Phát</h2>
-    </div>
-    <div class="span3 offset1" style="margin-bottom:20px;">
-        <select id="city_start" style="width:100%">
+    <div class="span7" style="margin-left:0px;">
+        <div class="span7" style="margin-bottom:20px;margin-left:0px;">
+            <h2>Xuất Phát</h2>
+        </div>
+        <div class="span3 offset2" style="margin-bottom:20px;">
+            <select id="city_start" style="width:100%">
             <option value="Ba_Ria">Bà Rịa</option>
             <option value="Bac_Giang">Bắc Giang</option>
             <option value="Bac_Lieu">Bạc Liêu</option>
@@ -413,119 +472,118 @@ defined('_JEXEC') or die;
             <option value="Vung_Tau">Vũng Tàu</option>
             <option value="Yen_Bai">Yên Bái</option>
         </select>
-    </div>
-    <div class="span3 offset1" style="margin-bottom:20px;">
-        <select id="transport_start" style="width:100%">
-            <option value="airplane">Máy Bay</option>
-            <option value="train">Xe Lửa</option>
-            <option value="coach">Xe Khách</option>
-            <option value="ship">Tàu Thủy</option>
-            <option value="motorbike">Xe Máy</option>
-        </select>
-    </div>
-    <div class="span12 transport_detail" id="transport_start_info" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;width:99.2%;margin-bottom:20px;">
-        <div>
-            <img id="transport_start_img" src="./templates/green/images/transport/airplane.png"/>
         </div>
-        <div id="transport_start_txt">
-            <p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>
+
+        <ul class="span5 offset1 nav nav-tabs" id="transport_start">
+            <li class="active"><a href="#maybay_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/airplane.png');"></div></a></li>
+            <li><a href="#xelua_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/train.png');"></div></a></li>
+            <li><a href="#xekhach_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/coach.png');"></div></a></li>
+            <li><a href="#tauthuy_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/ship.png');"></div></a></li>
+            <li><a href="#xemay_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/motorbike.png');"></div></a></li>
+        </ul>
+
+        <div class="span5 offset1 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
+            <div class="tab-pane active" id="maybay_start"><p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p></div>
+            <div class="tab-pane" id="xelua_start"><p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p></div>
+            <div class="tab-pane" id="xekhach_start"><p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p></div>
+            <div class="tab-pane" id="tauthuy_start"><p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p></div>
+            <div class="tab-pane" id="xemay_start"><p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p></div>
         </div>
-        <div style="clear:both;"></div>
     </div>
 
-    <div class="span3" style="margin-bottom:20px;">
-        <h2>Trở Về</h2>
-    </div>
-    <div class="span3 offset1" style="margin-bottom:20px;">
-        <select id="city_end" style="width:100%">
-            <option value="Ba_Ria">Bà Rịa</option>
-            <option value="Bac_Giang">Bắc Giang</option>
-            <option value="Bac_Lieu">Bạc Liêu</option>
-            <option value="Bac_Ninh">Bắc Ninh</option>
-            <option value="Bao_Loc">Bảo Lộc</option>
-            <option value="Ben_Tre">Bến Tre</option>
-            <option value="Bien_Hoa">Biên Hòa</option>
-            <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
-            <option value="Ca_Mau">Cà Mau</option>
-            <option value="Cam_Pha">Cẩm Phả</option>
-            <option value="Can_Tho">Cần Thơ</option>
-            <option value="Cam_Ranh">Cam Ranh</option>
-            <option value="Cao_Bang">Cao Bằng</option>
-            <option value="Cao_Lanh">Cao Lãnh</option>
-            <option value="Chau_Doc">Châu Đốc</option>
-            <option value="Da_Lat">Đà Lạt</option>
-            <option value="Da_nẵng">Đà Nẵng</option>
-            <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
-            <option value="Dong_Ha">Đông Hà</option>
-            <option value="Dong_Hoi">Đồng Hới</option>
-            <option value="Ha_Giang">Hà Giang</option>
-            <option value="Ha_Noi">Hà Nội</option>
-            <option value="Ha_Long">Hạ Long</option>
-            <option value="Ha_Tinh">Hà Tĩnh</option>
-            <option value="Hai_Duong">Hải Dương</option>
-            <option value="Hai_Phong">Hải Phòng</option>
-            <option value="Hoa_Binh">Hòa Bình</option>
-            <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
-            <option value="Hoi_An">Hội An</option>
-            <option value="Hue">Huế</option>
-            <option value="Hung_Yen">Hưng Yên</option>
-            <option value="Kon_Tum">Kon Tum</option>
-            <option value="Lai_Chau">Lai Châu</option>
-            <option value="Lang_Son">Lạng Sơn</option>
-            <option value="Lao_Cai">Lào Cai</option>
-            <option value="Long_Xuyen">Long Xuyên</option>
-            <option value="Mong_Cai">Móng Cái</option>
-            <option value="My_Tho">Mỹ Tho</option>
-            <option value="Nam_Dinh">Nam Định</option>
-            <option value="Nha_Trang">Nha Trang</option>
-            <option value="Ninh_Binh">Ninh Bình</option>
-            <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
-            <option value="Phan_Thiet">Phan Thiết</option>
-            <option value="Phu_Ly">Phủ Lý</option>
-            <option value="Pleiku">Pleiku</option>
-            <option value="Quang_Ngai">Quảng Ngãi</option>
-            <option value="Quy_Nhon">Quy Nhơn</option>
-            <option value="Rach_Gia">Rạch Giá</option>
-            <option value="Sa_Dec">Sa Đéc</option>
-            <option value="Soc_Trang">Sóc Trăng</option>
-            <option value="Son_La">Sơn La</option>
-            <option value="Tam_Ky">Tam Kỳ</option>
-            <option value="Tan_An">Tân An</option>
-            <option value="Tay_Ninh">Tây Ninh</option>
-            <option value="Thai_Binh">Thái Bình</option>
-            <option value="Thai_Nguyen">Thái Nguyên</option>
-            <option value="Thanh_Hoa">Thanh Hóa</option>
-            <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
-            <option value="Tra_Vinh">Trà Vinh</option>
-            <option value="Tuy_Hoa">Tuy Hòa</option>
-            <option value="Tuyen_Quang">Tuyên Quang</option>
-            <option value="Uong_Bi">Uông Bí</option>
-            <option value="Vi_Thanh">Vị Thanh</option>
-            <option value="Viet_Tri">Việt Trì</option>
-            <option value="Vinh">Vinh</option>
-            <option value="Vinh_Long">Vĩnh Long</option>
-            <option value="Vinh_Yen">Vĩnh Yên</option>
-            <option value="Vung_Tau">Vũng Tàu</option>
-            <option value="Yen_Bai">Yên Bái</option>
-        </select>
-    </div>
-    <div class="span3 offset1" style="margin-bottom:20px;">
-        <select id="transport_end" style="width:100%">
-            <option value="airplane">Máy Bay</option>
-            <option value="train">Xe Lửa</option>
-            <option value="coach">Xe Khách</option>
-            <option value="ship">Tàu Thủy</option>
-            <option value="motorbike">Xe Máy</option>
-        </select>
-    </div>
-    <div class="span12 transport_detail" id="transport_end_info" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;width:99.2%;">
-        <div>
-            <img id="transport_end_img" src="./templates/green/images/transport/airplane.png"/>
+    <div class="span7" style="margin-left:0px;">
+        <div class="span7" style="margin-bottom:20px;margin-left:0px;">
+            <h2>Trở Về</h2>
         </div>
-        <div id="transport_end_txt">
-            <p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>
+        <div class="span3 offset2" style="margin-bottom:20px;">
+            <select id="city_end" style="width:100%">
+                <option value="Ba_Ria">Bà Rịa</option>
+                <option value="Bac_Giang">Bắc Giang</option>
+                <option value="Bac_Lieu">Bạc Liêu</option>
+                <option value="Bac_Ninh">Bắc Ninh</option>
+                <option value="Bao_Loc">Bảo Lộc</option>
+                <option value="Ben_Tre">Bến Tre</option>
+                <option value="Bien_Hoa">Biên Hòa</option>
+                <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
+                <option value="Ca_Mau">Cà Mau</option>
+                <option value="Cam_Pha">Cẩm Phả</option>
+                <option value="Can_Tho">Cần Thơ</option>
+                <option value="Cam_Ranh">Cam Ranh</option>
+                <option value="Cao_Bang">Cao Bằng</option>
+                <option value="Cao_Lanh">Cao Lãnh</option>
+                <option value="Chau_Doc">Châu Đốc</option>
+                <option value="Da_Lat">Đà Lạt</option>
+                <option value="Da_nẵng">Đà Nẵng</option>
+                <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
+                <option value="Dong_Ha">Đông Hà</option>
+                <option value="Dong_Hoi">Đồng Hới</option>
+                <option value="Ha_Giang">Hà Giang</option>
+                <option value="Ha_Noi">Hà Nội</option>
+                <option value="Ha_Long">Hạ Long</option>
+                <option value="Ha_Tinh">Hà Tĩnh</option>
+                <option value="Hai_Duong">Hải Dương</option>
+                <option value="Hai_Phong">Hải Phòng</option>
+                <option value="Hoa_Binh">Hòa Bình</option>
+                <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
+                <option value="Hoi_An">Hội An</option>
+                <option value="Hue">Huế</option>
+                <option value="Hung_Yen">Hưng Yên</option>
+                <option value="Kon_Tum">Kon Tum</option>
+                <option value="Lai_Chau">Lai Châu</option>
+                <option value="Lang_Son">Lạng Sơn</option>
+                <option value="Lao_Cai">Lào Cai</option>
+                <option value="Long_Xuyen">Long Xuyên</option>
+                <option value="Mong_Cai">Móng Cái</option>
+                <option value="My_Tho">Mỹ Tho</option>
+                <option value="Nam_Dinh">Nam Định</option>
+                <option value="Nha_Trang">Nha Trang</option>
+                <option value="Ninh_Binh">Ninh Bình</option>
+                <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
+                <option value="Phan_Thiet">Phan Thiết</option>
+                <option value="Phu_Ly">Phủ Lý</option>
+                <option value="Pleiku">Pleiku</option>
+                <option value="Quang_Ngai">Quảng Ngãi</option>
+                <option value="Quy_Nhon">Quy Nhơn</option>
+                <option value="Rach_Gia">Rạch Giá</option>
+                <option value="Sa_Dec">Sa Đéc</option>
+                <option value="Soc_Trang">Sóc Trăng</option>
+                <option value="Son_La">Sơn La</option>
+                <option value="Tam_Ky">Tam Kỳ</option>
+                <option value="Tan_An">Tân An</option>
+                <option value="Tay_Ninh">Tây Ninh</option>
+                <option value="Thai_Binh">Thái Bình</option>
+                <option value="Thai_Nguyen">Thái Nguyên</option>
+                <option value="Thanh_Hoa">Thanh Hóa</option>
+                <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
+                <option value="Tra_Vinh">Trà Vinh</option>
+                <option value="Tuy_Hoa">Tuy Hòa</option>
+                <option value="Tuyen_Quang">Tuyên Quang</option>
+                <option value="Uong_Bi">Uông Bí</option>
+                <option value="Vi_Thanh">Vị Thanh</option>
+                <option value="Viet_Tri">Việt Trì</option>
+                <option value="Vinh">Vinh</option>
+                <option value="Vinh_Long">Vĩnh Long</option>
+                <option value="Vinh_Yen">Vĩnh Yên</option>
+                <option value="Vung_Tau">Vũng Tàu</option>
+                <option value="Yen_Bai">Yên Bái</option>
+            </select>
         </div>
-        <div style="clear:both;"></div>
+
+        <ul class="span5 offset1 nav nav-tabs" id="transport_end">
+            <li class="active"><a href="#maybay_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/airplane.png');"></div></a></li>
+            <li><a href="#xelua_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/train.png');"></div></a></li>
+            <li><a href="#xekhach_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/coach.png');"></div></a></li>
+            <li><a href="#tauthuy_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/ship.png');"></div></a></li>
+            <li><a href="#xemay_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/motorbike.png');"></div></a></li>
+        </ul>
+
+        <div class="span5 offset1 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
+            <div class="tab-pane active" id="maybay_end"><p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p></div>
+            <div class="tab-pane" id="xelua_end"><p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p></div>
+            <div class="tab-pane" id="xekhach_end"><p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p></div>
+            <div class="tab-pane" id="tauthuy_end"><p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p></div>
+            <div class="tab-pane" id="xemay_end"><p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p></div>
+        </div>
     </div>
 </div>
 
@@ -546,9 +604,38 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-home onepage-disappear" position="item-105">
-                            <iframe id="slideshow" src="about:blank" width="100%" height="100%" style="position:absolute;left:0px" scrolling="no">
-                            </iframe>
-                            <div id="attraction_info" style="position:absolute;width:450px;height:600px;float:left;right:15px;overflow: auto">
+                            <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
+                            <div class="span9" id="iPicture" data-interaction="hover">
+                                <div class="ip_slide">
+                                    <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg" style="height:615px;">
+                                    <div class="ip_tooltip ip_img32" style="top: 220px; left: 660px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                        <p>Nhà thờ Đức Bà</p>
+                                        <img attractionId="notre_dame_cathedral" alt="an image" src="./templates/green/images/Attraction/Place/2_notre_dame_cathedral.jpg" width="256" height="256" />
+                                    </div>
+                                    <div class="ip_tooltip ip_img32" style="top: 255px; left: 590px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                        <p>Dinh Độc Lập</p>
+                                        <img  attractionId="independence_palace" src="./templates/green/images/Attraction/Place/5_independence_palace.jpg" width="256" height="256" />
+                                    </div>
+                                    <div class="ip_tooltip ip_img32" style="top: 215px; left: 680px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                        <p>Bưu điện thành phố</p>
+                                        <img attractionId="saigon_central_post_office" alt="an image" src="./templates/green/images/Attraction/Place/1_saigon_central_post_office.jpg" width="256" height="256" />
+                                    </div>
+                                    <div class="ip_tooltip ip_img32" style="top: 270px; left: 725px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                        <p>Nhà hát thành phố</p>
+                                        <img attractionId="city_opera_house" src="./templates/green/images/Attraction/Place/4_city_opera_house.jpg" width="256" height="256" />
+                                    </div>
+                                    <div class="ip_tooltip ip_img32" style="top: 350px; left: 635px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                        <p>Chợ Bến Thành</p>
+                                        <img attractionId="ben_thanh_market" alt="an image" src="./templates/green/images/Attraction/Place/3_ben_thanh_market.jpg" width="256" height="256" />
+                                    </div>
+                                    <div class="ip_tooltip ip_img32" style="top: 420px; left: 800px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                        <p>Bến Nhà Rồng</p>
+                                        <img attractionId="nha_rong_port" src="./templates/green/images/Attraction/Place/6_nha_rong_port.jpg" width="256" height="256" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="span3" id="attraction_info" style="overflow: auto">
                                 <div ><span class="savesHover savesHover-1744950 " data-locationid="1744950" style="visibility: visible; display: block;">
 <span class="button_2011_grn copy_test_3 ">
 <span class="sprite-gradient1x32_grn gradient">
@@ -989,7 +1076,6 @@ defined('_JEXEC') or die;
 </div>
 </div>
 </div>
-
 <script>
     jQuery.noConflict();
     (function ($) {
@@ -1078,7 +1164,16 @@ jQuery.noConflict();
                 endDay = Date.parseExact(formated[1],formatStyle);
 
                 if(finishSelect) {
-                    $("#info").zAccordion("trigger", startDay.getMonth());
+                    $('#accordion .in').removeClass('in').height(0);
+                    for (i = 1; i <= 12; i++) {
+                        $('#collapse' + i).css('border',$('#collapse' + i).css('border').replace('5px','0px'));
+                    }
+
+                    var curr = startDay.getMonth() + 1;
+                    $('#a' + curr).addClass('collapsed');
+                    $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
+                    $('#collapse' + curr).addClass('in').height('auto');
+                    //$("#info").zAccordion("trigger", startDay.getMonth());
                 }
             }
         });
@@ -1105,86 +1200,6 @@ jQuery.noConflict();
 
         $("#city_end").select2();
 
-        function formatResult(item) {
-            if (!item.id)
-                return item.text;
-
-            return "<img src='./templates/green/images/transport/" + item.id + ".png'/>" + item.text;
-        }
-
-        function formatSelection(item) {
-            return item.text;
-        }
-
-        $("#transport_start").select2({
-            formatResult: formatResult,
-            formatSelection: formatSelection,
-            escapeMarkup: function(m) { return m; }
-        });
-
-        $("#transport_end").select2({
-            formatResult: formatResult,
-            formatSelection: formatSelection,
-            escapeMarkup: function(m) { return m; }
-        });
-
-        $("#transport_start").on("change", function(e) {
-            var transport_start_id = $("#transport_start").select2("data").id;
-            $("#transport_start_img").attr("src","./templates/green/images/transport/" + transport_start_id + ".png");
-
-            switch (transport_start_id) {
-                case 'airplane':
-                    $("#transport_start_txt").html("<p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>");
-                    break;
-                case 'train':
-                    $("#transport_start_txt").html("<p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>");
-                    break;
-                case 'coach':
-                    $("#transport_start_txt").html("<p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>");
-                    break;
-                case 'ship':
-                    $("#transport_start_txt").html("<p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>");
-                    break;
-                case 'motorbike':
-                    $("#transport_start_txt").html("<p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>");
-                    break;
-            }
-        });
-
-        $("#transport_end").on("change", function(e) {
-            var transport_end_id = $("#transport_end").select2("data").id;
-            $("#transport_end_img").attr("src","./templates/green/images/transport/" + transport_end_id + ".png");
-
-            switch (transport_end_id) {
-                case 'airplane':
-                    $("#transport_end_txt").html("<p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>");
-                    break;
-                case 'train':
-                    $("#transport_end_txt").html("<p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>");
-                    break;
-                case 'coach':
-                    $("#transport_end_txt").html("<p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>");
-                    break;
-                case 'ship':
-                    $("#transport_end_txt").html("<p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>");
-                    break;
-                case 'motorbike':
-                    $("#transport_end_txt").html("<p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>");
-                    break;
-            }
-        });
-
-        $("#info").zAccordion({
-            startingSlide: 1,
-            auto: false,
-            tabWidth: "5%",
-            width: "100%",
-            height: 320,
-            trigger: "mouseover"
-        });
-
-        window.addEventListener("message", receiveMessage, false);
-
         function checkButton() {
             if (attraction_selected.contains(attraction_current))
             {
@@ -1197,151 +1212,6 @@ jQuery.noConflict();
                 $('.saves-hover-txt-saved').css('display', 'none');
             }
         }
-
-        function receiveMessage(event){
-            var source = event.source.frameElement; //this is the iframe that sent the message
-            var message = event.data; //this is the message
-            attraction_current = message;
-
-            if(message == 'saigon_central_post_office'){
-                $('#attraction_title').html(
-                    "Bưu điện thành phố"
-                );
-                $('#attraction_description').html(
-                    "Bưu điện trung tâm Sài Gòn là một trong những công trình kiến trúc tiêu biểu tại Thành phố Hồ Chí Minh, tọa lạc tại số 2, Công trường Công xã Paris, Quận 1. Đây là tòa nhà được người Pháp xây dựng với phong cách chiết trung [1][2] trong khoảng 1886–1891 theo đồ án thiết kế của kiến trúc sư Villedieu cùng phụ tá Foulhoux.Đây là công trình kiến trúc mang phong cách châu Âu kết hợp với nét trang trí châu Á. Bên ngoài, phía trước ngôi nhà trang trí theo từng ô hình chữ nhật, trên đó ghi danh những nhà phát minh ra ngành điện tín và ngành điện. Trên các ô có đắp hình các nam nữ đội vòng nguyệt quế, trên vòng cung ngôi nhà có chiếc đồng hồ lớn. Vào phía trên trong, hai bên tường cao là hai bản đồ lịch sử mang tên: Saigon et ses environs, 1892 và Lignes télégraphiques du Sud Vietnam et du Cambodge, 1936."
-                );
-                $('#attraction_hour').html(
-                    "Thứ 2 - Thứ 6: 7h00 - 19h00, Thứ 7, Chủ Nhật: 7h30 - 18h00"
-                );
-                $('#attraction_price').html(
-                    "Miễn phí"
-                );
-                $('#attraction_address').html(
-                    "2 Công xã Paris, Bến Nghé, Thành Phố Hồ Chí Minh"
-                );
-                $('#attraction_phone').html(
-                    "08 3822 1677"
-                );
-
-                checkButton();
-            }
-
-            if(message == 'notre_dame_cathedral'){
-                $('#attraction_title').html(
-                    "Nhà thờ Đức Bà"
-                );
-                $('#attraction_description').html(
-                    "Trải qua hơn 100 năm và qua 3 thế kỷ, Nhà thờ Đức Bà Sài Gòn, tên chính thức là Vương cung Thánh đường Chính tòa Đức Mẹ Vô nhiễm Nguyên tội (Immaculate Conception Cathedral Basilica) vẫn đẹp lộng lẫy, tráng lệ và uy nghiêm; được coi là một tuyệt tác kiến trúc đô thị Sài Gòn. Đây là một công trình nhà thờ Công giáo nói riêng và tôn giáo nói chung rất đặc sắc, có quy mô thuộc loại lớn nhất ở Việt Nam. Cùng với một số công trình lân cận ở quận 1 như Nhà Bưu Điện trung tâm, Nhà hát thành phố, Bệnh viện Nhi Đồng 2…; Nhà thờ Đức Bà là một công trình tiêu biểu tạo nên bộ mặt kiến trúc đô thị Sài Gòn – Thành phố Hồ Chí Minh."
-                );
-                $('#attraction_hour').html(
-                    "8h00 - 10h00 &amp; 14h30 - 15h30 các ngày trong tuần"
-                );
-                $('#attraction_price').html(
-                    "Miễn phí"
-                );
-                $('#attraction_address').html(
-                    "Bến Nghé, tp. Hồ Chí Minh, Hồ Chí Minh"
-                );
-                $('#attraction_phone').html(
-                    "08 3822 0477"
-                );
-
-                checkButton();
-            }
-
-            if(message == 'ben_thanh_market'){
-                $('#attraction_title').html(
-                    "Chợ Bến Thành"
-                );
-                $('#attraction_description').html(
-                    "Nằm ở khu vực trung tâm thành phố, từ lâu chợ Bến Thành đã trở thành biểu tượng của Sài Gòn. Không chỉ thuần túy là nơi buôn bán, gần một trăm năm qua ngôi chợ này đã trở thành một chứng nhân lịch sử chứng kiến bao đổi thay thăng trầm của thành phố, là bộ mặt kinh tế nói lên sự phát triển của một thành phố thương mại lớn nhất nước và là điểm giao hòa giữa Sài Gòn xưa và nay.Bến Thành được xem là chợ bán lẻ quy mô nhất theo nghĩa có thể tìm thấy tại nơi này đủ thứ mặt hàng, từ bình dân đến cao cấp, đặc biệt hàng thực phẩm thuộc loại chọn lọc nhất. Ở đây không thiếu một thứ gì, từ củ hành, trái ớt, mớ rau, con cá, đủ loại hoa quả mùa nào thức nấy, cho tới bánh kẹo, vải vóc, giày dép, túi xách, đồ điện, điện tử, hàng lưu niệm...");
-                $('#attraction_hour').html(
-                    "7h – 19h, chợ đêm mở từ 19h – 23h45"
-                );
-                $('#attraction_price').html(
-                    "Miễn phí"
-                );
-                $('#attraction_address').html(
-                    "Cửa Nam (nằm giữa các đường Phan Bội Châu - Phan Chu Trinh - Lê Thánh Tôn - Công trường Quách Thị Trang) - Phường Bến Thành - Quận 1"
-                );
-                $('#attraction_phone').html(
-                    "(08)8292096"
-                );
-
-                checkButton();
-
-            }
-
-            if(message == 'city_opera_house'){
-                $('#attraction_title').html(
-                    "Nhà hát thành phố"
-                );
-                $('#attraction_description').html(
-                    "Nhà Hát Thành Phố Hồ Chí Minh, hay thường được biết đến với tên gọi Nhà hát Lớn là một nhà hát nằm trên đường Công trường Lam Sơn, Quận 1, Thành phố Hồ Chí Minh. Nằm ở một vị trí thuận lợi tại trung tâm thành phố, nhà hát được xem là nhà hát trung tâm, đa năng chuyên tổ chức biểu diễn sân khấu nghệ thuật đồng thời cũng được sử dụng để tổ chức một số sự kiện lớn. Đây cũng là nhà hát thuộc loại lâu đời theo kiến trúc Tây Âu và được xem như một địa điểm du lịch của thành phố này.Nhà hát lớn Sài Gòn là một đối trọng về mặt kiến trúc với Nhà hát lớn Hà Nội (cất năm 1911, kiến trúc theo mẫu Opéra Garnier tại Paris, 900 chỗ ngồi, kiến trúc sư Broger et Harloy). Nhà hát Sài Gòn giữ riêng nét đặc thù có một không hai. Tác giả của tòa kiến trúc này là các kiến trúc sư Félix Olivier, Ernest Guichard và Eugène Ferret xây dựng."
-                )
-                $('#attraction_hour').html(
-                    "7h – 23h"
-                );
-                $('#attraction_price').html(
-                    "Miễn phí"
-                );
-                $('#attraction_address').html(
-                    "Số 7, công trường Lam Sơn, Bến Nghé, Quận 1"
-                );
-                $('#attraction_phone').html(
-                    "08 3829 9976"
-                );
-
-                checkButton();
-            }
-
-            if(message == 'independence_palace'){
-                $('#attraction_title').html(
-                    "Dinh Độc Lập"
-                );
-                $('#attraction_description').html(
-                    "Dinh Độc Lập (tên gọi trước đây là dinh Norodom, ngày nay còn gọi là dinh Thống Nhất hay hội trường Thống Nhất) là một công trình kiến trúc ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt.Vẻ đẹp kiến trúc của Dinh còn được thể hiện bởi bức rèm hoa đá mang hình dáng những đốt trúc thanh tao bao xung quanh lầu 2. Rèm hoa đá được biến cách từ bức cửa bàn khoa của các cung điện Cố đô Huế không chỉ làm tăng vẻ đẹp của Dinh mà còn có tác dụng lấy ánh sáng mặt trời. Ði vào bên trong Dinh, tất cả các đuờng nét kiến trúc đều dùng đường ngay sổ thẳng, các hành lang, đại sảnh, các phòng ốc đều lấy câu chính đại quang minh làm gốc."
-                )
-                $('#attraction_hour').html(
-                    "7h30-11h00 & 13h00-16h00 các ngày trong tuần"
-                );
-                $('#attraction_price').html(
-                    "+ Người lớn: 30.000đ/người/lần.<br>+ Sinh viên: 15.000đ/người/lần<br>+ Học sinh (từ 6 tuổi đến 17 tuổi): 3.000đ/người/lần"
-                );
-                $('#attraction_address').html(
-                    "135 Nam Kỳ Khởi Nghĩa, quận 1, Thành phố Hồ Chí Minh"
-                );
-                $('#attraction_phone').html(
-                    "080. 85037 - 080. 85038 - 080. 85039 – 083.8223652"
-                );
-
-                checkButton();
-            }
-
-            if(message == 'nha_rong_port'){
-                $('#attraction_title').html(
-                    "Bến Nhà Rồng"
-                );
-                $('#attraction_description').html(
-                    "Bến Nhà Rồng, hay Bảo tàng Hồ Chí Minh, khởi đầu là một thương cảng lớn của Sài Gòn. Thương cảng này nằm trên sông Sài Gòn và được xây dựng từ 1864, trên khu vực gần cầu Khánh Hội, nay thuộc quận 4. Tại nơi đây, vào ngày 5 tháng 6 năm 1911, người thanh niên Nguyễn Tất Thành (sau này lấy tên là Hồ Chí Minh) đã xuống con tàu Amiral Latouche Tréville làm phụ bếp để có điều kiện sang châu Âu sau này là Ngày Bác Hồ ra đi tìm đường cứu nước ở Việt Nam. Do đó, từ 1975 toà trụ sở xưa của thương cảng Nhà Rồng đã được Việt Nam xây dựng lại thành khu lưu niệm Hồ Chí Minh."
-                );
-                $('#attraction_hour').html(
-                    "Thứ 3 - Chủ Nhật: 7h30 - 11h30 & 13h30 - 17h00."
-                );
-                $('#attraction_price').html(
-                    "Người Việt Nam 2K. Người nước ngoài 10K"
-                );
-                $('#attraction_address').html(
-                    "Số 01 Nguyễn Tất Thành, Phường 12, Quận 4, TP. Hồ Chí Minh"
-                );
-                $('#attraction_phone').html(
-                    "39402060 - 39401094"
-                );
-
-                checkButton();
-            }
-        }
-
         $('.saves-hover-txt').click(function(){
             $(this).css('display', 'none');
             $('.saves-hover-txt-saved').css('display', 'inline');
@@ -1449,8 +1319,164 @@ jQuery.noConflict();
             }
         })
     });
-    $("#slideshow").attr("src", "./templates/green/attraction.php");
 })(jQuery)
+</script>
+
+<script>
+    jQuery.noConflict();
+    function changeAttractionInfo(message){
+        if(message == 'saigon_central_post_office'){
+            jQuery('#attraction_title').html(
+                "Bưu điện thành phố"
+            );
+            jQuery('#attraction_description').html(
+                "Bưu điện trung tâm Sài Gòn là một trong những công trình kiến trúc tiêu biểu tại Thành phố Hồ Chí Minh, tọa lạc tại số 2, Công trường Công xã Paris, Quận 1. Đây là tòa nhà được người Pháp xây dựng với phong cách chiết trung [1][2] trong khoảng 1886–1891 theo đồ án thiết kế của kiến trúc sư Villedieu cùng phụ tá Foulhoux.Đây là công trình kiến trúc mang phong cách châu Âu kết hợp với nét trang trí châu Á. Bên ngoài, phía trước ngôi nhà trang trí theo từng ô hình chữ nhật, trên đó ghi danh những nhà phát minh ra ngành điện tín và ngành điện. Trên các ô có đắp hình các nam nữ đội vòng nguyệt quế, trên vòng cung ngôi nhà có chiếc đồng hồ lớn. Vào phía trên trong, hai bên tường cao là hai bản đồ lịch sử mang tên: Saigon et ses environs, 1892 và Lignes télégraphiques du Sud Vietnam et du Cambodge, 1936."
+            );
+            jQuery('#attraction_hour').html(
+                "Thứ 2 - Thứ 6: 7h00 - 19h00, Thứ 7, Chủ Nhật: 7h30 - 18h00"
+            );
+            jQuery('#attraction_price').html(
+                "Miễn phí"
+            );
+            jQuery('#attraction_address').html(
+                "2 Công xã Paris, Bến Nghé, Thành Phố Hồ Chí Minh"
+            );
+            jQuery('#attraction_phone').html(
+                "08 3822 1677"
+            );
+
+            checkButton();
+        }
+
+        if(message == 'notre_dame_cathedral'){
+            jQuery('#attraction_title').html(
+                "Nhà thờ Đức Bà"
+            );
+            jQuery('#attraction_description').html(
+                "Trải qua hơn 100 năm và qua 3 thế kỷ, Nhà thờ Đức Bà Sài Gòn, tên chính thức là Vương cung Thánh đường Chính tòa Đức Mẹ Vô nhiễm Nguyên tội (Immaculate Conception Cathedral Basilica) vẫn đẹp lộng lẫy, tráng lệ và uy nghiêm; được coi là một tuyệt tác kiến trúc đô thị Sài Gòn. Đây là một công trình nhà thờ Công giáo nói riêng và tôn giáo nói chung rất đặc sắc, có quy mô thuộc loại lớn nhất ở Việt Nam. Cùng với một số công trình lân cận ở quận 1 như Nhà Bưu Điện trung tâm, Nhà hát thành phố, Bệnh viện Nhi Đồng 2…; Nhà thờ Đức Bà là một công trình tiêu biểu tạo nên bộ mặt kiến trúc đô thị Sài Gòn – Thành phố Hồ Chí Minh."
+            );
+            jQuery('#attraction_hour').html(
+                "8h00 - 10h00 &amp; 14h30 - 15h30 các ngày trong tuần"
+            );
+            jQuery('#attraction_price').html(
+                "Miễn phí"
+            );
+            jQuery('#attraction_address').html(
+                "Bến Nghé, tp. Hồ Chí Minh, Hồ Chí Minh"
+            );
+            jQuery('#attraction_phone').html(
+                "08 3822 0477"
+            );
+
+            checkButton();
+        }
+
+        if(message == 'ben_thanh_market'){
+            jQuery('#attraction_title').html(
+                "Chợ Bến Thành"
+            );
+            jQuery('#attraction_description').html(
+                "Nằm ở khu vực trung tâm thành phố, từ lâu chợ Bến Thành đã trở thành biểu tượng của Sài Gòn. Không chỉ thuần túy là nơi buôn bán, gần một trăm năm qua ngôi chợ này đã trở thành một chứng nhân lịch sử chứng kiến bao đổi thay thăng trầm của thành phố, là bộ mặt kinh tế nói lên sự phát triển của một thành phố thương mại lớn nhất nước và là điểm giao hòa giữa Sài Gòn xưa và nay.Bến Thành được xem là chợ bán lẻ quy mô nhất theo nghĩa có thể tìm thấy tại nơi này đủ thứ mặt hàng, từ bình dân đến cao cấp, đặc biệt hàng thực phẩm thuộc loại chọn lọc nhất. Ở đây không thiếu một thứ gì, từ củ hành, trái ớt, mớ rau, con cá, đủ loại hoa quả mùa nào thức nấy, cho tới bánh kẹo, vải vóc, giày dép, túi xách, đồ điện, điện tử, hàng lưu niệm...");
+            jQuery('#attraction_hour').html(
+                "7h – 19h, chợ đêm mở từ 19h – 23h45"
+            );
+            jQuery('#attraction_price').html(
+                "Miễn phí"
+            );
+            jQuery('#attraction_address').html(
+                "Cửa Nam (nằm giữa các đường Phan Bội Châu - Phan Chu Trinh - Lê Thánh Tôn - Công trường Quách Thị Trang) - Phường Bến Thành - Quận 1"
+            );
+            jQuery('#attraction_phone').html(
+                "(08)8292096"
+            );
+
+            checkButton();
+
+        }
+
+        if(message == 'city_opera_house'){
+            jQuery('#attraction_title').html(
+                "Nhà hát thành phố"
+            );
+            jQuery('#attraction_description').html(
+                "Nhà Hát Thành Phố Hồ Chí Minh, hay thường được biết đến với tên gọi Nhà hát Lớn là một nhà hát nằm trên đường Công trường Lam Sơn, Quận 1, Thành phố Hồ Chí Minh. Nằm ở một vị trí thuận lợi tại trung tâm thành phố, nhà hát được xem là nhà hát trung tâm, đa năng chuyên tổ chức biểu diễn sân khấu nghệ thuật đồng thời cũng được sử dụng để tổ chức một số sự kiện lớn. Đây cũng là nhà hát thuộc loại lâu đời theo kiến trúc Tây Âu và được xem như một địa điểm du lịch của thành phố này.Nhà hát lớn Sài Gòn là một đối trọng về mặt kiến trúc với Nhà hát lớn Hà Nội (cất năm 1911, kiến trúc theo mẫu Opéra Garnier tại Paris, 900 chỗ ngồi, kiến trúc sư Broger et Harloy). Nhà hát Sài Gòn giữ riêng nét đặc thù có một không hai. Tác giả của tòa kiến trúc này là các kiến trúc sư Félix Olivier, Ernest Guichard và Eugène Ferret xây dựng."
+            )
+            jQuery('#attraction_hour').html(
+                "7h – 23h"
+            );
+            jQuery('#attraction_price').html(
+                "Miễn phí"
+            );
+            jQuery('#attraction_address').html(
+                "Số 7, công trường Lam Sơn, Bến Nghé, Quận 1"
+            );
+            jQuery('#attraction_phone').html(
+                "08 3829 9976"
+            );
+
+            checkButton();
+        }
+
+        if(message == 'independence_palace'){
+            jQuery('#attraction_title').html(
+                "Dinh Độc Lập"
+            );
+            jQuery('#attraction_description').html(
+                "Dinh Độc Lập (tên gọi trước đây là dinh Norodom, ngày nay còn gọi là dinh Thống Nhất hay hội trường Thống Nhất) là một công trình kiến trúc ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt.Vẻ đẹp kiến trúc của Dinh còn được thể hiện bởi bức rèm hoa đá mang hình dáng những đốt trúc thanh tao bao xung quanh lầu 2. Rèm hoa đá được biến cách từ bức cửa bàn khoa của các cung điện Cố đô Huế không chỉ làm tăng vẻ đẹp của Dinh mà còn có tác dụng lấy ánh sáng mặt trời. Ði vào bên trong Dinh, tất cả các đuờng nét kiến trúc đều dùng đường ngay sổ thẳng, các hành lang, đại sảnh, các phòng ốc đều lấy câu chính đại quang minh làm gốc."
+            )
+            jQuery('#attraction_hour').html(
+                "7h30-11h00 & 13h00-16h00 các ngày trong tuần"
+            );
+            jQuery('#attraction_price').html(
+                "+ Người lớn: 30.000đ/người/lần.<br>+ Sinh viên: 15.000đ/người/lần<br>+ Học sinh (từ 6 tuổi đến 17 tuổi): 3.000đ/người/lần"
+            );
+            jQuery('#attraction_address').html(
+                "135 Nam Kỳ Khởi Nghĩa, quận 1, Thành phố Hồ Chí Minh"
+            );
+            jQuery('#attraction_phone').html(
+                "080. 85037 - 080. 85038 - 080. 85039 – 083.8223652"
+            );
+
+            checkButton();
+        }
+
+        if(message == 'nha_rong_port'){
+            jQuery('#attraction_title').html(
+                "Bến Nhà Rồng"
+            );
+            jQuery('#attraction_description').html(
+                "Bến Nhà Rồng, hay Bảo tàng Hồ Chí Minh, khởi đầu là một thương cảng lớn của Sài Gòn. Thương cảng này nằm trên sông Sài Gòn và được xây dựng từ 1864, trên khu vực gần cầu Khánh Hội, nay thuộc quận 4. Tại nơi đây, vào ngày 5 tháng 6 năm 1911, người thanh niên Nguyễn Tất Thành (sau này lấy tên là Hồ Chí Minh) đã xuống con tàu Amiral Latouche Tréville làm phụ bếp để có điều kiện sang châu Âu sau này là Ngày Bác Hồ ra đi tìm đường cứu nước ở Việt Nam. Do đó, từ 1975 toà trụ sở xưa của thương cảng Nhà Rồng đã được Việt Nam xây dựng lại thành khu lưu niệm Hồ Chí Minh."
+            );
+            jQuery('#attraction_hour').html(
+                "Thứ 3 - Chủ Nhật: 7h30 - 11h30 & 13h30 - 17h00."
+            );
+            jQuery('#attraction_price').html(
+                "Người Việt Nam 2K. Người nước ngoài 10K"
+            );
+            jQuery('#attraction_address').html(
+                "Số 01 Nguyễn Tất Thành, Phường 12, Quận 4, TP. Hồ Chí Minh"
+            );
+            jQuery('#attraction_phone').html(
+                "39402060 - 39401094"
+            );
+
+            checkButton();
+        }
+    }
+</script>
+<script src="./templates/green/js/tooltip/ipicture-square.js"></script>
+<script>
+    jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function () {
+            $("#iPicture").iPicture({
+                animation: true,
+                animationBg: "bgblack",
+                animationType: "ltr-slide",
+                button: "moreblack"
+            });
+        });
+    })(jQuery)
 </script>
 <script type="text/javascript">
     jQuery.noConflict();
@@ -1467,6 +1493,14 @@ jQuery.noConflict();
                 }
                 $("#st-content-showcase-timeline").css("height", total_hei + "px");
             }, 1000);
+
+            $('#transport_start a:last').tab('show');
+            $('#transport_end a:last').tab('show');
+
+            $('#accordion').collapse({
+                toggle: false,
+                parent:true
+            });
         });
     })(jQuery);
 </script>
