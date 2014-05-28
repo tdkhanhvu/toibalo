@@ -3,7 +3,11 @@
 	font-size: 62.5%;
 	color: #ffffff;
 }
-.ip_slide{position:absolute;left:0px;text-align: center;}
+.ip_slide{
+/* 	position:absolute;
+	left:0px; */
+	text-align: center;
+}
 .ip_tooltip {
     padding: 0;
     position: absolute;

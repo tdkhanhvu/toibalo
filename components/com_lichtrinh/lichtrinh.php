@@ -31,10 +31,25 @@ defined('_JEXEC') or die;
         border: 5px solid green;
     }
 
-    #transport_start > li > a > div,#transport_end > li > a > div  {
+    #transport_start > li > a > div, #transport_end > li > a > div, #attraction_list > li > a > div   {
         width:50px;
         height:50px;
-        background-size: contain;
+        background-size: cover;
+    }
+
+    @media (max-width: 400px) {
+        #transport_start > li > a, #transport_end > li > a, #attraction_list > li > a {
+            width:50px;
+            height:50px;
+            background-size: cover;
+            padding:0px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ip_slide {
+            display:none;
+        }
     }
 </style>
 
@@ -604,38 +619,48 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-home onepage-disappear" position="item-105">
+                            <ul class="span12 nav nav-tabs" id="attraction_list">
+                                <li class="active"><a href="#saigon_central_post_office" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/1_saigon_central_post_office.jpg');"></div></a></li>
+                                <li><a href="#notre_dame_cathedral" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/2_notre_dame_cathedral.jpg');"></div></a></li>
+                                <li><a href="#ben_thanh_market" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/3_ben_thanh_market.jpg');"></div></a></li>
+                                <li><a href="#city_opera_house" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/4_city_opera_house.jpg');"></div></a></li>
+                                <li><a href="#independence_palace" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/5_independence_palace.jpg');"></div></a></li>
+                                <li><a href="#nha_rong_port" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/6_nha_rong_port.jpg');"></div></a></li>
+                            </ul>
+
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
-                            <div class="span9" id="iPicture" data-interaction="hover">
+                            <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;">
                                 <div class="ip_slide">
-                                    <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg" style="height:615px;">
-                                    <div class="ip_tooltip ip_img32" style="top: 220px; left: 660px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                    <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg">
+                                    <div class="ip_tooltip ip_img32" style="top: 36%; left: 77%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
                                         <p>Nhà thờ Đức Bà</p>
                                         <img attractionId="notre_dame_cathedral" alt="an image" src="./templates/green/images/Attraction/Place/2_notre_dame_cathedral.jpg" width="256" height="256" />
                                     </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 255px; left: 590px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                    <div class="ip_tooltip ip_img32" style="top: 40%; left: 68%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
                                         <p>Dinh Độc Lập</p>
                                         <img  attractionId="independence_palace" src="./templates/green/images/Attraction/Place/5_independence_palace.jpg" width="256" height="256" />
                                     </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 215px; left: 680px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                    <div class="ip_tooltip ip_img32" style="top: 34%; left: 79%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
                                         <p>Bưu điện thành phố</p>
                                         <img attractionId="saigon_central_post_office" alt="an image" src="./templates/green/images/Attraction/Place/1_saigon_central_post_office.jpg" width="256" height="256" />
                                     </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 270px; left: 725px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                    <div class="ip_tooltip ip_img32" style="top: 44%; left: 84%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
                                         <p>Nhà hát thành phố</p>
                                         <img attractionId="city_opera_house" src="./templates/green/images/Attraction/Place/4_city_opera_house.jpg" width="256" height="256" />
                                     </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 350px; left: 635px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                    <div class="ip_tooltip ip_img32" style="top: 55%; left: 74%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
                                         <p>Chợ Bến Thành</p>
                                         <img attractionId="ben_thanh_market" alt="an image" src="./templates/green/images/Attraction/Place/3_ben_thanh_market.jpg" width="256" height="256" />
                                     </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 420px; left: 800px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
+                                    <div class="ip_tooltip ip_img32" style="top: 67%; left: 93%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
                                         <p>Bến Nhà Rồng</p>
                                         <img attractionId="nha_rong_port" src="./templates/green/images/Attraction/Place/6_nha_rong_port.jpg" width="256" height="256" />
                                     </div>
                                 </div>
+                                <div style="clear:both"></div>
                             </div>
 
-                            <div class="span3" id="attraction_info" style="overflow: auto">
+                            <div class="span4" id="attraction_info" style="overflow: auto">
                                 <div ><span class="savesHover savesHover-1744950 " data-locationid="1744950" style="visibility: visible; display: block;">
 <span class="button_2011_grn copy_test_3 ">
 <span class="sprite-gradient1x32_grn gradient">
@@ -1125,9 +1150,6 @@ defined('_JEXEC') or die;
     })(jQuery)
 </script>
 <script type="text/javascript">
-var attraction_selected = [];
-var attraction_current = '';
-
 jQuery.noConflict();
 (function ($) {
     $(document).ready(function () {
@@ -1200,29 +1222,7 @@ jQuery.noConflict();
 
         $("#city_end").select2();
 
-        function checkButton() {
-            if (attraction_selected.contains(attraction_current))
-            {
-                $('.saves-hover-txt').css('display', 'none');
-                $('.saves-hover-txt-saved').css('display', 'inline');
-            }
-            else
-            {
-                $('.saves-hover-txt').css('display', 'inline');
-                $('.saves-hover-txt-saved').css('display', 'none');
-            }
-        }
-        $('.saves-hover-txt').click(function(){
-            $(this).css('display', 'none');
-            $('.saves-hover-txt-saved').css('display', 'inline');
-            attraction_selected.push(attraction_current);
-        });
 
-        $('.saves-hover-txt-saved').click(function(){
-            $(this).css('display', 'none');
-            $('.saves-hover-txt').css('display', 'inline');
-            attraction_selected.splice(attraction_selected.indexOf(attraction_current),1);
-        });
 
         $('.accordion').accordion({
             collapsible: true,
@@ -1323,8 +1323,30 @@ jQuery.noConflict();
 </script>
 
 <script>
-    jQuery.noConflict();
+
+    var attraction_selected = [];
+    var attraction_current = '';
+
+    //jQuery.noConflict();
+    function checkButton() {
+        if (attraction_selected.contains(attraction_current))
+        {
+            jQuery('.saves-hover-txt').css('display', 'none');
+            jQuery('.saves-hover-txt-saved').css('display', 'inline');
+        }
+        else
+        {
+            jQuery('.saves-hover-txt').css('display', 'inline');
+            jQuery('.saves-hover-txt-saved').css('display', 'none');
+        }
+    }
     function changeAttractionInfo(message){
+        attraction_current = message;
+        jQuery('#attraction_list li').each(function() {
+            if (jQuery(this).find('a').attr('href').replace('#','') == message)
+                jQuery(this).addClass('active');
+            else jQuery(this).removeClass('active');
+        });
         if(message == 'saigon_central_post_office'){
             jQuery('#attraction_title').html(
                 "Bưu điện thành phố"
@@ -1463,6 +1485,27 @@ jQuery.noConflict();
             checkButton();
         }
     }
+
+    (function ($) {
+        $(document).ready(function () {
+            jQuery('.saves-hover-txt').click(function(){
+                jQuery(this).css('display', 'none');
+                jQuery('.saves-hover-txt-saved').css('display', 'inline');
+
+                attraction_selected.push(attraction_current);
+            });
+
+            jQuery('.saves-hover-txt-saved').click(function(){
+                jQuery(this).css('display', 'none');
+                jQuery('.saves-hover-txt').css('display', 'inline');
+                attraction_selected.splice(attraction_selected.indexOf(attraction_current),1);
+            });
+
+            jQuery('#attraction_list li').click(function (event) {
+                changeAttractionInfo(jQuery(this).find('a').attr('href').replace('#',''));
+            });
+        });
+    })(jQuery)
 </script>
 <script src="./templates/green/js/tooltip/ipicture-square.js"></script>
 <script>
@@ -1496,6 +1539,7 @@ jQuery.noConflict();
 
             $('#transport_start a:last').tab('show');
             $('#transport_end a:last').tab('show');
+            $('#attraction_list a:last').tab('show');
 
             $('#accordion').collapse({
                 toggle: false,
