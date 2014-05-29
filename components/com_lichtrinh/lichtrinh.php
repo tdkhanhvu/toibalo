@@ -51,6 +51,46 @@ defined('_JEXEC') or die;
             display:none;
         }
     }
+    li img {
+        width:80px;
+        height:80px;
+    }
+
+    div .cost_title {
+        text-align:left;
+        font-size: 40px;
+        color: palevioletred;
+        font-family: 'Times New Roman';
+        margin: 10px 0px;
+    }
+
+    .cost {
+        text-align:right;
+        font-size: 40px;
+        color: lightseagreen;
+    }
+
+    @media (max-width: 400px) {
+        .gross_sum {
+            display:none;
+        }
+
+        li img {
+            width:40px;
+            height:40px;
+        }
+
+        div .cost_title {
+            font-size: 30px;
+        }
+
+        .cost {
+            font-size: 30px;
+        }
+    }
+    .span1, .span11 {
+        margin-left:0px;
+    }
 </style>
 
 <div id="avatar-full-2-block">
@@ -817,32 +857,13 @@ defined('_JEXEC') or die;
         background: green;
     }
 
-    li img {
-        width: 80px;
-        height: 80px;
-    }
-
     ul {
         list-style-type: none;
         position: relative;
     }
 
-    .cost {
-        text-align:right;
-        font-size: 40px;
-        color: lightseagreen;
-    }
-
     #total_cost {
         color: red;
-    }
-
-    div .cost_title {
-        text-align:left;
-        font-size: 40px;
-        color: palevioletred;
-        font-family: 'Times New Roman';
-        margin: 10px 0px;
     }
 
     .cost_info {
@@ -867,7 +888,8 @@ defined('_JEXEC') or die;
             <div class="st-title">
                 <h1 class="st-heading" style="color:rgb(223, 59, 59);">Chi phí</h1>
 
-                <div class="st-sub-heading">Hầu bao cần để đi</div>
+                <div class="st-sub-heading" style="margin-bottom:0px;">Hầu bao cần để đi</div>
+                <div style="clear:both;"></div>
             </div>
         </div>
     </div>
@@ -875,21 +897,22 @@ defined('_JEXEC') or die;
 <div id="101" class="avatar-module ">
 <div class="module-content">
 <div id="cost_info">
-<div id="summary">
-    <div class="cost_title" style="position:absolute;">
-        Tổng chi phí &nbsp;<select id="day_list" style="width:50px;">
+<div id="summary" class="span12">
+    <div class="cost_title span12">
+        <span class="gross_sum">Tổng chi phí</span> &nbsp;<select id="day_list" style="width:50px;font-size:30px;">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
         Ngày
+        <div id="total_cost" class="cost">0</div>
     </div>
-    <div id="total_cost" class="cost">0</div>
+
 </div>
-<hr style="border-top: 1px solid #030303;border-bottom: 1px solid #000000;"/>
+<hr style="border-top: 1px solid #030303;border-bottom: 1px solid #000000;margin:0px; margin-left:30px;" class="span12"/>
 <div id="vehicle" class="span12">
-    <div class="span12">
-        <div class="cost_title span12">Đi tới đây</div>
+
+        <div class="cost_title span12">Đi tới đây<div id="vehicle_cost" class="cost">0</div></div>
 
         <div class="span11">
             <ul id="vehicle_option">
@@ -928,174 +951,176 @@ defined('_JEXEC') or die;
                 </div>
             </div>
         </div>
-        <div id="vehicle_cost" class="cost span1">0</div>
-    </div>
+
+
 
 
     <br class="clear" />
 </div>
-<div id="accommodation">
-    <div class="cost_title">Nơi ở</div>
-    <ul id="accommodation_option">
-        <li cost="0" class="accommodation_active">
-            <img src="./templates/green/images/budget/nocost.png" />
-        </li>
-        <li cost="100">
-            <img src="./templates/green/images/budget/hostel.png" />
-        </li>
-        <li cost="500">
-            <img src="./templates/green/images/budget/hotel.png" />
-        </li>
-        <li cost="1500">
-            <img src="./templates/green/images/budget/hotel_premium.png" />
-        </li>
-    </ul>
+<div id="accommodation" class="span12">
+        <div class="cost_title span12">Nơi ở<div id="accommodation_cost" class="cost">0</div></div>
+        <div class="span11">
+            <ul id="accommodation_option">
+                <li cost="0" class="accommodation_active">
+                    <img src="./templates/green/images/budget/nocost.png" />
+                </li>
+                <li cost="100">
+                    <img src="./templates/green/images/budget/hostel.png" />
+                </li>
+                <li cost="500">
+                    <img src="./templates/green/images/budget/hotel.png" />
+                </li>
+                <li cost="1500">
+                    <img src="./templates/green/images/budget/hotel_premium.png" />
+                </li>
+            </ul>
 
-    <div id="accommodation_cost" class="cost">0</div>
+            <div id="accommodation_info" class="accordion">
+                <h3>Thông tin</h3>
+                <div>
+                    <p>
+                        Những nhà nghỉ giá rẻ: nhà khách quân đội
+                    </p>
+                    <p>
+                        Khách sạn bình dân: khu Bàu Cát, Phan Xích Long
+                    </p>
+                    <p>
+                        Khách sạn cao cấp: Rex, Sheraton, New World
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <div id="accommodation_info" class="accordion">
-        <h3>Thông tin</h3>
-        <div>
-            <p>
-                Những nhà nghỉ giá rẻ: nhà khách quân đội
-            </p>
-            <p>
-                Khách sạn bình dân: khu Bàu Cát, Phan Xích Long
-            </p>
-            <p>
-                Khách sạn cao cấp: Rex, Sheraton, New World
-            </p>
+
+    <br class="clear" />
+</div>
+<div id="food" class="span12">
+    <div class="cost_title span12">Ẩm thực<div id="food_cost" class="cost">0</div></div>
+    <div class="span11">
+        <ul id="food_option">
+            <li cost="0" class="food_active">
+                <img src="./templates/green/images/budget/nocost.png" />
+            </li>
+            <li cost="100">
+                <img src="./templates/green/images/budget/food_court.png" />
+            </li>
+            <li cost="500">
+                <img src="./templates/green/images/budget/restaurant.png" />
+            </li>
+            <li cost="1500">
+                <img src="./templates/green/images/budget/restaurant_premium.png" />
+            </li>
+        </ul>
+
+        <div id="food_info" class="accordion">
+            <h3>Thông tin</h3>
+            <div>
+                <p>
+                    Ẩm thực hè phố: Có thể theo dọc những đoạn đường ven trung tâm như Đinh Tiên Hoàng, Bùi Thị Xuân...
+                </p>
+                <p>
+                    Nhà hàng bình dân: khu Lý Tự Trọng, Lê Duẩn
+                </p>
+                <p>
+                    Nhà hàng sang trọng: Rex, Caravelle, Lion...
+                </p>
+            </div>
         </div>
     </div>
 
     <br class="clear" />
 </div>
-<div id="food">
-    <div class="cost_title">Ẩm thực</div>
-    <ul id="food_option">
-        <li cost="0" class="food_active">
-            <img src="./templates/green/images/budget/nocost.png" />
-        </li>
-        <li cost="100">
-            <img src="./templates/green/images/budget/food_court.png" />
-        </li>
-        <li cost="500">
-            <img src="./templates/green/images/budget/restaurant.png" />
-        </li>
-        <li cost="1500">
-            <img src="./templates/green/images/budget/restaurant_premium.png" />
-        </li>
-    </ul>
+<div id="transport" class="span12">
+    <div class="cost_title span12">Đi lại<div id="transport_cost" class="cost">0</div></div>
+    <div class="span11">
+        <ul id="transport_option">
+            <li cost="0" class="transport_active">
+                <img src="./templates/green/images/budget/nocost.png" />
+            </li>
+            <li cost="50">
+                <img src="./templates/green/images/budget/bus.png" />
+            </li>
+            <li cost="400">
+                <img src="./templates/green/images/budget/taxi.png" />
+            </li>
+        </ul>
 
-    <div id="food_cost" class="cost">0</div>
-
-    <div id="food_info" class="accordion">
-        <h3>Thông tin</h3>
-        <div>
-            <p>
-                Ẩm thực hè phố: Có thể theo dọc những đoạn đường ven trung tâm như Đinh Tiên Hoàng, Bùi Thị Xuân...
-            </p>
-            <p>
-                Nhà hàng bình dân: khu Lý Tự Trọng, Lê Duẩn
-            </p>
-            <p>
-                Nhà hàng sang trọng: Rex, Caravelle, Lion...
-            </p>
+        <div id="transport_info" class="accordion">
+            <h3>Thông tin</h3>
+            <div>
+                <p>
+                    Xe buýt: Hệ thống xe buýt khá là phát triển. Có thể bắt buýt trên những tuyến đường...
+                </p>
+                <p>
+                    Taxi: Nên đi taxi của những hãng Mai Linh, Vinasun để tránh nạn taxi dù chặt chém
+                </p>
+            </div>
         </div>
     </div>
 
     <br class="clear" />
 </div>
-<div id="transport">
-    <div class="cost_title">Đi lại</div>
-    <ul id="transport_option">
-        <li cost="0" class="transport_active">
-            <img src="./templates/green/images/budget/nocost.png" />
-        </li>
-        <li cost="50">
-            <img src="./templates/green/images/budget/bus.png" />
-        </li>
-        <li cost="400">
-            <img src="./templates/green/images/budget/taxi.png" />
-        </li>
-    </ul>
+<div id="personal_expense" class="span12">
+    <div class="cost_title span12">Chi tiêu cá nhân<div id="personal_expense_cost" class="cost">0</div></div>
+    <div class="span11">
+        <ul id="personal_expense_option">
+            <li cost="0" class="personal_expense_active">
+                <img src="./templates/green/images/budget/nocost.png" />
+            </li>
+            <li cost="100">
+                <img src="./templates/green/images/money/low.png" />
+            </li>
+            <li cost="300">
+                <img src="./templates/green/images/money/medium.png" />
+            </li>
+            <li cost="800">
+                <img src="./templates/green/images/money/high.png" />
+            </li>
+        </ul>
 
-    <div id="transport_cost" class="cost">0</div>
-
-    <div id="transport_info" class="accordion">
-        <h3>Thông tin</h3>
-        <div>
-            <p>
-                Xe buýt: Hệ thống xe buýt khá là phát triển. Có thể bắt buýt trên những tuyến đường...
-            </p>
-            <p>
-                Taxi: Nên đi taxi của những hãng Mai Linh, Vinasun để tránh nạn taxi dù chặt chém
-            </p>
+        <div id="personal_expense_info" class="accordion">
+            <h3>Thông tin</h3>
+            <div>
+                <p>
+                    Mua đồ giá rẻ: khu chợ Lớn, chợ Gò Vấp
+                </p>
+                <p>
+                    Mua đồ giá trung: chợ Bến Thành, chợ Lớn
+                </p>
+                <p>
+                    Mua đồ cao cấp: Các trung tâm mua sắm như Diamond, Parkson Hùng Vương, Vincom...
+                </p>
+            </div>
         </div>
     </div>
 
     <br class="clear" />
 </div>
-<div id="personal_expense">
-    <div class="cost_title">Chi tiêu cá nhân</div>
-    <ul id="personal_expense_option">
-        <li cost="0" class="personal_expense_active">
-            <img src="./templates/green/images/budget/nocost.png" />
-        </li>
-        <li cost="100">
-            <img src="./templates/green/images/money/low.png" />
-        </li>
-        <li cost="300">
-            <img src="./templates/green/images/money/medium.png" />
-        </li>
-        <li cost="800">
-            <img src="./templates/green/images/money/high.png" />
-        </li>
-    </ul>
+<div id="other" class="span12">
+    <div class="cost_title span12">Các chi phí khác<div id="other_cost" class="cost">0</div></div>
+    <div class="span11">
+        <ul id="other_option">
+            <li cost="0">
+                <img src="./templates/green/images/budget/departure_tax.png" />
+            </li>
+            <li cost="0">
+                <img src="./templates/green/images/budget/visa.png" />
+            </li>
+        </ul>
 
-    <div id="personal_expense_cost" class="cost">0</div>
-
-    <div id="personal_expense_info" class="accordion">
-        <h3>Thông tin</h3>
-        <div>
-            <p>
-                Mua đồ giá rẻ: khu chợ Lớn, chợ Gò Vấp
-            </p>
-            <p>
-                Mua đồ giá trung: chợ Bến Thành, chợ Lớn
-            </p>
-            <p>
-                Mua đồ cao cấp: Các trung tâm mua sắm như Diamond, Parkson Hùng Vương, Vincom...
-            </p>
+        <div id="other_info" class="accordion">
+            <h3>Thông tin</h3>
+            <div>
+                <p>
+                    Không áp dụng với Sài Gòn
+                </p>
+            </div>
         </div>
     </div>
 
     <br class="clear" />
 </div>
-<div id="other">
-    <div class="cost_title">Các chi phí khác</div>
-    <ul id="other_option">
-        <li cost="0">
-            <img src="./templates/green/images/budget/departure_tax.png" />
-        </li>
-        <li cost="0">
-            <img src="./templates/green/images/budget/visa.png" />
-        </li>
-    </ul>
-
-    <div id="other_cost" class="cost">0</div>
-
-    <div id="other_info" class="accordion">
-        <h3>Thông tin</h3>
-        <div>
-            <p>
-                Không áp dụng với Sài Gòn
-            </p>
-        </div>
-    </div>
-
-    <br class="clear" />
-</div>
+<div style="clear:both"></div>
 </div>
 </div>
 </div>
