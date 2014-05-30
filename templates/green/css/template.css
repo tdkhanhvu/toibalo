@@ -156,6 +156,59 @@ header .article-tool .article-info > *:before,
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
+/** Toi ba lo nav **/
+#tbl_nav {
+    margin-bottom:20px;
+}
+#tbl_nav ul {
+
+}
+#tbl_nav ul>li {
+    float:left;
+    width:20%;
+    height: 76px;
+    border: 3px solid orange;
+    padding: 2%;
+    margin-right: 5px;
+}
+#tbl_nav ul>li>a {
+	background: transparent url(../images/tbl_icon_1.png) no-repeat scroll left top;
+    display: block;
+    background-size: 210px;
+    height: 70px;
+    text-indent: -99999px;
+}
+#tbl_nav ul>li>a>img {
+
+}
+#tbl_nav ul>li.xp a:hover,
+#tbl_nav ul>li.xp.active a{
+    background-position: 0 0;
+}
+#tbl_nav ul>li.kp a:hover,
+#tbl_nav ul>li.kp.active a{
+    background-position: 0 -142px;
+}
+#tbl_nav ul>li.kh a:hover,
+#tbl_nav ul>li.kh.active a{
+    background-position: 0 -280px;
+}
+#tbl_nav ul>li.tbl a:hover,
+#tbl_nav ul>li.tbl.active a{
+    background-position: 0 -429px;
+}
+#tbl_nav ul>li.xp a{
+    background-position: 0 -70px;
+}
+#tbl_nav ul>li.kp a {
+    background-position: 0 -211px;
+}
+#tbl_nav ul>li.kh a {
+    background-position: 0 -350px;
+}
+#tbl_nav ul>li.tbl a {
+    background-position: 0 -498px;
+}
 /* -------------------------------------------------Body-------------------------------------------------------- */
 mostread,
 .weblinks,

@@ -170,6 +170,17 @@ $option =  JRequest::getVar('option'); // De phan loai trang
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             <div class='container' id="wrapper">
         <?php } ?>
+            <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
+            <div id="tbl_nav" class="container">
+                <ul>
+                    <li class="xp"><a href=".">Xuat Phat</a></li>
+                    <li class="kp  <?php if ($option == 'com_diadiem') {echo "active"; } ?>"><a href="?option=com_diadiem">Kham Pha</a></li>
+                    <li class="kh <?php if ($option == 'com_lichtrinh') {echo "active"; } ?>"><a href="?option=com_lichtrinh">Ke Hoach</a></li>
+                    <li class="tbl <?php if ($option == 'com_thongtin') {echo "active"; } ?>"><a href="?option=com_thongtin">Toi Ba Lo</a></li>
+                </ul>
+            </div>
+            <?php } ?>
+
             <jdoc:include type="component" />
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             </div>
