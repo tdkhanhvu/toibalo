@@ -73,7 +73,7 @@ defined('_JEXEC') or die;
 
                 <div class="custom">
                     <div class="st-onepage">
-                        <div class="st-features onepage-appear" position="item-103" style="padding: 155.30308532714844px 0px;">
+                        <div class="st-features onepage-appear" position="item-103">
                             <h1 class="st-heading">Đặc trưng</h1>
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
@@ -640,7 +640,7 @@ defined('_JEXEC') or die;
 <div id="avatar-full-1-example-block" position="item-109">
     <div class="content1">
         <div id="109" class="avatar-module st-our-work">
-            <h3 class="st-module-heading"><span></spam><span>Ẩm thực</span></span></h3>
+            <h3 class="st-heading"><span></spam><span>Ẩm thực</span></span></h3>
 
             <div class="st-module-content">
                 <div class="st-content-showcase-wall grey" id="53415ba15888f">

@@ -102,7 +102,7 @@ defined('_JEXEC') or die;
 <div class="module-content">
 <div class="custom">
 <div class="st-onepage">
-<div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
+<div class="st-projects onepage-appear" position="item-104">
 <h1 class="st-heading">Thời Điểm</h1>
 <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
     <div class="span6 offset3">
@@ -454,8 +454,8 @@ defined('_JEXEC') or die;
 
 
 <div class="custom">
-<div class="st-onepage">
-<div class="st-projects onepage-appear" position="item-101" id="transportation">
+<div class="st-onepage" id="transport_section">
+<div class="st-projects onepage-appear" position="item-101">
     <h1 class="st-heading">Phương Tiện</h1>
     <div class="st-sub-heading">Cách Thức Để Đi</div>
 
