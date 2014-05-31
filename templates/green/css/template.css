@@ -842,13 +842,13 @@ a:visited,
 }
 
 .st-sub-heading {
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 .st-heading {
     font: 40px montserratbold;
    /* line-height: 65px; */
     text-transform: uppercase;
-    color: white;
+    color: rgb(213, 51, 51);
 }
 .st-team .st-heading, .st-food .st-heading ,
 .st-lehoi .st-heading{

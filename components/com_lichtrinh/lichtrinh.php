@@ -31,6 +31,9 @@ defined('_JEXEC') or die;
         border: 5px solid green;
     }
 
+    #st-food .span3 > div > img {
+        width:95%;
+    }
     #transport_start > li > a > div, #transport_end > li > a > div, #attraction_list > li > a > div   {
         width:50px;
         height:50px;
@@ -93,15 +96,15 @@ defined('_JEXEC') or die;
     }
 </style>
 
-<div id="avatar-full-2-block">
-<div class="avatar-wrapper block-default-width">
+<div id="avatar-full-1-block">
+<div class="content block-default-width">
 <div class="avatar-module ">
 <div class="module-content">
-
-
 <div class="custom">
 <div class="st-onepage">
 <div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
+<h1 class="st-heading">Thời Điểm</h1>
+<div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
     <div class="span6 offset3">
         <p style="width:230px;float:left">Thời gian đi</p>
         <div style="float:left" id="widget">
@@ -112,8 +115,9 @@ defined('_JEXEC') or die;
             <div id="widgetCalendar" style="z-index:999;">
             </div>
         </div>
+        <div style="clear:both"></div>
     </div>
-    <div class="panel-group span13" id="accordion" style="margin-top:20px;">
+    <div class="panel-group span12" id="accordion" style="margin-top:20px;">
         <div class="span6" style="margin-left:0px;">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -141,6 +145,7 @@ defined('_JEXEC') or die;
                         </div>
                     </div>
                 </div>
+                <div style="clear:both"></div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -273,7 +278,7 @@ defined('_JEXEC') or die;
                 </div>
             </div>
         </div>
-        <div class="span6 offset1" >
+        <div class="span6" >
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -443,7 +448,7 @@ defined('_JEXEC') or die;
 </div>
 
 <div id="avatar-full-2-block">
-<div class="avatar-wrapper block-default-width">
+<div class="content block-default-width">
 <div class="avatar-module ">
 <div class="module-content">
 
@@ -451,11 +456,14 @@ defined('_JEXEC') or die;
 <div class="custom">
 <div class="st-onepage">
 <div class="st-projects onepage-appear" position="item-101" id="transportation">
-    <div class="span7" style="margin-left:0px;">
-        <div class="span7" style="margin-bottom:20px;margin-left:0px;">
+    <h1 class="st-heading">Phương Tiện</h1>
+    <div class="st-sub-heading">Cách Thức Để Đi</div>
+
+    <div class="span6">
+        <div class="span2" style="margin-bottom:20px;">
             <h2>Xuất Phát</h2>
         </div>
-        <div class="span3 offset2" style="margin-bottom:20px;">
+        <div class="span2" style="margin-bottom:20px;">
             <select id="city_start" style="width:100%">
             <option value="Ba_Ria">Bà Rịa</option>
             <option value="Bac_Giang">Bắc Giang</option>
@@ -529,7 +537,7 @@ defined('_JEXEC') or die;
         </select>
         </div>
 
-        <ul class="span5 offset1 nav nav-tabs" id="transport_start">
+        <ul class="span5 nav nav-tabs" id="transport_start">
             <li class="active"><a href="#maybay_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/airplane.png');"></div></a></li>
             <li><a href="#xelua_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/train.png');"></div></a></li>
             <li><a href="#xekhach_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/coach.png');"></div></a></li>
@@ -537,7 +545,7 @@ defined('_JEXEC') or die;
             <li><a href="#xemay_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/motorbike.png');"></div></a></li>
         </ul>
 
-        <div class="span5 offset1 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
+        <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
             <div class="tab-pane active" id="maybay_start"><p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p></div>
             <div class="tab-pane" id="xelua_start"><p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p></div>
             <div class="tab-pane" id="xekhach_start"><p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p></div>
@@ -546,11 +554,11 @@ defined('_JEXEC') or die;
         </div>
     </div>
 
-    <div class="span7" style="margin-left:0px;">
-        <div class="span7" style="margin-bottom:20px;margin-left:0px;">
+    <div class="span6">
+        <div class="span2" style="margin-bottom:20px;">
             <h2>Trở Về</h2>
         </div>
-        <div class="span3 offset2" style="margin-bottom:20px;">
+        <div class="span2" style="margin-bottom:20px;">
             <select id="city_end" style="width:100%">
                 <option value="Ba_Ria">Bà Rịa</option>
                 <option value="Bac_Giang">Bắc Giang</option>
@@ -624,7 +632,7 @@ defined('_JEXEC') or die;
             </select>
         </div>
 
-        <ul class="span5 offset1 nav nav-tabs" id="transport_end">
+        <ul class="span5 nav nav-tabs" id="transport_end">
             <li class="active"><a href="#maybay_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/airplane.png');"></div></a></li>
             <li><a href="#xelua_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/train.png');"></div></a></li>
             <li><a href="#xekhach_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/coach.png');"></div></a></li>
@@ -632,7 +640,7 @@ defined('_JEXEC') or die;
             <li><a href="#xemay_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/motorbike.png');"></div></a></li>
         </ul>
 
-        <div class="span5 offset1 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
+        <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
             <div class="tab-pane active" id="maybay_end"><p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p></div>
             <div class="tab-pane" id="xelua_end"><p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p></div>
             <div class="tab-pane" id="xekhach_end"><p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p></div>
@@ -651,7 +659,7 @@ defined('_JEXEC') or die;
 </div>
 
 <div id="avatar-full-3-block">
-    <div class="avatar-wrapper block-default-width">
+    <div class="content block-default-width">
         <div class="avatar-module ">
             <div class="module-content">
 
@@ -659,7 +667,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-home onepage-disappear" position="item-105">
-                            <ul class="span12 nav nav-tabs" id="attraction_list">
+                            <ul class="span12 nav nav-tabs" id="attraction_list" style="margin-left:0px;">
                                 <li class="active"><a href="#saigon_central_post_office" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/1_saigon_central_post_office.jpg');"></div></a></li>
                                 <li><a href="#notre_dame_cathedral" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/2_notre_dame_cathedral.jpg');"></div></a></li>
                                 <li><a href="#ben_thanh_market" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/3_ben_thanh_market.jpg');"></div></a></li>
@@ -669,7 +677,7 @@ defined('_JEXEC') or die;
                             </ul>
 
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
-                            <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;">
+                            <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;margin-left:0px;">
                                 <div class="ip_slide">
                                     <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg">
                                     <div class="ip_tooltip ip_img32" style="top: 36%; left: 77%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
@@ -700,20 +708,24 @@ defined('_JEXEC') or die;
                                 <div style="clear:both"></div>
                             </div>
 
-                            <div class="span4" id="attraction_info" style="overflow: auto">
-                                <div ><span class="savesHover savesHover-1744950 " data-locationid="1744950" style="visibility: visible; display: block;">
-<span class="button_2011_grn copy_test_3 ">
-<span class="sprite-gradient1x32_grn gradient">
-<span class="saveStar">
-<img src="http://c1.tacdn.com/img2/x.gif" class="sprite-suitcase_white">
-</span>
-<span class="saveText">
-<span class="saves-hover-txt" style="display: inline;">Thêm vào</span>
-<span class="saves-hover-txt-saved" style="display: none;">Đã thêm</span>
-</span>
-</span>
-</span>
-</span><h2 id="attraction_title"></h2></div>
+                            <div class="span3" id="attraction_info" style="overflow: auto;">
+                                <div>
+                                <span class="savesHover savesHover-1744950 " data-locationid="1744950" style="visibility: visible; display: block;">
+                                    <span class="button_2011_grn copy_test_3 ">
+                                        <span class="sprite-gradient1x32_grn gradient">
+                                            <span class="saveStar">
+                                                <img src="http://c1.tacdn.com/img2/x.gif" class="sprite-suitcase_white">
+                                            </span>
+                                            <span class="saveText">
+                                                <span class="saves-hover-txt" style="display: inline;">Thêm vào</span>
+                                                    <span class="saves-hover-txt-saved" style="display: none;">Đã thêm</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div ><h2 id="attraction_title"></h2></div>
                                 <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img src="./templates/green/images/icon/description.png" height="25px" width="25px"/><i id="attraction_description"></i></p>
                                 <hr />
                                 <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"> <img src="./templates/green/images/icon/time.png" height="25px" width="25px"/> <b id="attraction_hour"></b></p>
@@ -730,14 +742,8 @@ defined('_JEXEC') or die;
 
     </div>
 </div>
-<style>
-    /*[class*="span"] {*/
-    #st-advice .span3 {
-        margin-left:0px;
-    }
-</style>
 <div id="avatar-full-4-block">
-    <div class="avatar-wrapper block-default-width">
+    <div class="content block-default-width">
         <div class="avatar-module ">
             <div class="module-content">
 
@@ -787,7 +793,7 @@ defined('_JEXEC') or die;
     </div>
 </div>
 <div id="avatar-full-5-block" style="background-color:white">
-    <div class="avatar-wrapper block-default-width">
+    <div class="content block-default-width">
         <div class="avatar-module ">
             <div class="module-content">
 
@@ -879,7 +885,7 @@ defined('_JEXEC') or die;
     }
 </style>
 <div id="avatar-body-bottom-block" position="item-108">
-<div class="avatar-wrapper block-default-width">
+<div class="content block-default-width">
 <div id="100" class="avatar-module ">
     <div class="module-content">
 
