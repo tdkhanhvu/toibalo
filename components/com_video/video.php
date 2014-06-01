@@ -1,4 +1,4 @@
-    <div class="clearfix">
+<div class="clearfix">
 		<style>
 			.black-50 {
 				background: url(http://www.seanmccambridge.com/tubular/media/black-50-trans.png);

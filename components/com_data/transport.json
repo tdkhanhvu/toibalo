@@ -1,0 +1,46 @@
+{
+    "depart": {
+        "plane": {
+            "image_url": "airplane.png",
+            "description": "<p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>"
+        },
+        "train" : {
+            "image_url": "train.png",
+            "description": "<p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>"
+        },
+        "coach": {
+            "image_url": "coach.png",
+            "description": "<p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>"
+        },
+        "ship" : {
+            "image_url": "ship.png",
+            "description": "<p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>"
+        },
+        "motorbike" : {
+            "image_url": "motorbike.png",
+            "description":"<p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>"
+        }
+    },
+    "return": {
+        "plane": {
+            "image_url": "airplane.png",
+            "description": "<p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p>"
+        },
+        "train" : {
+            "image_url": "train.png",
+            "description": "<p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p>"
+        },
+        "coach": {
+            "image_url": "coach.png",
+            "description": "<p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p>"
+        },
+        "ship" : {
+            "image_url": "ship.png",
+            "description": "<p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p>"
+        },
+        "motorbike" : {
+            "image_url": "motorbike.png",
+            "description":"<p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p>"
+        }
+    }
+}

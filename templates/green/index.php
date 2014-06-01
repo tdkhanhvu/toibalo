@@ -2,56 +2,59 @@
 
 $doc = JFactory::getDocument();
 
-$doc->addStyleSheet('./media/jui/css/bootstrap.css');
-$doc->addStyleSheet('./media/jui/css/bootstrap-responsive.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/jquery.miniColors.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/timeline.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/grey.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/system.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/general.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/editor.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/layout.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/core_joomla.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
-//$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap-responsive.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/font-awesome.min.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/Button/button.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker_layout.css');
-
-
-$doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
-$doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
-$doc->addScript('./media/jui/js/jquery-migrate.min.js', 'text/javascript');
-$doc->addScript('./media/system/js/tabs-state.js', 'text/javascript');
-$doc->addScript('./media/system/js/caption.js', 'text/javascript');
-
-$doc->addScript('./templates/' . $this->template . '/js/mootools-core.js', 'text/javascript');//Hinh Anh
-$doc->addScript('./templates/' . $this->template . '/js/jquery.sequence.js', 'text/javascript');//Am Thuc
-$doc->addScript('./templates/' . $this->template . '/js/load-images.js', 'text/javascript');//Am Thuc + Le Hoi
-$doc->addScript('./templates/' . $this->template . '/js/shortcodes.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/isotope.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/jquery.fancybox-1.3.4.pack.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/bootstrap.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/avatar-template.js', 'text/javascript');
-
-//Lich trinh
-$doc->addScript('./templates/' . $this->template . '/js/date.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/datepicker/datepicker.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/dropdown/select2.min.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/jquery.easing.min.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/zaccordion/jquery.zaccordion.min.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/tooltip/ipicture-square.js', 'text/javascript');
-$doc->addScript('./templates/' . $this->template . '/js/Accordion/jquery-ui.js', 'text/javascript');
-
 $option =  JRequest::getVar('option'); // De phan loai trang
+
+if ($option != "com_data") {
+    $doc->addStyleSheet('./media/jui/css/bootstrap.css');
+    $doc->addStyleSheet('./media/jui/css/bootstrap-responsive.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/jquery.miniColors.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/timeline.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/grey.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/system.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/general.css');
+    //$doc->addStyleSheet('templates/' . $this->template . '/css/editor.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/layout.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/core_joomla.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
+    //$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
+    //$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap-responsive.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/font-awesome.min.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/Button/button.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker_layout.css');
+
+
+    $doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
+    $doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
+    $doc->addScript('./media/jui/js/jquery-migrate.min.js', 'text/javascript');
+    $doc->addScript('./media/system/js/tabs-state.js', 'text/javascript');
+    $doc->addScript('./media/system/js/caption.js', 'text/javascript');
+
+    $doc->addScript('./templates/' . $this->template . '/js/mootools-core.js', 'text/javascript');//Hinh Anh
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.sequence.js', 'text/javascript');//Am Thuc
+    $doc->addScript('./templates/' . $this->template . '/js/load-images.js', 'text/javascript');//Am Thuc + Le Hoi
+    $doc->addScript('./templates/' . $this->template . '/js/shortcodes.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/isotope.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.fancybox-1.3.4.pack.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/bootstrap.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/avatar-template.js', 'text/javascript');
+
+    //Lich trinh
+    $doc->addScript('./templates/' . $this->template . '/js/date.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/datepicker/datepicker.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/dropdown/select2.min.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.easing.min.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/zaccordion/jquery.zaccordion.min.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/tooltip/ipicture-square.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/Accordion/jquery-ui.js', 'text/javascript');
+}
+
 ?>
 
 <!--Vu's comment for testing TaiVT-->
@@ -150,6 +153,7 @@ $option =  JRequest::getVar('option'); // De phan loai trang
                                 <li><a href="#">Thông Tin</a></li>
                             <?php } else if ($option == 'com_video') { ?>
                                 <li><a href="#">Thông Tin</a></li>
+                            <?php } else if ($option == 'com_data') { ?>
                             <?php } else { ?>
 								<li><a href="#">About</a></li>
 								<li><a href="#">Blog</a></li>
@@ -167,7 +171,7 @@ $option =  JRequest::getVar('option'); // De phan loai trang
 
 	<!-- 3. Content -->
 	<div class='tbl_content'>
-        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
+        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh') && ($option != 'com_data')) { ?>
             <div class='container' id="wrapper">
         <?php } ?>
             <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
@@ -182,7 +186,7 @@ $option =  JRequest::getVar('option'); // De phan loai trang
             <?php } ?>
 
             <jdoc:include type="component" />
-        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
+        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh') && ($option != 'com_data')) { ?>
             </div>
         <?php } ?>
 	</div> <!-- End Content -->

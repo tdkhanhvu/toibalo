@@ -465,92 +465,35 @@ defined('_JEXEC') or die;
         </div>
         <div class="span2" style="margin-bottom:20px;">
             <select id="city_start" style="width:100%">
-            <option value="Ba_Ria">Bà Rịa</option>
-            <option value="Bac_Giang">Bắc Giang</option>
-            <option value="Bac_Lieu">Bạc Liêu</option>
-            <option value="Bac_Ninh">Bắc Ninh</option>
-            <option value="Bao_Loc">Bảo Lộc</option>
-            <option value="Ben_Tre">Bến Tre</option>
-            <option value="Bien_Hoa">Biên Hòa</option>
-            <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
-            <option value="Ca_Mau">Cà Mau</option>
-            <option value="Cam_Pha">Cẩm Phả</option>
-            <option value="Can_Tho">Cần Thơ</option>
-            <option value="Cam_Ranh">Cam Ranh</option>
-            <option value="Cao_Bang">Cao Bằng</option>
-            <option value="Cao_Lanh">Cao Lãnh</option>
-            <option value="Chau_Doc">Châu Đốc</option>
-            <option value="Da_Lat">Đà Lạt</option>
-            <option value="Da_nẵng">Đà Nẵng</option>
-            <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
-            <option value="Dong_Ha">Đông Hà</option>
-            <option value="Dong_Hoi">Đồng Hới</option>
-            <option value="Ha_Giang">Hà Giang</option>
-            <option value="Ha_Noi">Hà Nội</option>
-            <option value="Ha_Long">Hạ Long</option>
-            <option value="Ha_Tinh">Hà Tĩnh</option>
-            <option value="Hai_Duong">Hải Dương</option>
-            <option value="Hai_Phong">Hải Phòng</option>
-            <option value="Hoa_Binh">Hòa Bình</option>
-            <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
-            <option value="Hoi_An">Hội An</option>
-            <option value="Hue">Huế</option>
-            <option value="Hung_Yen">Hưng Yên</option>
-            <option value="Kon_Tum">Kon Tum</option>
-            <option value="Lai_Chau">Lai Châu</option>
-            <option value="Lang_Son">Lạng Sơn</option>
-            <option value="Lao_Cai">Lào Cai</option>
-            <option value="Long_Xuyen">Long Xuyên</option>
-            <option value="Mong_Cai">Móng Cái</option>
-            <option value="My_Tho">Mỹ Tho</option>
-            <option value="Nam_Dinh">Nam Định</option>
-            <option value="Nha_Trang">Nha Trang</option>
-            <option value="Ninh_Binh">Ninh Bình</option>
-            <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
-            <option value="Phan_Thiet">Phan Thiết</option>
-            <option value="Phu_Ly">Phủ Lý</option>
-            <option value="Pleiku">Pleiku</option>
-            <option value="Quang_Ngai">Quảng Ngãi</option>
-            <option value="Quy_Nhon">Quy Nhơn</option>
-            <option value="Rach_Gia">Rạch Giá</option>
-            <option value="Sa_Dec">Sa Đéc</option>
-            <option value="Soc_Trang">Sóc Trăng</option>
-            <option value="Son_La">Sơn La</option>
-            <option value="Tam_Ky">Tam Kỳ</option>
-            <option value="Tan_An">Tân An</option>
-            <option value="Tay_Ninh">Tây Ninh</option>
-            <option value="Thai_Binh">Thái Bình</option>
-            <option value="Thai_Nguyen">Thái Nguyên</option>
-            <option value="Thanh_Hoa">Thanh Hóa</option>
-            <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
-            <option value="Tra_Vinh">Trà Vinh</option>
-            <option value="Tuy_Hoa">Tuy Hòa</option>
-            <option value="Tuyen_Quang">Tuyên Quang</option>
-            <option value="Uong_Bi">Uông Bí</option>
-            <option value="Vi_Thanh">Vị Thanh</option>
-            <option value="Viet_Tri">Việt Trì</option>
-            <option value="Vinh">Vinh</option>
-            <option value="Vinh_Long">Vĩnh Long</option>
-            <option value="Vinh_Yen">Vĩnh Yên</option>
-            <option value="Vung_Tau">Vũng Tàu</option>
-            <option value="Yen_Bai">Yên Bái</option>
+                <?php
+                    include JPATH_COMPONENT."/../com_data/data.php";
+                    $city = GetStartCityData();
+
+                    foreach ($city as $key => $value) {
+                        echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
+                    }
+                ?>
         </select>
         </div>
 
         <ul class="span5 nav nav-tabs" id="transport_start">
-            <li class="active"><a href="#maybay_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/airplane.png');"></div></a></li>
-            <li><a href="#xelua_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/train.png');"></div></a></li>
-            <li><a href="#xekhach_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/coach.png');"></div></a></li>
-            <li><a href="#tauthuy_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/ship.png');"></div></a></li>
-            <li><a href="#xemay_start" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/motorbike.png');"></div></a></li>
+            <?php
+                $transport = GetStartTransportData();
+
+                foreach ($transport as $key => $value) {
+                    reset($transport);
+                    echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_start" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]["image_url"] . '\');"></div></a></li>';
+            }
+            ?>
         </ul>
 
         <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
-            <div class="tab-pane active" id="maybay_start"><p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p></div>
-            <div class="tab-pane" id="xelua_start"><p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p></div>
-            <div class="tab-pane" id="xekhach_start"><p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p></div>
-            <div class="tab-pane" id="tauthuy_start"><p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p></div>
-            <div class="tab-pane" id="xemay_start"><p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p></div>
+            <?php
+                foreach ($transport as $key => $value) {
+                    reset($transport);
+                    echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_start">'. $transport[$key]["description"].'</div>';
+                }
+            ?>
         </div>
     </div>
 
@@ -560,92 +503,34 @@ defined('_JEXEC') or die;
         </div>
         <div class="span2" style="margin-bottom:20px;">
             <select id="city_end" style="width:100%">
-                <option value="Ba_Ria">Bà Rịa</option>
-                <option value="Bac_Giang">Bắc Giang</option>
-                <option value="Bac_Lieu">Bạc Liêu</option>
-                <option value="Bac_Ninh">Bắc Ninh</option>
-                <option value="Bao_Loc">Bảo Lộc</option>
-                <option value="Ben_Tre">Bến Tre</option>
-                <option value="Bien_Hoa">Biên Hòa</option>
-                <option value="Buon_Ma_Thuot">Buôn Ma Thuột</option>
-                <option value="Ca_Mau">Cà Mau</option>
-                <option value="Cam_Pha">Cẩm Phả</option>
-                <option value="Can_Tho">Cần Thơ</option>
-                <option value="Cam_Ranh">Cam Ranh</option>
-                <option value="Cao_Bang">Cao Bằng</option>
-                <option value="Cao_Lanh">Cao Lãnh</option>
-                <option value="Chau_Doc">Châu Đốc</option>
-                <option value="Da_Lat">Đà Lạt</option>
-                <option value="Da_nẵng">Đà Nẵng</option>
-                <option value="Dien_Bien_Phu">Điện Biên Phủ</option>
-                <option value="Dong_Ha">Đông Hà</option>
-                <option value="Dong_Hoi">Đồng Hới</option>
-                <option value="Ha_Giang">Hà Giang</option>
-                <option value="Ha_Noi">Hà Nội</option>
-                <option value="Ha_Long">Hạ Long</option>
-                <option value="Ha_Tinh">Hà Tĩnh</option>
-                <option value="Hai_Duong">Hải Dương</option>
-                <option value="Hai_Phong">Hải Phòng</option>
-                <option value="Hoa_Binh">Hòa Bình</option>
-                <option value="Ho_Chi_Minh">Hồ Chí Minh</option>
-                <option value="Hoi_An">Hội An</option>
-                <option value="Hue">Huế</option>
-                <option value="Hung_Yen">Hưng Yên</option>
-                <option value="Kon_Tum">Kon Tum</option>
-                <option value="Lai_Chau">Lai Châu</option>
-                <option value="Lang_Son">Lạng Sơn</option>
-                <option value="Lao_Cai">Lào Cai</option>
-                <option value="Long_Xuyen">Long Xuyên</option>
-                <option value="Mong_Cai">Móng Cái</option>
-                <option value="My_Tho">Mỹ Tho</option>
-                <option value="Nam_Dinh">Nam Định</option>
-                <option value="Nha_Trang">Nha Trang</option>
-                <option value="Ninh_Binh">Ninh Bình</option>
-                <option value="Phan_Rang">Phan Rang - Tháp Chàm</option>
-                <option value="Phan_Thiet">Phan Thiết</option>
-                <option value="Phu_Ly">Phủ Lý</option>
-                <option value="Pleiku">Pleiku</option>
-                <option value="Quang_Ngai">Quảng Ngãi</option>
-                <option value="Quy_Nhon">Quy Nhơn</option>
-                <option value="Rach_Gia">Rạch Giá</option>
-                <option value="Sa_Dec">Sa Đéc</option>
-                <option value="Soc_Trang">Sóc Trăng</option>
-                <option value="Son_La">Sơn La</option>
-                <option value="Tam_Ky">Tam Kỳ</option>
-                <option value="Tan_An">Tân An</option>
-                <option value="Tay_Ninh">Tây Ninh</option>
-                <option value="Thai_Binh">Thái Bình</option>
-                <option value="Thai_Nguyen">Thái Nguyên</option>
-                <option value="Thanh_Hoa">Thanh Hóa</option>
-                <option value="Thu_Dau_Mot">Thủ Dầu Một</option>
-                <option value="Tra_Vinh">Trà Vinh</option>
-                <option value="Tuy_Hoa">Tuy Hòa</option>
-                <option value="Tuyen_Quang">Tuyên Quang</option>
-                <option value="Uong_Bi">Uông Bí</option>
-                <option value="Vi_Thanh">Vị Thanh</option>
-                <option value="Viet_Tri">Việt Trì</option>
-                <option value="Vinh">Vinh</option>
-                <option value="Vinh_Long">Vĩnh Long</option>
-                <option value="Vinh_Yen">Vĩnh Yên</option>
-                <option value="Vung_Tau">Vũng Tàu</option>
-                <option value="Yen_Bai">Yên Bái</option>
+                <?php
+                $city = GetEndCityData();
+
+                foreach ($city as $key => $value) {
+                    echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
+                }
+                ?>
             </select>
         </div>
 
         <ul class="span5 nav nav-tabs" id="transport_end">
-            <li class="active"><a href="#maybay_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/airplane.png');"></div></a></li>
-            <li><a href="#xelua_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/train.png');"></div></a></li>
-            <li><a href="#xekhach_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/coach.png');"></div></a></li>
-            <li><a href="#tauthuy_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/ship.png');"></div></a></li>
-            <li><a href="#xemay_end" data-toggle="tab"><div style="background-image: url('./templates/green/images/transport/motorbike.png');"></div></a></li>
+            <?php
+            $transport = GetEndTransportData();
+
+            foreach ($transport as $key => $value) {
+                reset($transport);
+                echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_end" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]["image_url"] . '\');"></div></a></li>';
+            }
+            ?>
         </ul>
 
         <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
-            <div class="tab-pane active" id="maybay_end"><p>Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar, VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện nhất vì thường xuyên có khuyến mãi và thời gian đi lại ngắn nhất so với phương tiện khác. Vé trung bình khoảng 2 triệu cho hai chiều bay</p></div>
-            <div class="tab-pane" id="xelua_end"><p>Ga Hòa Hưng: Có các chuyến tàu sắt Bắc Năm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian tàu đi khoảng 30h.Chuyến sớm nhất là 6h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện thứ nhì sau máy bay vì có giường nằm máy lạnh cho khách.Vé trung bình khoảng 1.5 triệu cho hai lượt tàu đi về</p></div>
-            <div class="tab-pane" id="xekhach_end"><p>Bến Xe Mỹ Đình: Có các chuyến xe khách đường dài giường nằm chạy liên tục mỗi ngày vào Sài Gòn. Thời gian xe đi khoảng 40h. Chuyến sớm nhất là 8h sáng và chuyến trễ nhất là 11h đêm.</p><br/><p>Đây được xem là phương tiện đi lại tiện giá rẻ và phù hợp với túi tiền người dân. Vé trung bình khoảng 1.2 triệu cho hai lượt xe đi về</p></div>
-            <div class="tab-pane" id="tauthuy_end"><p>Bến Tàu Hà Nội: Mỗi ngày có hai chuyến tàu chạy đường thủy vào Sài Gòn. Thời gian tàu đi khoảng 60h. Chuyến sớm nhất là 10h sáng và chuyến trễ nhất là 8h chiều.</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh biển.Vé trung bình khoảng 2 triệu cho hai lượt tàu đi về</p></div>
-            <div class="tab-pane" id="xemay_end"><p>Quốc Lộ 1A:Dài khoảng 2,000 km đi từ Bắc chí Nam và ghé ngang những tỉnh thành lớn. Dọc theo quốc lộ có các nhà nghỉ uy tín như Phương Trinh, Vàng Anh...</p><br/><p>Đây được xem là phương tiện đi lại phù hợp cho những người muốn ngắm cảnh trên đường đi và thích dừng chân trong suốt chuyến đi ở các thành phố khác nhau. Tiền xăng dầu cho hai chiều đi về khoảng 1.5 triệu</p></div>
+            <?php
+            foreach ($transport as $key => $value) {
+                reset($transport);
+                echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_end">'. $transport[$key]["description"].'</div>';
+            }
+            ?>
         </div>
     </div>
 </div>
@@ -755,34 +640,19 @@ defined('_JEXEC') or die;
 
                             <p class="st-sub-heading">Để chuyến du lịch thú vị hơn</p>
                             <div class="row-fluid">
-                                <div class="span3">
-                                    <div class="st-icon-star">&nbsp;</div>
-                                    <div class="vote-div" track="1"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Chợ đêm Bến Thành</div>
-                                    <div class="content">Bạn nên dành thời gian ghé qua khu chợ đêm nổi tiếng với các món hàng hóa độc đáo và những món ăn vặt tuyệt cú mèo như các loại xôi, phở...
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-food">&nbsp;</div>
-                                    <div class="vote-div" track="2"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Bánh tráng trộn</div>
-                                    <div class="content">Teen Sài Gòn hay ghé góc phố Nguyễn Thái Học và Trần Hưng Đạo để thưởng thức những bịch bánh tráng trôn ngon tuyệt cú mèo
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-cup">&nbsp;</div>
-                                    <div class="vote-div" track="3"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Phố Tây Phạm Ngũ Lão</div>
-                                    <div class="content">Hòa mình vào khu phố của những khách Tây Ba Lô trên đoạn Phạm Ngũ Lão và Bùi Viện. Nơi Tây Ba Lô gặp gỡ Ta Ba Lô
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div class="st-icon-camera">&nbsp;</div>
-                                    <div class="vote-div" track="4"><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    <div class="title">Nơi chụp ảnh</div>
-                                    <div class="content">Khu vực xung quanh nhà thờ Đức Bà, dinh Độc Lập, Bưu Điện Thành Phố là địa điểm ưa thích của các bạn trẻ để lưu giữ lại hình ảnh xưa và nay của Sài Gòn.
-                                    </div>
-                                </div>
+                                <?php
+                                $advice = GetAdviceData();
+
+                                foreach ($advice as $key => $value) {
+                                    echo '<div class="span3">';
+                                    echo '<div class='. $advice[$key]["icon"] .'>&nbsp;</div>';
+                                    echo '<div class="vote-div" track='. $key .' type="advice"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($advice[$key]["select"]?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($advice[$key]["like"]?'':'unclicked') .' "/></div>';
+                                    echo '<div class="title">'. $advice[$key]["name"] . '</div>';
+                                    echo '<div class="content">'. $advice[$key]["content"];
+                                    echo '</div>';
+                                    echo '</div>';
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -805,43 +675,21 @@ defined('_JEXEC') or die;
 
                             <p class="st-sub-heading" style="color:blue">Món ngon không nên bỏ lỡ</p>
                             <div class="row-fluid">
-                                <div class="span3">
-                                    <div><img src="./templates/green/images/com_tam.jpg"/></div>
-                                    <div class="title">
-                                        <h2>Cơm Tấm</h2>
-                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    </div>
-                                    <div class="content">Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này.
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div><img src="./templates/green/images/hu_tieu_nam_vang.jpg"/></div>
-                                    <div class="title">
-                                        <h2>Hủ Tiếu Nam Vang</h2>
-                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    </div>
-                                    <div class="content">Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div><img src="./templates/green/images/banh_khot.jpg"/></div>
-                                    <div class="title">
-                                        <h2>Bánh Khọt</h2>
-                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    </div>
-                                    <div class="content">
-                                        Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua)
-                                    </div>
-                                </div>
-                                <div class="span3">
-                                    <div><img src="./templates/green/images/sau_rieng.jpg"/></div>
-                                    <div class="title">
-                                        <h2>Sầu Riêng</h2>
-                                        <div class="vote-div" track="1" style=""><img src="./templates/green/images/icon/select.png" class="vote-icon select unclicked"/><img src="./templates/green/images/vote/up.png" class="vote-icon up unclicked"/></div>
-                                    </div>
-                                    <div class="content">Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu
-                                    </div>
-                                </div>
+                                <?php
+                                $food = GetFoodData();
+
+                                foreach ($food as $key => $value) {
+                                    echo '<div class="span3">';
+                                    echo '<div><img src="./templates/green/images/'. $food[$key]["image_url"] .'"/></div>';
+                                    echo '<div class="title">';
+                                    echo '  <h2>' . $food[$key]["name"] . '</h2>';
+                                    echo '<div class="vote-div" track='. $key .' type="food"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($food[$key]["select"]?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($food[$key]["like"]?'':'unclicked') .' "/></div>';
+                                    echo '</div>';
+                                    echo '<div class="content">'. $food[$key]["description"];
+                                    echo '</div>';
+                                    echo '</div>';
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -1334,20 +1182,36 @@ jQuery.noConflict();
         }
 
         $('.vote-icon').click(function () {
+            var values = {};
+
+            if ($(this).hasClass('select')) {
+                values.source = "select";
+            }
+            else
+                values.source = "like";
+
             if ($(this).hasClass('unclicked')) {
                 $(this).removeClass('unclicked');
-                if ($(this).hasClass('select'))
-                    alert($(this).parent().attr('track') + ' select clicked');
-                else
-                    alert($(this).parent().attr('track') + ' up clicked');
+                values.action = "add";
             }
             else {
+                values.action = "remove";
                 $(this).addClass('unclicked');
-                if ($(this).hasClass('select'))
-                    alert($(this).parent().attr('track') + ' select unclicked');
-                else
-                    alert($(this).parent().attr('track') + ' up unclicked');
             }
+
+            values.id = $(this).parent().attr('track');
+            values.type = $(this).parent().attr('type');
+            $.ajax({
+                url: "index.php?option=com_data&format=raw",
+                type: "post",
+                data: values,
+                success: function(msg){
+                    alert(msg);
+                },
+                error:function(){
+                    alert("failure");
+                }
+            });
         })
     });
 })(jQuery)
@@ -1378,143 +1242,48 @@ jQuery.noConflict();
                 jQuery(this).addClass('active');
             else jQuery(this).removeClass('active');
         });
-        if(message == 'saigon_central_post_office'){
-            jQuery('#attraction_title').html(
-                "Bưu điện thành phố"
-            );
-            jQuery('#attraction_description').html(
-                "Bưu điện trung tâm Sài Gòn là một trong những công trình kiến trúc tiêu biểu tại Thành phố Hồ Chí Minh, tọa lạc tại số 2, Công trường Công xã Paris, Quận 1. Đây là tòa nhà được người Pháp xây dựng với phong cách chiết trung [1][2] trong khoảng 1886–1891 theo đồ án thiết kế của kiến trúc sư Villedieu cùng phụ tá Foulhoux.Đây là công trình kiến trúc mang phong cách châu Âu kết hợp với nét trang trí châu Á. Bên ngoài, phía trước ngôi nhà trang trí theo từng ô hình chữ nhật, trên đó ghi danh những nhà phát minh ra ngành điện tín và ngành điện. Trên các ô có đắp hình các nam nữ đội vòng nguyệt quế, trên vòng cung ngôi nhà có chiếc đồng hồ lớn. Vào phía trên trong, hai bên tường cao là hai bản đồ lịch sử mang tên: Saigon et ses environs, 1892 và Lignes télégraphiques du Sud Vietnam et du Cambodge, 1936."
-            );
-            jQuery('#attraction_hour').html(
-                "Thứ 2 - Thứ 6: 7h00 - 19h00, Thứ 7, Chủ Nhật: 7h30 - 18h00"
-            );
-            jQuery('#attraction_price').html(
-                "Miễn phí"
-            );
-            jQuery('#attraction_address').html(
-                "2 Công xã Paris, Bến Nghé, Thành Phố Hồ Chí Minh"
-            );
-            jQuery('#attraction_phone').html(
-                "08 3822 1677"
-            );
 
-            checkButton();
-        }
+        jQuery.ajax({
+            url: "index.php?option=com_data&format=raw",
+            type: "post",
+            data: {'request':'GetAttractionById','id':message},
+            success: function(msg){
+                var data = JSON.parse(msg);
+                //alert(msg);
 
-        if(message == 'notre_dame_cathedral'){
-            jQuery('#attraction_title').html(
-                "Nhà thờ Đức Bà"
-            );
-            jQuery('#attraction_description').html(
-                "Trải qua hơn 100 năm và qua 3 thế kỷ, Nhà thờ Đức Bà Sài Gòn, tên chính thức là Vương cung Thánh đường Chính tòa Đức Mẹ Vô nhiễm Nguyên tội (Immaculate Conception Cathedral Basilica) vẫn đẹp lộng lẫy, tráng lệ và uy nghiêm; được coi là một tuyệt tác kiến trúc đô thị Sài Gòn. Đây là một công trình nhà thờ Công giáo nói riêng và tôn giáo nói chung rất đặc sắc, có quy mô thuộc loại lớn nhất ở Việt Nam. Cùng với một số công trình lân cận ở quận 1 như Nhà Bưu Điện trung tâm, Nhà hát thành phố, Bệnh viện Nhi Đồng 2…; Nhà thờ Đức Bà là một công trình tiêu biểu tạo nên bộ mặt kiến trúc đô thị Sài Gòn – Thành phố Hồ Chí Minh."
-            );
-            jQuery('#attraction_hour').html(
-                "8h00 - 10h00 &amp; 14h30 - 15h30 các ngày trong tuần"
-            );
-            jQuery('#attraction_price').html(
-                "Miễn phí"
-            );
-            jQuery('#attraction_address').html(
-                "Bến Nghé, tp. Hồ Chí Minh, Hồ Chí Minh"
-            );
-            jQuery('#attraction_phone').html(
-                "08 3822 0477"
-            );
+                jQuery('#attraction_title').html(
+                    data.name
+                );
+                jQuery('#attraction_description').html(
+                    data.description
+                );
+                jQuery('#attraction_hour').html(
+                    data.hour
+                );
+                jQuery('#attraction_price').html(
+                    data.price
+                );
+                jQuery('#attraction_address').html(
+                    data.address
+                );
+                jQuery('#attraction_phone').html(
+                    data.phone
+                );
 
-            checkButton();
-        }
-
-        if(message == 'ben_thanh_market'){
-            jQuery('#attraction_title').html(
-                "Chợ Bến Thành"
-            );
-            jQuery('#attraction_description').html(
-                "Nằm ở khu vực trung tâm thành phố, từ lâu chợ Bến Thành đã trở thành biểu tượng của Sài Gòn. Không chỉ thuần túy là nơi buôn bán, gần một trăm năm qua ngôi chợ này đã trở thành một chứng nhân lịch sử chứng kiến bao đổi thay thăng trầm của thành phố, là bộ mặt kinh tế nói lên sự phát triển của một thành phố thương mại lớn nhất nước và là điểm giao hòa giữa Sài Gòn xưa và nay.Bến Thành được xem là chợ bán lẻ quy mô nhất theo nghĩa có thể tìm thấy tại nơi này đủ thứ mặt hàng, từ bình dân đến cao cấp, đặc biệt hàng thực phẩm thuộc loại chọn lọc nhất. Ở đây không thiếu một thứ gì, từ củ hành, trái ớt, mớ rau, con cá, đủ loại hoa quả mùa nào thức nấy, cho tới bánh kẹo, vải vóc, giày dép, túi xách, đồ điện, điện tử, hàng lưu niệm...");
-            jQuery('#attraction_hour').html(
-                "7h – 19h, chợ đêm mở từ 19h – 23h45"
-            );
-            jQuery('#attraction_price').html(
-                "Miễn phí"
-            );
-            jQuery('#attraction_address').html(
-                "Cửa Nam (nằm giữa các đường Phan Bội Châu - Phan Chu Trinh - Lê Thánh Tôn - Công trường Quách Thị Trang) - Phường Bến Thành - Quận 1"
-            );
-            jQuery('#attraction_phone').html(
-                "(08)8292096"
-            );
-
-            checkButton();
-
-        }
-
-        if(message == 'city_opera_house'){
-            jQuery('#attraction_title').html(
-                "Nhà hát thành phố"
-            );
-            jQuery('#attraction_description').html(
-                "Nhà Hát Thành Phố Hồ Chí Minh, hay thường được biết đến với tên gọi Nhà hát Lớn là một nhà hát nằm trên đường Công trường Lam Sơn, Quận 1, Thành phố Hồ Chí Minh. Nằm ở một vị trí thuận lợi tại trung tâm thành phố, nhà hát được xem là nhà hát trung tâm, đa năng chuyên tổ chức biểu diễn sân khấu nghệ thuật đồng thời cũng được sử dụng để tổ chức một số sự kiện lớn. Đây cũng là nhà hát thuộc loại lâu đời theo kiến trúc Tây Âu và được xem như một địa điểm du lịch của thành phố này.Nhà hát lớn Sài Gòn là một đối trọng về mặt kiến trúc với Nhà hát lớn Hà Nội (cất năm 1911, kiến trúc theo mẫu Opéra Garnier tại Paris, 900 chỗ ngồi, kiến trúc sư Broger et Harloy). Nhà hát Sài Gòn giữ riêng nét đặc thù có một không hai. Tác giả của tòa kiến trúc này là các kiến trúc sư Félix Olivier, Ernest Guichard và Eugène Ferret xây dựng."
-            )
-            jQuery('#attraction_hour').html(
-                "7h – 23h"
-            );
-            jQuery('#attraction_price').html(
-                "Miễn phí"
-            );
-            jQuery('#attraction_address').html(
-                "Số 7, công trường Lam Sơn, Bến Nghé, Quận 1"
-            );
-            jQuery('#attraction_phone').html(
-                "08 3829 9976"
-            );
-
-            checkButton();
-        }
-
-        if(message == 'independence_palace'){
-            jQuery('#attraction_title').html(
-                "Dinh Độc Lập"
-            );
-            jQuery('#attraction_description').html(
-                "Dinh Độc Lập (tên gọi trước đây là dinh Norodom, ngày nay còn gọi là dinh Thống Nhất hay hội trường Thống Nhất) là một công trình kiến trúc ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt.Vẻ đẹp kiến trúc của Dinh còn được thể hiện bởi bức rèm hoa đá mang hình dáng những đốt trúc thanh tao bao xung quanh lầu 2. Rèm hoa đá được biến cách từ bức cửa bàn khoa của các cung điện Cố đô Huế không chỉ làm tăng vẻ đẹp của Dinh mà còn có tác dụng lấy ánh sáng mặt trời. Ði vào bên trong Dinh, tất cả các đuờng nét kiến trúc đều dùng đường ngay sổ thẳng, các hành lang, đại sảnh, các phòng ốc đều lấy câu chính đại quang minh làm gốc."
-            )
-            jQuery('#attraction_hour').html(
-                "7h30-11h00 & 13h00-16h00 các ngày trong tuần"
-            );
-            jQuery('#attraction_price').html(
-                "+ Người lớn: 30.000đ/người/lần.<br>+ Sinh viên: 15.000đ/người/lần<br>+ Học sinh (từ 6 tuổi đến 17 tuổi): 3.000đ/người/lần"
-            );
-            jQuery('#attraction_address').html(
-                "135 Nam Kỳ Khởi Nghĩa, quận 1, Thành phố Hồ Chí Minh"
-            );
-            jQuery('#attraction_phone').html(
-                "080. 85037 - 080. 85038 - 080. 85039 – 083.8223652"
-            );
-
-            checkButton();
-        }
-
-        if(message == 'nha_rong_port'){
-            jQuery('#attraction_title').html(
-                "Bến Nhà Rồng"
-            );
-            jQuery('#attraction_description').html(
-                "Bến Nhà Rồng, hay Bảo tàng Hồ Chí Minh, khởi đầu là một thương cảng lớn của Sài Gòn. Thương cảng này nằm trên sông Sài Gòn và được xây dựng từ 1864, trên khu vực gần cầu Khánh Hội, nay thuộc quận 4. Tại nơi đây, vào ngày 5 tháng 6 năm 1911, người thanh niên Nguyễn Tất Thành (sau này lấy tên là Hồ Chí Minh) đã xuống con tàu Amiral Latouche Tréville làm phụ bếp để có điều kiện sang châu Âu sau này là Ngày Bác Hồ ra đi tìm đường cứu nước ở Việt Nam. Do đó, từ 1975 toà trụ sở xưa của thương cảng Nhà Rồng đã được Việt Nam xây dựng lại thành khu lưu niệm Hồ Chí Minh."
-            );
-            jQuery('#attraction_hour').html(
-                "Thứ 3 - Chủ Nhật: 7h30 - 11h30 & 13h30 - 17h00."
-            );
-            jQuery('#attraction_price').html(
-                "Người Việt Nam 2K. Người nước ngoài 10K"
-            );
-            jQuery('#attraction_address').html(
-                "Số 01 Nguyễn Tất Thành, Phường 12, Quận 4, TP. Hồ Chí Minh"
-            );
-            jQuery('#attraction_phone').html(
-                "39402060 - 39401094"
-            );
-
-            checkButton();
-        }
+                if (data.select) {
+                    jQuery('.saves-hover-txt').css('display','none');
+                    jQuery('.saves-hover-txt-saved').css('display','inline');
+                }
+                else {
+                    jQuery('.saves-hover-txt-saved').css('display','none');
+                    jQuery('.saves-hover-txt').css('display','inline');
+                }
+                //checkButton();
+            },
+            error:function(){
+                alert("failure");
+            }
+        });
     }
 
     (function ($) {
@@ -1523,15 +1292,39 @@ jQuery.noConflict();
                 jQuery(this).css('display', 'none');
                 jQuery('.saves-hover-txt-saved').css('display', 'inline');
 
-                attraction_selected.push(attraction_current);
+                //attraction_selected.push(attraction_current);
+
+                jQuery.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'source':'select','id':attraction_current, 'action':'add','type':'attraction'},
+                    success: function(msg){
+                        alert(msg);
+                    },
+                    error:function(){
+                        alert("failure");
+                    }
+                });
             });
 
             jQuery('.saves-hover-txt-saved').click(function(){
                 jQuery(this).css('display', 'none');
                 jQuery('.saves-hover-txt').css('display', 'inline');
-                attraction_selected.splice(attraction_selected.indexOf(attraction_current),1);
+
+                jQuery.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'source':'select','id':attraction_current, 'action':'remove','type':'attraction'},
+                    success: function(msg){
+                        alert(msg);
+                    },
+                    error:function(){
+                        alert("failure");
+                    }
+                });
             });
 
+            //slideshow
             jQuery('#attraction_list li').click(function (event) {
                 changeAttractionInfo(jQuery(this).find('a').attr('href').replace('#',''));
             });

@@ -1,0 +1,22 @@
+{
+    "1": {
+        "name": "Cơm Tấm",
+        "image_url" : "com_tam.jpg",
+        "description": "Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này."
+    },
+    "2": {
+        "name": "Hủ Tiếu Nam Vang",
+        "image_url" : "hu_tieu_nam_vang.jpg",
+        "description": "Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng."
+    },
+    "3": {
+        "name": "Bánh Khọt",
+        "image_url" : "banh_khot.jpg",
+        "description": "Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua)."
+    },
+    "4": {
+        "name": "Sầu Riêng",
+        "image_url" : "sau_rieng.jpg",
+        "description": "Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu."
+    }
+}
