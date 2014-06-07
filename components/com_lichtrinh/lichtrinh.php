@@ -119,322 +119,67 @@ defined('_JEXEC') or die;
     </div>
     <div class="panel-group span12" id="accordion" style="margin-top:20px;">
         <div class="span6" style="margin-left:0px;">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a1" data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">1</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse" style="width:95%;background-color:rgb(240, 223, 225);border:0px groove #FAB6C3;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Thời tiết khô và nóng, có khi lên tới 39 độ vào ban ngày.
-                                Du khách được khuyến cáo không nên ra đường vào bữa trưa</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Thời gian giữa tết tây và tết ta nên lượng du khách đổ tới Sài Gòn khá đông</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả khá là đắt đỏ, tăng gấp rưỡi so với các tháng khác</p>
-                        </div>
-                    </div>
-                </div>
-                <div style="clear:both"></div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">2</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse" style="width:95%;background-color:rgb(231, 203, 236);border:0px groove #E094EE;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Thời tiết bắt đầu đỡ hơn so với tháng Giêng.</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Đa phần du khách tới Sài Gòn vào mùa này để tận hưởng Tết Cổ Truyền</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả leo thang, đắt gấp đôi trong năm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a3" data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">3</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse" style="width:95%;background-color:rgb(220, 212, 236);border:0px groove #AE8FBD;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Khí hậu bớt oi bức, bắt đầu xuất hiện vài cơn mưa lất phất</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Sau đợt tết, du khách bắt đầu trở về nước</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a4" data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">4</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse4" class="panel-collapse collapse" style="width:95%;background-color:rgb(207, 234, 247);border:0px groove #6882D3;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Trời mát, hay xuất hiện mưa buổi chiều</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Đợt không cao điểm trong năm cho du lịch</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a5" data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">5</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse5" class="panel-collapse collapse" style="width:95%;background-color:rgb(150, 233, 210);border:0px groove #32C5B4;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Trời mát, hay xuất hiện mưa buổi chiều</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Đợt không cao điểm trong năm cho du lịch</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả bắt đầu trở lại mức trong năm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a6" data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">6</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/low.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse6" class="panel-collapse collapse" style="width:95%;background-color:rgb(207, 234, 247);border:0px groove #98bf21;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Mưa nhiều và thường xuyên trong ngày</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Ít du khách tới Sài Gòn vào thời điểm này</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả thấp so với trong năm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            include JPATH_COMPONENT."/../com_data/data.php";
+            $month_info = GetMonthInfoData();
+
+            for ($i = 1; $i <= 6; $i++) {
+                echo '<div class="panel panel-default">';
+                echo '<div class="panel-heading">';
+                echo '   <h4 class="panel-title">';
+                echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
+                echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
+                echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
+                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
+                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
+                echo '           <div style="clear:both;"></div>';
+                echo '       </a>';
+                echo '   </h4>';
+                echo '</div>';
+                echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
+                echo '   <div class="panel-body">';
+
+                for ($j = 1; $j <= 3; $j++) {
+                    echo '       <div class="parent">';
+                    echo '           <p class="info child">'.$month_info[$i]['content'][$j].'</p>';
+                    echo '       </div>';
+                }
+                echo '   </div>';
+                echo '</div>';
+                echo '<div style="clear:both"></div>';
+                echo '</div>';
+            }
+            ?>
         </div>
         <div class="span6" >
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a7" data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">7</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/low.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse7" class="panel-collapse collapse" style="width:95%;background-color:rgb(176, 219, 197);border:0px groove #35D64F;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Mưa với tần suất lớn. Có ngày mưa hơn 12h</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Ít du khách tới Sài Gòn vào thời điểm này</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả rất thấp do hàng hóa dồi dào</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a8" data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">8</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/green_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/low.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse8" class="panel-collapse collapse" style="width:95%;background-color:rgb(150, 228, 153);border:0px groove #1B9725;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Mưa bắt đầu ngớt dần, nhưng khí hậu vẫn khá ẩm ướt</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Vẫn chưa có nhiều du khách tới</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Giá cả rất thấp do hàng hóa dồi dào</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a9" data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">9</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/medium.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse9" class="panel-collapse collapse" style="width:95%;background-color:rgb(168, 214, 142);border:0px groove #A1C03F;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Thời tiết chuyển sang khô ráo, hơi se se lạnh</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Du khách bắt đầu quay lại Sài Gòn</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Già cả tăng cao trở lại</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a10" data-toggle="collapse" data-parent="#accordion" href="#collapse10" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">10</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/yellow_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse10" class="panel-collapse collapse" style="width:95%;background-color:rgb(209, 224, 159);border:0px groove #D8CB35;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Già cả tăng cao trở lại</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a11" data-toggle="collapse" data-parent="#accordion" href="#collapse11" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">11</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse11" class="panel-collapse collapse" style="width:95%;background-color:rgb(224, 198, 159);border:0px groove #D89D35;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Già cả tăng cao trở lại</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a id="a12" data-toggle="collapse" data-parent="#accordion" href="#collapse12" class="collapsed">
-                            <div style="width:50px;float:left;margin-top:20px;">12</div>
-                            <div style="width:50px;height:50px;float:left"><p class="icon-sun weathericon" style="margin-top: -30px"></p></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/crowded/red_star.png');float:left;"></div>
-                            <div style="width:50px;height:50px;background-size:cover;background-image: url('./templates/green/images/money/high.png');float:left;"></div>
-                            <div style="clear:both;"></div>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse12" class="panel-collapse collapse" style="width:95%;background-color:rgb(224, 175, 159);border:0px groove #C5632C;">
-                    <div class="panel-body">
-                        <div class="parent">
-                            <p class="weather child">Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Số lượng du khách tăng mạnh do trùng vào đợt nghỉ</p>
-                        </div>
-                        <div class="parent">
-                            <p class="info child">Già cả tăng cao trở lại</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            for ($i = 7; $i <= 12; $i++) {
+                echo '<div class="panel panel-default">';
+                echo '<div class="panel-heading">';
+                echo '   <h4 class="panel-title">';
+                echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
+                echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
+                echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
+                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
+                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
+                echo '           <div style="clear:both;"></div>';
+                echo '       </a>';
+                echo '   </h4>';
+                echo '</div>';
+                echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
+                echo '   <div class="panel-body">';
+
+                for ($j = 1; $j <= 3; $j++) {
+                    echo '       <div class="parent">';
+                    echo '           <p class="info child">'.$month_info[$i]['content'][$j].'</p>';
+                    echo '       </div>';
+                }
+                echo '   </div>';
+                echo '</div>';
+                echo '<div style="clear:both"></div>';
+                echo '</div>';
+            }
+            ?>
         </div>
 </div>
 </div>
@@ -466,7 +211,6 @@ defined('_JEXEC') or die;
         <div class="span2" style="margin-bottom:20px;">
             <select id="city_start" style="width:100%">
                 <?php
-                    include JPATH_COMPONENT."/../com_data/data.php";
                     $city = GetStartCityData();
 
                     foreach ($city as $key => $value) {
@@ -482,7 +226,7 @@ defined('_JEXEC') or die;
 
                 foreach ($transport as $key => $value) {
                     reset($transport);
-                    echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_start" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]["image_url"] . '\');"></div></a></li>';
+                    echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_start" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]['image_url'] . '\');"></div></a></li>';
             }
             ?>
         </ul>
@@ -491,7 +235,7 @@ defined('_JEXEC') or die;
             <?php
                 foreach ($transport as $key => $value) {
                     reset($transport);
-                    echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_start">'. $transport[$key]["description"].'</div>';
+                    echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_start">'. $transport[$key]['description'].'</div>';
                 }
             ?>
         </div>
@@ -519,7 +263,7 @@ defined('_JEXEC') or die;
 
             foreach ($transport as $key => $value) {
                 reset($transport);
-                echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_end" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]["image_url"] . '\');"></div></a></li>';
+                echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_end" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]['image_url'] . '\');"></div></a></li>';
             }
             ?>
         </ul>
@@ -528,7 +272,7 @@ defined('_JEXEC') or die;
             <?php
             foreach ($transport as $key => $value) {
                 reset($transport);
-                echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_end">'. $transport[$key]["description"].'</div>';
+                echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_end">'. $transport[$key]['description'].'</div>';
             }
             ?>
         </div>
@@ -645,10 +389,10 @@ defined('_JEXEC') or die;
 
                                 foreach ($advice as $key => $value) {
                                     echo '<div class="span3">';
-                                    echo '<div class='. $advice[$key]["icon"] .'>&nbsp;</div>';
-                                    echo '<div class="vote-div" track='. $key .' type="advice"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($advice[$key]["select"]?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($advice[$key]["like"]?'':'unclicked') .' "/></div>';
-                                    echo '<div class="title">'. $advice[$key]["name"] . '</div>';
-                                    echo '<div class="content">'. $advice[$key]["content"];
+                                    echo '<div class='. $advice[$key]['icon'] .'>&nbsp;</div>';
+                                    echo '<div class="vote-div" track='. $key .' type="advice"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($advice[$key]['select']?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($advice[$key]['like']?'':'unclicked') .' "/></div>';
+                                    echo '<div class="title">'. $advice[$key]['name'] . '</div>';
+                                    echo '<div class="content">'. $advice[$key]['content'];
                                     echo '</div>';
                                     echo '</div>';
                                 }
@@ -677,18 +421,27 @@ defined('_JEXEC') or die;
                             <div class="row-fluid">
                                 <?php
                                 $food = GetFoodData();
-
+                                $i = 1;
                                 foreach ($food as $key => $value) {
+                                    if ($i % 4 == 1)
+                                        echo '<div class="span12">';
                                     echo '<div class="span3">';
-                                    echo '<div><img src="./templates/green/images/'. $food[$key]["image_url"] .'"/></div>';
+                                    echo '<div><img src="./templates/green/images/'. $food[$key]['image_url'] .'"/></div>';
                                     echo '<div class="title">';
-                                    echo '  <h2>' . $food[$key]["name"] . '</h2>';
-                                    echo '<div class="vote-div" track='. $key .' type="food"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($food[$key]["select"]?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($food[$key]["like"]?'':'unclicked') .' "/></div>';
+                                    echo '  <h2>' . $food[$key]['name'] . '</h2>';
+                                    echo '<div class="vote-div" track='. $key .' type="food"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($food[$key]['select']?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($food[$key]['like']?'':'unclicked') .' "/></div>';
                                     echo '</div>';
-                                    echo '<div class="content">'. $food[$key]["description"];
+                                    echo '<div class="content">'. $food[$key]['description'];
                                     echo '</div>';
                                     echo '</div>';
+
+                                    if ($i % 4 == 0)
+                                        echo '</div>';
+                                    $i++;
                                 }
+                                if ($i % 4 == 1)
+                                    echo '</div>';
+
                                 ?>
                             </div>
                         </div>
@@ -759,221 +512,57 @@ defined('_JEXEC') or die;
             <option value="3">3</option>
         </select>
         Ngày
-        <div id="total_cost" class="cost">0</div>
+
+        <?php
+            $totalCost = 0;
+
+            foreach ($_SESSION['cost'] as $key => $value) {
+                $totalCost += $value['totalCost'];
+            }
+        ?>
+        <div id="total_cost" class="cost"><?php echo $totalCost; ?></div>
     </div>
 
 </div>
 <hr style="border-top: 1px solid #030303;border-bottom: 1px solid #000000;margin:0px; margin-left:30px;" class="span12"/>
-<div id="vehicle" class="span12">
+<?php
+    $cost = GetCostData();
 
-        <div class="cost_title span12">Đi tới đây<div id="vehicle_cost" class="cost">0</div></div>
+    foreach ($cost as $key => $value) {
+        $arr = $cost[$key]['type'];
+        $temp_cost = $_SESSION['cost'][$key]['totalCost'];
 
-        <div class="span11">
-            <ul id="vehicle_option">
-                <li cost="0" class="vehicle_active">
-                    <img src="./templates/green/images/budget/nocost.png" />
-                </li>
-                <li cost="500">
-                    <img src="./templates/green/images/transport/coach.png" alt="coach" />
-                </li>
-                <li cost="900">
-                    <img src="./templates/green/images/transport/ship.png" />
-                </li>
-                <li cost="1100">
-                    <img src="./templates/green/images/transport/train.png" />
-                </li>
-                <li cost="2000">
-                    <img src="./templates/green/images/transport/airplane.png" />
-                </li>
-            </ul>
+        echo '<div id="'.$key.'" class="span12">';
+        echo '<div class="cost_title span12">'.$value['name'].'<div id="'.$key.'_cost" class="cost">'.$temp_cost.'</div></div>';
+        echo '<div class="span11">';
+        echo '   <ul id="'.$key.'_option">';
 
-            <div id="vehicle_info" class="accordion">
-                <h3>Thông tin</h3>
-                <div>
-                    <p>
-                        Xe buýt: các bến xe lớn như Miền Đông, Miền Tây
-                    </p>
-                    <p>
-                        Thuyền: Cập vào bến cảng Sài Gòn
-                    </p>
-                    <p>
-                        Xe lửa: Tới Ga Hòa Hưng
-                    </p>
-                    <p>
-                        Máy bay: Sân bay Tân Sơn Nhất
-                    </p>
-                </div>
-            </div>
-        </div>
+        foreach($arr as $type => $type_value) {
+            echo '       <li cost="'.$arr[$type]['cost'].'"'.(array_search($type,$_SESSION['cost'][$key]['element']) !== FALSE ?' class="'.$key.'_active"' : '').' type="'.$type.'">';
+            echo '          <img src="./templates/green/images/'.$arr[$type]['image_url'].'" />';
+            echo '       </li>';
+        }
+        echo '   </ul>';
 
+        echo '    <div id="'.$key.'_info" class="accordion">';
+        echo '       <h3>Thông tin</h3>';
+        echo '       <div>';
+        if ($cost[$key]['info'] != '')
+            echo '<p>'.$cost[$key]['info'].'</p>';
+        foreach($arr as $type => $type_value) {
+            if ($arr[$type]['info'] != '')
+            echo '<p>'.$arr[$type]['info'].'</p>';
+        }
 
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
 
+        echo '<br class="clear" />';
+        echo '</div>';
+    }
+?>
 
-    <br class="clear" />
-</div>
-<div id="accommodation" class="span12">
-        <div class="cost_title span12">Nơi ở<div id="accommodation_cost" class="cost">0</div></div>
-        <div class="span11">
-            <ul id="accommodation_option">
-                <li cost="0" class="accommodation_active">
-                    <img src="./templates/green/images/budget/nocost.png" />
-                </li>
-                <li cost="100">
-                    <img src="./templates/green/images/budget/hostel.png" />
-                </li>
-                <li cost="500">
-                    <img src="./templates/green/images/budget/hotel.png" />
-                </li>
-                <li cost="1500">
-                    <img src="./templates/green/images/budget/hotel_premium.png" />
-                </li>
-            </ul>
-
-            <div id="accommodation_info" class="accordion">
-                <h3>Thông tin</h3>
-                <div>
-                    <p>
-                        Những nhà nghỉ giá rẻ: nhà khách quân đội
-                    </p>
-                    <p>
-                        Khách sạn bình dân: khu Bàu Cát, Phan Xích Long
-                    </p>
-                    <p>
-                        Khách sạn cao cấp: Rex, Sheraton, New World
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-    <br class="clear" />
-</div>
-<div id="food" class="span12">
-    <div class="cost_title span12">Ẩm thực<div id="food_cost" class="cost">0</div></div>
-    <div class="span11">
-        <ul id="food_option">
-            <li cost="0" class="food_active">
-                <img src="./templates/green/images/budget/nocost.png" />
-            </li>
-            <li cost="100">
-                <img src="./templates/green/images/budget/food_court.png" />
-            </li>
-            <li cost="500">
-                <img src="./templates/green/images/budget/restaurant.png" />
-            </li>
-            <li cost="1500">
-                <img src="./templates/green/images/budget/restaurant_premium.png" />
-            </li>
-        </ul>
-
-        <div id="food_info" class="accordion">
-            <h3>Thông tin</h3>
-            <div>
-                <p>
-                    Ẩm thực hè phố: Có thể theo dọc những đoạn đường ven trung tâm như Đinh Tiên Hoàng, Bùi Thị Xuân...
-                </p>
-                <p>
-                    Nhà hàng bình dân: khu Lý Tự Trọng, Lê Duẩn
-                </p>
-                <p>
-                    Nhà hàng sang trọng: Rex, Caravelle, Lion...
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br class="clear" />
-</div>
-<div id="transport" class="span12">
-    <div class="cost_title span12">Đi lại<div id="transport_cost" class="cost">0</div></div>
-    <div class="span11">
-        <ul id="transport_option">
-            <li cost="0" class="transport_active">
-                <img src="./templates/green/images/budget/nocost.png" />
-            </li>
-            <li cost="50">
-                <img src="./templates/green/images/budget/bus.png" />
-            </li>
-            <li cost="400">
-                <img src="./templates/green/images/budget/taxi.png" />
-            </li>
-        </ul>
-
-        <div id="transport_info" class="accordion">
-            <h3>Thông tin</h3>
-            <div>
-                <p>
-                    Xe buýt: Hệ thống xe buýt khá là phát triển. Có thể bắt buýt trên những tuyến đường...
-                </p>
-                <p>
-                    Taxi: Nên đi taxi của những hãng Mai Linh, Vinasun để tránh nạn taxi dù chặt chém
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br class="clear" />
-</div>
-<div id="personal_expense" class="span12">
-    <div class="cost_title span12">Chi tiêu cá nhân<div id="personal_expense_cost" class="cost">0</div></div>
-    <div class="span11">
-        <ul id="personal_expense_option">
-            <li cost="0" class="personal_expense_active">
-                <img src="./templates/green/images/budget/nocost.png" />
-            </li>
-            <li cost="100">
-                <img src="./templates/green/images/money/low.png" />
-            </li>
-            <li cost="300">
-                <img src="./templates/green/images/money/medium.png" />
-            </li>
-            <li cost="800">
-                <img src="./templates/green/images/money/high.png" />
-            </li>
-        </ul>
-
-        <div id="personal_expense_info" class="accordion">
-            <h3>Thông tin</h3>
-            <div>
-                <p>
-                    Mua đồ giá rẻ: khu chợ Lớn, chợ Gò Vấp
-                </p>
-                <p>
-                    Mua đồ giá trung: chợ Bến Thành, chợ Lớn
-                </p>
-                <p>
-                    Mua đồ cao cấp: Các trung tâm mua sắm như Diamond, Parkson Hùng Vương, Vincom...
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br class="clear" />
-</div>
-<div id="other" class="span12">
-    <div class="cost_title span12">Các chi phí khác<div id="other_cost" class="cost">0</div></div>
-    <div class="span11">
-        <ul id="other_option">
-            <li cost="0">
-                <img src="./templates/green/images/budget/departure_tax.png" />
-            </li>
-            <li cost="0">
-                <img src="./templates/green/images/budget/visa.png" />
-            </li>
-        </ul>
-
-        <div id="other_info" class="accordion">
-            <h3>Thông tin</h3>
-            <div>
-                <p>
-                    Không áp dụng với Sài Gòn
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br class="clear" />
-</div>
 <div style="clear:both"></div>
 </div>
 </div>
@@ -1034,7 +623,7 @@ jQuery.noConflict();
     $(document).ready(function () {
         avatarTemplate.url.base = "http://www.beautiful-templates.com/demo/templates-joomla/st_green/";
         avatarTemplate.template.name = "st_green";
-        avatarTemplate.template.params = {"template_panel_setting": "1", "active_responsive": "1", "load_jquery": "1", "template_showcase": "-1", "template_background": "0", "doctype": "5", "show_main_body": "1", "hide_menu_items": ["101"], "show_message": "1", "404_article": "", "template_width": "1200px", "avatar_header_block": "block-default-width", "avatar_header_inside_block": "block-default-width", "avatar_tool_block": "block-max-width-100", "avatar_body_top_block": "block-default-width", "avatar_body_middle_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_footer_inside_block": "block-default-width", "avatar_footer_block": "block-default-width", "avatar_full_1_block": "block-default-width", "avatar_full_2_block": "block-default-width", "avatar_full_3_block": "block-default-width", "avatar_full_4_block": "block-default-width", "avatar_full_5_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_full_6_block": "block-default-width", "top_left": 20, "top_right": 80, "promo_top_left": 33.33, "promo_top_right": 33.33, "promo_bottom_left": 33.33, "promo_bottom_right": 33.33, "left": 23, "right": 23, "inner_left": 23, "inner_right": 23, "footer_left": 33.33, "footer_right": 33.33, "link_color": "", "hover_color": "", "body_font": "", "menu_font": "", "google_font_api": "0", "google_font_api_key": "", "google_font_content": "", "heading_1": "", "heading_2": "", "heading_3": "", "heading_4": "", "heading_5": "", "heading_6": "", "customize_css": "", "go_to_top": "1", "go_to_top_text": "", "go_to_top_css": "", "css3_effect": "1", "css3_effect_scroll": ".avatar-css3-effect-scroll", "optimize": "0"};
+        avatarTemplate.template.params = {"template_panel_setting": "1", "active_responsive": "1", "load_jquery": "1", "template_showcase": "-1", "template_background": "0", "doctype": "5", "show_main_body": "1", "hide_menu_items": ['101'], "show_message": "1", "404_article": "", "template_width": "1200px", "avatar_header_block": "block-default-width", "avatar_header_inside_block": "block-default-width", "avatar_tool_block": "block-max-width-100", "avatar_body_top_block": "block-default-width", "avatar_body_middle_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_footer_inside_block": "block-default-width", "avatar_footer_block": "block-default-width", "avatar_full_1_block": "block-default-width", "avatar_full_2_block": "block-default-width", "avatar_full_3_block": "block-default-width", "avatar_full_4_block": "block-default-width", "avatar_full_5_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_full_6_block": "block-default-width", "top_left": 20, "top_right": 80, "promo_top_left": 33.33, "promo_top_right": 33.33, "promo_bottom_left": 33.33, "promo_bottom_right": 33.33, "left": 23, "right": 23, "inner_left": 23, "inner_right": 23, "footer_left": 33.33, "footer_right": 33.33, "link_color": "", "hover_color": "", "body_font": "", "menu_font": "", "google_font_api": "0", "google_font_api_key": "", "google_font_content": "", "heading_1": "", "heading_2": "", "heading_3": "", "heading_4": "", "heading_5": "", "heading_6": "", "customize_css": "", "go_to_top": "1", "go_to_top_text": "", "go_to_top_css": "", "css3_effect": "1", "css3_effect_scroll": ".avatar-css3-effect-scroll", "optimize": "0"};
         avatarTemplate.image.initEffects();
         avatarTemplate.layout.init();
         avatarTemplate.settingPanel.init();
@@ -1074,7 +663,18 @@ jQuery.noConflict();
                     $('#a' + curr).addClass('collapsed');
                     $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
                     $('#collapse' + curr).addClass('in').height('auto');
-                    //$("#info").zAccordion("trigger", startDay.getMonth());
+                    alert(startDay + ' ' + endDay);
+                    $.ajax({
+                        url: "index.php?option=com_data&format=raw",
+                        type: "post",
+                        data: {'request':'SetDay','StartDay':startDay, 'EndDay':endDay},
+                        success: function(msg){
+                            alert(msg);
+                        },
+                        error:function(){
+                            alert("failure");
+                        }
+                    });
                 }
             }
         });
@@ -1089,73 +689,88 @@ jQuery.noConflict();
 
         $("#city_start").select2();
         $("#city_start").on("change", function(e) { $("#city").text($("#city_start").select2("data").text);
-            //alert(e.val + ' ' + e.added + ' ' +e.removed)
         });
-        $("#day_list").select2();
         $("#day_list").on("change", function(e) {
+            previousDay = day;
             day = parseInt($("#day_list").select2("data").text);
-            recalculateTotalCost();
+
+            recalculateTotalCost(true);
+
+            $.ajax({
+                url: "index.php?option=com_data&format=raw",
+                type: "post",
+                data: {'request':'SetNumOfDay','NumOfDay':day},
+                success: function(msg){
+                    if (msg != '')
+                        setTimeout(function() {
+                            $.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: 'success', width: 'auto' });
+                        }, 1000);
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert("some error " + errorThrown);
+                }
+            });
         });
 
         $("#day_list").select2();
 
         $("#city_end").select2();
 
-
+        $("#day_list").select2("val","<?php echo $_SESSION['NumOfDay']; ?>");
 
         $('.accordion').accordion({
             collapsible: true,
             active: false
         });
 
-        var other_cost = 0;
-        var total_cost = 0;
         var day = 1;
+        var previousDay = 1;
 
-        var cost_name = new Array();
-        cost_name[0] = 'vehicle';
-        cost_name[1] = 'accommodation';
-        cost_name[2] = 'food';
-        cost_name[3] = 'transport';
-        cost_name[4] = 'personal_expense';
-        cost_name[5] = 'other';
+        var cost_name = ['vehicle','accommodation','food','transport','personal_expense','other'];
 
-        $('#vehicle_option li').click(function () {
-            $('.vehicle_active').removeClass('vehicle_active');
-            var $btn = $(this).addClass('vehicle_active'), idx = $btn.index();
-            document.getElementById('vehicle_cost').innerHTML = $(this).attr('cost');
-            recalculateTotalCost();
-        })
+        function SetCost(category, choice, totalCost){
+            $.ajax({
+                url: "index.php?option=com_data&format=raw",
+                type: "post",
+                data: {'request':'SetCost','TotalCost':totalCost, 'Category':category, 'Choice':choice},
+                success: function(msg){
+                    if (msg != '')
+                        setTimeout(function() {
+                            $.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: 'success', width: 'auto' });
+                        }, 1000);
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert("some error " + errorThrown);
+                }
+            });
+        }
 
-        $('#accommodation_option li').click(function () {
-            $('.accommodation_active').removeClass('accommodation_active');
-            var $btn = $(this).addClass('accommodation_active'), idx = $btn.index();
-            document.getElementById('accommodation_cost').innerHTML = $(this).attr('cost');
-            recalculateTotalCost();
-        })
+        function SetClickCost(category, timesDay) {
+            $('#' + category + '_option li').click(function () {
+                $('.' + category + '_active').removeClass(category + '_active');
+                $(this).addClass(category + '_active');
 
-        $('#food_option li').click(function () {
-            $('.food_active').removeClass('food_active');
-            var $btn = $(this).addClass('food_active'), idx = $btn.index();
-            document.getElementById('food_cost').innerHTML = $(this).attr('cost');
-            recalculateTotalCost();
-        })
+                var amt_to_add = $(this).attr('cost');
 
-        $('#transport_option li').click(function () {
-            $('.transport_active').removeClass('transport_active');
-            var $btn = $(this).addClass('transport_active'), idx = $btn.index();
-            document.getElementById('transport_cost').innerHTML = $(this).attr('cost');
-            recalculateTotalCost();
-        })
+                if (timesDay) {
+                    amt_to_add = amt_to_add / previousDay * day;
+                }
 
-        $('#personal_expense_option li').click(function () {
-            $('.personal_expense_active').removeClass('personal_expense_active');
-            var $btn = $(this).addClass('personal_expense_active'), idx = $btn.index();
-            document.getElementById('personal_expense_cost').innerHTML = $(this).attr('cost');
-            recalculateTotalCost();
-        })
+                SetCost(category,$(this).attr('type'),amt_to_add);
+                $('#' + category + '_cost').html(amt_to_add);
+
+                recalculateTotalCost(false);
+            })
+        }
+
+        SetClickCost('vehicle',false);
+        SetClickCost('accommodation',true);
+        SetClickCost('food',true);
+        SetClickCost('transport',true);
+        SetClickCost('personal_expense',true);
 
         $('#other_option li').click(function () {
+            var other_cost = parseInt($('#other_cost').html());
             var value = parseInt($(this).attr('cost'));
             if ($(this).hasClass('other_active')) {
                 $(this).removeClass('other_active');
@@ -1165,20 +780,32 @@ jQuery.noConflict();
                 $(this).addClass('other_active');
                 other_cost += value;
             }
-            document.getElementById('other_cost').innerHTML = other_cost;
-            recalculateTotalCost();
+            $('#other_cost').html(other_cost);
+
+            SetCost('other',$(this).attr('type'),other_cost);
+            $('#other_cost').html(other_cost);
+
+            recalculateTotalCost(false);
         })
 
-        function recalculateTotalCost() {
-            total_cost = 0;
+        function recalculateTotalCost(update) {
+            var total_cost = 0;
+            var amt_to_add = 0;
 
             for (var i = 0; i < cost_name.length; i++) {
-                if (1 <= i && i <= 4)
-                    total_cost += parseInt(document.getElementById(cost_name[i] + '_cost').innerHTML) * day;
-                else
-                    total_cost += parseInt(document.getElementById(cost_name[i] + '_cost').innerHTML);
+                amt_to_add = parseInt(document.getElementById(cost_name[i] + '_cost').innerHTML);
+
+                if (update) {
+                    if (1 <= i && i <= 4)
+                        amt_to_add = amt_to_add / previousDay * day;
+
+                    SetCost(cost_name[i],'', amt_to_add);
+                    $('#' + cost_name[i] + '_cost').html(amt_to_add);
+                }
+
+                total_cost += amt_to_add;
             }
-            document.getElementById('total_cost').innerHTML = total_cost;
+            $('#total_cost').html(total_cost);
         }
 
         $('.vote-icon').click(function () {
@@ -1349,6 +976,20 @@ jQuery.noConflict();
     jQuery.noConflict();
     (function ($) {
         jQuery(document).ready(function () {
+            $('.nav-tabs li').click(function (event) {
+                $.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'request':'SetTransport','transport':$(this).find('a').attr('href').replace('#','').replace('_start','').replace('_end',''), 'direction':$(this).parent().attr('id')},
+                    success: function(msg){
+                        alert(msg);
+                    },
+                    error:function(){
+                        alert("failure");
+                    }
+                });
+            });
+
             setTimeout(function () {
                 var left_hei = $(".timeline-left").height();
                 var right_hei = $(".timeline-right").height();

@@ -1,0 +1,148 @@
+{
+    "vehicle": {
+        "name": "Đi Tới",
+        "type": {
+            "nocost": {
+                "cost" : "0",
+                "image_url" : "budget/nocost.png",
+                "info":""
+            },
+            "coach": {
+                "cost" : "500",
+                "image_url" : "transport/coach.png",
+                "info":"Xe buýt: các bến xe lớn như Miền Đông, Miền Tây"
+            },
+            "ship": {
+                "cost" : "900",
+                "image_url" : "transport/ship.png",
+                "info":"Thuyền: Cập vào bến cảng Sài Gòn"
+            },
+            "train": {
+                "cost" : "1100",
+                "image_url" : "transport/train.png",
+                "info":"Xe lửa: Tới Ga Hòa Hưng"
+            },
+            "plane": {
+                "cost" : "2000",
+                "image_url" : "transport/airplane.png",
+                "info":"Máy bay xuất phát chuyến sớm nhất từ sân bay Nội Bài là 7h sáng và trễ nhất là 10 tối. Khoảng cách chuyến là 2h. Có các hãng bay Vietjet, Jetstar, Vietnam Airline"
+            }
+        },
+        "info":""
+    },
+    "accommodation": {
+        "name": "Nơi Ở",
+        "type": {
+            "nocost": {
+                "cost" : "0",
+                "image_url" : "budget/nocost.png",
+                "info": ""
+            },
+            "hostel": {
+                "cost" : "100",
+                "image_url" : "budget/hostel.png",
+                "info":"Nhà nghỉ bình dân tập trung ở khu đường Nguyễn Trãi quận 1, giá rẻ lại ngay khu trung tâm. Vấn đề an ninh khá là đảm bảo. Các nhà nghỉ uy tín như Vàng Anh, Ngọc Trinh, Phương Trinh..."
+            },
+            "hotel": {
+                "cost" : "500",
+                "image_url" : "budget/hotel.png",
+                "info":"Khách sạn bình dân: khu Bàu Cát, Phan Xích Long"
+            },
+            "hotel_premium": {
+                "cost" : "1500",
+                "image_url" : "budget/hotel_premium.png",
+                "info":"Khách sạn cao cấp: Rex, Sheraton, New World"
+            }
+        },
+        "info":""
+    },
+    "food": {
+        "name": "Ăn Uống",
+        "type": {
+            "nocost": {
+                "cost" : "0",
+                "image_url" : "budget/nocost.png",
+                "info": ""
+            },
+            "food_court": {
+                "cost" : "100",
+                "image_url" : "budget/food_court.png",
+                "info":"Khu Phạm Ngũ Lão nhiều đồ ăn Tây với giá cả phải chăng. Nếu thích đồ ăn vặt bán có thể đi ven theo chợ Bến Thành nhất là vào ban đêm"
+            },
+            "restaurant": {
+                "cost" : "500",
+                "image_url" : "budget/restaurant.png",
+                "info":"Nhà hàng bình dân: khu Lý Tự Trọng, Lê Duẩn"
+            },
+            "restaurant_premium": {
+                "cost" : "1500",
+                "image_url" : "budget/restaurant_premium.png",
+                "info": "Nhà hàng sang trọng: Rex, Caravelle, Lion..."
+            }
+        },
+        "info":""
+    },
+    "transport": {
+        "name": "Đi Lại",
+        "type": {
+            "nocost": {
+                "cost" : "0",
+                "image_url" : "budget/nocost.png",
+                "info": ""
+            },
+            "bus": {
+                "cost" : "50",
+                "image_url" : "budget/bus.png",
+                "info": "Xe buýt đi lại rất rẻ, trung bình chỉ có 5,000 cho một lượt đi. Về các tuyến xe bạn có thể tham khảo <a href=\"http:\\\\www.google.com\">Các Tuyến Xe Buýt Sài Gòn</a>"
+            },
+            "taxi": {
+                "cost" : "400",
+                "image_url" : "/budget/taxi.png",
+                "info": "Taxi: Nên đi taxi của những hãng Mai Linh, Vinasun để tránh nạn taxi dù chặt chém"
+            }
+        },
+        "info":""
+    },
+    "personal_expense": {
+        "name": "Chi Tiêu Riêng",
+        "type": {
+            "nocost": {
+                "cost" : "0",
+                "image_url" : "budget/nocost.png",
+                "info": ""
+            },
+            "low": {
+                "cost" : "100",
+                "image_url" : "money/low.png",
+                "info":"Các khu shopping trung tâm giá cả khá bình dân. Bạn có thể ghé ngang qua những trung tâm Parkson, Vincom, Lotte Mart để chọn mua những sản phẩm vừa ý"
+            },
+            "medium": {
+                "cost" : "300",
+                "image_url" : "money/medium.png",
+                "info":"Mua đồ giá trung: chợ Bến Thành, chợ Lớn"
+            },
+            "high": {
+                "cost" : "300",
+                "image_url" : "money/high.png",
+                "info": "Mua đồ cao cấp: Các trung tâm mua sắm như Diamond, Parkson Hùng Vương, Vincom..."
+            }
+        },
+        "info":""
+    },
+    "other": {
+        "name": "Khác",
+        "type": {
+            "departure_tax": {
+                "cost" : "0",
+                "image_url" : "budget/departure_tax.png",
+                "info": ""
+            },
+            "visa": {
+                "cost" : "0",
+                "image_url" : "budget/visa.png",
+                "info": ""
+            }
+        },
+        "info":"<p>Không áp dụng với Sài Gòn</p>"
+    }
+}

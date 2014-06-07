@@ -2,21 +2,43 @@
     "1": {
         "name": "Cơm Tấm",
         "image_url" : "com_tam.jpg",
-        "description": "Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này."
+        "description": "Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này.",
+        "address":"321 Lê Quang Định, Phường 1 Gò Vấp"
     },
     "2": {
         "name": "Hủ Tiếu Nam Vang",
         "image_url" : "hu_tieu_nam_vang.jpg",
-        "description": "Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng."
+        "description": "Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng.",
+        "address": "123 Lý Thái Tổ, Phường 12 Quận 1"
     },
     "3": {
         "name": "Bánh Khọt",
         "image_url" : "banh_khot.jpg",
-        "description": "Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua)."
+        "description": "Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua).",
+        "address": "10 Phan Đình Phùng Phường 6 Quận 3"
     },
     "4": {
         "name": "Sầu Riêng",
         "image_url" : "sau_rieng.jpg",
-        "description": "Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu."
+        "description": "Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu.",
+        "address": "69 Võ Văn Kiệt, Phường 8 Quận 6"
+    },
+    "5": {
+        "name": "Bánh Tráng Trộn",
+        "image_url" : "banh_trang_tron.jpg",
+        "description": "Bánh tráng trộn ngon tuyệt cú mèo, là món hàng bán trước cổng trường của biết bao học sinh",
+        "address": "23 Nguyễn Thái Học, Phường 6, Quận 1"
+    },
+    "6": {
+        "name": "Đá Me",
+        "image_url" : "da_me.jpg",
+        "description": "Nước đá me, món giải khát không thể thiếu vào những ngày hè nóng bức. Chỉ nghĩ tới là đã thèm",
+        "address": "123 Hùng Vương, Quận 5"
+    },
+    "7": {
+        "name": "Măng Cụt",
+        "image_url" : "mang_cut.jpg",
+        "description": "Món trái cây ưa thích của dân miền Nam. Quả ngon và ngọt, còn vỏ thì có thể dùng làm vị thuốc quí",
+        "address": "101 Lê Lai, Quận 1"
     }
 }

@@ -1,6 +1,7 @@
 <?php
 /** Toi Ba Lo */
 defined('_JEXEC') or die;
+include JPATH_COMPONENT."/../com_data/data.php";
 
 ?>
 
@@ -307,24 +308,23 @@ defined('_JEXEC') or die;
     </div>
 
     <?php
-    $bo_title = array ('Cơm Tấm','Hủ tiếu nam vang','Bánh tráng trộn', 'Đá me', 'Măng Cụt', 'Sầu Riêng');
-    $bo_image = array ('com_tam.jpg','hu_tieu_nam_vang.jpg','banh_trang_tron.jpg', 'da_me.jpg', 'mang_cut.jpg','sau_rieng.jpg');
-    $bo_address = array ('321 Lê Quang Định, Phường 1 Gò Vấp','123 Lý Thái Tổ, Phường 12 Quận 1','23 Nguyễn Thái Học, Phường 6, Quận 1', '123 Hùng Vương, Quận 5', '101 Lê Lai, Quận 1', '69 Võ Văn Kiệt, Phường 8 Quận 6');
-    for($i = 0; $i < count($bo_title); $i++) {
-        ?>
-        <div class='span4' style="margin-bottom:20px;<?php if ($i % 3 == 0) echo("margin-left:0px;");?>">
-            <div class='box_title'><?php echo $bo_title[$i]; ?></div>
-            <div class='box_content'>
-                <div class='box_image'>
-                    <img src="./templates/green/images/<?php echo $bo_image[$i]; ?>"/>
-                </div>
-                <div class='box_comment'>
-                    <?php echo $bo_address[$i]; ?>
-                </div>
-            </div>
-        </div>
-    <?php } ?>
+        $arr = $_SESSION['select_food'];
+        $i = 0;
+        foreach($arr as $food) {
+            $temp = GetFoodByIdPHP($food);
 
+            echo '<div class="span4" style="margin-bottom:20px;'.($i % 3 == 0? 'margin-left:0px;':'').'">';
+            echo '<div class="box_title">'.$temp["name"].'</div>';
+            echo '<div class="box_content">';
+            echo '<div class="box_image">';
+            echo '   <img src="./templates/green/images/'.$temp["image_url"].'"/>';
+            echo '</div>';
+            echo '<div class="box_comment">'.$temp["address"].'</div>';
+            echo '</div>';
+            echo '</div>';
+            $i++;
+        }
+    ?>
     <div class='clearfix'></div>
 </div>
 
@@ -335,35 +335,19 @@ defined('_JEXEC') or die;
         </div>
         <div></div>
     </div>
-
-    <div class="span12 advice">
-        <div class="st-icon-star span1"></div>
-        <div class="span10">
-            <p>Chợ Bến Thành</p>
-            <p>Bạn nên dành thời gian ghé qua khu chợ đêm nổi tiếng với các món hàng hóa độc đáo và những món ăn vặt tuyệt cú mèo như các loại xôi, phở...</p>
-        </div>
-    </div>
-    <div class="span12 advice">
-        <div class="st-icon-food span1"></div>
-        <div class="span10">
-            <p>Bánh tráng trộn</p>
-            <p>Teen Sài Gòn hay ghé góc phố Nguyễn Thái Học và Trần Hưng Đạo để thưởng thức những bịch bánh tráng trôn ngon tuyệt cú mèo</p>
-        </div>
-    </div>
-    <div class="span12 advice">
-        <div class="st-icon-cup span1"></div>
-        <div class="span10">
-            <p>Phố Tây Phạm Ngũ Lão</p>
-            <p>Hòa mình vào khu phố của những khách Tây Ba Lô trên đoạn Phạm Ngũ Lão và Bùi Viện. Nơi Tây Ba Lô gặp gỡ Ta Ba Lô</p>
-        </div>
-    </div>
-    <div class="span12 advice">
-        <div class="st-icon-camera span1"></div>
-        <div class="span10">
-            <p>Nơi chụp ảnh</p>
-            <p>Khu vực xung quanh nhà thờ Đức Bà, dinh Độc Lập, Bưu Điện Thành Phố là địa điểm ưa thích của các bạn trẻ để lưu giữ lại hình ảnh xưa và nay của Sài Gòn.</p>
-        </div>
-    </div>
+    <?php
+        $arr = $_SESSION['select_advice'];
+        foreach($arr as $attraction) {
+            $temp = GetAdviceByIdPHP($attraction);
+            echo '<div class="span12 advice">';
+            echo '<div class="'.$temp["icon"].' span1"></div>';
+            echo '<div class="span10">';
+            echo '<p>'.$temp["name"].'</p>';
+            echo '<p>'.$temp["content"].'</p>';
+            echo '</div>';
+            echo '</div>';
+        }
+    ?>
 
     <div style="clear:both"></div>
 </div>
@@ -379,58 +363,45 @@ defined('_JEXEC') or die;
     <div style="position:relative">
 <!--        <span class="attraction_point" style="top:335px;left:343px;">1</span>-->
         <img src="./templates/green/images/Attraction/sai_gon_map.jpg"/>
-        <span class="attraction_point" style="top:39%;left:77%;">1</span>
-        <span class="attraction_point" style="top:44%;left:69%;">2</span>
-        <span class="attraction_point" style="top:58%;left:74%;">3</span>
+        <?php
+            $arr = $_SESSION['select_attraction'];
+            $temp = array();
+            $i = 1;
+            foreach($arr as $attraction) {
+                $temp[$attraction] = GetAttractionByIdPHP($attraction);
+                echo '<span class="attraction_point" style="top:'.$temp[$attraction]["top"].';left:'.$temp[$attraction]["left"].';">'.$i.'</span>';
+                $i++;
+            }
+        ?>
+
     </div>
 
 
+    <?php
+    $i = 1;
+    foreach($temp as $attraction) {
+        echo '<div class="span12 attraction">';
+        echo '<div class="span2"><img src="./templates/green/images/'.$attraction["image_url"].'"/></div>';
+        echo '<div class="span10">';
+        echo '  <p>'.$i.') '.$attraction["name"].'</p>';
+        echo '   <p>'.$attraction["description"].'</p>';
+        echo '<div class="span5"><p><img src="./templates/green/images/icon/time.png"/> <b id="attraction_hour">'.$attraction["hour"].'</b></p></div>';
+        echo '   <div class="span4"><p><img src="./templates/green/images/icon/price.png"> <b id="attraction_price">'.$attraction["price"].'</b></p></div>';
+        echo '   <div class="span5"><p><img src="./templates/green/images/icon/address.png"> <b id="attraction_address">'.$attraction["address"].'</b></p></div>';
+        echo '  <div class="span4"><p><img src="/green/./templates/green/images/icon/phone.png"> <b id="attraction_phone">'.$attraction["address"].'</b></p></div>';
+        echo '</div>';
+        echo '<div style="clear:both"></div>';
+        echo '</div>';
+        $i++;
+    }
+    ?>
 
-    <div class="span12 attraction">
-        <div class="span2"><img src="./templates/green/images/nha_tho_duc_ba.jpg"/></div>
-        <div class="span10">
-            <p>1) Nhà Thờ Đức Bà</p>
-            <p>Trải qua hơn 100 năm và qua 3 thế kỷ, Nhà thờ Đức Bà Sài Gòn, tên chính thức là Vương cung Thánh đường Chính tòa Đức Mẹ Vô nhiễm Nguyên tội (Immaculate Conception Cathedral Basilica) vẫn đẹp lộng lẫy, tráng lệ và uy nghiêm; được coi là một tuyệt tác kiến trúc đô thị Sài Gòn. Đây là một công trình nhà thờ Công giáo nói riêng và tôn giáo nói chung rất đặc sắc, có quy mô thuộc loại lớn nhất ở Việt Nam. Cùng với một số công trình lân cận ở quận 1 như Nhà Bưu Điện trung tâm, Nhà hát thành phố, Bệnh viện Nhi Đồng 2…; Nhà thờ Đức Bà là một công trình tiêu biểu tạo nên bộ mặt kiến trúc đô thị Sài Gòn – Thành phố Hồ Chí Minh.
-            </p>
-            <div class="span5"><p><img src="./templates/green/images/icon/time.png"/> <b id="attraction_hour">8h00 - 10h00 & 14h30 - 15h30 các ngày trong tuần</b></p></div>
-            <div class="span4"><p><img src="./templates/green/images/icon/price.png"> <b id="attraction_price">Miễn phí</b></p></div>
-            <div class="span5"><p><img src="./templates/green/images/icon/address.png"> <b id="attraction_address">2 Công xã Paris, Bến Nghé, Thành Phố Hồ Chí Minh</b></p></div>
-            <div class="span4"><p><img src="/green/./templates/green/images/icon/phone.png"> <b id="attraction_phone">08 3822 1677</b></p></div>
-        </div>
-        <div style="clear:both"></div>
-    </div>
-
-    <div class="span12 attraction">
-        <div class="span2"><img src="./templates/green/images/dinh_doc_lap.jpg"/></div>
-        <div class="span10">
-            <p>2) Dinh Độc Lập</p>
-            <p>Dinh Độc Lập (tên gọi trước đây là dinh Norodom, ngày nay còn gọi là dinh Thống Nhất hay hội trường Thống Nhất) là một công trình kiến trúc ở Thành phố Hồ Chí Minh. Hiện nay, nó đã được thủ tướng chính phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt.Vẻ đẹp kiến trúc của Dinh còn được thể hiện bởi bức rèm hoa đá mang hình dáng những đốt trúc thanh tao bao xung quanh lầu 2. Rèm hoa đá được biến cách từ bức cửa bàn khoa của các cung điện Cố đô Huế không chỉ làm tăng vẻ đẹp của Dinh mà còn có tác dụng lấy ánh sáng mặt trời. Ði vào bên trong Dinh, tất cả các đuờng nét kiến trúc đều dùng đường ngay sổ thẳng, các hành lang, đại sảnh, các phòng ốc đều lấy câu chính đại quang minh làm gốc.
-            </p>
-            <div class="span5"><p><img src="./templates/green/images/icon/time.png"/> <b id="attraction_hour">7h30-11h00 & 13h00-16h00 các ngày trong tuần</b></p></div>
-            <div class="span4"><p><img src="./templates/green/images/icon/price.png"> <b id="attraction_price">+ Người lớn: 30.000đ/người/lần.<br/> + Sinh viên: 15.000đ/người/lần.<br/>+ Học sinh (từ 6 tuổi đến 17 tuổi): 3.000đ/người/lần</b></p></div>
-            <div class="span5"><p><img src="./templates/green/images/icon/address.png"> <b id="attraction_address">135 Nam Kỳ Khởi Nghĩa, quận 1, Thành phố Hồ Chí Minh</b></p></div>
-            <div class="span4"><p><img src="/green/./templates/green/images/icon/phone.png"> <b id="attraction_phone"> 080. 85037 - 080. 85038 - 080. 85039 – 083.8223652</b></p></div>
-        </div>
-    </div>
-    <div class="span12 attraction">
-        <div class="span2"><img src="./templates/green/images/cho_ben_thanh.jpg"/></div>
-        <div class="span10">
-            <p>3) Chợ Bến Thành</p>
-            <p>Nằm ở khu vực trung tâm thành phố, từ lâu chợ Bến Thành đã trở thành biểu tượng của Sài Gòn. Không chỉ thuần túy là nơi buôn bán, gần một trăm năm qua ngôi chợ này đã trở thành một chứng nhân lịch sử chứng kiến bao đổi thay thăng trầm của thành phố, là bộ mặt kinh tế nói lên sự phát triển của một thành phố thương mại lớn nhất nước và là điểm giao hòa giữa Sài Gòn xưa và nay.Bến Thành được xem là chợ bán lẻ quy mô nhất theo nghĩa có thể tìm thấy tại nơi này đủ thứ mặt hàng, từ bình dân đến cao cấp, đặc biệt hàng thực phẩm thuộc loại chọn lọc nhất. Ở đây không thiếu một thứ gì, từ củ hành, trái ớt, mớ rau, con cá, đủ loại hoa quả mùa nào thức nấy, cho tới bánh kẹo, vải vóc, giày dép, túi xách, đồ điện, điện tử, hàng lưu niệm...
-            </p>
-            <div class="span5"><p><img src="./templates/green/images/icon/time.png"/><b id="attraction_hour">7h – 19h, chợ đêm mở từ 19h – 23h45</b></p></div>
-            <div class="span4"><p><img src="./templates/green/images/icon/price.png"><b id="attraction_price">Miễn phí</b></p></div>
-            <div class="span5"><p><img src="./templates/green/images/icon/address.png"><b id="attraction_address">Cửa Nam (nằm giữa các đường Phan Bội Châu - Phan Chu Trinh - Lê Thánh Tôn - Công trường Quách Thị Trang) - Phường Bến Thành - Quận 1</b></p></div>
-            <div class="span4"><p><img src="/green/./templates/green/images/icon/phone.png"><b id="attraction_phone">(08)8292096</b></p></div>
-        </div>
-    </div>
-    <div style="clear:both"></div>
 </div>
 
 <div class="span12">
     <div class="span12 section_head">
         <div>
-            <p>Chi Phí 5 Ngày</p>
+            <p>Chi Phí <?php echo $_SESSION['NumOfDay'];?> Ngày</p>
         </div>
         <div></div>
     </div>
@@ -439,41 +410,45 @@ defined('_JEXEC') or die;
         <table>
             <tr>
                 <th>Tổng Chi Phí</th>
-                <th>5,000,000</th>
+                <?php
+                    $arr = $_SESSION['cost'];
+                    $total_cost = 0;
+
+                    foreach ($arr as $key => $value) {
+                        $total_cost += $value["totalCost"];
+                    }
+
+
+                ?>
+                <th><?php echo number_format($total_cost*1000);?></th>
             </tr>
-            <tr>
-                <td>Đi Tới</td>
-                <td>2,000,000</td>
-            </tr>
-            <tr>
-                <td>Nơi Ở</td>
-                <td>500,000</td>
-            </tr>
-            <tr>
-                <td>Ăn Uống</td>
-                <td>500,000</td>
-            </tr>
-            <tr>
-                <td>Đi Lại</td>
-                <td>400,000</td>
-            </tr>
-            <tr>
-                <td>Chi Tiêu Riêng</td>
-                <td>1,600,000</td>
-            </tr>
-            <tr>
-                <td>Khác</td>
-                <td>0</td>
-            </tr>
+
+            <?php
+                $temp = GetCostData();
+
+                foreach ($arr as $key => $value) {
+                    echo'<tr>';
+                    echo '<td>'.$temp[$key]["name"].'</td>';
+                    echo '<td>'.number_format($value["totalCost"]*1000).'</td>';
+                    echo '</tr>';
+                }
+            ?>
         </table>
     </div>
     <div class="span8 moreinfo">
-        <p style="margin-bottom:10px;">Máy bay xuất phát chuyến sớm nhất từ sân bay Nội Bài là 7h sáng và trễ nhất là 10 tối. Khoảng cách chuyến là 2h. Có các hãng bay Vietjet, Jetstar, Vietnam Airline</p>
-        <p style="margin-bottom:10px;">Nhà nghỉ bình dân tập trung ở khu đường Nguyễn Trãi quận 1, giá rẻ lại ngay khu trung tâm. Vấn đề an ninh khá là đảm bảo. Các nhà nghỉ uy tín như Vàng Anh, Ngọc Trinh, Phương Trinh...</p>
-        <p style="margin-bottom:10px;">Khu Phạm Ngũ Lão nhiều đồ ăn Tây với giá cả phải chăng. Nếu thích đồ ăn vặt bán có thể đi ven theo chợ Bến Thành nhất là vào ban đêm</p>
-        <p style="margin-bottom:10px;">Xe buýt đi lại rất rẻ, trung bình chỉ có 5,000 cho một lượt đi. Về các tuyến xe bạn có thể tham khảo <a href="www.google.com">Các Tuyến Xe Buýt Sài Gòn</a> </p>
-        <p style="margin-bottom:10px;">Các khu shopping trung tâm giá cả khá bình dân. Bạn có thể ghé ngang qua những trung tâm Parkson, Vincom, Lotte Mart để chọn mua những sản phẩm vừa ý</p>
-        <p style="margin-bottom:10px;"></p>
+        <?php
+        $temp = GetCostData();
+
+        foreach ($arr as $key => $value) {
+            if ($temp[$key]["info"] != '')
+                echo '<p style="margin-bottom:10px;">'.$temp[$key]["info"].'</td>';
+
+            foreach($value["element"] as $key_temp => $value_temp) {
+                if ($temp[$key]["type"][$value_temp]["info"] != '')
+                    echo '<p style="margin-bottom:10px;">'.$temp[$key]["type"][$value_temp]["info"].'</td>';
+            }
+        }
+        ?>
     </div>
     <div style="clear:both"></div>
 </div>

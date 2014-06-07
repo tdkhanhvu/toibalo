@@ -20,6 +20,25 @@ if (!isset($_SESSION['select_attraction']))
     $_SESSION['select_attraction']= array();
 if (!isset($_SESSION['like_attraction']))
     $_SESSION['like_attraction']= array();
+if (!isset($_SESSION['NumOfDay']))
+    $_SESSION['NumOfDay']= 1;
+
+if (!isset($_SESSION['cost'])){
+    $_SESSION['cost'] = array();
+    $arr = array('vehicle','accommodation','food','transport','personal_expense','other');
+
+    foreach ($arr as $temp) {
+        $_SESSION['cost'][$temp] = array();
+        $_SESSION['cost'][$temp]['element'] = array();
+        $_SESSION['cost'][$temp]['totalCost'] = 0;
+
+        if ($temp != 'other') {
+            $_SESSION['cost'][$temp]['single'] = true;
+            array_push($_SESSION['cost'][$temp]['element'], 'nocost');
+        }
+        else $_SESSION['cost'][$temp]['single'] = false;
+    }
+}
 
 function GetData($name) {
     $arr =  GetDataFromJsonFile($name);
@@ -55,13 +74,13 @@ function GetEndCityData() {
 function GetStartTransportData() {
     $arr = GetDataFromJsonFile("transport");
 
-    return $arr["depart"];
+    return $arr['depart'];
 }
 
 function GetEndTransportData() {
     $arr = GetDataFromJsonFile("transport");
 
-    return $arr["return"];
+    return $arr['return'];
 }
 
 function GetAdviceData() {
@@ -87,15 +106,111 @@ function GetAttractionById($id) {
     }
 }
 
-if (isset($_POST["request"]) && $_POST["request"] == 'GetAttractionById') {
-    GetAttractionById($_POST["id"]);
+function GetAttractionByIdPHP($id) {
+    $arr = GetAttractionData();
+
+    foreach ($arr as $key => $value) {
+        if ($key == $id)
+            return $arr[$key];
+    }
 }
 
-else if (isset($_POST["type"])) {
-    $type = $_POST["type"];
-    $id = $_POST["id"];
-    $action = $_POST["action"];
-    $source = $_POST["source"];
+function GetAdviceByIdPHP($id) {
+    $arr = GetAdviceData();
+
+    foreach ($arr as $key => $value) {
+        if ($key == $id)
+            return $arr[$key];
+    }
+}
+
+function GetFoodByIdPHP($id) {
+    $arr = GetFoodData();
+
+    foreach ($arr as $key => $value) {
+        if ($key == $id)
+            return $arr[$key];
+    }
+}
+
+function GetMonthInfoData() {
+    return GetDataFromJsonFile("month_info");
+}
+
+function GetCostData() {
+    return GetDataFromJsonFile("cost");
+}
+function SetTransport($transport, $direction) {
+    $_SESSION[$direction] = $transport;
+
+    echo 'Choose ' .  $transport . ' for ' . $direction;
+}
+
+function SetDay($startDay, $endDay) {
+    $_SESSION['StartDay'] = $startDay;
+    $_SESSION['EndDay'] = $endDay;
+
+    echo 'Choose Start day ' .  $startDay . ' and end day ' . $endDay;
+}
+
+function SetCost($category, $option, $totalCost) {
+    $cost_object = $_SESSION['cost'][$category];
+
+    if ($option != '') {
+        if ($cost_object['single'])
+        {
+            $cost_object['element'] = array();
+            array_push($cost_object['element'],$option);
+            echo "You select " . $option . " total cost is " .$totalCost;
+        }
+        else
+        {
+            $index = array_search($option, $cost_object['element']);
+
+            if ($index !== FALSE) {
+                unset($cost_object['element'][$index]);
+                echo "You deselect " . $option . " total cost is " .$totalCost;
+            }
+            else
+            {
+                array_push($cost_object['element'],$option);
+                echo "You select " . $option . " total cost is " .$totalCost;
+            }
+
+            unset($index);
+        }
+    }
+    else echo "Change Total cost for " . $category . " to " . $totalCost;
+
+    $cost_object['totalCost'] = $totalCost;
+    $_SESSION['cost'][$category] = $cost_object;
+
+    echo print_r($_SESSION['cost'][$category]);
+    unset($cost_object);
+}
+
+function SetNumOfDay($day){
+    $_SESSION['NumOfDay']= $day;
+    echo "You have selected " .$day . " days";
+}
+if (isset($_POST['request'])) {
+    if($_POST['request'] == 'GetAttractionById')
+        GetAttractionById($_POST['id']);
+    else if ($_POST['request'] == 'SetTransport')
+        SetTransport($_POST['transport'], $_POST['direction']);
+    else if ($_POST['request'] == 'SetDay')
+        SetDay($_POST['StartDay'], $_POST['EndDay']);
+    else if ($_POST['request'] == 'SetCost')
+        SetCost($_POST['Category'],$_POST['Choice'],$_POST['TotalCost']);
+    else if ($_POST['request'] == 'SetNumOfDay')
+            SetNumOfDay($_POST['NumOfDay']);
+}
+
+else if (isset($_POST['type'])) {
+    $type = $_POST['type'];
+    $id = $_POST['id'];
+    $action = $_POST['action'];
+    $source = $_POST['source'];
 
     switch($type) {
         case "attraction":

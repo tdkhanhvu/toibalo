@@ -1,0 +1,146 @@
+{
+    "1": {
+        "weather": "icon-sun",
+        "crowd": "red_star.png",
+        "money": "high.png",
+        "background_color": "rgb(240, 223, 225)",
+        "background_border": "#FAB6C3",
+        "content": {
+            "1": "Thời tiết khô và nóng, có khi lên tới 39 độ vào ban ngày. Du khách được khuyến cáo không nên ra đường vào bữa trưa",
+            "2": "Thời gian giữa tết tây và tết ta nên lượng du khách đổ tới Sài Gòn khá đông",
+            "3": "Giá cả khá là đắt đỏ, tăng gấp rưỡi so với các tháng khác"
+        }
+    },
+    "2": {
+        "weather": "icon-sun",
+        "crowd": "red_star.png",
+        "money": "high.png",
+        "background_color": "rgb(231, 203, 236)",
+        "background_border": "#E094EE",
+        "content": {
+            "1": "Thời tiết bắt đầu đỡ hơn so với tháng Giêng.",
+            "2": "Đa phần du khách tới Sài Gòn vào mùa này để tận hưởng Tết Cổ Truyền",
+            "3": "Giá cả leo thang, đắt gấp đôi trong năm"
+        }
+    },
+    "3": {
+        "weather": "icon-sun",
+        "crowd": "yellow_star.png",
+        "money": "medium.png",
+        "background_color": "rgb(220, 212, 236)",
+        "background_border": "#AE8FBD",
+        "content": {
+            "1": "Khí hậu bớt oi bức, bắt đầu xuất hiện vài cơn mưa lất phất",
+            "2": "Sau đợt tết, du khách bắt đầu trở về nước",
+            "3": "Giá cả bắt đầu trở lại mức trong năm"
+        }
+    },
+    "4": {
+        "weather": "icon-sun",
+        "crowd": "yellow_star.png",
+        "money": "medium.png",
+        "background_color": "rgb(207, 234, 247)",
+        "background_border": "#6882D3",
+        "content": {
+            "1": "Trời mát, hay xuất hiện mưa buổi chiều",
+            "2": "Đợt không cao điểm trong năm cho du lịch",
+            "3": "Giá cả bắt đầu trở lại mức trong năm"
+        }
+    },
+    "5": {
+        "weather": "icon-sun",
+        "crowd": "green_star.png",
+        "money": "medium.png",
+        "background_color": "rgb(150, 233, 210)",
+        "background_border": "#32C5B4",
+        "content": {
+            "1": "Trời mát, hay xuất hiện mưa buổi chiều",
+            "2": "Đợt không cao điểm trong năm cho du lịch",
+            "3": "Giá cả bắt đầu trở lại mức trong năm"
+        }
+    },
+    "6": {
+        "weather": "icon-sun",
+        "crowd": "green_star.png",
+        "money": "low.png",
+        "background_color": "rgb(207, 234, 247)",
+        "background_border": "#98bf21",
+        "content": {
+            "1": "Mưa nhiều và thường xuyên trong ngày",
+            "2": "Ít du khách tới Sài Gòn vào thời điểm này",
+            "3": "Giá cả thấp so với trong năm"
+        }
+    },
+    "7": {
+        "weather": "icon-sun",
+        "crowd": "green_star.png",
+        "money": "low.png",
+        "background_color": "rgb(176, 219, 197)",
+        "background_border": "#35D64F",
+        "content": {
+            "1": "Mưa với tần suất lớn. Có ngày mưa hơn 12h",
+            "2": "Ít du khách tới Sài Gòn vào thời điểm này",
+            "3": "Giá cả rất thấp do hàng hóa dồi dào"
+        }
+    },
+    "8": {
+        "weather": "icon-sun",
+        "crowd": "green_star.png",
+        "money": "low.png",
+        "background_color": "rgb(150, 228, 153)",
+        "background_border": "#1B9725",
+        "content": {
+            "1": "Mưa bắt đầu ngớt dần, nhưng khí hậu vẫn khá ẩm ướt",
+            "2": "Vẫn chưa có nhiều du khách tới",
+            "3": "Giá cả rất thấp do hàng hóa dồi dào"
+        }
+    },
+    "9": {
+        "weather": "icon-sun",
+        "crowd": "yellow_star.png",
+        "money": "medium.png",
+        "background_color": "rgb(168, 214, 142)",
+        "background_border": "#A1C03F",
+        "content": {
+            "1": "Thời tiết chuyển sang khô ráo, hơi se se lạnh",
+            "2": "Du khách bắt đầu quay lại Sài Gòn",
+            "3": "Giá cả tăng cao trở lại"
+        }
+    },
+    "10": {
+        "weather": "icon-sun",
+        "crowd": "yellow_star.png",
+        "money": "high.png",
+        "background_color": "rgb(209, 224, 159)",
+        "background_border": "#D8CB35",
+        "content": {
+            "1": "Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa",
+            "2": "Số lượng du khách tăng mạnh do trùng vào đợt nghỉ",
+            "3": "Giá cả tăng cao trở lại"
+        }
+    },
+    "11": {
+        "weather": "icon-sun",
+        "crowd": "red_star.png",
+        "money": "high.png",
+        "background_color": "rgb(224, 198, 159)",
+        "background_border": "#D89D35",
+        "content": {
+            "1": "Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa",
+            "2": "Số lượng du khách tăng mạnh do trùng vào đợt nghỉ",
+            "3": "Giá cả tăng cao trở lại"
+        }
+    },
+    "12": {
+        "weather": "icon-sun",
+        "crowd": "red_star.png",
+        "money": "high.png",
+        "background_color": "rgb(224, 175, 159)",
+        "background_border": "#C5632C",
+        "content": {
+            "1": "Thời tiết thất thường, lạnh vào sáng sớm và khô nóng vào buổi trưa",
+            "2": "Số lượng du khách tăng mạnh do trùng vào đợt nghỉ",
+            "3": "Giá cả tăng cao trở lại"
+        }
+    }
+}

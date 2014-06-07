@@ -44,6 +44,7 @@ if ($option != "com_data") {
     $doc->addScript('./templates/' . $this->template . '/js/jquery.fancybox-1.3.4.pack.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/bootstrap.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/avatar-template.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.bootstrap-growl.min.js', 'text/javascript');
 
     //Lich trinh
     $doc->addScript('./templates/' . $this->template . '/js/date.js', 'text/javascript');
