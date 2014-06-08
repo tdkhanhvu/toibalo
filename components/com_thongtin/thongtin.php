@@ -2,7 +2,7 @@
 /** Toi Ba Lo */
 defined('_JEXEC') or die;
 include JPATH_COMPONENT."/../com_data/data.php";
-
+$session =& JFactory::getSession();
 ?>
 
 
@@ -257,11 +257,15 @@ include JPATH_COMPONENT."/../com_data/data.php";
             </div>
         </div>
         <div class="span8 transport_detail">
+            <?php
+            $transport_info = GetStartTransportData();
+            $transport_start = $transport_info[$session -> get('transport_start')];
+            ?>
             <div>
-                <img src="./templates/green/images/transport/airplane.png"/>
+                <img src="./templates/green/images/transport/<?php echo $transport_start['image_url']?>"/>
             </div>
             <div>
-                <p> Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar , VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p>
+                <p><?php echo $transport_start['description']?></p>
             </div>
         </div>
         <div style="clear:both;"></div>
@@ -288,11 +292,15 @@ include JPATH_COMPONENT."/../com_data/data.php";
             </div>
         </div>
         <div class="span8 transport_detail">
+            <?php
+            $transport_info = GetEndTransportData();
+            $transport_end = $transport_info[$session -> get('transport_end')];
+            ?>
             <div>
-                <img src="./templates/green/images/transport/airplane.png"/>
+                <img src="./templates/green/images/transport/<?php echo $transport_end['image_url']?>"/>
             </div>
             <div>
-                <p> Sân Bay Quốc Tế Nội Bài: Có các hãng bay tới Sài Gòn như Vietnam Airline, Jetstar , VietJet Air. Thời gian bay khoảng chừng 2h. Chuyến sớm nhất là 7h sáng và chuyến trễ nhất là 11h đêm.</p>
+                <p><?php echo $transport_end['description']?></p>
             </div>
         </div>
         <div style="clear:both;"></div>
@@ -308,7 +316,7 @@ include JPATH_COMPONENT."/../com_data/data.php";
     </div>
 
     <?php
-        $arr = $_SESSION['select_food'];
+        $arr = $session -> get('select_food');
         $i = 0;
         foreach($arr as $food) {
             $temp = GetFoodByIdPHP($food);
@@ -336,7 +344,7 @@ include JPATH_COMPONENT."/../com_data/data.php";
         <div></div>
     </div>
     <?php
-        $arr = $_SESSION['select_advice'];
+        $arr = $session -> get('select_advice');
         foreach($arr as $attraction) {
             $temp = GetAdviceByIdPHP($attraction);
             echo '<div class="span12 advice">';
@@ -364,7 +372,7 @@ include JPATH_COMPONENT."/../com_data/data.php";
 <!--        <span class="attraction_point" style="top:335px;left:343px;">1</span>-->
         <img src="./templates/green/images/Attraction/sai_gon_map.jpg"/>
         <?php
-            $arr = $_SESSION['select_attraction'];
+            $arr = $session -> get('select_attraction');
             $temp = array();
             $i = 1;
             foreach($arr as $attraction) {
@@ -401,7 +409,7 @@ include JPATH_COMPONENT."/../com_data/data.php";
 <div class="span12">
     <div class="span12 section_head">
         <div>
-            <p>Chi Phí <?php echo $_SESSION['NumOfDay'];?> Ngày</p>
+            <p>Chi Phí <?php echo $session -> get('NumOfDay');?> Ngày</p>
         </div>
         <div></div>
     </div>
@@ -411,7 +419,7 @@ include JPATH_COMPONENT."/../com_data/data.php";
             <tr>
                 <th>Tổng Chi Phí</th>
                 <?php
-                    $arr = $_SESSION['cost'];
+                    $arr = $session -> get('cost');
                     $total_cost = 0;
 
                     foreach ($arr as $key => $value) {

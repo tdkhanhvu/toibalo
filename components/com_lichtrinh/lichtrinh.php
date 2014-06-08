@@ -1,9 +1,9 @@
 <?php
 /** Toi Ba Lo */
 defined('_JEXEC') or die;
-
+include JPATH_COMPONENT."/../com_data/data.php";
+$session =& JFactory::getSession();
 ?>
-
 <style type="text/css">
     .vote-icon {
         width:20px;
@@ -97,194 +97,193 @@ defined('_JEXEC') or die;
 </style>
 
 <div id="avatar-full-1-block">
-<div class="content block-default-width">
-<div class="avatar-module ">
-<div class="module-content">
-<div class="custom">
-<div class="st-onepage">
-<div class="st-projects onepage-appear" position="item-104">
-<h1 class="st-heading">Thời Điểm</h1>
-<div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
-    <div class="span6 offset3">
-        <p style="width:230px;float:left">Thời gian đi</p>
-        <div style="float:left" id="widget">
-            <div id="widgetField">
-                <span>28 July, 2008 &divide; 31 July, 2008</span>
-                <a href="#">Select date range</a>
-            </div>
-            <div id="widgetCalendar" style="z-index:999;">
+    <div class="content block-default-width">
+        <div class="avatar-module ">
+            <div class="module-content">
+                <div class="custom">
+                    <div class="st-onepage">
+                        <div class="st-projects onepage-appear" position="item-104">
+                            <h1 class="st-heading">Thời Điểm</h1>
+                            <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
+                            <div class="span6 offset3">
+                                <p style="width:230px;float:left">Thời gian đi</p>
+                                <div style="float:left" id="widget">
+                                    <div id="widgetField">
+                                        <span>28 July, 2008 &divide; 31 July, 2008</span>
+                                        <a href="#">Select date range</a>
+                                    </div>
+                                    <div id="widgetCalendar" style="z-index:999;">
+                                    </div>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="panel-group span12" id="accordion" style="margin-top:20px;">
+                                <div class="span6" style="margin-left:0px;">
+                                    <?php
+                                    $month_info = GetMonthInfoData();
+
+                                    for ($i = 1; $i <= 6; $i++) {
+                                        echo '<div class="panel panel-default">';
+                                        echo '<div class="panel-heading">';
+                                        echo '   <h4 class="panel-title">';
+                                        echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
+                                        echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
+                                        echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
+                                        echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
+                                        echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
+                                        echo '           <div style="clear:both;"></div>';
+                                        echo '       </a>';
+                                        echo '   </h4>';
+                                        echo '</div>';
+                                        echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
+                                        echo '   <div class="panel-body">';
+
+                                        for ($j = 1; $j <= 3; $j++) {
+                                            echo '       <div class="parent">';
+                                            echo '           <p class="info child">'.$month_info[$i]['content'][$j].'</p>';
+                                            echo '       </div>';
+                                        }
+                                        echo '   </div>';
+                                        echo '</div>';
+                                        echo '<div style="clear:both"></div>';
+                                        echo '</div>';
+                                    }
+                                    ?>
+                                </div>
+                                <div class="span6" >
+                                    <?php
+                                    for ($i = 7; $i <= 12; $i++) {
+                                        echo '<div class="panel panel-default">';
+                                        echo '<div class="panel-heading">';
+                                        echo '   <h4 class="panel-title">';
+                                        echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
+                                        echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
+                                        echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
+                                        echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
+                                        echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
+                                        echo '           <div style="clear:both;"></div>';
+                                        echo '       </a>';
+                                        echo '   </h4>';
+                                        echo '</div>';
+                                        echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
+                                        echo '   <div class="panel-body">';
+
+                                        for ($j = 1; $j <= 3; $j++) {
+                                            echo '       <div class="parent">';
+                                            echo '           <p class="info child">'.$month_info[$i]['content'][$j].'</p>';
+                                            echo '       </div>';
+                                        }
+                                        echo '   </div>';
+                                        echo '</div>';
+                                        echo '<div style="clear:both"></div>';
+                                        echo '</div>';
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div style="clear:both"></div>
+
     </div>
-    <div class="panel-group span12" id="accordion" style="margin-top:20px;">
-        <div class="span6" style="margin-left:0px;">
-            <?php
-            include JPATH_COMPONENT."/../com_data/data.php";
-            $month_info = GetMonthInfoData();
-
-            for ($i = 1; $i <= 6; $i++) {
-                echo '<div class="panel panel-default">';
-                echo '<div class="panel-heading">';
-                echo '   <h4 class="panel-title">';
-                echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
-                echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
-                echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
-                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
-                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
-                echo '           <div style="clear:both;"></div>';
-                echo '       </a>';
-                echo '   </h4>';
-                echo '</div>';
-                echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
-                echo '   <div class="panel-body">';
-
-                for ($j = 1; $j <= 3; $j++) {
-                    echo '       <div class="parent">';
-                    echo '           <p class="info child">'.$month_info[$i]['content'][$j].'</p>';
-                    echo '       </div>';
-                }
-                echo '   </div>';
-                echo '</div>';
-                echo '<div style="clear:both"></div>';
-                echo '</div>';
-            }
-            ?>
-        </div>
-        <div class="span6" >
-            <?php
-            for ($i = 7; $i <= 12; $i++) {
-                echo '<div class="panel panel-default">';
-                echo '<div class="panel-heading">';
-                echo '   <h4 class="panel-title">';
-                echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
-                echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
-                echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
-                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
-                echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
-                echo '           <div style="clear:both;"></div>';
-                echo '       </a>';
-                echo '   </h4>';
-                echo '</div>';
-                echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
-                echo '   <div class="panel-body">';
-
-                for ($j = 1; $j <= 3; $j++) {
-                    echo '       <div class="parent">';
-                    echo '           <p class="info child">'.$month_info[$i]['content'][$j].'</p>';
-                    echo '       </div>';
-                }
-                echo '   </div>';
-                echo '</div>';
-                echo '<div style="clear:both"></div>';
-                echo '</div>';
-            }
-            ?>
-        </div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-</div>
 </div>
 
 <div id="avatar-full-2-block">
-<div class="content block-default-width">
-<div class="avatar-module ">
-<div class="module-content">
+    <div class="content block-default-width">
+        <div class="avatar-module ">
+            <div class="module-content">
 
 
-<div class="custom">
-<div class="st-onepage" id="transport_section">
-<div class="st-projects onepage-appear" position="item-101">
-    <h1 class="st-heading">Phương Tiện</h1>
-    <div class="st-sub-heading">Cách Thức Để Đi</div>
+                <div class="custom">
+                    <div class="st-onepage" id="transport_section">
+                        <div class="st-projects onepage-appear" position="item-101">
+                            <h1 class="st-heading">Phương Tiện</h1>
+                            <div class="st-sub-heading">Cách Thức Để Đi</div>
 
-    <div class="span6">
-        <div class="span2" style="margin-bottom:20px;">
-            <h2>Xuất Phát</h2>
+                            <div class="span6">
+                                <div class="span2" style="margin-bottom:20px;">
+                                    <h2>Xuất Phát</h2>
+                                </div>
+                                <div class="span2" style="margin-bottom:20px;">
+                                    <select id="city_start" style="width:100%">
+                                        <?php
+                                        $city = GetStartCityData();
+
+                                        foreach ($city as $key => $value) {
+                                            echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+
+                                <ul class="span5 nav nav-tabs" id="transport_start">
+                                    <?php
+                                    $transport = GetStartTransportData();
+
+                                    foreach ($transport as $key => $value) {
+                                        reset($transport);
+                                        echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_start" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]['image_url'] . '\');"></div></a></li>';
+                                    }
+                                    ?>
+                                </ul>
+
+                                <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
+                                    <?php
+                                    foreach ($transport as $key => $value) {
+                                        reset($transport);
+                                        echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_start">'. $transport[$key]['description'].'</div>';
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+
+                            <div class="span6">
+                                <div class="span2" style="margin-bottom:20px;">
+                                    <h2>Trở Về</h2>
+                                </div>
+                                <div class="span2" style="margin-bottom:20px;">
+                                    <select id="city_end" style="width:100%">
+                                        <?php
+                                        $city = GetEndCityData();
+
+                                        foreach ($city as $key => $value) {
+                                            echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+
+                                <ul class="span5 nav nav-tabs" id="transport_end">
+                                    <?php
+                                    $transport = GetEndTransportData();
+
+                                    foreach ($transport as $key => $value) {
+                                        reset($transport);
+                                        echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_end" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]['image_url'] . '\');"></div></a></li>';
+                                    }
+                                    ?>
+                                </ul>
+
+                                <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
+                                    <?php
+                                    foreach ($transport as $key => $value) {
+                                        reset($transport);
+                                        echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_end">'. $transport[$key]['description'].'</div>';
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="span2" style="margin-bottom:20px;">
-            <select id="city_start" style="width:100%">
-                <?php
-                    $city = GetStartCityData();
 
-                    foreach ($city as $key => $value) {
-                        echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
-                    }
-                ?>
-        </select>
-        </div>
-
-        <ul class="span5 nav nav-tabs" id="transport_start">
-            <?php
-                $transport = GetStartTransportData();
-
-                foreach ($transport as $key => $value) {
-                    reset($transport);
-                    echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_start" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]['image_url'] . '\');"></div></a></li>';
-            }
-            ?>
-        </ul>
-
-        <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
-            <?php
-                foreach ($transport as $key => $value) {
-                    reset($transport);
-                    echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_start">'. $transport[$key]['description'].'</div>';
-                }
-            ?>
-        </div>
     </div>
-
-    <div class="span6">
-        <div class="span2" style="margin-bottom:20px;">
-            <h2>Trở Về</h2>
-        </div>
-        <div class="span2" style="margin-bottom:20px;">
-            <select id="city_end" style="width:100%">
-                <?php
-                $city = GetEndCityData();
-
-                foreach ($city as $key => $value) {
-                    echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
-                }
-                ?>
-            </select>
-        </div>
-
-        <ul class="span5 nav nav-tabs" id="transport_end">
-            <?php
-            $transport = GetEndTransportData();
-
-            foreach ($transport as $key => $value) {
-                reset($transport);
-                echo '<li ' . ($key === key($transport)?'class="active"':'').'><a href="#' . $key . '_end" data-toggle="tab"><div style="background-image: url(\'./templates/green/images/transport/' . $transport[$key]['image_url'] . '\');"></div></a></li>';
-            }
-            ?>
-        </ul>
-
-        <div class="span5 tab-content" style="background-color:rgb(240, 223, 225);border:5px groove #FAB6C3;margin-bottom:20px;">
-            <?php
-            foreach ($transport as $key => $value) {
-                reset($transport);
-                echo '<div class="tab-pane' . ($key === key($transport)?' active':'').'" id="' . $key . '_end">'. $transport[$key]['description'].'</div>';
-            }
-            ?>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-</div>
 </div>
 
 <div id="avatar-full-3-block">
@@ -486,90 +485,106 @@ defined('_JEXEC') or die;
     }
 </style>
 <div id="avatar-body-bottom-block" position="item-108">
-<div class="content block-default-width">
-<div id="100" class="avatar-module ">
-    <div class="module-content">
+    <div class="content block-default-width">
+        <div id="100" class="avatar-module ">
+            <div class="module-content">
 
 
-        <div class="custom">
-            <div class="st-title">
-                <h1 class="st-heading" style="color:rgb(223, 59, 59);">Chi phí</h1>
+                <div class="custom">
+                    <div class="st-title">
+                        <h1 class="st-heading" style="color:rgb(223, 59, 59);">Chi phí</h1>
 
-                <div class="st-sub-heading" style="margin-bottom:0px;">Hầu bao cần để đi</div>
-                <div style="clear:both;"></div>
+                        <div class="st-sub-heading" style="margin-bottom:0px;">Hầu bao cần để đi</div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="101" class="avatar-module ">
+            <div class="module-content">
+                <div id="cost_info">
+                    <div id="summary" class="span12">
+                        <div class="cost_title span12">
+                            <span class="gross_sum">Tổng chi phí</span> &nbsp;<select id="day_list" style="width:50px;font-size:30px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            Ngày
+
+                            <?php
+                            $totalCost = 0;
+                            $temp_arr = $session->get('cost');
+
+                            foreach ($temp_arr as $key => $value) {
+                                $totalCost += $value['totalCost'];
+                            }
+                            ?>
+                            <div id="total_cost" class="cost"><?php echo $totalCost; ?></div>
+                        </div>
+
+                    </div>
+                    <hr style="border-top: 1px solid #030303;border-bottom: 1px solid #000000;margin:0px; margin-left:30px;" class="span12"/>
+                    <?php
+                    $cost = GetCostData();
+
+                    foreach ($cost as $key => $value) {
+                        $arr = $cost[$key]['type'];
+                        $temp_cost = $temp_arr[$key]['totalCost'];
+
+                        echo '<div id="'.$key.'" class="span12">';
+                        echo '<div class="cost_title span12">'.$value['name'].'<div id="'.$key.'_cost" class="cost">'.$temp_cost.'</div></div>';
+                        echo '<div class="span11">';
+                        echo '   <ul id="'.$key.'_option">';
+
+                        foreach($arr as $type => $type_value) {
+                            echo '       <li cost="'.$arr[$type]['cost'].'"'.(array_search($type,$temp_arr[$key]['element']) !== FALSE ?' class="'.$key.'_active"' : '').' type="'.$type.'">';
+                            echo '          <img src="./templates/green/images/'.$arr[$type]['image_url'].'" />';
+                            echo '       </li>';
+                        }
+                        echo '   </ul>';
+
+                        echo '    <div id="'.$key.'_info" class="accordion">';
+                        echo '       <h3>Thông tin</h3>';
+                        echo '       <div>';
+                        if ($cost[$key]['info'] != '')
+                            echo '<p>'.$cost[$key]['info'].'</p>';
+                        foreach($arr as $type => $type_value) {
+                            if ($arr[$type]['info'] != '')
+                                echo '<p>'.$arr[$type]['info'].'</p>';
+                        }
+
+                        echo '</div>';
+                        echo '</div>';
+                        echo '</div>';
+
+                        echo '<br class="clear" />';
+                        echo '</div>';
+                    }
+                    ?>
+
+                    <div style="clear:both"></div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div id="101" class="avatar-module ">
-<div class="module-content">
-<div id="cost_info">
-<div id="summary" class="span12">
-    <div class="cost_title span12">
-        <span class="gross_sum">Tổng chi phí</span> &nbsp;<select id="day_list" style="width:50px;font-size:30px;">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        Ngày
-
-        <?php
-            $totalCost = 0;
-
-            foreach ($_SESSION['cost'] as $key => $value) {
-                $totalCost += $value['totalCost'];
-            }
-        ?>
-        <div id="total_cost" class="cost"><?php echo $totalCost; ?></div>
-    </div>
-
-</div>
-<hr style="border-top: 1px solid #030303;border-bottom: 1px solid #000000;margin:0px; margin-left:30px;" class="span12"/>
-<?php
-    $cost = GetCostData();
-
-    foreach ($cost as $key => $value) {
-        $arr = $cost[$key]['type'];
-        $temp_cost = $_SESSION['cost'][$key]['totalCost'];
-
-        echo '<div id="'.$key.'" class="span12">';
-        echo '<div class="cost_title span12">'.$value['name'].'<div id="'.$key.'_cost" class="cost">'.$temp_cost.'</div></div>';
-        echo '<div class="span11">';
-        echo '   <ul id="'.$key.'_option">';
-
-        foreach($arr as $type => $type_value) {
-            echo '       <li cost="'.$arr[$type]['cost'].'"'.(array_search($type,$_SESSION['cost'][$key]['element']) !== FALSE ?' class="'.$key.'_active"' : '').' type="'.$type.'">';
-            echo '          <img src="./templates/green/images/'.$arr[$type]['image_url'].'" />';
-            echo '       </li>';
-        }
-        echo '   </ul>';
-
-        echo '    <div id="'.$key.'_info" class="accordion">';
-        echo '       <h3>Thông tin</h3>';
-        echo '       <div>';
-        if ($cost[$key]['info'] != '')
-            echo '<p>'.$cost[$key]['info'].'</p>';
-        foreach($arr as $type => $type_value) {
-            if ($arr[$type]['info'] != '')
-            echo '<p>'.$arr[$type]['info'].'</p>';
-        }
-
-        echo '</div>';
-        echo '</div>';
-        echo '</div>';
-
-        echo '<br class="clear" />';
-        echo '</div>';
-    }
-?>
-
-<div style="clear:both"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <script>
+    function DisplayNotification(msg, type) {
+        if (msg != '')
+            setTimeout(function() {
+                jQuery.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: type, width: 'auto' });
+            }, 1000);
+    }
+
+    function DisplaySuccess(msg){
+        DisplayNotification(msg, 'success');
+    }
+
+    function DisplayError(msg){
+        DisplayNotification(msg, 'error');
+    }
+
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
@@ -663,16 +678,16 @@ jQuery.noConflict();
                     $('#a' + curr).addClass('collapsed');
                     $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
                     $('#collapse' + curr).addClass('in').height('auto');
-                    alert(startDay + ' ' + endDay);
+                    DisplaySuccess(startDay + ' ' + endDay);
                     $.ajax({
                         url: "index.php?option=com_data&format=raw",
                         type: "post",
                         data: {'request':'SetDay','StartDay':startDay, 'EndDay':endDay},
                         success: function(msg){
-                            alert(msg);
+                            DisplaySuccess(msg);
                         },
                         error:function(){
-                            alert("failure");
+                            DisplayError("failure");
                         }
                     });
                 }
@@ -701,13 +716,10 @@ jQuery.noConflict();
                 type: "post",
                 data: {'request':'SetNumOfDay','NumOfDay':day},
                 success: function(msg){
-                    if (msg != '')
-                        setTimeout(function() {
-                            $.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: 'success', width: 'auto' });
-                        }, 1000);
+                    DisplaySuccess(msg);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert("some error " + errorThrown);
+                    DisplayError("some error " + errorThrown);
                 }
             });
         });
@@ -716,7 +728,7 @@ jQuery.noConflict();
 
         $("#city_end").select2();
 
-        $("#day_list").select2("val","<?php echo $_SESSION['NumOfDay']; ?>");
+        $("#day_list").select2("val","<?php echo ($session->get('NumOfDay')); ?>");
 
         $('.accordion').accordion({
             collapsible: true,
@@ -734,13 +746,10 @@ jQuery.noConflict();
                 type: "post",
                 data: {'request':'SetCost','TotalCost':totalCost, 'Category':category, 'Choice':choice},
                 success: function(msg){
-                    if (msg != '')
-                        setTimeout(function() {
-                            $.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: 'success', width: 'auto' });
-                        }, 1000);
+                    DisplaySuccess(msg);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert("some error " + errorThrown);
+                    DisplayError(errorThrown);
                 }
             });
         }
@@ -798,8 +807,6 @@ jQuery.noConflict();
                 if (update) {
                     if (1 <= i && i <= 4)
                         amt_to_add = amt_to_add / previousDay * day;
-
-                    SetCost(cost_name[i],'', amt_to_add);
                     $('#' + cost_name[i] + '_cost').html(amt_to_add);
                 }
 
@@ -833,10 +840,10 @@ jQuery.noConflict();
                 type: "post",
                 data: values,
                 success: function(msg){
-                    alert(msg);
+                    DisplaySuccess(msg);
                 },
                 error:function(){
-                    alert("failure");
+                    DisplayError("failure");
                 }
             });
         })
@@ -876,7 +883,7 @@ jQuery.noConflict();
             data: {'request':'GetAttractionById','id':message},
             success: function(msg){
                 var data = JSON.parse(msg);
-                //alert(msg);
+                //DisplaySuccess('Success');
 
                 jQuery('#attraction_title').html(
                     data.name
@@ -905,10 +912,9 @@ jQuery.noConflict();
                     jQuery('.saves-hover-txt-saved').css('display','none');
                     jQuery('.saves-hover-txt').css('display','inline');
                 }
-                //checkButton();
             },
             error:function(){
-                alert("failure");
+                DisplayError("failure");
             }
         });
     }
@@ -918,18 +924,15 @@ jQuery.noConflict();
             jQuery('.saves-hover-txt').click(function(){
                 jQuery(this).css('display', 'none');
                 jQuery('.saves-hover-txt-saved').css('display', 'inline');
-
-                //attraction_selected.push(attraction_current);
-
                 jQuery.ajax({
                     url: "index.php?option=com_data&format=raw",
                     type: "post",
                     data: {'source':'select','id':attraction_current, 'action':'add','type':'attraction'},
                     success: function(msg){
-                        alert(msg);
+                        DisplaySuccess(msg);
                     },
                     error:function(){
-                        alert("failure");
+                        DisplayFailure("failure");
                     }
                 });
             });
@@ -943,10 +946,10 @@ jQuery.noConflict();
                     type: "post",
                     data: {'source':'select','id':attraction_current, 'action':'remove','type':'attraction'},
                     success: function(msg){
-                        alert(msg);
+                        DisplaySuccess(msg);
                     },
                     error:function(){
-                        alert("failure");
+                        DisplayError("failure");
                     }
                 });
             });
@@ -982,10 +985,10 @@ jQuery.noConflict();
                     type: "post",
                     data: {'request':'SetTransport','transport':$(this).find('a').attr('href').replace('#','').replace('_start','').replace('_end',''), 'direction':$(this).parent().attr('id')},
                     success: function(msg){
-                        alert(msg);
+                        DisplaySuccess(msg);
                     },
                     error:function(){
-                        alert("failure");
+                        DisplayError("failure");
                     }
                 });
             });

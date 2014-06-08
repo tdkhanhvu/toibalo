@@ -20,14 +20,14 @@ class JConfig {
 	public $live_site = '';
 	public $secret = 'OWqc2TbtS0U0Aras';
 	public $gzip = '0';
-	public $error_reporting = 'default';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
+	public $error_reporting = 'none';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '';
 	public $ftp_port = '';
 	public $ftp_user = '';
 	public $ftp_pass = '';
 	public $ftp_root = '';
-	public $ftp_enable = '';
+	public $ftp_enable = '0';
 	public $offset = 'UTC';
 	public $mailonline = '1';
 	public $mailer = 'mail';
@@ -58,4 +58,12 @@ class JConfig {
 	public $tmp_path = 'C:\\wamp\\www\\green/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $frontediting = '1';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
+	public $asset_id = '1';
 }
