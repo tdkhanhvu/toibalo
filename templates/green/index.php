@@ -26,10 +26,7 @@ if ($option != "com_data") {
     $doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/Button/button.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/datepicker/datepicker_layout.css');
-
-
+    $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
     $doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-migrate.min.js', 'text/javascript');
@@ -48,10 +45,9 @@ if ($option != "com_data") {
 
     //Lich trinh
     $doc->addScript('./templates/' . $this->template . '/js/date.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/datepicker/datepicker.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/vi-VN.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/dropdown/select2.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.easing.min.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/zaccordion/jquery.zaccordion.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/tooltip/ipicture-square.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/Accordion/jquery-ui.js', 'text/javascript');
 }

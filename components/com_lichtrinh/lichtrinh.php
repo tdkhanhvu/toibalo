@@ -94,6 +94,12 @@ $session =& JFactory::getSession();
     .span1, .span11 {
         margin-left:0px;
     }
+
+    #dateDepart, #dateReturn { width: 90px; border-radius: 5px; border: 1px solid #ccc; box-shadow: inset 0 0 3px rgba(0,0,0,0.2); padding: 6px 10px; font-size: 14px; background: #fff url(../../img/sprite-home.png) no-repeat 100px -664px; }
+
+    .selected {
+        background-color:green;
+    }
 </style>
 
 <div id="avatar-full-1-block">
@@ -106,15 +112,9 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading">Thời Điểm</h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
                             <div class="span6 offset3">
-                                <p style="width:230px;float:left">Thời gian đi</p>
-                                <div style="float:left" id="widget">
-                                    <div id="widgetField">
-                                        <span>28 July, 2008 &divide; 31 July, 2008</span>
-                                        <a href="#">Select date range</a>
-                                    </div>
-                                    <div id="widgetCalendar" style="z-index:999;">
-                                    </div>
-                                </div>
+                                <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate placeholder" data-placeholder="depart" placeholder="Ngày Đi" autocomplete="off" tabindex="3" />
+                                <input type="text" id="dateReturn" name="" onkeydown="return false" class="inputDate placeholder" data-placeholder="return" placeholder="Ngày Về" autocomplete="off" tabindex="4">
+
                                 <div style="clear:both"></div>
                             </div>
                             <div class="panel-group span12" id="accordion" style="margin-top:20px;">
@@ -213,7 +213,7 @@ $session =& JFactory::getSession();
                                         $city = GetStartCityData();
 
                                         foreach ($city as $key => $value) {
-                                            echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
+                                            echo '<option value="' . $key.'">' . $city[$key] . '</option>';
                                         }
                                         ?>
                                     </select>
@@ -250,7 +250,7 @@ $session =& JFactory::getSession();
                                         $city = GetEndCityData();
 
                                         foreach ($city as $key => $value) {
-                                            echo '<option value="' . $key . 'Ba_Ria">' . $city[$key] . '</option>';
+                                            echo '<option value="' . $key . '">' . $city[$key] . '</option>';
                                         }
                                         ?>
                                     </select>
@@ -296,12 +296,12 @@ $session =& JFactory::getSession();
                     <div class="st-onepage">
                         <div class="st-home onepage-disappear" position="item-105">
                             <ul class="span12 nav nav-tabs" id="attraction_list" style="margin-left:0px;">
-                                <li class="active"><a href="#saigon_central_post_office" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/1_saigon_central_post_office.jpg');"></div></a></li>
-                                <li><a href="#notre_dame_cathedral" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/2_notre_dame_cathedral.jpg');"></div></a></li>
-                                <li><a href="#ben_thanh_market" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/3_ben_thanh_market.jpg');"></div></a></li>
-                                <li><a href="#city_opera_house" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/4_city_opera_house.jpg');"></div></a></li>
-                                <li><a href="#independence_palace" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/5_independence_palace.jpg');"></div></a></li>
-                                <li><a href="#nha_rong_port" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/6_nha_rong_port.jpg');"></div></a></li>
+                                <li class="active"><a id="tab_saigon_central_post_office" href="#saigon_central_post_office" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/1_saigon_central_post_office.jpg');"></div></a></li>
+                                <li><a id="tab_notre_dame_cathedral" href="#notre_dame_cathedral" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/2_notre_dame_cathedral.jpg');"></div></a></li>
+                                <li><a id="tab_ben_thanh_market" href="#ben_thanh_market" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/3_ben_thanh_market.jpg');"></div></a></li>
+                                <li><a id="tab_city_opera_house" href="#city_opera_house" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/4_city_opera_house.jpg');"></div></a></li>
+                                <li><a id="tab_independence_palace" href="#independence_palace" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/5_independence_palace.jpg');"></div></a></li>
+                                <li><a id="tab_nha_rong_port" href="#nha_rong_port" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/6_nha_rong_port.jpg');"></div></a></li>
                             </ul>
 
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
@@ -585,6 +585,144 @@ $session =& JFactory::getSession();
         DisplayNotification(msg, 'error');
     }
 
+    var startDay = new Date();
+    var endDay = new Date();
+    endDay = endDay.setDate(endDay.getDate()+5);
+
+    //jQuery.noConflict();
+    (function ($) {
+    $(document).ready(function () {
+        $.ajax({
+            url: "index.php?option=com_data&format=raw",
+            type: "post",
+            data: {'request':'SetBookingDay','date':(new Date()).toString('dddd, dd MMMM, yyyy')},
+            success: function(msg){
+                DisplaySuccess(msg);
+            },
+            error:function(){
+                DisplayError("failure");
+            }
+        });
+
+        $('#accordion').collapse({
+            toggle: false,
+            parent:true
+        });
+
+/*        function highlightDays(date) {
+            var startDate = new Date(jQuery( "#dateDepart" ).datepicker("getDate"));
+            var endDate = new Date(jQuery( "#dateReturn" ).datepicker("getDate"));
+
+            if ((startDate <= date) &&  (date <= endDate)) {
+                return [true, 'highlight'];
+            } else {
+                return [true, ''];
+            }
+        }
+
+        function closeDatepicker(dp) {
+
+            if (dp=='datepicker-hdr-departdate') {
+
+                jQuery("#dateDepart").datepicker("show");
+                jQuery("#dateReturn").datepicker("hide");
+            }else if(dp=='datepicker-hdr-returndate'){
+                jQuery("#dateReturn").datepicker("show");
+                jQuery("#dateDepart").datepicker("hide");
+            }else if(dp=='datepicker-hdr-checkin-date'){
+                jQuery("#check-in").datepicker("show");
+                jQuery("#check-out").datepicker("hide");
+            }else if(dp=='datepicker-hdr-checkout-date'){
+                jQuery("#check-out").datepicker("show");
+                jQuery("#check-in").datepicker("hide");
+            }else if(dp=='datepicker-hdr-pickup'){
+                jQuery("#carspickupdate").datepicker("show");
+                jQuery("#carsreturndate").datepicker("hide");
+            }else if(dp=='datepicker-hdr-dropoff'){
+                jQuery("#carsreturndate").datepicker("show");
+                jQuery("#carspickupdate").datepicker("hide");
+            }
+
+        }*/
+        $('#dateDepart').datepicker({
+
+/*
+            beforeShowDay: highlightDays,
+*/
+
+            dateFormat: "d M yy",
+            defaultDate:new Date(),
+            numberOfMonths: 2,
+            changeMonth: true,
+            changeYear: true,
+            minDate: new Date(),
+            maxDate: "+13m",
+            onSelect:function(dateText, inst){
+                //MVC300412: set dynamic return date, should always be equal or greater than depart date
+                //jQuery("#dateReturn").datepicker("option", "minDate", jQuery("#dateDepart").datepicker("getDate"));
+                var dd = dateText.split(" ")[0];
+                var month = Date.parse(dateText);
+                alert(dateText);
+                alert(month);
+                startDay = month;
+                var mm = ("0" + (month.getMonth() + 1)).slice(-2);
+                var yyyy = dateText.split(" ")[2];
+            },
+            onClose:function(dateText, inst){
+                $( "#dateReturn" ).datepicker("show");
+            }
+        });
+
+        $('#dateReturn').datepicker({
+
+//            beforeShowDay: highlightDays,
+
+            dateFormat: "dd M yy",
+            defaultDate:new Date(),
+            numberOfMonths: 2,
+            changeMonth: true,
+            changeYear: true,
+            minDate: new Date(),
+            maxDate: "+13m",
+            onSelect:function(dateText, inst){
+                //MVC300412: set dynamic depart date, should always be equal or less than return date
+                //jQuery("#dateDepart").datepicker("option", "maxDate", jQuery("#dateReturn").datepicker("getDate"));
+
+                var dd = dateText.split(" ")[0];
+                var month = new Date(dateText);
+                endDay = month;
+                var mm = ("0" + (month.getMonth() + 1)).slice(-2);
+                var yyyy = dateText.split(" ")[2];
+
+                $('#accordion .in').removeClass('in').height(0);
+                for (i = 1; i <= 12; i++) {
+                    $('#collapse' + i).css('border',$('#collapse' + i).css('border').replace('5px','0px'));
+                }
+
+                var curr = startDay.getMonth() + 1;
+                $('#a' + curr).addClass('collapsed');
+                $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
+                $('#collapse' + curr).addClass('in').height('auto');
+                DisplaySuccess(startDay + ' ' + endDay);
+                $.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'request':'SetDay','StartDay':startDay.toString('dddd, dd/MM/yyyy'), 'EndDay':endDay.toString('dddd, dd/MM/yyyy')},
+                    success: function(msg){
+                        DisplaySuccess(msg);
+                    },
+                    error:function(){
+                        DisplayError("failure");
+                    }
+                });
+            }
+        });
+    });
+    })(jQuery)
+
+
+
+
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
@@ -645,66 +783,23 @@ jQuery.noConflict();
         avatarTemplate.menu.init();
         avatarTemplate.css3effect.init();
 
-        $(".note_select").click(function () {
-            $("#frame").attr("src", "/green/templates/green/blog.php");
-        });
-
-        var startDay = new Date();
-        var endDay = new Date();
-        endDay = endDay.setDate(endDay.getDate()+5);
-        var formatStyle = "d MMM, yyyy";
-        var finishSelect = true;
-
-        $('#widgetCalendar').DatePicker({
-            flat: true,
-            format: 'd B, Y',
-            date: [new Date(), new Date()],
-            calendars: 1,
-            mode: 'range',
-            starts: 1,
-            onChange: function(formated) {
-                finishSelect = !finishSelect;
-                $('#widgetField span').get(0).innerHTML = formated.join(' &divide; ');
-                startDay = Date.parseExact(formated[0], formatStyle);
-                endDay = Date.parseExact(formated[1],formatStyle);
-
-                if(finishSelect) {
-                    $('#accordion .in').removeClass('in').height(0);
-                    for (i = 1; i <= 12; i++) {
-                        $('#collapse' + i).css('border',$('#collapse' + i).css('border').replace('5px','0px'));
-                    }
-
-                    var curr = startDay.getMonth() + 1;
-                    $('#a' + curr).addClass('collapsed');
-                    $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
-                    $('#collapse' + curr).addClass('in').height('auto');
-                    DisplaySuccess(startDay + ' ' + endDay);
-                    $.ajax({
-                        url: "index.php?option=com_data&format=raw",
-                        type: "post",
-                        data: {'request':'SetDay','StartDay':startDay, 'EndDay':endDay},
-                        success: function(msg){
-                            DisplaySuccess(msg);
-                        },
-                        error:function(){
-                            DisplayError("failure");
-                        }
-                    });
-                }
-            }
-        });
-
-        var state = false;
-        $('#widgetField>a').bind('click', function(){
-            $('#widgetCalendar').stop().animate({height: state ? 0 : $('#widgetCalendar div.datepicker').get(0).offsetHeight}, 500);
-            state = !state;
-            return false;
-        });
-        $('#widgetCalendar div.datepicker').css('position', 'absolute');
-
         $("#city_start").select2();
-        $("#city_start").on("change", function(e) { $("#city").text($("#city_start").select2("data").text);
+        $("#city_start").on("change",
+            function(e) {
+                $.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'request':'SetCity','direction':'Start','city':$(this).select2("data").id},
+                    success: function(msg){
+                        DisplaySuccess(msg);
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        DisplayError("some error " + errorThrown);
+                    }
+                });
         });
+
+
         $("#day_list").on("change", function(e) {
             previousDay = day;
             day = parseInt($("#day_list").select2("data").text);
@@ -727,8 +822,24 @@ jQuery.noConflict();
         $("#day_list").select2();
 
         $("#city_end").select2();
+        $("#city_end").on("change",
+            function(e) {
+                $.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'request':'SetCity','direction':'End','city':$(this).select2("data").id},
+                    success: function(msg){
+                        DisplaySuccess(msg);
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        DisplayError("some error " + errorThrown);
+                    }
+                });
+            });
 
         $("#day_list").select2("val","<?php echo ($session->get('NumOfDay')); ?>");
+        $("#city_start").select2("val","<?php echo ($session->get('StartCity')); ?>");
+        $("#city_end").select2("val","<?php echo ($session->get('EndCity')); ?>");
 
         $('.accordion').accordion({
             collapsible: true,
@@ -924,6 +1035,7 @@ jQuery.noConflict();
             jQuery('.saves-hover-txt').click(function(){
                 jQuery(this).css('display', 'none');
                 jQuery('.saves-hover-txt-saved').css('display', 'inline');
+                jQuery('#tab_'+attraction_current).addClass('selected');
                 jQuery.ajax({
                     url: "index.php?option=com_data&format=raw",
                     type: "post",
@@ -940,6 +1052,7 @@ jQuery.noConflict();
             jQuery('.saves-hover-txt-saved').click(function(){
                 jQuery(this).css('display', 'none');
                 jQuery('.saves-hover-txt').css('display', 'inline');
+                jQuery('#tab_'+attraction_current).removeClass('selected');
 
                 jQuery.ajax({
                     url: "index.php?option=com_data&format=raw",
@@ -1008,11 +1121,6 @@ jQuery.noConflict();
             $('#transport_start a:last').tab('show');
             $('#transport_end a:last').tab('show');
             $('#attraction_list a:last').tab('show');
-
-            $('#accordion').collapse({
-                toggle: false,
-                parent:true
-            });
         });
     })(jQuery);
 </script>

@@ -205,6 +205,43 @@ function SetNumOfDay($day){
     $session -> set('NumOfDay',$day);
     echo "You have selected " .$day . " days";
 }
+
+function SetCity($city, $direction) {
+    $session =& JFactory::getSession();
+    $session -> set($direction.'City',$city);
+
+    echo 'Set ' . $direction.'City' . ' to ' . $city;
+}
+
+function GetStartCity() {
+    $session =& JFactory::getSession();
+    $startCity = $session -> get('StartCity');
+    $arr = GetStartCityData();
+
+    foreach ($arr as $key => $value) {
+        if ($key == $startCity)
+            return $arr[$key];
+    }
+}
+
+function GetEndCity() {
+    $session =& JFactory::getSession();
+    $endCity = $session -> get('EndCity');
+    $arr = GetEndCityData();
+
+    foreach ($arr as $key => $value) {
+        if ($key == $endCity)
+            return $arr[$key];
+    }
+}
+
+function SetBookingDay($date) {
+    $session =& JFactory::getSession();
+    $session -> set('BookingDay',$date);
+
+    echo 'Set booking day to ' . $date;
+}
+
 if (isset($_POST['request'])) {
     if($_POST['request'] == 'GetAttractionById')
         GetAttractionById($_POST['id']);
@@ -216,6 +253,10 @@ if (isset($_POST['request'])) {
         SetCost($_POST['Category'],$_POST['Choice'],$_POST['TotalCost']);
     else if ($_POST['request'] == 'SetNumOfDay')
             SetNumOfDay($_POST['NumOfDay']);
+    else if ($_POST['request'] == 'SetCity')
+        SetCity($_POST['city'],$_POST['direction']);
+    else if ($_POST['request'] == 'SetBookingDay')
+        SetBookingDay($_POST['date']);
 }
 
 else if (isset($_POST['type'])) {

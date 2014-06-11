@@ -233,7 +233,7 @@ $session =& JFactory::getSession();
         </div>
 
         <div class="span3 itinerary_info"><span>Mã Số</span><span>S59I2P</span></div>
-        <div class="span9 itinerary_info"><span>Ngày Đặt</span><span>Chủ Nhật, 04 Tháng 5, 2014</span></div>
+        <div class="span9 itinerary_info"><span>Ngày Đặt</span><span><?php echo $session->get('BookingDay');?></span></div>
     </div>
 
     <!--    Chiều Đi-->
@@ -246,10 +246,10 @@ $session =& JFactory::getSession();
             <div></div>
         </div>
         <div class="span4 transport">
-            <span>Thứ 6, 04/07/2014</span>
+            <span><?php echo $session->get('StartDay');?></span>
             <div>
                 <span>Từ</span>
-                <span>Hà Nội</span>
+                <span><?php echo GetStartCity();?></span>
             </div>
             <div>
                 <span>Tới</span>
@@ -281,14 +281,14 @@ $session =& JFactory::getSession();
             <div></div>
         </div>
         <div class="span4 transport">
-            <span>Chủ Nhật, 08/07/2014</span>
+            <span><?php echo $session->get('EndDay');?></span>
             <div>
                 <span>Từ</span>
                 <span>Hồ Chí Minh</span>
             </div>
             <div>
                 <span>Tới</span>
-                <span>Hà Nội</span>
+                <span><?php echo GetEndCity();?></span>
             </div>
         </div>
         <div class="span8 transport_detail">
