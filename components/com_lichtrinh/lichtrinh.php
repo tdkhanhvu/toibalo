@@ -296,42 +296,28 @@ $session =& JFactory::getSession();
                     <div class="st-onepage">
                         <div class="st-home onepage-disappear" position="item-105">
                             <ul class="span12 nav nav-tabs" id="attraction_list" style="margin-left:0px;">
-                                <li class="active"><a id="tab_saigon_central_post_office" href="#saigon_central_post_office" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/1_saigon_central_post_office.jpg');"></div></a></li>
-                                <li><a id="tab_notre_dame_cathedral" href="#notre_dame_cathedral" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/2_notre_dame_cathedral.jpg');"></div></a></li>
-                                <li><a id="tab_ben_thanh_market" href="#ben_thanh_market" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/3_ben_thanh_market.jpg');"></div></a></li>
-                                <li><a id="tab_city_opera_house" href="#city_opera_house" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/4_city_opera_house.jpg');"></div></a></li>
-                                <li><a id="tab_independence_palace" href="#independence_palace" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/5_independence_palace.jpg');"></div></a></li>
-                                <li><a id="tab_nha_rong_port" href="#nha_rong_port" data-toggle="tab"><div style="background-image: url('./templates/green/images/attraction/place/6_nha_rong_port.jpg');"></div></a></li>
+                                <?php
+                                    $attraction = GetAttractionData();
+
+                                    foreach($attraction as $key => $value) {
+                                        echo '<li><a id="tab_'.$key.'" href="#'.$key.'" data-toggle="tab"'.($value['select']?' class="selected"':'').'>';
+                                        echo '<div style="background-image: url(\'./templates/green/images/'.$value['image_url'].'\');"></div></a></li>';
+                                    }
+                                ?>
                             </ul>
 
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
                             <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;margin-left:0px;">
                                 <div class="ip_slide">
                                     <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg">
-                                    <div class="ip_tooltip ip_img32" style="top: 36%; left: 77%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
-                                        <p>Nhà thờ Đức Bà</p>
-                                        <img attractionId="notre_dame_cathedral" alt="an image" src="./templates/green/images/Attraction/Place/2_notre_dame_cathedral.jpg" width="256" height="256" />
-                                    </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 40%; left: 68%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
-                                        <p>Dinh Độc Lập</p>
-                                        <img  attractionId="independence_palace" src="./templates/green/images/Attraction/Place/5_independence_palace.jpg" width="256" height="256" />
-                                    </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 34%; left: 79%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
-                                        <p>Bưu điện thành phố</p>
-                                        <img attractionId="saigon_central_post_office" alt="an image" src="./templates/green/images/Attraction/Place/1_saigon_central_post_office.jpg" width="256" height="256" />
-                                    </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 44%; left: 84%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
-                                        <p>Nhà hát thành phố</p>
-                                        <img attractionId="city_opera_house" src="./templates/green/images/Attraction/Place/4_city_opera_house.jpg" width="256" height="256" />
-                                    </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 55%; left: 74%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
-                                        <p>Chợ Bến Thành</p>
-                                        <img attractionId="ben_thanh_market" alt="an image" src="./templates/green/images/Attraction/Place/3_ben_thanh_market.jpg" width="256" height="256" />
-                                    </div>
-                                    <div class="ip_tooltip ip_img32" style="top: 67%; left: 93%;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">
-                                        <p>Bến Nhà Rồng</p>
-                                        <img attractionId="nha_rong_port" src="./templates/green/images/Attraction/Place/6_nha_rong_port.jpg" width="256" height="256" />
-                                    </div>
+                                    <?php
+                                        foreach($attraction as $key => $value) {
+                                            echo '<div class="ip_tooltip ip_img32" style="top: '.$value['top_lichtrinh'].'; left: '.$value['left_lichtrinh'].';" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">';
+                                            echo '<p>'.$value['name'].'</p>';
+                                            echo '<img attractionId="'.$key.'" alt="an image" src="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
+                                            echo '</div>';
+                                        }
+                                    ?>
                                 </div>
                                 <div style="clear:both"></div>
                             </div>

@@ -8,7 +8,9 @@
         "address" : "2 Công xã Paris, Bến Nghé, Thành Phố Hồ Chí Minh",
         "phone" : "08 3822 1677",
         "top": "37%",
-        "left": "80%"
+        "left": "80%",
+        "top_lichtrinh":"34%",
+        "left_lichtrinh":"79%"
     },
     "notre_dame_cathedral": {
         "name": "Nhà Thờ Đức Bà",
@@ -19,7 +21,9 @@
         "address" : "Bến Nghé, tp. Hồ Chí Minh, Hồ Chí Minh",
         "phone" : "08 3822 0477",
         "top": "39%",
-        "left": "77%"
+        "left": "77%",
+        "top_lichtrinh":"36%",
+        "left_lichtrinh":"77%"
     },
     "ben_thanh_market": {
         "name": "Chợ Bến Thành",
@@ -30,7 +34,9 @@
         "address" : "Cửa Nam (nằm giữa các đường Phan Bội Châu - Phan Chu Trinh - Lê Thánh Tôn - Công trường Quách Thị Trang) - Phường Bến Thành - Quận 1",
         "phone" : "(08)8292096",
         "top":"58%",
-        "left":"74%"
+        "left":"74%",
+        "top_lichtrinh":"55%",
+        "left_lichtrinh":"74%"
     },
     "city_opera_house": {
         "name": "Nhà Hát Thành Phố",
@@ -41,7 +47,9 @@
         "address" : "Số 7, công trường Lam Sơn, Bến Nghé, Quận 1",
         "phone" : "08 3829 9976",
         "top": "45%",
-        "left": "85%"
+        "left": "85%",
+        "top_lichtrinh":"44%",
+        "left_lichtrinh":"84%"
     },
     "independence_palace": {
         "name": "Dinh Độc Lập",
@@ -52,7 +60,9 @@
         "address" : "135 Nam Kỳ Khởi Nghĩa, quận 1, Thành phố Hồ Chí Minh",
         "phone" : "080. 85037 - 080. 85038 - 080. 85039 – 083.8223652",
         "top":"44%",
-        "left":"69%"
+        "left":"69%",
+        "top_lichtrinh":"40%",
+        "left_lichtrinh":"68%"
     },
     "nha_rong_port": {
         "name": "Bến Nhà Rồng",
@@ -63,6 +73,8 @@
         "address" : "Số 01 Nguyễn Tất Thành, Phường 12, Quận 4, TP. Hồ Chí Minh",
         "phone" : "39402060 - 39401094",
         "top": "77%",
-        "left": "95%"
+        "left": "95%",
+        "top_lichtrinh":"67%",
+        "left_lichtrinh":"93%"
     }
 }
