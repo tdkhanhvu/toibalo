@@ -84,7 +84,7 @@ defined('_JEXEC') or die;
                                     <li class="current"><span></span></li>
                                     <li class=""><span></span></li>
                                 </ul>
-                                <ul class="sequence-canvas">
+                                <ul class="sequence-canvas" style="height:350px;">
                                     <li class="animate-in" style="z-index: 2; opacity: 1;position:relative;">
                                         <div class="row-fluid" style="position:relative;">
                                             <div class="span3" style="float:left;">
@@ -277,9 +277,7 @@ defined('_JEXEC') or die;
                                         <p>Là trung tâm kinh tế lớn của cả nước, Sài Gòn là nơi tập trung văn hóa Bắc
                                             Trung Nam xen lẫn một cách hài hòa.</p>
 
-                                        <p><a class="link-button"
-                                              href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">Visit
-                                                Page</a>
+                                        <p><button type="button" class="btn btn-primary" id="displayArticle">Xem Bài Viết</button>
                                         </p>
                                     </div>
                                 </div>
@@ -507,134 +505,62 @@ defined('_JEXEC') or die;
                     <div class="st-lehoi">
                         <h1 class="st-heading">Lễ hội</h1>
                         <div class="st-sub-heading">Nét đặc trưng riêng của Sài Gòn</div>
+
+                        <div class="jflatTimeline">
+                            <div class="timeline-wrap">
+                                <div class="event" data-date="01/01/2014">
+                                    <div class="layout3">
+                                        <img src="./templates/green/images/tet_duong_lich.jpg" alt="image alt"/>
+                                        <h3>Tết Dương Lịch</h3>
+                                        <p>Tết Dương lịch hay còn gọi là Tết Tây là một trong những ngày
+                                            lễ quan trọng trong năm của nhiều dân tộc trên thế giới. Tết này là ngày đầu
+                                            tiên hàng năm theo dương lịch, loại lịch hiện được dùng phổ biến tại Việt Nam,
+                                            tuy âm lịch vẫn còn được dùng trong các lễ hội, giỗ, tết hay sự kiện văn hóa cổ.</p>
+                                    </div>
+                                    <span class="date"><i class="icon-calendar"></i>01.01.2014</span>
+                                </div>
+                                <div class="event selected" data-date="01/31/2014">
+                                    <div class="layout1">
+                                        <div class="left"><img src="./templates/green/images/tet_nguyen_dan.jpg" alt="image alt"/></div>
+                                        <div class="right">
+                                            <h3>Tết Nguyên Đán</h3>
+                                            <p>Tết Nguyên Đán (hay còn gọi là Tết Cả, Tết Ta, Tết Âm lịch,
+                                                Tết Cổ truyền hay chỉ đơn giản còn gọi là Tết) là dịp lễ quan trọng nhất của
+                                                Việt Nam, theo ảnh hưởng văn hóa của Tết Âm lịch Trung Hoa và Vòng văn hóa Đông
+                                                Á. Trước ngày Tết, thường có những ngày khác để sửa soạn như "Tết Táo Quân" (23
+                                                tháng chạp âm lịch) và "Tất Niên" (29 hoặc 30 tháng chạp âm lịch).</p>
+                                        </div>
+                                    </div>
+                                    <span class="date"><i class="icon-calendar"></i>31.01.2014</span>
+                                </div>
+                                <div class="event" data-date="09/08/2014">
+                                    <div class="layout2">
+                                        <div class="left">
+                                            <h3>Tết Trung Thu</h3>
+                                            <p>Trung thu là giữa mùa thu, Tết Trung Thu như tên gọi đến với chúng ta vào đúng giữa mùa thu tức là vào rằm tháng Tám âm lịch. Tết Trung Thu là tết của trẻ em. Ngay từ đầu tháng, Tết đã được sửa soạn với những cỗ đèn muôn mầu sắc, muôn hình thù, với những bánh dẻo, bánh nướng mà ta gọi gồm là bánh trung thu.</p>
+                                        </div>
+                                        <div class="right"><img src="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
+                                    </div>
+                                    <span class="date"><i class="icon-calendar"></i>08.09.2014</span>
+                                </div>
+                                <div class="event" data-date="12/25/2014">
+                                    <div class="layout3">
+                                        <img src="./templates/green/images/giang_sinh.jpg" alt="image alt"/>
+                                        <h3>Giáng Sinh</h3>
+                                        <p>Lễ Giáng Sinh, còn được gọi là lễ Thiên Chúa giáng sinh, Noel
+                                            hay Christmas là một ngày lễ kỷ niệm Chúa Giêsu sinh ra đời, theo phần lớn các
+                                            tín hữu Kitô giáo. Họ tin là Chúa Giêsu được sinh tại Bethlehem (Bêlem) thuộc xứ
+                                            Judea (Giuđêa) nước Do Thái (ngày nay là 1 thành phố của Palestine), lúc bấy giờ
+                                            thuộc Đế quốc La Mã, khoảng giữa năm 7 TCN và năm 2.</p>
+                                    </div>
+                                    <span class="date"><i class="icon-calendar"></i>25.12.2014</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="101" class="avatar-module ">
-            <div class="module-content">
-                <script type="text/javascript">
-                    jQuery.noConflict();
-                    (function ($) {
-                        jQuery(document).ready(function () {
-                            setTimeout(function () {
-                                var left_hei = $(".timeline-left").height();
-                                var right_hei = $(".timeline-right").height();
-                                var total_hei = 0;
-                                if (left_hei >= right_hei) {
-                                    total_hei = left_hei + 66;
-                                } else {
-                                    total_hei = right_hei + 66;
-                                }
-                                $("#st-content-showcase-timeline").css("height", total_hei + "px");
-                            }, 1000);
-                        });
-                    })(jQuery);
-                </script>
-                <div id="st-content-showcase-timeline" style="">
-                    <div class="timeline"></div>
-                    <?php
-                    $lh_date = array ('1/1/2014','8/9/2014','31/1/2014','25/12/2014');
-                    $lh_link = array ('#','#','#','#');
-                    $lh_content = array (
-                        'Tết Dương lịch hay còn gọi là Tết Tây là một trong những ngày
-                        lễ quan trọng trong năm của nhiều dân tộc trên thế giới. Tết này là ngày đầu
-                        tiên hàng năm theo dương lịch, loại lịch hiện được dùng phổ biến tại Việt Nam,
-                        tuy âm lịch vẫn còn được dùng trong các lễ hội, giỗ, tết hay sự kiện văn hóa cổ.',
-                        'Trung thu là giữa mùa thu, Tết Trung Thu như tên gọi đến với
-                        chúng ta vào đúng giữa mùa thu tức là vào rằm tháng Tám âm lịch. Tết Trung Thu
-                        là tết của trẻ em. Ngay từ đầu tháng, Tết đã được sửa soạn với những cỗ đèn muôn
-                        mầu sắc, muôn hình thù, với những bánh dẻo, bánh nướng mà ta gọi gồm là bánh trung thu',
-                        'Tết Nguyên Đán (hay còn gọi là Tết Cả, Tết Ta, Tết Âm lịch,
-                        Tết Cổ truyền hay chỉ đơn giản còn gọi là Tết) là dịp lễ quan trọng nhất của
-                        Việt Nam, theo ảnh hưởng văn hóa của Tết Âm lịch Trung Hoa và Vòng văn hóa Đông
-                        Á. Trước ngày Tết, thường có những ngày khác để sửa soạn như "Tết Táo Quân" (23
-                        tháng chạp âm lịch) và "Tất Niên" (29 hoặc 30 tháng chạp âm lịch)',
-                        'Lễ Giáng Sinh, còn được gọi là lễ Thiên Chúa giáng sinh, Noel
-                        hay Christmas là một ngày lễ kỷ niệm Chúa Giêsu sinh ra đời, theo phần lớn các
-                        tín hữu Kitô giáo. Họ tin là Chúa Giêsu được sinh tại Bethlehem (Bêlem) thuộc xứ
-                        Judea (Giuđêa) nước Do Thái (ngày nay là 1 thành phố của Palestine), lúc bấy giờ
-                        thuộc Đế quốc La Mã, khoảng giữa năm 7 TCN và năm 2.',
-                    );
-                    $lh_img = array (
-                        './templates/green/images/tet_duong_lich.jpg',
-                        './templates/green/images/trung_thu.jpg',
-                        './templates/green/images/tet_nguyen_dan.jpg',
-                        './templates/green/images/giang_sinh.jpg',
-                    );
-                    $lh_title = array (
-                        'Tết dương lịch',
-                        'Trung Thu',
-                        'Tết Nguyên Đán',
-                        'Giáng Sinh',
-                    );
-                    $lh_timeline = array ('timeline-0','timeline-0','timeline-1','timeline-1');
-                    ?>
-                    <div class="timeline-left">
-                        <?php for ($i = 0; $i < 2; $i++) {?>
-                            <div class="item <?php echo $lh_timeline[$i] ?>">
-                                <div class="time">
-                                    <span><?php echo $lh_date[$i] ?></span>
-                                </div>
-                                <div class="plus">
-                                    <div class="point"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="inner">
-                                    <div class="thumbnail-image">
-                                        <a href="<?php echo $lh_link[$i] ?>" title="<?php echo $lh_title[$i] ?>" >
-                                            <div class="media">
-                                                <img src="<?php echo $lh_img[$i] ?>" alt="<?php echo $lh_title[$i] ?>"/>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="content">
-                                        <h3 class="title">
-                                            <a href="<?php echo $lh_link[$i] ?>"></a>
-                                        </h3>
-                                        <div class="clearfix"></div>
-                                        <p class="description"><?php echo $lh_content[$i] ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }; ?>
-                    </div>
-                    <div class="timeline-right">
-                        <?php for ($i = 2; $i < 4; $i++) {?>
-                            <div class="item <?php echo $lh_timeline[$i] ?>">
-                                <div class="time">
-                                    <span><?php echo $lh_date[$i] ?></span>
-                                </div>
-                                <div class="plus">
-                                    <div class="point"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="inner">
-                                    <div class="thumbnail-image">
-                                        <a href="<?php echo $lh_link[$i] ?>" title="<?php echo $lh_title[$i] ?>" >
-                                            <div class="media">
-                                                <img src="<?php echo $lh_img[$i] ?>" alt="<?php echo $lh_title[$i] ?>"/>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="content">
-                                        <h3 class="title">
-                                            <a href="<?php echo $lh_link[$i] ?>"></a>
-                                        </h3>
-                                        <div class="clearfix"></div>
-                                        <p class="description"><?php echo $lh_content[$i] ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php }; ?>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
 </div><!-- End avatar-body-bottom-block-->
 
 <div id="avatar-full-1-example-block" position="item-109">
@@ -1032,13 +958,13 @@ jQuery.noConflict();
     })(jQuery);
 
 
-    window.addEvent('domready', function() {
+/*    window.addEvent('domready', function() {
 
         SqueezeBox.initialize({});
         SqueezeBox.assign($$('a.modal'), {
             parse: 'rel'
         });
-    });
+    });*/
 
 
 </script>
@@ -1086,6 +1012,15 @@ jQuery.noConflict();
             $(".note_select").click(function () {
                 $("#frame").attr("src", "./templates/green/blog.php");
             });
+
+            $("#displayArticle").click(function () {
+                window.open("./templates/green/wiki.php", '_blank');
+            });
+
+            $("div.jflatTimeline").jflatTimeline({
+                scroll: "2",
+                scrollingTime: "300"
+            })
         });
     })(jQuery)
 </script>
