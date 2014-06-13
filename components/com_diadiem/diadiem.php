@@ -471,24 +471,29 @@ defined('_JEXEC') or die;
         <div class="avatar-module ">
             <div class="module-content">
                 <div class="custom">
-                    <div class="st-blog" style="position:relative; left:0px; top:0px; width:18%">
+                    <div class="st-onepage">
+                    <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
                         <h1 class="st-heading" style="float:left">Nhật kí</h1>
-                        <div style="float:left;width:100%;font-size: large;color:#ffffff;margin-bottom: 20px">
+                        <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px">
                             <img class="note_select" src="./templates/green/images/du_khach_1.jpg"/>
                             <div>Trần Thanh Hùng</div>
                             <div>Nha Trang</div>
                             <div>10-15/5/2013</div>
                         </div>
-                        <div style="float:left;width:100%;font-size: large;color:#ffffff">
+                        <div style="float:left;font-size: large;color:#ffffff">
                             <img class="note_select" src="./templates/green/images/du_khach_2.jpg"/>
                             <div>Nguyễn Thị Diễm Lệ</div>
                             <div>Hải Phòng</div>
                             <div>6-9/1/2014</div>
                         </div>
+
+                        <div style="clear:both"></div>
                     </div>
-                    <div id="dialog p_rel" title="Basic modal dialog">
-                        <iframe id="frame" src="about:blank" width="78%" height="610px" >
+                    <div id="dialog p_rel" title="Basic modal dialog" style="float:left;width:80%;">
+                        <iframe id="frame" src="about:blank" height="610px" style="width:100%;">
                         </iframe>
+                    </div>
+                    <div style="clear:both"></div>
                     </div>
                 </div>
             </div>
