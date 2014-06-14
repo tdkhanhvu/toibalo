@@ -102,13 +102,13 @@ $session =& JFactory::getSession();
     }
 </style>
 
-<div id="avatar-full-1-block">
+<div id="avatar-full-1-block" position="item-104">
     <div class="content block-default-width">
         <div class="avatar-module ">
             <div class="module-content">
                 <div class="custom">
                     <div class="st-onepage">
-                        <div class="st-projects onepage-appear" position="item-104">
+                        <div class="st-projects onepage-appear">
                             <h1 class="st-heading">Thời Điểm</h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
                             <div class="span6 offset3">
@@ -191,7 +191,7 @@ $session =& JFactory::getSession();
     </div>
 </div>
 
-<div id="avatar-full-2-block">
+<div id="avatar-full-2-block" position="item-101">
     <div class="content block-default-width">
         <div class="avatar-module ">
             <div class="module-content">
@@ -199,7 +199,7 @@ $session =& JFactory::getSession();
 
                 <div class="custom">
                     <div class="st-onepage" id="transport_section">
-                        <div class="st-projects onepage-appear" position="item-101">
+                        <div class="st-projects onepage-appear">
                             <h1 class="st-heading">Phương Tiện</h1>
                             <div class="st-sub-heading">Cách Thức Để Đi</div>
 

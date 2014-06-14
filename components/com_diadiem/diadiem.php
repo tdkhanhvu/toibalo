@@ -19,6 +19,7 @@ defined('_JEXEC') or die;
                         <li class=""><span></span></li>
                         <li class="current"><span></span></li>
                     </ul>
+                    <div style="text-align:center"><button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Hình Ảnh');">Phản Hồi</button></div>
                     <ul class="sequence-canvas">
                         <?php
                         $slide_img_link = array('http://www.beautiful-templates.com/demo/templates-joomla/st_green/index.php?option=com_content&view=article&id=7'
@@ -74,7 +75,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-features onepage-appear" position="item-103">
-                            <h1 class="st-heading">Đặc trưng</h1>
+                            <h1 class="st-heading">Đặc trưng<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Đặc Trưng');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
                             <div class="st-layer-slider " style="width: 100%;max-height:none;" id="dactrung_slide">
@@ -143,7 +144,7 @@ defined('_JEXEC') or die;
 
                                 </ul>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,7 +156,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
-                            <h1 class="st-heading">Tham quan</h1>
+                            <h1 class="st-heading">Tham quan<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Tham Quan');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những nơi không nên bỏ lỡ</p>
                             <div class="st-layer-slider " style="width: 100%; height: 345px;" id="thamquan_slide">
@@ -272,7 +273,7 @@ defined('_JEXEC') or die;
                             <div class="row-fluid">
                                 <div class="span8">
                                     <div class="inner content">
-                                        <h1>Văn hóa giao thoa</h1>
+                                        <h1>Văn hóa giao thoa <button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Bài Viết');">Phản Hồi</button></h1>
 
                                         <p>Là trung tâm kinh tế lớn của cả nước, Sài Gòn là nơi tập trung văn hóa Bắc
                                             Trung Nam xen lẫn một cách hài hòa.</p>
@@ -310,7 +311,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-team onepage-disappear" position="item-106">
-                            <h1 class="st-heading">Cảm nghĩ</h1>
+                            <h1 class="st-heading">Cảm nghĩ<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Cảm Nghĩ');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading" style="margin-bottom:15px;">Sài Gòn trong tim mỗi người là...</p>
                             <div class="st-layer-slider span12" style="width: 100%;height:600px;margin-left:0px;" id="camnghi_slide">
@@ -472,28 +473,28 @@ defined('_JEXEC') or die;
             <div class="module-content">
                 <div class="custom">
                     <div class="st-onepage">
-                    <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
-                        <h1 class="st-heading" style="float:left">Nhật kí</h1>
-                        <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px">
-                            <img class="note_select" src="./templates/green/images/du_khach_1.jpg"/>
-                            <div>Trần Thanh Hùng</div>
-                            <div>Nha Trang</div>
-                            <div>10-15/5/2013</div>
-                        </div>
-                        <div style="float:left;font-size: large;color:#ffffff">
-                            <img class="note_select" src="./templates/green/images/du_khach_2.jpg"/>
-                            <div>Nguyễn Thị Diễm Lệ</div>
-                            <div>Hải Phòng</div>
-                            <div>6-9/1/2014</div>
-                        </div>
+                        <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
+                            <h1 class="st-heading" style="float:left">Nhật kí<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
+                            <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px">
+                                <img class="note_select" src="./templates/green/images/du_khach_1.jpg"/>
+                                <div>Trần Thanh Hùng</div>
+                                <div>Nha Trang</div>
+                                <div>10-15/5/2013</div>
+                            </div>
+                            <div style="float:left;font-size: large;color:#ffffff">
+                                <img class="note_select" src="./templates/green/images/du_khach_2.jpg"/>
+                                <div>Nguyễn Thị Diễm Lệ</div>
+                                <div>Hải Phòng</div>
+                                <div>6-9/1/2014</div>
+                            </div>
 
+                            <div style="clear:both"></div>
+                        </div>
+                        <div id="dialog p_rel" title="Basic modal dialog" style="float:left;width:80%;">
+                            <iframe id="frame" src="about:blank" height="610px" style="width:100%;">
+                            </iframe>
+                        </div>
                         <div style="clear:both"></div>
-                    </div>
-                    <div id="dialog p_rel" title="Basic modal dialog" style="float:left;width:80%;">
-                        <iframe id="frame" src="about:blank" height="610px" style="width:100%;">
-                        </iframe>
-                    </div>
-                    <div style="clear:both"></div>
                     </div>
                 </div>
             </div>
@@ -508,7 +509,8 @@ defined('_JEXEC') or die;
             <div class="module-content">
                 <div class="custom">
                     <div class="st-lehoi">
-                        <h1 class="st-heading">Lễ hội</h1>
+                        <h1 class="st-heading">Lễ hội<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Lễ Hội');">Phản Hồi</button>
+                        </h1>
                         <div class="st-sub-heading">Nét đặc trưng riêng của Sài Gòn</div>
 
                         <div class="jflatTimeline">
@@ -566,12 +568,13 @@ defined('_JEXEC') or die;
                 </div>
             </div>
         </div>
-</div><!-- End avatar-body-bottom-block-->
+    </div><!-- End avatar-body-bottom-block-->
+</div>
 
 <div id="avatar-full-1-example-block" position="item-109">
     <div class="content1">
         <div id="109" class="avatar-module st-our-work">
-            <h3 class="st-heading"><span></spam><span>Ẩm thực</span></span></h3>
+            <h3 class="st-heading"><span>Ẩm thực</span><button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Ẩm Thực');">Phản Hồi</button></h3>
 
             <div class="st-module-content">
                 <div class="st-content-showcase-wall grey" id="53415ba15888f">
@@ -963,13 +966,13 @@ jQuery.noConflict();
     })(jQuery);
 
 
-/*    window.addEvent('domready', function() {
+    /*    window.addEvent('domready', function() {
 
-        SqueezeBox.initialize({});
-        SqueezeBox.assign($$('a.modal'), {
-            parse: 'rel'
-        });
-    });*/
+     SqueezeBox.initialize({});
+     SqueezeBox.assign($$('a.modal'), {
+     parse: 'rel'
+     });
+     });*/
 
 
 </script>

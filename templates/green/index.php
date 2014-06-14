@@ -5,19 +5,16 @@ $doc = JFactory::getDocument();
 $option =  JRequest::getVar('option'); // De phan loai trang
 
 if ($option != "com_data") {
-    $doc->addStyleSheet('./media/jui/css/bootstrap.css');
+    $doc->addStyleSheet('./media/jui/css/bootstrap.min.css');
     $doc->addStyleSheet('./media/jui/css/bootstrap-responsive.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/jquery.miniColors.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/grey.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/system.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/general.css');
-    //$doc->addStyleSheet('templates/' . $this->template . '/css/editor.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/layout.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/core_joomla.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
-    //$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
-    //$doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap-responsive.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/font-awesome.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
@@ -27,6 +24,9 @@ if ($option != "com_data") {
     $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/res-timeline.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/popup.min.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/rating/rating.css');
+
     $doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-migrate.min.js', 'text/javascript');
@@ -53,6 +53,8 @@ if ($option != "com_data") {
 
     //Dia Diem
     $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.bpopup.min.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/rating/rating.js', 'text/javascript');
 }
 
 ?>
@@ -79,6 +81,19 @@ if ($option != "com_data") {
 <!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
 </head>
 <body id="avatar-template" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
+<script type="text/javascript">
+    function PopUpFeedback(page, section) {
+        jQuery('#popup').bPopup();
+        jQuery('#inputPage').val(page);
+        jQuery('#inputSection').val(section);
+    }
+
+    function SubmitFeedback() {
+        alert(jQuery('#inputName').val() + '\n' + jQuery('#inputEmail').val() + '\n' + jQuery('#rating').find('input').val() + '\n' + jQuery('#comment').val());
+
+        return;
+    }
+</script>
 <!-- Top -->
 <a name="top" id="top"></a>
 
@@ -213,5 +228,75 @@ if ($option != "com_data") {
 	
 </div><!-- End Clearfix-->
 
+<div id="popup">
+    <span class="button b-close"><span>X</span></span>
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+            <label for="inputPage" class="col-sm-2 control-label">Trang</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPage" value="" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputSection" class="col-sm-2 control-label">Mục</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputSection" value="" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">Họ Tên</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Họ Tên">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rating" class="col-sm-2 control-label">Đánh Giá</label>
+            <div class="col-sm-10">
+                <div id="rating"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comment" class="col-sm-2 control-label">Nhận Xét</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputFile" class="col-sm-2 control-label">Upload</label>
+            <div class="col-sm-10">
+                <input type="file" id="inputFile">
+            </div>
+        </div>
+        <div class="form-group">
+
+
+            <div class="col-sm-offset-5 col-sm-10" style="text-align:center">
+                <button type="button" class="btn btn-default" onclick="SubmitFeedback();">Gửi</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function () {
+            $.fn.raty.defaults.path = './templates/green/images/rating';
+
+            $('#rating').raty({
+                click: function(score, evt) {
+                    //alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
+                },
+                cancel:true
+            });
+        });
+    })(jQuery)
+</script>
 </body>
 </html>
