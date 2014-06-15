@@ -6,6 +6,7 @@ $option =  JRequest::getVar('option'); // De phan loai trang
 
 if ($option != "com_data") {
     $doc->addStyleSheet('./media/jui/css/bootstrap.min.css');
+    $doc->addStyleSheet('./media/jui/css/bootstrap-theme.css');
     $doc->addStyleSheet('./media/jui/css/bootstrap-responsive.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/jquery.miniColors.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
@@ -96,85 +97,101 @@ if ($option != "com_data") {
 </script>
 <!-- Top -->
 <a name="top" id="top"></a>
+<script>
+    jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function () {
+            $.fn.raty.defaults.path = './templates/green/images/rating';
 
+            $('#rating').raty({
+                click: function(score, evt) {
+                    //alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
+                },
+                cancel:true
+            });
+        });
+    })(jQuery)
+</script>
 <div class="clearfix">
 	
 		
 	<!-- 2. Main Menu-->
-	
+
 	<div class='navbar'>
 		<div class='container'>
 			<div class='row p_rel'>
 				<div class='span2'>
 					<a class="navbar-brand" href=".">
-					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px">
+					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px" style="margin-top:-10px;">
 					</a>
 				</div>
-				<div class='span10 f_right'>
+				<div class='span10 f_right' style="margin-left: 0px;">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<div class="nav-collapse collapse ">
-						<ul class="nav">
+					<div class="nav-collapse collapse" style="display:block;">
+						<ul class="nav navbar-nav">
 							<!--<li><a href="/features/">Features</a></li>-->
 							<?php if ($option == 'com_diadiem') { ?>
 								<!--<li class="item-101"><a class="body" href="">Home</a></li>-->
 								<li class="item-102 current active">
-									<a class=".st-top-slider" href="#">Hình Ảnh</a>	
+									<a class=".st-top-slider" href="#" >Hình Ảnh</a>
 								</li>
 								<li class="item-103">
-									<a class=".st-features" href="#">Đặc Trưng</a>
+									<a class=".st-features" href="#" >Đặc Trưng</a>
 								</li>
 								<li class="item-104">
-									<a class=".st-projects"	href="#">Tham Quan</a>		
+									<a class=".st-projects"	href="#" >Tham Quan</a>
 								</li>
 								<li class="item-105">
-									<a class=".st-home" href="#">Bài Viết</a>			
+									<a class=".st-home" href="#" >Bài Viết</a>
 								</li>
 								<li class="item-106">
-									<a class=".st-team" href="#">Cảm Nghĩ</a>								
+									<a class=".st-team" href="#" >Cảm Nghĩ</a>
 								</li>
 								<li class="item-107">
-									<a class="#avatar-full-5-block" href="#">Nhật Kí</a>
+									<a class="#avatar-full-5-block" href="#" >Nhật Kí</a>
 								</li>
 								<li class="item-108">
-									<a class="#avatar-body-bottom-block" href="#">Lễ Hội</a>
+									<a class="#avatar-body-bottom-block" href="#" >Lễ Hội</a>
 								</li>
 								<li class="item-109">
-									<a class="#avatar-full-1-example-block" href="#">Ẩm Thực</a>			
+									<a class="#avatar-full-1-example-block" href="#" >Ẩm Thực</a>
 								</li>
                             <?php } else if ($option == 'com_lichtrinh') { ?>
                                 <li class="item-104 current active">
-                                    <a class="#avatar-full-1-block" href="#">Thời Điểm</a>
+                                    <a class="#avatar-full-1-block" href="#" >Thời Điểm</a>
                                 </li>
                                 <li class="item-101">
-                                    <a class="#avatar-full-2-block" href="#">Phương Tiện</a>
+                                    <a class="#avatar-full-2-block" href="#" >Phương Tiện</a>
                                 </li>
                                 <li class="item-105">
-                                    <a class=".st-home" href="#">Tham Quan</a>
+                                    <a class=".st-home" href="#" >Tham Quan</a>
                                 </li>
                                 <li class="item-106">
-                                    <a class="#st-advice" href="#">Lời Khuyên</a>
+                                    <a class="#st-advice" href="#" >Lời Khuyên</a>
                                 </li>
                                 <li class="item-107">
-                                    <a class="#st-food" href="#">Ẩm Thực</a>
+                                    <a class="#st-food" href="#" >Ẩm Thực</a>
                                 </li>
                                 <li class="item-108">
-                                    <a class="#avatar-body-bottom-block" href="#">Chi Phí</a>
+                                    <a class="#avatar-body-bottom-block" href="#" >Chi Phí</a>
                                 </li>
 							<?php } else if ($option == 'com_thongtin') { ?>
-                                <li><a href="#">Thông Tin</a></li>
+                                <li><a href="#" >Thông Tin</a></li>
                             <?php } else if ($option == 'com_video') { ?>
-                                <li><a href="#">Thông Tin</a></li>
+                                <li><a href="#" >Thông Tin</a></li>
+                            <?php } else if ($option == 'com_profile') { ?>
+                                <li><a href="#" >Profile</a></li>
                             <?php } else if ($option == 'com_data') { ?>
                             <?php } else { ?>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Blog</a></li>
-								<li class="sep"></li><li>
-								</li><li><a href="#">Log in</a></li>
-								<li class="signup"><a href="#">Sign up</a></li>	
+								<li><a href="#" >About</a></li>
+								<li><a href="#" >Blog</a></li>
+								<li class="sep" ></li><li>
+								</li><li><a href="#" >Log in</a></li>
+								<li class="signup"><a href="#" >Sign up</a></li>
 							<?php } ?>
 						</ul>
 					</div>
@@ -283,20 +300,6 @@ if ($option != "com_data") {
     </form>
 </div>
 
-<script>
-    jQuery.noConflict();
-    (function ($) {
-        $(document).ready(function () {
-            $.fn.raty.defaults.path = './templates/green/images/rating';
 
-            $('#rating').raty({
-                click: function(score, evt) {
-                    //alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt);
-                },
-                cancel:true
-            });
-        });
-    })(jQuery)
-</script>
 </body>
 </html>

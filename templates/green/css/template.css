@@ -87,7 +87,6 @@
     width: 100%;
     opacity: 1;
     filter: alpha(opacity=100);
-	padding: 5px 0px;
 	background-image: url(../images/bg_menu.jpg);
 	background-repeat: repeat-x;
 	background-position-y: -20px;
@@ -165,8 +164,8 @@ header .article-tool .article-info > *:before,
 }
 #tbl_nav ul>li {
     float:left;
-    width:20%;
-    height: 76px;
+    width:22%;
+    height: 100px;
     border: 3px solid orange;
     padding: 2%;
     margin-right: 5px;
@@ -176,6 +175,7 @@ header .article-tool .article-info > *:before,
     display: block;
     background-size: 210px;
     height: 70px;
+	width:210px;
     text-indent: -99999px;
 }
 #tbl_nav ul>li>a>img {
@@ -763,7 +763,7 @@ a:visited,
 
 .st-features .title, .st-team .title {
     font: 24px montserratbold;
-    margin: 0 0 25px;
+    /* margin: 0 0 25px; */
     color: #595959;
 }
 
@@ -852,8 +852,8 @@ a:visited,
 }
 
 .st-projects .content {
-    margin: 65px auto;
-    position: relative;
+/*     margin: 65px auto;
+ */    position: relative;
     height: 238px;
     width: 238px;
 }
@@ -982,7 +982,7 @@ a:visited,
 
 .st-team .inner .role {
     font: 20px montserratregular;
-    margin: 0 0 20px;
+   /*  margin: 0 0 20px; */
 }
 
 .st-footer-social,
@@ -1301,6 +1301,7 @@ a:visited,
 .circular {
     width: 240px;
     height: 240px;
+	margin-bottom:20px;
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
@@ -2723,3 +2724,7 @@ header .article-tool .article-info {
 
 /*=== End Responsive screen 320===*/
 /*===End Responsive===*/	
+
+.ui-datepicker-month, .ui-datepicker-year {
+	color:#4B44A0;
+}

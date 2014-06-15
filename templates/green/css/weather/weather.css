@@ -31,7 +31,7 @@
 }
 
 .info {
-    height: 6em;
+/*     height: 6em; */
 
     margin-top:0em;
     margin-bottom:0em;
@@ -39,8 +39,8 @@
 }
 
 .info img {
-    margin-top: 2em;
-    margin-bottom:0.5em;
+/*     margin-top: 2em;
+    margin-bottom:0.5em; */
 }
 .monthinfo {
     padding-bottom: 1.5em;

@@ -6,8 +6,8 @@ $session =& JFactory::getSession();
 ?>
 <style type="text/css">
     .vote-icon {
-        width:20px;
-        height:20px;
+        width:35px;
+        height:35px;
         padding:3px;
         z-index: 9999;
     }
@@ -99,6 +99,10 @@ $session =& JFactory::getSession();
 
     .selected {
         background-color:green;
+    }
+
+    .panel-heading {
+        padding: 0px;
     }
 </style>
 
@@ -309,7 +313,7 @@ $session =& JFactory::getSession();
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
                             <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;margin-left:0px;">
                                 <div class="ip_slide">
-                                    <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg">
+                                    <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg" width="860">
                                     <?php
                                         foreach($attraction as $key => $value) {
                                             echo '<div class="ip_tooltip ip_img32" style="top: '.$value['top_lichtrinh'].'; left: '.$value['left_lichtrinh'].';" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">';

@@ -8,6 +8,10 @@ $session =& JFactory::getSession();
 
 <!-- search -->
 <style>
+    .transport_detail > div > img {
+        width: 80%;
+    }
+
     @media (max-width: 900px) {
         .container, .tbl_content{
             margin-left:0px;
@@ -325,7 +329,7 @@ $session =& JFactory::getSession();
             echo '<div class="box_title">'.$temp["name"].'</div>';
             echo '<div class="box_content">';
             echo '<div class="box_image">';
-            echo '   <img src="./templates/green/images/'.$temp["image_url"].'"/>';
+            echo '   <img class="img-responsive" src="./templates/green/images/'.$temp["image_url"].'"/>';
             echo '</div>';
             echo '<div class="box_comment">'.$temp["address"].'</div>';
             echo '</div>';
@@ -370,7 +374,7 @@ $session =& JFactory::getSession();
 
     <div style="position:relative">
 <!--        <span class="attraction_point" style="top:335px;left:343px;">1</span>-->
-        <img src="./templates/green/images/Attraction/sai_gon_map.jpg"/>
+        <img src="./templates/green/images/Attraction/sai_gon_map.jpg" class="img-responsive"/>
         <?php
             $arr = $session -> get('select_attraction');
             $temp = array();
@@ -389,7 +393,7 @@ $session =& JFactory::getSession();
     $i = 1;
     foreach($temp as $attraction) {
         echo '<div class="span12 attraction">';
-        echo '<div class="span2"><img src="./templates/green/images/'.$attraction["image_url"].'"/></div>';
+        echo '<div class="span2"><img class="img-responsive" src="./templates/green/images/'.$attraction["image_url"].'"/></div>';
         echo '<div class="span10">';
         echo '  <p>'.$i.') '.$attraction["name"].'</p>';
         echo '   <p>'.$attraction["description"].'</p>';

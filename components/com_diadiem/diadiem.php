@@ -6,6 +6,12 @@ defined('_JEXEC') or die;
 
 <a id="avatar-go-to-top" href="#top" style="display: block;"><span></span></a>
 
+<style>
+    .sequence-canvas {
+        padding-left:0px;
+    }
+</style>
+
 <div id="avatar-tool-block">
     <div class="content">
         <div class="avatar-module st-top-slider onepage-appear" position="item-102">
@@ -19,7 +25,7 @@ defined('_JEXEC') or die;
                         <li class=""><span></span></li>
                         <li class="current"><span></span></li>
                     </ul>
-                    <div style="text-align:center"><button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Hình Ảnh');">Phản Hồi</button></div>
+                    <div style="text-align:center"><button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Hình Ảnh');">Phản Hồi</button></div>
                     <ul class="sequence-canvas">
                         <?php
                         $slide_img_link = array('http://www.beautiful-templates.com/demo/templates-joomla/st_green/index.php?option=com_content&view=article&id=7'
@@ -75,7 +81,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-features onepage-appear" position="item-103">
-                            <h1 class="st-heading">Đặc trưng<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Đặc Trưng');">Phản Hồi</button></h1>
+                            <h1 class="st-heading">Đặc trưng<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Đặc Trưng');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
                             <div class="st-layer-slider " style="width: 100%;max-height:none;" id="dactrung_slide">
@@ -91,6 +97,7 @@ defined('_JEXEC') or die;
                                             <div class="span3" style="float:left;">
                                                 <div class="st-icon-star">&nbsp;</div>
                                                 <div class="title">Nơi đến ưa thích</div>
+                                                <div id="dactrung_1"></div>
                                                 <div class="content">9/10 du khách tới du lịch Việt Nam đều dành thời gian thăm quan
                                                     Sài Gòn
                                                 </div>
@@ -98,6 +105,7 @@ defined('_JEXEC') or die;
                                             <div class="span3" style="float:left;">
                                                 <div class="st-icon-food">&nbsp;</div>
                                                 <div class="title">Ẩm thực</div>
+                                                <div id="dactrung_2"></div>
                                                 <div class="content">Là nơi hội tụ ẩm thực cả nước nói chung và miền Tây Nam Bô nói
                                                     riêng.
                                                     Món ăn nổi tiêng nhất phải kể tới cơm tấm, hủ tiếu, bánh tráng trộn.
@@ -106,12 +114,14 @@ defined('_JEXEC') or die;
                                             <div class="span3" style="float:left;">
                                                 <div class="st-icon-cup">&nbsp;</div>
                                                 <div class="title">Cà phê bệt</div>
+                                                <div id="dactrung_3"></div>
                                                 <div class="content">Một nét đặc trưng thú vị với ly cà phê bệt ở góc nhà thờ Đức Bà
                                                 </div>
                                             </div>
                                             <div class="span3" style="float:left;">
                                                 <div class="st-icon-camera">&nbsp;</div>
                                                 <div class="title">Kiến trúc Pháp</div>
+                                                <div id="dactrung_4"></div>
                                                 <div class="content">Với những công trình mang đậm kiến trúc thòi Pháp thuộc như Nhà
                                                     Thờ Đức Bà, Bưu Điện Thành Phố, Dinh Độc Lập...
                                                     Sài Gòn là địa điểm thích hợp cho các bạn trẻ muốn lưu giữ lại những bức ảnh đẹp
@@ -156,7 +166,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
-                            <h1 class="st-heading">Tham quan<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Tham Quan');">Phản Hồi</button></h1>
+                            <h1 class="st-heading">Tham quan<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Tham Quan');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những nơi không nên bỏ lỡ</p>
                             <div class="st-layer-slider " style="width: 100%; height: 345px;" id="thamquan_slide">
@@ -174,7 +184,7 @@ defined('_JEXEC') or die;
                                                                           src="./templates/green/images/nha_tho_duc_ba.jpg"
                                                                           border="0"
                                                                           alt=""><br>
-
+                                                    <div id="thamquan_1"></div>
                                                     <div class="detail">
                                                         <h2 class="title">Nhà thờ Đức Bà</h2>
 
@@ -186,7 +196,7 @@ defined('_JEXEC') or die;
                                                 <div class="content"><img class="circular"
                                                                           src="./templates/green/images/dinh_doc_lap.jpg" border="0"
                                                                           alt=""><br>
-
+                                                    <div id="thamquan_2"></div>
                                                     <div class="detail">
                                                         <h2 class="title">Dinh Độc Lập</h2>
 
@@ -199,7 +209,7 @@ defined('_JEXEC') or die;
                                                                           src="./templates/green/images/cho_ben_thanh.jpg"
                                                                           border="0"
                                                                           alt=""><br>
-
+                                                    <div id="thamquan_3"></div>
                                                     <div class="detail">
                                                         <h2 class="title">Chợ Bến Thành</h2>
 
@@ -211,7 +221,7 @@ defined('_JEXEC') or die;
                                                 <div class="content"><img class="circular"
                                                                           src="./templates/green/images/ben_nha_rong.jpg" border="0"
                                                                           alt=""><br>
-
+                                                    <div id="thamquan_4"></div>
                                                     <div class="detail">
                                                         <h2 class="title">Bến Nhà Rồng</h2>
 
@@ -273,7 +283,7 @@ defined('_JEXEC') or die;
                             <div class="row-fluid">
                                 <div class="span8">
                                     <div class="inner content">
-                                        <h1>Văn hóa giao thoa <button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Bài Viết');">Phản Hồi</button></h1>
+                                        <h1>Văn hóa giao thoa <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Bài Viết');">Phản Hồi</button></h1>
 
                                         <p>Là trung tâm kinh tế lớn của cả nước, Sài Gòn là nơi tập trung văn hóa Bắc
                                             Trung Nam xen lẫn một cách hài hòa.</p>
@@ -284,9 +294,7 @@ defined('_JEXEC') or die;
                                 </div>
                                 <div class="span4">
                                     <div class="inner phone" style="width:100%">
-                                        <img src="./templates/green/images/tong_hop.jpg"
-                                             border="0"
-                                             alt="">
+                                        <img src="./templates/green/images/tong_hop.jpg" border="0" alt="" width="370">
                                         <img src="./templates/green/images/hang_rong_sai_gon.jpg"
                                              border="0"
                                              alt="">
@@ -311,7 +319,7 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-team onepage-disappear" position="item-106">
-                            <h1 class="st-heading">Cảm nghĩ<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Cảm Nghĩ');">Phản Hồi</button></h1>
+                            <h1 class="st-heading">Cảm nghĩ<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Cảm Nghĩ');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading" style="margin-bottom:15px;">Sài Gòn trong tim mỗi người là...</p>
                             <div class="st-layer-slider span12" style="width: 100%;height:600px;margin-left:0px;" id="camnghi_slide">
@@ -333,6 +341,7 @@ defined('_JEXEC') or die;
                                                     <h3 class="title">Nguyễn Duy Long</h3>
 
                                                     <div class="role">Hà Nội</div>
+                                                    <div id="camnghi_1"></div>
                                                     <!--                                        <div class="social"><a class="facebook"
                                                                                                                    href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
                                                                                                 <a class="twitter"
@@ -353,6 +362,7 @@ defined('_JEXEC') or die;
                                                     <h3 class="title">Trần Nhật Trung</h3>
 
                                                     <div class="role">Huế</div>
+                                                    <div id="camnghi_2"></div>
                                                     <!--                                        <div class="social"><a class="facebook"
                                                                                                                    href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
                                                                                                 <a class="twitter"
@@ -374,6 +384,7 @@ defined('_JEXEC') or die;
                                                     <h3 class="title">Mai Đình Anh</h3>
 
                                                     <div class="role">Đà Nẵng</div>
+                                                    <div id="camnghi_3"></div>
                                                     <!--                                        <div class="social"><a class="facebook"
                                                                                                                    href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
                                                                                                 <a class="twitter"
@@ -395,6 +406,7 @@ defined('_JEXEC') or die;
                                                     <h3 class="title">Trần Đoàn Khánh Vũ</h3>
 
                                                     <div class="role">Hồ Chí Minh</div>
+                                                    <div id="camnghi_4"></div>
                                                     <!--                                        <div class="social"><a class="facebook"
                                                                                                                    href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
                                                                                                 <a class="twitter"
@@ -474,18 +486,20 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
-                            <h1 class="st-heading" style="float:left">Nhật kí<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
+                            <h1 class="st-heading" style="float:left">Nhật kí<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
                             <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px">
                                 <img class="note_select" src="./templates/green/images/du_khach_1.jpg"/>
                                 <div>Trần Thanh Hùng</div>
                                 <div>Nha Trang</div>
                                 <div>10-15/5/2013</div>
+                                <div id="nhatki_1"></div>
                             </div>
                             <div style="float:left;font-size: large;color:#ffffff">
                                 <img class="note_select" src="./templates/green/images/du_khach_2.jpg"/>
                                 <div>Nguyễn Thị Diễm Lệ</div>
                                 <div>Hải Phòng</div>
                                 <div>6-9/1/2014</div>
+                                <div id="nhatki_2"></div>
                             </div>
 
                             <div style="clear:both"></div>
@@ -509,7 +523,7 @@ defined('_JEXEC') or die;
             <div class="module-content">
                 <div class="custom">
                     <div class="st-lehoi">
-                        <h1 class="st-heading">Lễ hội<button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Lễ Hội');">Phản Hồi</button>
+                        <h1 class="st-heading">Lễ hội<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Lễ Hội');">Phản Hồi</button>
                         </h1>
                         <div class="st-sub-heading">Nét đặc trưng riêng của Sài Gòn</div>
 
@@ -574,7 +588,7 @@ defined('_JEXEC') or die;
 <div id="avatar-full-1-example-block" position="item-109">
     <div class="content1">
         <div id="109" class="avatar-module st-our-work">
-            <h3 class="st-heading"><span>Ẩm thực</span><button type="button" class="btn btn-success" onclick="PopUpFeedback('Địa Điểm','Ẩm Thực');">Phản Hồi</button></h3>
+            <h3 class="st-heading"><span>Ẩm thực</span><button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Ẩm Thực');">Phản Hồi</button></h3>
 
             <div class="st-module-content">
                 <div class="st-content-showcase-wall grey" id="53415ba15888f">
@@ -624,6 +638,7 @@ defined('_JEXEC') or die;
                                         <div class="span4">
                                             <h3>Project description</h3>
                                             <p><?php echo $s_name[$i] ?></p>
+                                            <?php  echo'<div id="amthuc_'.($i+1).'"></div>';?>
                                             <ul class="yt-list type-check" style="">
                                                 <li>Illustration</li>
                                                 <li>Photoshop</li>
@@ -653,8 +668,11 @@ defined('_JEXEC') or die;
                                     </div>
                                     <div class="info image">
                                         <h3 class="title">
-                                            <?php echo $s_category[$i] ?> </h3>
+                                            <?php echo $s_category[$i] ?>
+                                            <?php  echo '<div id="amthuc_current_'.($i+1).'"></div>';?>
+                                        </h3>
                                         <div class="date"><?php echo $s_date ?></div>
+                                        <div style="clear:both"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1029,6 +1047,62 @@ jQuery.noConflict();
                 scroll: "2",
                 scrollingTime: "300"
             })
+
+            $('#dactrung_1').raty({
+                cancel:true
+            });
+            $('#dactrung_2').raty({
+                cancel:true
+            });
+            $('#dactrung_3').raty({
+                cancel:true
+            });
+            $('#dactrung_4').raty({
+                cancel:true
+            });
+            $('#thamquan_1').raty({
+                cancel:true
+            });
+            $('#thamquan_2').raty({
+                cancel:true
+            });
+            $('#thamquan_3').raty({
+                cancel:true
+            });
+            $('#thamquan_4').raty({
+                cancel:true
+            });
+            $('#camnghi_1').raty({
+                cancel:true
+            });
+            $('#camnghi_2').raty({
+                cancel:true
+            });
+            $('#camnghi_3').raty({
+                cancel:true
+            });
+            $('#camnghi_4').raty({
+                cancel:true
+            });
+
+            for(i = 0; i < 9; i++) {
+                $('#amthuc_' + (i+1)).raty({
+                    cancel:true
+                });
+                $('#amthuc_current_' + (i+1)).raty({
+                    readOnly: true,
+                    score: Math.floor((Math.random() * 3) + 3)
+                });
+            }
+
+            $('#nhatki_1').raty({
+                readOnly: true,
+                score: 4.9
+            });
+            $('#nhatki_2').raty({
+                readOnly: true,
+                score: 4.4
+            });
         });
     })(jQuery)
 </script>

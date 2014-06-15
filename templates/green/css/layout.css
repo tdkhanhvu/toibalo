@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 
-.layout-wall .item .inner img {
+.layout-wall .item .inner .media > img {
     width: 100%;
 }
 
@@ -256,4 +256,8 @@ body .block-max-width-100 {
     -o-transition: all 250ms;
     -ms-transition: all 250ms;
     transition: all 250ms;
+}
+
+.span8 img {
+	max-width: 750px;
 }

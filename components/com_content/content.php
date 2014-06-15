@@ -47,7 +47,7 @@ JHtml::_('behavior.tabstate');
             </div>
             <!-- Background Homepage -->
             <div id='bg_homepage'>
-                <img src="./templates/green/images/bg_main.jpg" alt="Main Background" class="Background" />
+                <img src="./templates/green/images/bg_main.jpg" alt="Main Background" class="img-responsive" />
             </div>
         </div>
 
@@ -57,7 +57,7 @@ JHtml::_('behavior.tabstate');
             $bo_title = array ('Traveller','Picture','Comment',);
             for($i = 0; $i < 3; $i++) {
                 ?>
-                <div class='span4'>
+                <div class='span4' <?php echo ($i==0? 'style="margin-left:15px;"':'');?>>
                     <div class='box_title'><?php $bo_title[$i] ?></div>
                     <div class='box_content'>
                         <div class='box_image'>
