@@ -18,9 +18,8 @@ JHtml::_('behavior.tabstate');
 //$controller->redirect();
 ?>
 
-        <!-- search -->
-        <div class='p_rel'>
-            <!-- Hot News -->
+        <!-- search --> 
+            <!-- Hot News 
             <div id='tbl_news'>
                 <div class='news_avatar'>
                     <img src="./templates/green/images/avatar.jpg" alt="Avatar"  />
@@ -28,30 +27,14 @@ JHtml::_('behavior.tabstate');
                 <div class='news_content'>Minh dang chuan bi len ke hoach di ...</div>
             </div>
             <!-- Search Destination and Make a plan -->
-            <div id='tbl_search'>
-                <div class='tbl_search_title'>Plan your perfect trip</div>
-                <form class='tbl_search_form'>
-                    <div class='button'>
-                        <input id='search_des' onclick='?option=com_video' class='' title='Tim Kiem' type='submit' value="Let's go"/>
-                    </div>
-                    <select id="tbl_des" class="" name="option" tabindex="8" onfocus="" onchange="">
-                        <option value="com_video" selected="selected">Sai Gon</option>
-                        <option value="com_video">Ha Noi</option>
-                        <option value="com_video">Da Nang</option>
-                        <option value="com_video">Hue</option>
-                        <option value="com_video">Quang Ngai</option>
-                        <option value="com_video">...</option>
-                    </select>
-                </form>
-                <div class='clearfix'></div>
-            </div>
-            <!-- Background Homepage -->
+          
+            <!-- Background Homepage 
             <div id='bg_homepage'>
                 <img src="./templates/green/images/bg_main.jpg" alt="Main Background" class="img-responsive" />
             </div>
         </div>
 
-        <!-- mid container - includes main content area and right sidebar -->
+        <!-- mid container - includes main content area and right sidebar 
         <div class='row' id='tbl_box'>
             <?php
             $bo_title = array ('Traveller','Picture','Comment',);
@@ -74,3 +57,4 @@ JHtml::_('behavior.tabstate');
 
 </div>
 <div class='span9'>		</div>
+-->

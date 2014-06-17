@@ -81,7 +81,8 @@ if ($option != "com_data") {
 <title>Home</title>
 <!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
 </head>
-<body id="avatar-template" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
+
+<body id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
 <script type="text/javascript">
     function PopUpFeedback(page, section) {
         jQuery('#popup').bPopup();
@@ -95,6 +96,7 @@ if ($option != "com_data") {
         return;
     }
 </script>
+
 <!-- Top -->
 <a name="top" id="top"></a>
 <script>
@@ -116,68 +118,66 @@ if ($option != "com_data") {
 	
 		
 	<!-- 2. Main Menu-->
-
+    <?php if ($option != 'com_content') { ?>
 	<div class='navbar'>
 		<div class='container'>
 			<div class='row p_rel'>
 				<div class='span2'>
 					<a class="navbar-brand" href=".">
-					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px" style="margin-top:-10px;">
+					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px">
 					</a>
 				</div>
-				<div class='span10 f_right' style="margin-left: 0px;">
+				<div class='span10 f_right'>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<div class="nav-collapse collapse" style="display:block;">
-						<ul class="nav navbar-nav">
-							<!--<li><a href="/features/">Features</a></li>-->
+					<div class="nav-collapse collapse ">
+						<ul class="nav">
 							<?php if ($option == 'com_diadiem') { ?>
-								<!--<li class="item-101"><a class="body" href="">Home</a></li>-->
 								<li class="item-102 current active">
-									<a class=".st-top-slider" href="#" >Hình Ảnh</a>
+									<a class=".st-top-slider" href="#">Hình Ảnh</a>	
 								</li>
 								<li class="item-103">
-									<a class=".st-features" href="#" >Đặc Trưng</a>
+									<a class=".st-features" href="#">Đặc Trưng</a>
 								</li>
 								<li class="item-104">
-									<a class=".st-projects"	href="#" >Tham Quan</a>
+									<a class=".st-projects"	href="#">Tham Quan</a>		
 								</li>
 								<li class="item-105">
-									<a class=".st-home" href="#" >Bài Viết</a>
+									<a class=".st-home" href="#">Bài Viết</a>			
 								</li>
 								<li class="item-106">
-									<a class=".st-team" href="#" >Cảm Nghĩ</a>
+									<a class=".st-team" href="#">Cảm Nghĩ</a>								
 								</li>
 								<li class="item-107">
-									<a class="#avatar-full-5-block" href="#" >Nhật Kí</a>
+									<a class="#avatar-full-5-block" href="#">Nhật Kí</a>
 								</li>
 								<li class="item-108">
-									<a class="#avatar-body-bottom-block" href="#" >Lễ Hội</a>
+									<a class="#avatar-body-bottom-block" href="#">Lễ Hội</a>
 								</li>
 								<li class="item-109">
-									<a class="#avatar-full-1-example-block" href="#" >Ẩm Thực</a>
+									<a class="#avatar-full-1-example-block" href="#">Ẩm Thực</a>			
 								</li>
                             <?php } else if ($option == 'com_lichtrinh') { ?>
                                 <li class="item-104 current active">
-                                    <a class="#avatar-full-1-block" href="#" >Thời Điểm</a>
+                                    <a class=".st-projects"	href="#">Thời Điểm</a>
                                 </li>
                                 <li class="item-101">
-                                    <a class="#avatar-full-2-block" href="#" >Phương Tiện</a>
+                                    <a class="#transportation" href="#">Phương Tiện</a>
                                 </li>
                                 <li class="item-105">
-                                    <a class=".st-home" href="#" >Tham Quan</a>
+                                    <a class=".st-home" href="#">Tham Quan</a>
                                 </li>
                                 <li class="item-106">
-                                    <a class="#st-advice" href="#" >Lời Khuyên</a>
+                                    <a class="#st-advice" href="#">Lời Khuyên</a>
                                 </li>
                                 <li class="item-107">
-                                    <a class="#st-food" href="#" >Ẩm Thực</a>
+                                    <a class="#st-food" href="#">Ẩm Thực</a>
                                 </li>
                                 <li class="item-108">
-                                    <a class="#avatar-body-bottom-block" href="#" >Chi Phí</a>
+                                    <a class="#avatar-body-bottom-block" href="#">Chi Phí</a>
                                 </li>
 							<?php } else if ($option == 'com_thongtin') { ?>
                                 <li><a href="#" >Thông Tin</a></li>
@@ -199,11 +199,38 @@ if ($option != "com_data") {
 				</div>
 			</div>
 		</div>
-	</div> <!--Nav Bar -->
+	</div>
+	<?php } else { ?>
+		<div id='tbl_cover'>
+			<ul>
+				<li id='tbl_name'><a href='#'>Name Card</a></li>
+				<li id='tbl_coin'><a href='#'>Name Card</a></li>
+				<li id='tbl_picture'><a href='#'>Name Card</a></li>
+			</ul>
+		</div>
+	  <div id='tbl_search'>
+		<div class='tbl_search_title'>Plan your perfect trip</div>
+		<form class='tbl_search_form'>
+			<div class='button'>
+				<input id='search_des' onclick='?option=com_video' class='' title='Tim Kiem' type='submit' value="Let's go"/>
+			</div>
+			<select id="tbl_des" class="" name="option" tabindex="8" onfocus="" onchange="">
+				<option value="com_video" selected="selected">Sai Gon</option>
+				<option value="com_video">Ha Noi</option>
+				<option value="com_video">Da Nang</option>
+				<option value="com_video">Hue</option>
+				<option value="com_video">Quang Ngai</option>
+				<option value="com_video">...</option>
+			</select>
+		</form>
+		<div class='clearfix'></div>
+	</div>
+	<?php  } ?>
+	<!--Nav Bar -->
 
 	<!-- 3. Content -->
 	<div class='tbl_content'>
-        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh') && ($option != 'com_data')) { ?>
+        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             <div class='container' id="wrapper">
         <?php } ?>
             <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
@@ -218,12 +245,13 @@ if ($option != "com_data") {
             <?php } ?>
 
             <jdoc:include type="component" />
-        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh') && ($option != 'com_data')) { ?>
+        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             </div>
         <?php } ?>
 	</div> <!-- End Content -->
 	
 	<!-- 4. Footer -->
+    <?php if ($option != 'com_content') { ?>
 	<div class='footer'>
 		<div class='container'>
 			<div class='row'>
@@ -239,7 +267,7 @@ if ($option != "com_data") {
 			</div>
 		</div>
 	</div><!-- End Footer -->
-	
+    <?php } ?>
 	<!-- 5. Debug-->
 	<jdoc:include type="modules" name="debug" />
 	

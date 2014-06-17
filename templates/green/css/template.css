@@ -243,9 +243,12 @@ ul.nav.menu,
 /*-Search-*/
 #tbl_search {
 	position: absolute;
-	bottom: 0px;
+	/*bottom: 0px;
 	width:70%;
-	margin-left: 15%;
+	margin-left: 15%;*/
+	bottom: 15%;
+	width: 40%;
+	margin-left: 11%;
 }
 #tbl_search .button{
 	float:right;
@@ -312,6 +315,7 @@ ul.nav.menu,
 .box_comment {
 
 }
+
 /* -------------------------------------------------Footer-------------------------------------------------------- */
 .footer {
 	background: #009edb;
@@ -421,16 +425,63 @@ input[type="url"], input[type="search"], input[type="tel"], input[type="color"],
 .f_right {
 	float:right;
 }
-
+#tbl_cover {
+	position: absolute;
+	width: 35%;
+	right: 5%;
+	top: 15%;
+}/*
+#tbl_cover li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}*/
+#tbl_cover a {
+	display: block;
+	text-indent: -99999px;
+}
+#tbl_name a{
+	background: transparent url(../images/tbl_cardname.png) no-repeat scroll right 50% top 10%;
+	background-size: 60%;
+	height: 245px;
+}
+#tbl_coin a{
+	background: transparent url(../images/tbl_coin.png) no-repeat scroll 0px -165px;
+	background-size: 100%;
+	height: 175px;
+	width: 160px;
+}
+#tbl_coin a:hover {
+	background-position: 0px 10px;
+}
+#tbl_picture a{
+	background: transparent url(../images/tbl_picture.png) no-repeat 0px -292px;
+	background-size: 100%;
+	float:right;
+	height: 293px;
+	width: 400px;
+	margin-top: 20px;
+}
+#tbl_picture a:hover {
+	background-position: 0px 0px;
+}
 /* -------------------------------------------------Green-------------------------------------------------------- */
 body {
-	background-image: url(../images/b2.jpg);
+	/*background-image: url(../images/b2.jpg);*/
 	font: normal 14px/20px Arial, Helvetica, sans-serif;
 	/* font-family: 'montserratregular'; */
 	color: #5A5A5A;
 	opacity: 0;
+	
 }
-
+body#homepage {
+	background: url('../images/bg_toibalo.png') ;
+	background-size: 120%;
+	background-position: top;
+	background-repeat: no-repeat;
+}
 
 /***Default**/
 a,
