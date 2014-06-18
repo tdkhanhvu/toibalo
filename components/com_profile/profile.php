@@ -112,12 +112,22 @@
         background-color: #AFCCD8;
         margin-top:0px;
     }
+
+    #cropContainerModal {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        border: 1px solid #ccc;
+    }
 </style>
 
 <div class="col-sm-5" style="border: 5px groove rgb(105, 73, 189);">
     <div class="row">
         <div class="col-sm-4" style="padding-right:0px;">
-            <img class="img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>
+<!--            <img id="uploader2" class="img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>-->
+            <div id="cropContainerModal">
+                <img class="croppedImg img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg">
+            </div>
         </div>
         <div class="col-sm-8" style="padding-left:0px;">
             <div class="row">
@@ -258,7 +268,7 @@
                                             </div>
                                             <div class="col-sm-6">
                                                 <label class="control-label">Hà Nội</label>
-                                                <label class="control-label">17/01/2014</label>
+                                                <label class="control-label">22/01/2014</label>
                                             </div>
                                         </div>
                                     </div>
@@ -566,6 +576,16 @@
                 if ($('#frame').attr('src') != '')
                     $("#frame").attr("src", "./templates/green/blog.php");
             });
+
+            var croppicContainerModalOptions = {
+                uploadUrl:'./templates/green/img_save_to_file.php',
+                cropUrl:'./templates/green/img_crop_to_file.php',
+                croppedImg: './templates/green/images/avatar.jpg',
+                modal:true,
+                imgEyecandyOpacity:0.4,
+                loaderHtml:'<div class="loader bubblingG"><span id="bubblingG_1"></span><span id="bubblingG_2"></span><span id="bubblingG_3"></span></div> '
+            }
+            var cropContainerModal = new Croppic('cropContainerModal', croppicContainerModalOptions);
         });
     })(jQuery)
 </script>

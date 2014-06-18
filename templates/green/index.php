@@ -28,6 +28,9 @@ if ($option != "com_data") {
     $doc->addStyleSheet('templates/' . $this->template . '/css/popup.min.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/rating/rating.css');
 
+    //upload file
+    $doc->addStyleSheet('templates/' . $this->template . '/css/upload/croppic.css');
+
     $doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-migrate.min.js', 'text/javascript');
@@ -56,6 +59,9 @@ if ($option != "com_data") {
     $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.bpopup.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/rating/rating.js', 'text/javascript');
+
+    //Profile
+    $doc->addScript('./templates/' . $this->template . '/js/upload/croppic.js', 'text/javascript');
 }
 
 ?>
