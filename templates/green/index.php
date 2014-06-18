@@ -203,15 +203,15 @@ if ($option != "com_data") {
 	<?php } else { ?>
 		<div id='tbl_cover'>
 			<ul>
-				<li id='tbl_name'><a href='#'>Name Card</a></li>
-				<li id='tbl_coin'><a href='#'>Name Card</a></li>
-				<li id='tbl_picture'><a href='#'>Name Card</a></li>
+				<li id='tbl_name'><a href='#'></a></li>
+				<li id='tbl_coin'><a href='#'></a></li>
+				<li id='tbl_picture'><a href='#'></a></li>
 			</ul>
 		</div>
 	  <div id='tbl_search'>
 		<div class='tbl_search_title'>Plan your perfect trip</div>
 		<form class='tbl_search_form'>
-			<div class='button'>
+			<div class='tbl_button'>
 				<input id='search_des' onclick='?option=com_video' class='' title='Tim Kiem' type='submit' value="Let's go"/>
 			</div>
 			<select id="tbl_des" class="" name="option" tabindex="8" onfocus="" onchange="">
