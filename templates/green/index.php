@@ -122,19 +122,19 @@ if ($option != "com_data") {
 	<div class='navbar'>
 		<div class='container'>
 			<div class='row p_rel'>
-				<div class='span2'>
+				<div class='span2' style="margin-left:0px;">
 					<a class="navbar-brand" href=".">
-					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px">
+					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px" style="margin-top:-10px;">
 					</a>
 				</div>
-				<div class='span10 f_right'>
+				<div class='span10 f_right' style="margin-left:0px;">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<div class="nav-collapse collapse ">
-						<ul class="nav">
+					<div class="nav-collapse collapse " style="display:block;">
+						<ul class="nav navbar-nav">
 							<?php if ($option == 'com_diadiem') { ?>
 								<li class="item-102 current active">
 									<a class=".st-top-slider" href="#">Hình Ảnh</a>	
