@@ -164,7 +164,7 @@ strong
 	color: #c0c0c0;
 	font-size: 80%;
 }
-#popup,#popup2,.bMulti
+#popup,#signup,.bMulti
 {
 	background-color: #fff;
 	border-radius: 10px 10px 10px 10px;
@@ -174,16 +174,16 @@ strong
 	min-width: 450px;
 	padding: 25px;
 }
-#popup .logo
+#popup .logo,#signup .logo
 {
 	color: #2b91af;
 	font: bold 325% 'Petrona',sans;
 }
-#popup,.bMulti
+#popup,#signup,.bMulti
 {
 	min-height: 250px;
 }
-#popup2 iframe
+#popup2 iframe,#signup iframe
 {
 	background: url('loader.gif') center center no-repeat;
 	min-height: 240px;

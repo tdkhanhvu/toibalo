@@ -91,7 +91,9 @@ if ($option != "com_data") {
 <body id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
 <script type="text/javascript">
     function PopUpFeedback(page, section) {
-        jQuery('#popup').bPopup();
+        jQuery('#popup').bPopup({
+            position: ['auto', 100]
+        });
         jQuery('#inputPage').val(page);
         jQuery('#inputSection').val(section);
     }
@@ -109,6 +111,11 @@ if ($option != "com_data") {
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
+            $('#signUpLink').click(function(e) {
+                e.preventDefault();
+                jQuery('#signup').bPopup();
+            });
+
             $.fn.raty.defaults.path = './templates/green/images/rating';
 
             $('#rating').raty({
@@ -199,6 +206,7 @@ if ($option != "com_data") {
 								</li><li><a href="#" >Log in</a></li>
 								<li class="signup"><a href="#" >Sign up</a></li>
 							<?php } ?>
+                                 <li><a href="#" id="signUpLink">Đăng Nhập</a></li>
 						</ul>
 					</div>
 					<div class="clearbreak"></div>
@@ -334,6 +342,83 @@ if ($option != "com_data") {
     </form>
 </div>
 
+<div id="signup">
+    <span class="button b-close"><span>X</span></span>
+    <div class="tabbable">
+    <ul class="nav nav-tabs">
+        <li><a href="#signin_" data-toggle="tab">Đăng Nhập</a></li>
+        <li><a id="note" href="#signup_" data-toggle="tab">Đăng Ký</a></li>
+    </ul>
+    <div class="tab-content">
+    <div class="tab-pane active" id="signin_">
+        <form role="form" class="form-horizontal" style="margin-top: 20px;">
+            <div class="form-group">
+                <label for="lID" class="col-sm-4 control-label">ID</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="lID" placeholder="ID">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lPassword" class="col-sm-4 control-label">Mật Khẩu</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="lPassword" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+
+
+                <div class="col-sm-offset-3 col-sm-10" style="text-align:center">
+                    <button type="button" class="btn btn-primary" onclick="SubmitFeedback();" style="width:200px;">Đăng Nhập</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="tab-pane" id="signup_">
+        <form role="form" class="form-horizontal" style="margin-top: 20px;">
+            <div class="form-group">
+                <label for="sName" class="col-sm-4 control-label">Họ Tên</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="sName" placeholder="Họ Tên">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sID" class="col-sm-4 control-label">ID</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="sID" placeholder="ID">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sEmail" class="col-sm-4 control-label">Email</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="sEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sPassword" class="col-sm-4 control-label">Mật Khẩu</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="sPassword" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sPassword2" class="col-sm-4 control-label">Mật Khẩu (lần 2)</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="sPassword2" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+
+
+                <div class="col-sm-offset-3 col-sm-10" style="text-align:center">
+                    <button type="button" class="btn btn-primary" onclick="SubmitFeedback();" style="width:200px;">Đăng Ký</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    </div>
+    </div>
+
+</div>
 
 </body>
 </html>

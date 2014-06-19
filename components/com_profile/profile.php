@@ -192,7 +192,7 @@
     <div class="row">
         <div class="col-sm-12" style="text-align: center;">
             <div class="col-sm-12">
-                <label for="profileFeature" class="control-label">Dấu Thị Thực</label>
+                <label for="profileFeature" class="control-label">Dấu Thị Thực<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpSignUp();">Phản Hồi</button></label>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -550,7 +550,15 @@
     </div>
     <!-- /tabs -->
 </div>
+
+
+
 <script>
+    function PopUpSignUp() {
+        jQuery('#signup').bPopup();
+
+    }
+
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
