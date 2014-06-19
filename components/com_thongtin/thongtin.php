@@ -232,8 +232,9 @@ $session =& JFactory::getSession();
         <div class="span12 section_head">
             <div>
                 <p>Lịch Trình</p>
+
             </div>
-            <div></div>
+            <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Thông Tin','Lịch Trình');">Phản Hồi</button></div>
         </div>
 
         <div class="span3 itinerary_info"><span>Mã Số</span><span>S59I2P</span></div>
@@ -247,7 +248,7 @@ $session =& JFactory::getSession();
             <div>
                 <p>Chiều Đi</p>
             </div>
-            <div></div>
+            <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Thông Tin','Chiều Đi');">Phản Hồi</button></div>
         </div>
         <div class="span4 transport">
             <span><?php echo $session->get('StartDay');?></span>
@@ -282,7 +283,7 @@ $session =& JFactory::getSession();
             <div>
                 <p>Chiều Về</p>
             </div>
-            <div></div>
+            <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Thông Tin','Chiều Về');">Phản Hồi</button></div>
         </div>
         <div class="span4 transport">
             <span><?php echo $session->get('EndDay');?></span>
@@ -316,7 +317,7 @@ $session =& JFactory::getSession();
         <div>
             <p>Ẩm Thực</p>
         </div>
-        <div></div>
+        <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Thông Tin','Ẩm Thực');">Phản Hồi</button></div>
     </div>
 
     <?php
@@ -345,7 +346,7 @@ $session =& JFactory::getSession();
         <div>
             <p>Lời Khuyên</p>
         </div>
-        <div></div>
+        <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Thông Tin','Lời Khuyên');">Phản Hồi</button></div>
     </div>
     <?php
         $arr = $session -> get('select_advice');
@@ -369,7 +370,7 @@ $session =& JFactory::getSession();
         <div>
             <p>Tham Quan</p>
         </div>
-        <div></div>
+        <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;z-index:9999;" onclick="PopUpFeedback('Thông Tin','Tham Quan');">Phản Hồi</button></div>
     </div>
 
     <div style="position:relative">
@@ -415,7 +416,7 @@ $session =& JFactory::getSession();
         <div>
             <p>Chi Phí <?php echo $session -> get('NumOfDay');?> Ngày</p>
         </div>
-        <div></div>
+        <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Thông Tin','Chi Phí');">Phản Hồi</button></div>
     </div>
 
     <div class="span4 cost">

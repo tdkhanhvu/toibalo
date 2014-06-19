@@ -3,7 +3,6 @@
 <html lang="en-gb" dir="ltr" slick-uniqueid="3">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript">jQuery.noConflict();</script>
 <base href=".">
 
 <meta name="keywords" content="joomla templates, portfolio, one page, green, orange">

@@ -115,7 +115,7 @@
 
     #cropContainerModal {
         width: 100%;
-        height: 200px;
+        height: 140px;
         position: relative;
         border: 1px solid #ccc;
     }
@@ -174,6 +174,8 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="col-sm-12">
+                <button type="button" class="btn btn-success" style="position:absolute; top:-35px;left:20px;" onclick="PopUpFeedback('Profile','Thông Tin Cá Nhân');">Phản Hồi</button>
+
                 <label for="profileFeature" class="control-label">Đặc Điểm Nhận Dạng</label>
                 <textarea id="profileFeature" class="form-control" rows="2" placeholder="___________________________________________________________________________________________"></textarea>
             </div>
@@ -192,7 +194,7 @@
     <div class="row">
         <div class="col-sm-12" style="text-align: center;">
             <div class="col-sm-12">
-                <label for="profileFeature" class="control-label">Dấu Thị Thực<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpSignUp();">Phản Hồi</button></label>
+                <label for="profileFeature" class="control-label">Dấu Thị Thực<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Profile','Thị Thực');">Phản Hồi</button></label>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -235,9 +237,11 @@
     <!-- tabs -->
     <div class="tabbable">
         <ul class="nav nav-tabs">
-            <li><a href="#info_" data-toggle="tab">Thông Tin</a></li>
+            <li><a href="#info_" data-toggle="tab">Chuyến Đi</a></li>
             <li><a id="note" href="#note_" data-toggle="tab">Nhật Ký</a></li>
             <li><a href="#cost_" data-toggle="tab">Chi Phí</a></li>
+            <button type="button" class="btn btn-success" style="margin-top:10px;margin-left:30px;" onclick="GetFeedback();">Phản Hồi</button>
+
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="info_">
@@ -596,5 +600,9 @@
             var cropContainerModal = new Croppic('cropContainerModal', croppicContainerModalOptions);
         });
     })(jQuery)
+
+    function GetFeedback() {
+        PopUpFeedback('Profile', jQuery('.nav-tabs .active a').text());
+    }
 </script>
 

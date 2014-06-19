@@ -43,7 +43,7 @@
             </p>
 			<div class="span3">
 				<div class="black-50 span3">
-					<h2 style="display:inline;">Thành Phố Về Đêm</h2>
+					<h2 style="display:inline;">Thành Phố Về Đêm<button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Video','Thông Tin');">Phản Hồi</button></h2>
                     <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
                     <div>
 					    <p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>

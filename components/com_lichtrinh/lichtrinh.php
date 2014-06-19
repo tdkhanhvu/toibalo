@@ -113,7 +113,7 @@ $session =& JFactory::getSession();
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-projects onepage-appear">
-                            <h1 class="st-heading">Thời Điểm</h1>
+                            <h1 class="st-heading">Thời Điểm <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Thời Điểm');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
                             <div class="span6 offset3">
                                 <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate placeholder" data-placeholder="depart" placeholder="Ngày Đi" autocomplete="off" tabindex="3" />
@@ -204,7 +204,7 @@ $session =& JFactory::getSession();
                 <div class="custom">
                     <div class="st-onepage" id="transport_section">
                         <div class="st-projects onepage-appear">
-                            <h1 class="st-heading">Phương Tiện</h1>
+                            <h1 class="st-heading">Phương Tiện <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Phương Tiện');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Cách Thức Để Đi</div>
 
                             <div class="span6">
@@ -299,7 +299,7 @@ $session =& JFactory::getSession();
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-home onepage-disappear" position="item-105">
-                            <ul class="span12 nav nav-tabs" id="attraction_list" style="margin-left:0px;">
+                            <ul class="span11 nav nav-tabs" id="attraction_list" style="margin-left:0px;">
                                 <?php
                                     $attraction = GetAttractionData();
 
@@ -309,7 +309,7 @@ $session =& JFactory::getSession();
                                     }
                                 ?>
                             </ul>
-
+                            <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Tham Quan');">Phản Hồi</button>
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
                             <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;margin-left:0px;">
                                 <div class="ip_slide">
@@ -369,7 +369,7 @@ $session =& JFactory::getSession();
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-team onepage-disappear" position="item-106" id="st-advice">
-                            <h1 class="st-heading">Lời khuyên</h1>
+                            <h1 class="st-heading">Lời khuyên <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Lời Khuyên');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Để chuyến du lịch thú vị hơn</p>
                             <div class="row-fluid">
@@ -404,7 +404,7 @@ $session =& JFactory::getSession();
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-team onepage-disappear" position="item-107" id="st-food">
-                            <h1 class="st-heading" style="color:green">Ẩm Thực</h1>
+                            <h1 class="st-heading" style="color:green">Ẩm Thực <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Ẩm Thực');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading" style="color:blue">Món ngon không nên bỏ lỡ</p>
                             <div class="row-fluid">
@@ -482,7 +482,7 @@ $session =& JFactory::getSession();
 
                 <div class="custom">
                     <div class="st-title">
-                        <h1 class="st-heading" style="color:rgb(223, 59, 59);">Chi phí</h1>
+                        <h1 class="st-heading" style="color:rgb(223, 59, 59);">Chi phí <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Chi Phí');">Phản Hồi</button></h1>
 
                         <div class="st-sub-heading" style="margin-bottom:0px;">Hầu bao cần để đi</div>
                         <div style="clear:both;"></div>
