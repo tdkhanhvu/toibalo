@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c3cd1b0-99a9-4204-a0dd-dca75b6115bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_diadiem/diadiem.php" afterPath="$PROJECT_DIR$/components/com_diadiem/diadiem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/css/template.css" afterPath="$PROJECT_DIR$/templates/green/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/index.php" afterPath="$PROJECT_DIR$/templates/green/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="green.iws" />
@@ -56,11 +55,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/green/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="32" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="7293">
-              <folding />
+            <state line="138" column="78" selection-start="7018" selection-end="7018" vertical-scroll-proportion="0.24727273" vertical-offset="2210" max-vertical-offset="7293">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diadiem.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="diadiem.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="467" column="44" selection-start="34454" selection-end="34454" vertical-scroll-proportion="0.70652175" vertical-offset="7549" max-vertical-offset="18921">
+            <state line="457" column="50" selection-start="33509" selection-end="33509" vertical-scroll-proportion="-8.461538" vertical-offset="7549" max-vertical-offset="18921">
               <folding />
             </state>
           </provider>
@@ -129,13 +132,13 @@
         <option value="$PROJECT_DIR$/components/com_content/content.php" />
         <option value="$PROJECT_DIR$/components/com_data/data.php" />
         <option value="$PROJECT_DIR$/templates/green/signup.php" />
-        <option value="$PROJECT_DIR$/templates/green/index.php" />
         <option value="$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php" />
         <option value="$PROJECT_DIR$/components/com_thongtin/thongtin.php" />
         <option value="$PROJECT_DIR$/components/com_video/video.php" />
         <option value="$PROJECT_DIR$/components/com_profile/profile.php" />
         <option value="$PROJECT_DIR$/templates/green/blog.php" />
         <option value="$PROJECT_DIR$/components/com_diadiem/diadiem.php" />
+        <option value="$PROJECT_DIR$/templates/green/index.php" />
       </list>
     </option>
   </component>
@@ -414,19 +417,24 @@
       <created>1403199790253</created>
       <updated>1403199790253</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi">
+      <created>1403241531023</created>
+      <updated>1403241531023</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22601625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40487805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2003035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2003035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33873582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -436,7 +444,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -476,7 +483,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="first version" />
     <MESSAGE value="add maximize/minimize button to video page&#10;&#10;add the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page" />
     <MESSAGE value="fix the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page" />
     <MESSAGE value="fix thongtin page: resize browser width will render the content properly" />
@@ -501,7 +507,8 @@
     <MESSAGE value="implement signin/signup form&#10;&#10;have wizard form" />
     <MESSAGE value="implement feedback button for&#10;   - video&#10;   - lichtrinh&#10;   - thongtin&#10;   - profile" />
     <MESSAGE value="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi" />
+    <MESSAGE value="fix logo not being centered when resize the page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix logo not being centered when resize the page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="32" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="7293">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="191" selection-start="1429" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="604" max-vertical-offset="2074">
@@ -773,8 +773,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="467" column="44" selection-start="34454" selection-end="34454" vertical-scroll-proportion="0.70652175" vertical-offset="7549" max-vertical-offset="18921">
+        <state line="457" column="50" selection-start="33509" selection-end="33509" vertical-scroll-proportion="-8.461538" vertical-offset="7549" max-vertical-offset="18921">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="78" selection-start="7018" selection-end="7018" vertical-scroll-proportion="0.24727273" vertical-offset="2210" max-vertical-offset="7293">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

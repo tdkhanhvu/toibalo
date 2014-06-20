@@ -135,8 +135,8 @@ if ($option != "com_data") {
 	<div class='navbar'>
 		<div class='container'>
 			<div class='row p_rel'>
-				<div class='span2' style="margin-left:0px;">
-					<a class="navbar-brand" href=".">
+				<div class='span2' style="margin-left:0px;text-align:center;">
+					<a class="navbar-brand" href="." style="position:absolute;">
 					<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px" style="margin-top:-10px;">
 					</a>
 				</div>
