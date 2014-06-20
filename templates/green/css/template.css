@@ -904,14 +904,14 @@ a:visited,
     margin-bottom:20px;
 }
 
-.st-projects .content {
-/*     margin: 65px auto;
- */    position: relative;
-    height: 238px;
-    width: 238px;
+.st-projects .attraction-content {
+	margin: 65px auto;
+    position: relative;
+    width: 240px;
+	height:240px;
 }
 
-.st-projects .content .detail {
+.st-projects .attraction-content .detail {
     position: absolute;
     top: 0;
     left: 0;
@@ -919,8 +919,8 @@ a:visited,
     bottom: 0;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.5);
-    height: 238px;
-    width: 238px;
+    height: 240px;
+    width: 240px;
     opacity: 0;
     filter: alpha(opacity="0");
 }
@@ -945,13 +945,13 @@ a:visited,
     right: 0;
 }
 
-.st-projects .content:hover .detail {
+.st-projects .attraction-content:hover .detail {
     opacity: 1;
     filter: alpha(opacity="100");
 }
 
-.css3-effect .st-projects .content .detail,
-.css3-effect .st-projects .content:hover .detail {
+.css3-effect .st-projects .attraction-content .detail,
+.css3-effect .st-projects .attraction-content:hover .detail {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -959,7 +959,7 @@ a:visited,
     transition: all 1s;
 }
 
-.css3-effect .st-projects .content {
+.css3-effect .st-projects .attraction-content {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -976,7 +976,7 @@ a:visited,
     transform: translate(-400px, 0) rotate(-260deg);
 }
 
-.css3-effect .st-projects.onepage-appear .content {
+.css3-effect .st-projects.onepage-appear .attraction-content {
     opacity: 1;
     filter: alpha(opacity="99");
     -webkit-transform: translate(0, 0) rotate(0deg);
@@ -986,7 +986,7 @@ a:visited,
     transform: translate(0, 0) rotate(0deg);
 }
 
-.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+1) .content {
+.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+1) .attraction-content {
     -webkit-transition: all 1s 3s;
     -moz-transition: all 1s 3s;
     -ms-transition: all 1s 3s;
@@ -994,7 +994,7 @@ a:visited,
     transition: all 1s 3s;
 }
 
-.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+2) .content {
+.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+2) .attraction-content {
     -webkit-transition: all 1s 2s;
     -moz-transition: all 1s 2s;
     -ms-transition: all 1s 2s;
@@ -1002,7 +1002,7 @@ a:visited,
     transition: all 1s 2s;
 }
 
-.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+3) .content {
+.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+3) .attraction-content {
     -webkit-transition: all 1s 1s;
     -moz-transition: all 1s 1s;
     -ms-transition: all 1s 1s;
@@ -1010,7 +1010,7 @@ a:visited,
     transition: all 1s 1s;
 }
 
-.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+4) .content {
+.css3-effect .st-projects.onepage-appear .span3:nth-child(2n+4) .attraction-content {
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -1610,7 +1610,7 @@ header .article-tool .article-info {
 
 @media (max-width: 768px) {
     .avatar-responsive .st-layer-slider {
-        max-height: 400px;
+        /* max-height: 400px; */
     }
 
     .avatar-responsive .st-blog-slider .layer_layout_slide .column-inner .title {

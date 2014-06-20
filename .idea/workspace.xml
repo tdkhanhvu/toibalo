@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="603a8dbb-1b0d-4aeb-8f94-cda48c0e4c11" name="Default" comment="">
+    <list default="true" id="7c3cd1b0-99a9-4204-a0dd-dca75b6115bf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_diadiem/diadiem.php" afterPath="$PROJECT_DIR$/components/com_diadiem/diadiem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/css/template.css" afterPath="$PROJECT_DIR$/templates/green/css/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="2145e3df-e409-479b-9a2f-fe3e179606c4" name="Rejected commit: Default" comment="Add button redirect pages" />
     <ignored path="green.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,19 +27,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+      <file leaf-file-name="lichtrinh.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="53" selection-start="6975" selection-end="6975" vertical-scroll-proportion="0.0" vertical-offset="2346" max-vertical-offset="7293">
+            <state line="484" column="222" selection-start="25255" selection-end="25255" vertical-scroll-proportion="0.0" vertical-offset="7877" max-vertical-offset="19091">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/green/css/template.css">
+      <file leaf-file-name="thongtin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_thongtin/thongtin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1669" column="5" selection-start="185767" selection-end="185767" vertical-scroll-proportion="0.0" vertical-offset="28373" max-vertical-offset="47413">
+            <state line="372" column="107" selection-start="9556" selection-end="9556" vertical-scroll-proportion="0.0" vertical-offset="5842" max-vertical-offset="8041">
+              <folding>
+                <marker date="1403198668389" expanded="true" signature="11379:11389" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="191" selection-start="1429" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="604" max-vertical-offset="2074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="32" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="7293">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_profile/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="604" column="51" selection-start="33033" selection-end="33033" vertical-scroll-proportion="0.0" vertical-offset="9845" max-vertical-offset="10438">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diadiem.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="467" column="44" selection-start="34454" selection-end="34454" vertical-scroll-proportion="0.70652175" vertical-offset="7549" max-vertical-offset="18921">
               <folding />
             </state>
           </provider>
@@ -52,20 +91,51 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="tdkhanhvu" />
+      </list>
+    </option>
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/components/com_video/video.php" />
-        <option value="$PROJECT_DIR$/templates/green/index.php" />
+        <option value="$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js" />
+        <option value="$PROJECT_DIR$/templates/green/test.php" />
+        <option value="$PROJECT_DIR$/components/com_test/test.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_data/data.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_data/data.php" />
+        <option value="$PROJECT_DIR$/components/com_data/controllers/DataController.php" />
+        <option value="$PROJECT_DIR$/templates/green/data.php" />
+        <option value="$PROJECT_DIR$/components/com_data/city.json" />
+        <option value="$PROJECT_DIR$/components/com_data/transport.json" />
+        <option value="$PROJECT_DIR$/components/com_data/month_info.json" />
+        <option value="$PROJECT_DIR$/components/com_data/food.json" />
+        <option value="$PROJECT_DIR$/administrator/templates/hathor/html/com_banners/tracks/default.php" />
+        <option value="$PROJECT_DIR$/components/com_data/cost.json" />
+        <option value="$PROJECT_DIR$/templates/green/js/Accordion/jquery-ui.js" />
+        <option value="$PROJECT_DIR$/templates/green/js/vi-VN.js" />
+        <option value="$PROJECT_DIR$/components/com_data/attraction.json" />
+        <option value="$PROJECT_DIR$/templates/green/wiki.php" />
+        <option value="$PROJECT_DIR$/templates/green/css/res-timeline.css" />
         <option value="$PROJECT_DIR$/templates/green/css/template.css" />
+        <option value="$PROJECT_DIR$/components/com_content/content.php" />
+        <option value="$PROJECT_DIR$/components/com_data/data.php" />
+        <option value="$PROJECT_DIR$/templates/green/signup.php" />
+        <option value="$PROJECT_DIR$/templates/green/index.php" />
+        <option value="$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php" />
+        <option value="$PROJECT_DIR$/components/com_thongtin/thongtin.php" />
+        <option value="$PROJECT_DIR$/components/com_video/video.php" />
+        <option value="$PROJECT_DIR$/components/com_profile/profile.php" />
+        <option value="$PROJECT_DIR$/templates/green/blog.php" />
+        <option value="$PROJECT_DIR$/components/com_diadiem/diadiem.php" />
       </list>
     </option>
   </component>
@@ -73,17 +143,17 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -116,7 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -126,7 +196,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -140,7 +210,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -149,42 +219,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="green" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="green" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="green" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="green" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -195,25 +229,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-  </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="69bfe28f-d84a-4f03-927c-edfb58acaa81">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\toibalo\templates\green\images" />
+      <recent name="C:\wamp\www\green\components\com_data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\green\components\com_data" />
+      <recent name="C:\wamp\www\green\templates\green" />
+      <recent name="C:\wamp\www\green\templates\green\js" />
+      <recent name="C:\wamp\www\green\components\com_test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.com_test">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -227,7 +262,13 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="com_test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$/components" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.com_test" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -249,49 +290,184 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="603a8dbb-1b0d-4aeb-8f94-cda48c0e4c11" name="Default" comment="" />
-      <created>1400169727773</created>
-      <updated>1400169727773</updated>
+      <changelist id="7c3cd1b0-99a9-4204-a0dd-dca75b6115bf" name="Default" comment="" />
+      <created>1400164830070</created>
+      <updated>1400164830070</updated>
     </task>
-    <task id="LOCAL-00001" summary="fix bug video page">
-      <created>1400421453452</created>
-      <updated>1400421453452</updated>
+    <task id="LOCAL-00001" summary="first version">
+      <created>1400166190757</created>
+      <updated>1400166190757</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add button redirect pages">
-      <created>1401471816495</created>
-      <updated>1401471816495</updated>
+    <task id="LOCAL-00002" summary="first version">
+      <created>1400426304845</created>
+      <updated>1400426304845</updated>
     </task>
-    <task id="LOCAL-00003" summary="Change Homepage">
-      <created>1402969363133</created>
-      <updated>1402969363133</updated>
+    <task id="LOCAL-00003" summary="first version">
+      <created>1400430415017</created>
+      <updated>1400430415017</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add maximize/minimize button to video page&#10;&#10;add the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page">
+      <created>1400602172684</created>
+      <updated>1400602172684</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page">
+      <created>1400608674103</created>
+      <updated>1400608674103</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix thongtin page: resize browser width will render the content properly">
+      <created>1400777295042</created>
+      <updated>1400777295042</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix lichtrinh page">
+      <created>1400822420318</created>
+      <updated>1400822420318</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix lichtrinh page">
+      <created>1400858956560</created>
+      <updated>1400858956560</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix cursor in video page">
+      <created>1401107123821</created>
+      <updated>1401107123821</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix date select section in lichtrinh page">
+      <created>1401203236895</created>
+      <updated>1401203236895</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix attraction select section in lichtrinh page">
+      <created>1401290648109</created>
+      <updated>1401290648109</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix budget section in lichtrinh page">
+      <created>1401376986236</created>
+      <updated>1401376986236</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix background color for date/transport section from blue to white in lichtrinh page">
+      <created>1401378683853</created>
+      <updated>1401378683853</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix css">
+      <created>1401514795712</created>
+      <updated>1401514795713</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix css">
+      <created>1401521689233</created>
+      <updated>1401521689233</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix css">
+      <created>1401638324818</created>
+      <updated>1401638324818</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add php session to lichtrinh/thongtin pages&#10;&#10;got issue with php session not compatible with the way Joomla handles session. Changing now">
+      <created>1402149331411</created>
+      <updated>1402149331411</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix issue with php session">
+      <created>1402198891452</created>
+      <updated>1402198891452</updated>
+    </task>
+    <task id="LOCAL-00019" summary="change date picker">
+      <created>1402493649707</created>
+      <updated>1402493649707</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix css">
+      <created>1402497638833</created>
+      <updated>1402497638833</updated>
+    </task>
+    <task id="LOCAL-00021" summary="change the holiday timeline in diadiem + implement the wiki page">
+      <created>1402589533825</created>
+      <updated>1402589533825</updated>
+    </task>
+    <task id="LOCAL-00022" summary="remove unused css">
+      <created>1402678463485</created>
+      <updated>1402678463485</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix blog css">
+      <created>1402680220031</created>
+      <updated>1402680220032</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add feedback button for users">
+      <created>1402738199670</created>
+      <updated>1402738199670</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update bootstrap to latest version&#10;&#10;implement profile page&#10;&#10;implement rating system">
+      <created>1402821803382</created>
+      <updated>1402821803382</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix top menu bar">
+      <created>1402973328647</created>
+      <updated>1402973328647</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add in trip detail in profile page">
+      <created>1403016410230</created>
+      <updated>1403016410230</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add photo upload for profile page">
+      <created>1403107669070</created>
+      <updated>1403107669070</updated>
+    </task>
+    <task id="LOCAL-00029" summary="implement signin/signup form&#10;&#10;have wizard form">
+      <created>1403195721747</created>
+      <updated>1403195721747</updated>
+    </task>
+    <task id="LOCAL-00030" summary="implement feedback button for&#10;   - video&#10;   - lichtrinh&#10;   - thongtin&#10;   - profile">
+      <created>1403199790253</created>
+      <updated>1403199790253</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22601625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40487805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24921875" sideWeight="0.6720554" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2003035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33873582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32794458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22601625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40487805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33873582" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22837633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -300,99 +476,304 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fix bug video page" />
-    <MESSAGE value="Add button redirect pages" />
-    <MESSAGE value="Change Homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Homepage" />
+    <MESSAGE value="first version" />
+    <MESSAGE value="add maximize/minimize button to video page&#10;&#10;add the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page" />
+    <MESSAGE value="fix the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page" />
+    <MESSAGE value="fix thongtin page: resize browser width will render the content properly" />
+    <MESSAGE value="fix lichtrinh page" />
+    <MESSAGE value="fix cursor in video page" />
+    <MESSAGE value="fix date select section in lichtrinh page" />
+    <MESSAGE value="fix attraction select section in lichtrinh page" />
+    <MESSAGE value="fix budget section in lichtrinh page" />
+    <MESSAGE value="fix background color for date/transport section from blue to white in lichtrinh page" />
+    <MESSAGE value="add php session to lichtrinh/thongtin pages&#10;&#10;got issue with php session not compatible with the way Joomla handles session. Changing now" />
+    <MESSAGE value="fix issue with php session" />
+    <MESSAGE value="change date picker" />
+    <MESSAGE value="fix css" />
+    <MESSAGE value="change the holiday timeline in diadiem + implement the wiki page" />
+    <MESSAGE value="remove unused css" />
+    <MESSAGE value="fix blog css" />
+    <MESSAGE value="add feedback button for users" />
+    <MESSAGE value="update bootstrap to latest version&#10;&#10;implement profile page&#10;&#10;implement rating system" />
+    <MESSAGE value="fix top menu bar" />
+    <MESSAGE value="add in trip detail in profile page" />
+    <MESSAGE value="add photo upload for profile page" />
+    <MESSAGE value="implement signin/signup form&#10;&#10;have wizard form" />
+    <MESSAGE value="implement feedback button for&#10;   - video&#10;   - lichtrinh&#10;   - thongtin&#10;   - profile" />
+    <MESSAGE value="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+    <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="62" selection-start="8795" selection-end="8795" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="3672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="44" selection-start="3139" selection-end="3139" vertical-scroll-proportion="0.0" vertical-offset="2522" max-vertical-offset="98447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/images/maximize.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="47" selection-start="2367" selection-end="2367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360" />
+        <state line="20" column="32" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="23103" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/green/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="48" selection-start="8600" selection-end="8600" vertical-scroll-proportion="0.0" vertical-offset="2890" max-vertical-offset="3638" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="15" selection-start="2224" selection-end="2224" vertical-scroll-proportion="0.0" vertical-offset="1389" max-vertical-offset="97444" />
+        <state line="24" column="85" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.0" vertical-offset="2686" max-vertical-offset="3468" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="55" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="15215" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/images/minimize.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="55" selection-start="747" selection-end="747" vertical-scroll-proportion="0.031481482" vertical-offset="289" max-vertical-offset="18666" />
+        <state line="152" column="0" selection-start="9467" selection-end="9467" vertical-scroll-proportion="0.0" vertical-offset="2414" max-vertical-offset="18666" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_thongtin/thongtin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9214" />
+        <state line="448" column="27" selection-start="11331" selection-end="11331" vertical-scroll-proportion="0.0" vertical-offset="7408" max-vertical-offset="9214" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="0" selection-start="9201" selection-end="9201" vertical-scroll-proportion="0.0" vertical-offset="2414" max-vertical-offset="18666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_thongtin/thongtin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="37" selection-start="944" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="4437" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="741" column="20" selection-start="43282" selection-end="43282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="10" selection-start="2334" selection-end="2334" vertical-scroll-proportion="0.7888889" vertical-offset="662" max-vertical-offset="1700" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/images/maximize.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+        <state line="75" column="73" selection-start="2926" selection-end="2926" vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1462" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="226" selection-end="226" vertical-scroll-proportion="0.29876977" vertical-offset="0" max-vertical-offset="2703" />
+        <state line="83" column="41" selection-start="3069" selection-end="3088" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2703" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="53" selection-start="6975" selection-end="6975" vertical-scroll-proportion="0.0" vertical-offset="2346" max-vertical-offset="7293">
-          <folding />
-        </state>
+        <state line="741" column="20" selection-start="43282" selection-end="43282" vertical-scroll-proportion="0.0" vertical-offset="12125" max-vertical-offset="15215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="741" column="20" selection-start="43282" selection-end="43282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="15" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1241" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="41" selection-start="3069" selection-end="3088" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="18" selection-start="8459" selection-end="8459" vertical-scroll-proportion="0.4770798" vertical-offset="6043" max-vertical-offset="10132" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/images/tbl_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/images/tbl_icon_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/plan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1039.8077" vertical-offset="27035" max-vertical-offset="27642" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_thongtin/thongtin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.60714287" vertical-offset="306" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_data/data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="1142" selection-end="1173" vertical-scroll-proportion="0.4722222" vertical-offset="255" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_data/data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_ajax/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/month_info.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="37" selection-start="4928" selection-end="4928" vertical-scroll-proportion="-7.8461537" vertical-offset="2142" max-vertical-offset="2567" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/advice.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/templates/hathor/html/com_banners/tracks/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="18" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.3478261" vertical-offset="590" max-vertical-offset="2210" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/food.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="38" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/cost.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="2601" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/js/Accordion/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8449" column="16" selection-start="252048" selection-end="252052" vertical-scroll-proportion="2.915009" vertical-offset="142021" max-vertical-offset="255153" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="5" selection-start="3124" selection-end="3124" vertical-scroll-proportion="0.07445008" vertical-offset="3186" max-vertical-offset="15929" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/transport.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="2345" selection-end="2357" vertical-scroll-proportion="-4.8846154" vertical-offset="315" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/js/vi-VN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="68" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3264" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/city.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="23" selection-start="1859" selection-end="1859" vertical-scroll-proportion="-17.076923" vertical-offset="729" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/attraction.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="28" selection-start="7323" selection-end="7323" vertical-scroll-proportion="0.0" vertical-offset="1063" max-vertical-offset="1445" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/wiki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="21" selection-start="4949" selection-end="4974" vertical-scroll-proportion="-16.653847" vertical-offset="944" max-vertical-offset="1751" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/green/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1669" column="5" selection-start="185767" selection-end="185767" vertical-scroll-proportion="0.0" vertical-offset="28373" max-vertical-offset="47413">
+        <state line="16" column="39" selection-start="291" selection-end="291" vertical-scroll-proportion="0.47058824" vertical-offset="0" max-vertical-offset="46410" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/res-timeline.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.34517765" vertical-offset="0" max-vertical-offset="5406" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_content/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="86" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.34375" vertical-offset="714" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="18" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.33333334" vertical-offset="1010" max-vertical-offset="13838" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="272" column="0" selection-start="7252" selection-end="7252" vertical-scroll-proportion="10.961538" vertical-offset="4909" max-vertical-offset="5729" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="836" selection-end="836" vertical-scroll-proportion="-4.576923" vertical-offset="102" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="484" column="222" selection-start="25255" selection-end="25255" vertical-scroll-proportion="0.0" vertical-offset="7877" max-vertical-offset="19091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_thongtin/thongtin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="107" selection-start="9556" selection-end="9556" vertical-scroll-proportion="0.0" vertical-offset="5842" max-vertical-offset="8041">
+          <folding>
+            <marker date="1403198668389" expanded="true" signature="11379:11389" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="32" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="7293">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="191" selection-start="1429" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="604" max-vertical-offset="2074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="67" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="7055" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_profile/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="604" column="51" selection-start="33033" selection-end="33033" vertical-scroll-proportion="0.0" vertical-offset="9845" max-vertical-offset="10438">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="467" column="44" selection-start="34454" selection-end="34454" vertical-scroll-proportion="0.70652175" vertical-offset="7549" max-vertical-offset="18921">
           <folding />
         </state>
       </provider>

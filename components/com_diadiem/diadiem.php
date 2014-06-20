@@ -85,13 +85,13 @@ defined('_JEXEC') or die;
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
                             <div class="st-layer-slider " style="width: 100%;max-height:none;" id="dactrung_slide">
-                                <div class="sequence-prev"></div>
+<!--                                <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
                                 <ul class="sequence-pagination">
                                     <li class="current"><span></span></li>
                                     <li class=""><span></span></li>
-                                </ul>
-                                <ul class="sequence-canvas" style="height:350px;">
+                                </ul>-->
+                                <ul class="sequence-canvas">
                                     <li class="animate-in" style="z-index: 2; opacity: 1;position:relative;">
                                         <div class="row-fluid" style="position:relative;">
                                             <div class="span3" style="float:left;">
@@ -131,7 +131,7 @@ defined('_JEXEC') or die;
                                         </div>
 
                                     </li>
-                                    <li class="animate-out" style="opacity: 1; z-index: 1;position:relative;top:-330px;left:0px">
+<!--                                    <li class="animate-out" style="opacity: 1; z-index: 1;position:relative;top:-330px;left:0px">
                                         <div class="row-fluid" style="position:relative;">
                                             <div class="span3">
                                                 <div class="st-icon-cup">&nbsp;</div>
@@ -151,7 +151,7 @@ defined('_JEXEC') or die;
                                         </div>
 
                                     </li>
-
+-->
                                 </ul>
                             </div>
                         </div>
@@ -161,26 +161,25 @@ defined('_JEXEC') or die;
         </div>
         <div class="avatar-module ">
             <div class="module-content">
-
-
                 <div class="custom">
                     <div class="st-onepage">
-                        <div class="st-projects onepage-appear" style="padding: 35.813541412353516px 0px;" position="item-104">
+                        <div class="st-projects onepage-appear" position="item-104">
                             <h1 class="st-heading">Tham quan<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Tham Quan');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những nơi không nên bỏ lỡ</p>
-                            <div class="st-layer-slider " style="width: 100%; height: 345px;" id="thamquan_slide">
-                                <div class="sequence-prev"></div>
+                            <div class="st-layer-slider " style="width: 100%;" id="thamquan_slide">
+<!--                                <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
                                 <ul class="sequence-pagination">
                                     <li class="current"><span></span></li>
                                     <li class=""><span></span></li>
-                                </ul>
-                                <ul class="sequence-canvas">
-                                    <li class="animate-in" style="z-index: 2; opacity: 1;">
+                                </ul>-->
+<!--                                <ul class="sequence-canvas">
+                                   <li class="animate-in" style="z-index: 2; opacity: 1;">
+                              -->
                                         <div class="row-fluid">
-                                            <div class="span3">
-                                                <div class="content"><img class="circular"
+                                            <div class="span3" style="margin-bottom:80px;">
+                                                <div class="attraction-content"><img class="circular"
                                                                           src="./templates/green/images/nha_tho_duc_ba.jpg"
                                                                           border="0"
                                                                           alt=""><br>
@@ -192,8 +191,8 @@ defined('_JEXEC') or die;
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="span3">
-                                                <div class="content"><img class="circular"
+                                            <div class="span3" style="margin-bottom:80px;"">
+                                                <div class="attraction-content"><img class="circular"
                                                                           src="./templates/green/images/dinh_doc_lap.jpg" border="0"
                                                                           alt=""><br>
                                                     <div id="thamquan_2"></div>
@@ -204,8 +203,8 @@ defined('_JEXEC') or die;
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="span3">
-                                                <div class="content"><img class="circular"
+                                            <div class="span3" style="margin-bottom:80px;"">
+                                                <div class="attraction-content"><img class="circular"
                                                                           src="./templates/green/images/cho_ben_thanh.jpg"
                                                                           border="0"
                                                                           alt=""><br>
@@ -217,8 +216,8 @@ defined('_JEXEC') or die;
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="span3">
-                                                <div class="content"><img class="circular"
+                                            <div class="span3" style="margin-bottom:80px;"">
+                                                <div class="attraction-content"><img class="circular"
                                                                           src="./templates/green/images/ben_nha_rong.jpg" border="0"
                                                                           alt=""><br>
                                                     <div id="thamquan_4"></div>
@@ -228,9 +227,8 @@ defined('_JEXEC') or die;
                                                         <p class="desc">Nơi Bác ra đi tìm đường cứu nước</p>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </div>
-                                    </li>
+<!--                                    </li>
                                     <li class="animate-out" style="opacity: 1; z-index: 1;">
                                         <div class="row-fluid">
                                             <div class="span3">
@@ -260,7 +258,7 @@ defined('_JEXEC') or die;
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul>-->
                             </div>
                         </div>
                     </div>
@@ -322,15 +320,15 @@ defined('_JEXEC') or die;
                             <h1 class="st-heading">Cảm nghĩ<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Cảm Nghĩ');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading" style="margin-bottom:15px;">Sài Gòn trong tim mỗi người là...</p>
-                            <div class="st-layer-slider span12" style="width: 100%;height:600px;margin-left:0px;" id="camnghi_slide">
-                                <div class="sequence-prev"></div>
+                            <div class="st-layer-slider span12" style="width: 100%;margin-left:0px;" id="camnghi_slide">
+<!--                                <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
                                 <ul class="sequence-pagination">
                                     <li class="current"><span></span></li>
                                     <li class=""><span></span></li>
                                 </ul>
                                 <ul class="sequence-canvas">
-                                    <li class="animate-in" style="z-index: 2; opacity: 1;">
+                                    <li class="animate-in" style="z-index: 2; opacity: 1;">-->
                                         <div class="row-fluid">
                                             <div class="span3">
                                                 <div class="inner">
@@ -420,54 +418,54 @@ defined('_JEXEC') or die;
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
-                                    <li class="animate-out" style="opacity: 1; z-index: 1;">
-                                        <div class="row-fluid">
-                                            <div class="span3">
-                                                <div class="inner">
-                                                    <div class="avatar"><img class="circular"
-                                                                             src="./templates/green/images/nguoi_da_nang.jpg"
-                                                                             border="0"
-                                                                             alt=""></div>
-                                                    <h3 class="title">Mai Đình Anh</h3>
-
-                                                    <div class="role">Đà Nẵng</div>
-                                                    <!--                                        <div class="social"><a class="facebook"
-                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                                <a class="twitter"
-                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                                <a class="linkedin"
-                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                            </div>-->
-                                                    <div class="desc">Nếu bạn chưa từng ngắm nhìn và tận hưởng cơn mưa Sài Gòn vào
-                                                        một bữa chiều oi bức là xem như bạn chưa biết gì về Sài Gòn
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="span3">
-                                                <div class="inner">
-                                                    <div class="avatar"><img class="circular"
-                                                                             src="./templates/green/images/nguoi_ho_chi_minh.jpg"
-                                                                             border="0"
-                                                                             alt=""></div>
-                                                    <h3 class="title">Trần Đoàn Khánh Vũ</h3>
-
-                                                    <div class="role">Hồ Chí Minh</div>
-                                                    <!--                                        <div class="social"><a class="facebook"
-                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                                <a class="twitter"
-                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                                <a class="linkedin"
-                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>
-                                                                                            </div>-->
-                                                    <div class="desc">Thời tiết Sài Gòn như một cô gái đỏng đảnh tính khí thất
-                                                        thường, lúc thì nắng gay gắt, rồi lại mưa ào ạt.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+<!--                                    </li>-->
+<!--                                    <li class="animate-out" style="opacity: 1; z-index: 1;">-->
+<!--                                        <div class="row-fluid">-->
+<!--                                            <div class="span3">-->
+<!--                                                <div class="inner">-->
+<!--                                                    <div class="avatar"><img class="circular"-->
+<!--                                                                             src="./templates/green/images/nguoi_da_nang.jpg"-->
+<!--                                                                             border="0"-->
+<!--                                                                             alt=""></div>-->
+<!--                                                    <h3 class="title">Mai Đình Anh</h3>-->
+<!---->
+<!--                                                    <div class="role">Đà Nẵng</div>-->
+<!--                                                    <!--                                        <div class="social"><a class="facebook"-->
+<!--                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>-->
+<!--                                                                                                <a class="twitter"-->
+<!--                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>-->
+<!--                                                                                                <a class="linkedin"-->
+<!--                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>-->
+<!--                                                                                            </div>-->
+<!--                                                    <div class="desc">Nếu bạn chưa từng ngắm nhìn và tận hưởng cơn mưa Sài Gòn vào-->
+<!--                                                        một bữa chiều oi bức là xem như bạn chưa biết gì về Sài Gòn-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="span3">-->
+<!--                                                <div class="inner">-->
+<!--                                                    <div class="avatar"><img class="circular"-->
+<!--                                                                             src="./templates/green/images/nguoi_ho_chi_minh.jpg"-->
+<!--                                                                             border="0"-->
+<!--                                                                             alt=""></div>-->
+<!--                                                    <h3 class="title">Trần Đoàn Khánh Vũ</h3>-->
+<!---->
+<!--                                                    <div class="role">Hồ Chí Minh</div>-->
+<!--                                                    <!--                                        <div class="social"><a class="facebook"-->
+<!--                                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>-->
+<!--                                                                                                <a class="twitter"-->
+<!--                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>-->
+<!--                                                                                                <a class="linkedin"-->
+<!--                                                                                                   href="http://www.beautiful-templates.com/demo/templates-joomla/st_green/#">.</a>-->
+<!--                                                                                            </div>-->
+<!--                                                    <div class="desc">Thời tiết Sài Gòn như một cô gái đỏng đảnh tính khí thất-->
+<!--                                                        thường, lúc thì nắng gay gắt, rồi lại mưa ào ạt.-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
                             </div>
 
                         </div>
