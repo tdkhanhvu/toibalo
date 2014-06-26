@@ -513,7 +513,7 @@ to {background: rgba(0,0,0, 0.6);}
   background: url("../images/moregrey/button.png") no-repeat scroll left center transparent;
 } 
 .moreblack{
-  background: url("../../Images/Attraction/button/moreblack.png") no-repeat scroll left center transparent;
+  background: url("../../images/attraction/button/moreblack.png") no-repeat scroll left center transparent;
   background-size: 20px 20px;
 }
 .moredarkblue{

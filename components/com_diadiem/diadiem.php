@@ -280,7 +280,7 @@ defined('_JEXEC') or die;
                         <div class="st-home onepage-disappear" position="item-105">
                             <div class="row-fluid">
                                 <div class="span8">
-                                    <div class="inner content">
+                                    <div class="inner article-content">
                                         <h1>Văn hóa giao thoa <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Bài Viết');">Phản Hồi</button></h1>
 
                                         <p>Là trung tâm kinh tế lớn của cả nước, Sài Gòn là nơi tập trung văn hóa Bắc
@@ -292,10 +292,8 @@ defined('_JEXEC') or die;
                                 </div>
                                 <div class="span4">
                                     <div class="inner phone" style="width:100%">
-                                        <img src="./templates/green/images/tong_hop.jpg" border="0" alt="" width="370">
-                                        <img src="./templates/green/images/hang_rong_sai_gon.jpg"
-                                             border="0"
-                                             alt="">
+                                        <img src="./templates/green/images/tong_hop.jpg" border="0" alt="" class="img-responsive">
+                                        <img src="./templates/green/images/hang_rong_sai_gon.jpg" border="0" alt="" class="img-responsive">
 
                                     </div>
                                 </div>
@@ -486,14 +484,14 @@ defined('_JEXEC') or die;
                         <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
                             <h1 class="st-heading" style="float:left">Nhật kí<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
                             <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px">
-                                <img class="note_select" src="./templates/green/images/du_khach_1.jpg"/>
+                                <img class="note_select thumbnail img-responsive" src="./templates/green/images/du_khach_1.jpg"/>
                                 <div>Trần Thanh Hùng</div>
                                 <div>Nha Trang</div>
                                 <div>10-15/5/2013</div>
                                 <div id="nhatki_1"></div>
                             </div>
                             <div style="float:left;font-size: large;color:#ffffff">
-                                <img class="note_select" src="./templates/green/images/du_khach_2.jpg"/>
+                                <img class="note_select thumbnail img-responsive" src="./templates/green/images/du_khach_2.jpg"/>
                                 <div>Nguyễn Thị Diễm Lệ</div>
                                 <div>Hải Phòng</div>
                                 <div>6-9/1/2014</div>
@@ -528,19 +526,22 @@ defined('_JEXEC') or die;
                         <div class="jflatTimeline">
                             <div class="timeline-wrap">
                                 <div class="event" data-date="01/01/2014">
-                                    <div class="layout3">
-                                        <img src="./templates/green/images/tet_duong_lich.jpg" alt="image alt"/>
-                                        <h3>Tết Dương Lịch</h3>
-                                        <p>Tết Dương lịch hay còn gọi là Tết Tây là một trong những ngày
-                                            lễ quan trọng trong năm của nhiều dân tộc trên thế giới. Tết này là ngày đầu
-                                            tiên hàng năm theo dương lịch, loại lịch hiện được dùng phổ biến tại Việt Nam,
-                                            tuy âm lịch vẫn còn được dùng trong các lễ hội, giỗ, tết hay sự kiện văn hóa cổ.</p>
+                                    <div class="layout1">
+                                        <div class="left"><img class="thumbnail" src="./templates/green/images/tet_duong_lich.jpg" alt="image alt"/></div>
+                                        <div class="right">
+                                            <h3>Tết Dương Lịch</h3>
+                                            <p>Tết Dương lịch hay còn gọi là Tết Tây là một trong những ngày
+                                                lễ quan trọng trong năm của nhiều dân tộc trên thế giới. Tết này là ngày đầu
+                                                tiên hàng năm theo dương lịch, loại lịch hiện được dùng phổ biến tại Việt Nam,
+                                                tuy âm lịch vẫn còn được dùng trong các lễ hội, giỗ, tết hay sự kiện văn hóa cổ.</p>
+                                        </div>
+
                                     </div>
                                     <span class="date"><i class="icon-calendar"></i>01.01.2014</span>
                                 </div>
                                 <div class="event selected" data-date="01/31/2014">
                                     <div class="layout1">
-                                        <div class="left"><img src="./templates/green/images/tet_nguyen_dan.jpg" alt="image alt"/></div>
+                                        <div class="left"><img class="thumbnail" src="./templates/green/images/tet_nguyen_dan.jpg" alt="image alt"/></div>
                                         <div class="right">
                                             <h3>Tết Nguyên Đán</h3>
                                             <p>Tết Nguyên Đán (hay còn gọi là Tết Cả, Tết Ta, Tết Âm lịch,
@@ -558,19 +559,21 @@ defined('_JEXEC') or die;
                                             <h3>Tết Trung Thu</h3>
                                             <p>Trung thu là giữa mùa thu, Tết Trung Thu như tên gọi đến với chúng ta vào đúng giữa mùa thu tức là vào rằm tháng Tám âm lịch. Tết Trung Thu là tết của trẻ em. Ngay từ đầu tháng, Tết đã được sửa soạn với những cỗ đèn muôn mầu sắc, muôn hình thù, với những bánh dẻo, bánh nướng mà ta gọi gồm là bánh trung thu.</p>
                                         </div>
-                                        <div class="right"><img src="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
+                                        <div class="right"><img class="thumbnail" src="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
                                     </div>
                                     <span class="date"><i class="icon-calendar"></i>08.09.2014</span>
                                 </div>
                                 <div class="event" data-date="12/25/2014">
-                                    <div class="layout3">
-                                        <img src="./templates/green/images/giang_sinh.jpg" alt="image alt"/>
-                                        <h3>Giáng Sinh</h3>
-                                        <p>Lễ Giáng Sinh, còn được gọi là lễ Thiên Chúa giáng sinh, Noel
-                                            hay Christmas là một ngày lễ kỷ niệm Chúa Giêsu sinh ra đời, theo phần lớn các
-                                            tín hữu Kitô giáo. Họ tin là Chúa Giêsu được sinh tại Bethlehem (Bêlem) thuộc xứ
-                                            Judea (Giuđêa) nước Do Thái (ngày nay là 1 thành phố của Palestine), lúc bấy giờ
-                                            thuộc Đế quốc La Mã, khoảng giữa năm 7 TCN và năm 2.</p>
+                                    <div class="layout2">
+                                        <div class="left">
+                                            <h3>Giáng Sinh</h3>
+                                            <p>Lễ Giáng Sinh, còn được gọi là lễ Thiên Chúa giáng sinh, Noel
+                                                hay Christmas là một ngày lễ kỷ niệm Chúa Giêsu sinh ra đời, theo phần lớn các
+                                                tín hữu Kitô giáo. Họ tin là Chúa Giêsu được sinh tại Bethlehem (Bêlem) thuộc xứ
+                                                Judea (Giuđêa) nước Do Thái (ngày nay là 1 thành phố của Palestine), lúc bấy giờ
+                                                thuộc Đế quốc La Mã, khoảng giữa năm 7 TCN và năm 2.</p>
+                                        </div>
+                                        <div class="right"><img class="thumbnail" src="./templates/green/images/giang_sinh.jpg" alt="image alt"/></div>
                                     </div>
                                     <span class="date"><i class="icon-calendar"></i>25.12.2014</span>
                                 </div>
@@ -632,7 +635,7 @@ defined('_JEXEC') or die;
                                 ?>
                                 <div class="item-content" category="<?php echo $s_category[$i] ?>">
                                     <div class="row-fluid">
-                                        <div class="span8"><img src="<?php echo $s_image[$i] ?>" alt="<?php echo $s_name[$i] ?>"/></div>
+                                        <div class="span8"><img class="thumbnail" src="<?php echo $s_image[$i] ?>" alt="<?php echo $s_name[$i] ?>"/></div>
                                         <div class="span4">
                                             <h3>Project description</h3>
                                             <p><?php echo $s_name[$i] ?></p>
@@ -662,7 +665,7 @@ defined('_JEXEC') or die;
                                 <a class="link" href="#"></a>
                                 <div class="inner">
                                     <div class="media">
-                                        <img src="<?php echo $s_image[$i] ?>" alt="Column image and text"/>
+                                        <img class="thumbnail" style="margin-bottom:0px;" src="<?php echo $s_image[$i] ?>" alt="Column image and text"/>
                                     </div>
                                     <div class="info image">
                                         <h3 class="title">

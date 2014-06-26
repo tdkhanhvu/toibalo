@@ -672,7 +672,7 @@ a:visited,
     text-align: center;
 }
 
-.st-home .span8 .content {
+.st-home .span8 .article-content {
     position: absolute;
     width: 60%;
     top: 50%;
@@ -686,19 +686,20 @@ a:visited,
 .st-home h1,
 .st-home p {
     color: #fff;
-}
+/* 	font-size:2vw;
+ */}
 
 .st-home h1 {
     text-align: left;
 /*     font-family: 'montserratbold'; */
-    font-size: 64px;
+    font-size: 5vw;
     line-height: 65px;
     margin: 20px 0;
 }
 
 .st-home p {
-    font-size: 24px;
-    line-height: 36px;
+/*     font-size: 24px;
+ */    line-height: 36px;
     text-align: left;
 }
 
@@ -1563,7 +1564,7 @@ header .article-tool .article-info {
 
 @media (max-width: 1024px) {
     .avatar-responsive .avatar-module {
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
 
     .avatar-responsive .st-top-slider .layer-effect-door .sequence-canvas > li .image img {

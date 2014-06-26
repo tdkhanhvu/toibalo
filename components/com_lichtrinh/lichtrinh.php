@@ -301,26 +301,26 @@ $session =& JFactory::getSession();
                         <div class="st-home onepage-disappear" position="item-105">
                             <ul class="span11 nav nav-tabs" id="attraction_list" style="margin-left:0px;">
                                 <?php
-                                    $attraction = GetAttractionData();
+                                $attraction = GetAttractionData();
 
-                                    foreach($attraction as $key => $value) {
-                                        echo '<li><a id="tab_'.$key.'" href="#'.$key.'" data-toggle="tab"'.($value['select']?' class="selected"':'').'>';
-                                        echo '<div style="background-image: url(\'./templates/green/images/'.$value['image_url'].'\');"></div></a></li>';
-                                    }
+                                foreach($attraction as $key => $value) {
+                                    echo '<li><a id="tab_'.$key.'" href="#'.$key.'" data-toggle="tab"'.($value['select']?' class="selected"':'').'>';
+                                    echo '<div style="background-image: url(\'./templates/green/images/'.$value['image_url'].'\');"></div></a></li>';
+                                }
                                 ?>
                             </ul>
                             <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Tham Quan');">Phản Hồi</button>
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
                             <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;margin-left:0px;">
                                 <div class="ip_slide">
-                                    <img class="ip_tooltipImg" src="./templates/green/images/Attraction/sai_gon_map.jpg" width="860">
+                                    <img class="ip_tooltipImg" src="./templates/green/images/attraction/sai_gon_map.jpg" width="860">
                                     <?php
-                                        foreach($attraction as $key => $value) {
-                                            echo '<div class="ip_tooltip ip_img32" style="top: '.$value['top_lichtrinh'].'; left: '.$value['left_lichtrinh'].';" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">';
-                                            echo '<p>'.$value['name'].'</p>';
-                                            echo '<img attractionId="'.$key.'" alt="an image" src="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
-                                            echo '</div>';
-                                        }
+                                    foreach($attraction as $key => $value) {
+                                        echo '<div class="ip_tooltip ip_img32" style="top: '.$value['top_lichtrinh'].'; left: '.$value['left_lichtrinh'].';" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">';
+                                        echo '<p>'.$value['name'].'</p>';
+                                        echo '<img attractionId="'.$key.'" alt="an image" src="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
+                                        echo '</div>';
+                                    }
                                     ?>
                                 </div>
                                 <div style="clear:both"></div>
@@ -529,7 +529,7 @@ $session =& JFactory::getSession();
 
                         foreach($arr as $type => $type_value) {
                             echo '       <li cost="'.$arr[$type]['cost'].'"'.(array_search($type,$temp_arr[$key]['element']) !== FALSE ?' class="'.$key.'_active"' : '').' type="'.$type.'">';
-                            echo '          <img src="./templates/green/images/'.$arr[$type]['image_url'].'" />';
+                            echo '          <img class="thumbnail" style="margin-bottom:0px;background-color:transparent" src="./templates/green/images/'.$arr[$type]['image_url'].'" />';
                             echo '       </li>';
                         }
                         echo '   </ul>';
@@ -581,133 +581,133 @@ $session =& JFactory::getSession();
 
     //jQuery.noConflict();
     (function ($) {
-    $(document).ready(function () {
-        $.ajax({
-            url: "index.php?option=com_data&format=raw",
-            type: "post",
-            data: {'request':'SetBookingDay','date':(new Date()).toString('dddd, dd MMMM, yyyy')},
-            success: function(msg){
-                DisplaySuccess(msg);
-            },
-            error:function(){
-                DisplayError("failure");
-            }
-        });
+        $(document).ready(function () {
+            $.ajax({
+                url: "index.php?option=com_data&format=raw",
+                type: "post",
+                data: {'request':'SetBookingDay','date':(new Date()).toString('dddd, dd MMMM, yyyy')},
+                success: function(msg){
+                    DisplaySuccess(msg);
+                },
+                error:function(){
+                    DisplayError("failure");
+                }
+            });
 
-        $('#accordion').collapse({
-            toggle: false,
-            parent:true
-        });
+            $('#accordion').collapse({
+                toggle: false,
+                parent:true
+            });
 
-/*        function highlightDays(date) {
-            var startDate = new Date(jQuery( "#dateDepart" ).datepicker("getDate"));
-            var endDate = new Date(jQuery( "#dateReturn" ).datepicker("getDate"));
+            /*        function highlightDays(date) {
+             var startDate = new Date(jQuery( "#dateDepart" ).datepicker("getDate"));
+             var endDate = new Date(jQuery( "#dateReturn" ).datepicker("getDate"));
 
-            if ((startDate <= date) &&  (date <= endDate)) {
-                return [true, 'highlight'];
-            } else {
-                return [true, ''];
-            }
-        }
+             if ((startDate <= date) &&  (date <= endDate)) {
+             return [true, 'highlight'];
+             } else {
+             return [true, ''];
+             }
+             }
 
-        function closeDatepicker(dp) {
+             function closeDatepicker(dp) {
 
-            if (dp=='datepicker-hdr-departdate') {
+             if (dp=='datepicker-hdr-departdate') {
 
-                jQuery("#dateDepart").datepicker("show");
-                jQuery("#dateReturn").datepicker("hide");
-            }else if(dp=='datepicker-hdr-returndate'){
-                jQuery("#dateReturn").datepicker("show");
-                jQuery("#dateDepart").datepicker("hide");
-            }else if(dp=='datepicker-hdr-checkin-date'){
-                jQuery("#check-in").datepicker("show");
-                jQuery("#check-out").datepicker("hide");
-            }else if(dp=='datepicker-hdr-checkout-date'){
-                jQuery("#check-out").datepicker("show");
-                jQuery("#check-in").datepicker("hide");
-            }else if(dp=='datepicker-hdr-pickup'){
-                jQuery("#carspickupdate").datepicker("show");
-                jQuery("#carsreturndate").datepicker("hide");
-            }else if(dp=='datepicker-hdr-dropoff'){
-                jQuery("#carsreturndate").datepicker("show");
-                jQuery("#carspickupdate").datepicker("hide");
-            }
+             jQuery("#dateDepart").datepicker("show");
+             jQuery("#dateReturn").datepicker("hide");
+             }else if(dp=='datepicker-hdr-returndate'){
+             jQuery("#dateReturn").datepicker("show");
+             jQuery("#dateDepart").datepicker("hide");
+             }else if(dp=='datepicker-hdr-checkin-date'){
+             jQuery("#check-in").datepicker("show");
+             jQuery("#check-out").datepicker("hide");
+             }else if(dp=='datepicker-hdr-checkout-date'){
+             jQuery("#check-out").datepicker("show");
+             jQuery("#check-in").datepicker("hide");
+             }else if(dp=='datepicker-hdr-pickup'){
+             jQuery("#carspickupdate").datepicker("show");
+             jQuery("#carsreturndate").datepicker("hide");
+             }else if(dp=='datepicker-hdr-dropoff'){
+             jQuery("#carsreturndate").datepicker("show");
+             jQuery("#carspickupdate").datepicker("hide");
+             }
 
-        }*/
-        $('#dateDepart').datepicker({
+             }*/
+            $('#dateDepart').datepicker({
 
-/*
-            beforeShowDay: highlightDays,
-*/
+                /*
+                 beforeShowDay: highlightDays,
+                 */
 
-            dateFormat: "d M yy",
-            defaultDate:new Date(),
-            numberOfMonths: 2,
-            changeMonth: true,
-            changeYear: true,
-            minDate: new Date(),
-            maxDate: "+13m",
-            onSelect:function(dateText, inst){
-                //MVC300412: set dynamic return date, should always be equal or greater than depart date
-                //jQuery("#dateReturn").datepicker("option", "minDate", jQuery("#dateDepart").datepicker("getDate"));
-                var dd = dateText.split(" ")[0];
-                var month = Date.parse(dateText);
-                alert(dateText);
-                alert(month);
-                startDay = month;
-                var mm = ("0" + (month.getMonth() + 1)).slice(-2);
-                var yyyy = dateText.split(" ")[2];
-            },
-            onClose:function(dateText, inst){
-                $( "#dateReturn" ).datepicker("show");
-            }
-        });
+                dateFormat: "d M yy",
+                defaultDate:new Date(),
+                numberOfMonths: 2,
+                changeMonth: true,
+                changeYear: true,
+                minDate: new Date(),
+                maxDate: "+13m",
+                onSelect:function(dateText, inst){
+                    //MVC300412: set dynamic return date, should always be equal or greater than depart date
+                    //jQuery("#dateReturn").datepicker("option", "minDate", jQuery("#dateDepart").datepicker("getDate"));
+                    var dd = dateText.split(" ")[0];
+                    var month = Date.parse(dateText);
+                    alert(dateText);
+                    alert(month);
+                    startDay = month;
+                    var mm = ("0" + (month.getMonth() + 1)).slice(-2);
+                    var yyyy = dateText.split(" ")[2];
+                },
+                onClose:function(dateText, inst){
+                    $( "#dateReturn" ).datepicker("show");
+                }
+            });
 
-        $('#dateReturn').datepicker({
+            $('#dateReturn').datepicker({
 
 //            beforeShowDay: highlightDays,
 
-            dateFormat: "dd M yy",
-            defaultDate:new Date(),
-            numberOfMonths: 2,
-            changeMonth: true,
-            changeYear: true,
-            minDate: new Date(),
-            maxDate: "+13m",
-            onSelect:function(dateText, inst){
-                //MVC300412: set dynamic depart date, should always be equal or less than return date
-                //jQuery("#dateDepart").datepicker("option", "maxDate", jQuery("#dateReturn").datepicker("getDate"));
+                dateFormat: "dd M yy",
+                defaultDate:new Date(),
+                numberOfMonths: 2,
+                changeMonth: true,
+                changeYear: true,
+                minDate: new Date(),
+                maxDate: "+13m",
+                onSelect:function(dateText, inst){
+                    //MVC300412: set dynamic depart date, should always be equal or less than return date
+                    //jQuery("#dateDepart").datepicker("option", "maxDate", jQuery("#dateReturn").datepicker("getDate"));
 
-                var dd = dateText.split(" ")[0];
-                var month = new Date(dateText);
-                endDay = month;
-                var mm = ("0" + (month.getMonth() + 1)).slice(-2);
-                var yyyy = dateText.split(" ")[2];
+                    var dd = dateText.split(" ")[0];
+                    var month = new Date(dateText);
+                    endDay = month;
+                    var mm = ("0" + (month.getMonth() + 1)).slice(-2);
+                    var yyyy = dateText.split(" ")[2];
 
-                $('#accordion .in').removeClass('in').height(0);
-                for (i = 1; i <= 12; i++) {
-                    $('#collapse' + i).css('border',$('#collapse' + i).css('border').replace('5px','0px'));
-                }
-
-                var curr = startDay.getMonth() + 1;
-                $('#a' + curr).addClass('collapsed');
-                $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
-                $('#collapse' + curr).addClass('in').height('auto');
-                DisplaySuccess(startDay + ' ' + endDay);
-                $.ajax({
-                    url: "index.php?option=com_data&format=raw",
-                    type: "post",
-                    data: {'request':'SetDay','StartDay':startDay.toString('dddd, dd/MM/yyyy'), 'EndDay':endDay.toString('dddd, dd/MM/yyyy')},
-                    success: function(msg){
-                        DisplaySuccess(msg);
-                    },
-                    error:function(){
-                        DisplayError("failure");
+                    $('#accordion .in').removeClass('in').height(0);
+                    for (i = 1; i <= 12; i++) {
+                        $('#collapse' + i).css('border',$('#collapse' + i).css('border').replace('5px','0px'));
                     }
-                });
-            }
+
+                    var curr = startDay.getMonth() + 1;
+                    $('#a' + curr).addClass('collapsed');
+                    $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
+                    $('#collapse' + curr).addClass('in').height('auto');
+                    DisplaySuccess(startDay + ' ' + endDay);
+                    $.ajax({
+                        url: "index.php?option=com_data&format=raw",
+                        type: "post",
+                        data: {'request':'SetDay','StartDay':startDay.toString('dddd, dd/MM/yyyy'), 'EndDay':endDay.toString('dddd, dd/MM/yyyy')},
+                        success: function(msg){
+                            DisplaySuccess(msg);
+                        },
+                        error:function(){
+                            DisplayError("failure");
+                        }
+                    });
+                }
+            });
         });
-    });
     })(jQuery)
 
 
@@ -761,63 +761,45 @@ $session =& JFactory::getSession();
     })(jQuery)
 </script>
 <script type="text/javascript">
-jQuery.noConflict();
-(function ($) {
-    $(document).ready(function () {
-        avatarTemplate.url.base = "http://www.beautiful-templates.com/demo/templates-joomla/st_green/";
-        avatarTemplate.template.name = "st_green";
-        avatarTemplate.template.params = {"template_panel_setting": "1", "active_responsive": "1", "load_jquery": "1", "template_showcase": "-1", "template_background": "0", "doctype": "5", "show_main_body": "1", "hide_menu_items": ['101'], "show_message": "1", "404_article": "", "template_width": "1200px", "avatar_header_block": "block-default-width", "avatar_header_inside_block": "block-default-width", "avatar_tool_block": "block-max-width-100", "avatar_body_top_block": "block-default-width", "avatar_body_middle_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_footer_inside_block": "block-default-width", "avatar_footer_block": "block-default-width", "avatar_full_1_block": "block-default-width", "avatar_full_2_block": "block-default-width", "avatar_full_3_block": "block-default-width", "avatar_full_4_block": "block-default-width", "avatar_full_5_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_full_6_block": "block-default-width", "top_left": 20, "top_right": 80, "promo_top_left": 33.33, "promo_top_right": 33.33, "promo_bottom_left": 33.33, "promo_bottom_right": 33.33, "left": 23, "right": 23, "inner_left": 23, "inner_right": 23, "footer_left": 33.33, "footer_right": 33.33, "link_color": "", "hover_color": "", "body_font": "", "menu_font": "", "google_font_api": "0", "google_font_api_key": "", "google_font_content": "", "heading_1": "", "heading_2": "", "heading_3": "", "heading_4": "", "heading_5": "", "heading_6": "", "customize_css": "", "go_to_top": "1", "go_to_top_text": "", "go_to_top_css": "", "css3_effect": "1", "css3_effect_scroll": ".avatar-css3-effect-scroll", "optimize": "0"};
-        avatarTemplate.image.initEffects();
-        avatarTemplate.layout.init();
-        avatarTemplate.settingPanel.init();
-        avatarTemplate.menu.init();
-        avatarTemplate.css3effect.init();
+    jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function () {
+            avatarTemplate.url.base = "http://www.beautiful-templates.com/demo/templates-joomla/st_green/";
+            avatarTemplate.template.name = "st_green";
+            avatarTemplate.template.params = {"template_panel_setting": "1", "active_responsive": "1", "load_jquery": "1", "template_showcase": "-1", "template_background": "0", "doctype": "5", "show_main_body": "1", "hide_menu_items": ['101'], "show_message": "1", "404_article": "", "template_width": "1200px", "avatar_header_block": "block-default-width", "avatar_header_inside_block": "block-default-width", "avatar_tool_block": "block-max-width-100", "avatar_body_top_block": "block-default-width", "avatar_body_middle_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_footer_inside_block": "block-default-width", "avatar_footer_block": "block-default-width", "avatar_full_1_block": "block-default-width", "avatar_full_2_block": "block-default-width", "avatar_full_3_block": "block-default-width", "avatar_full_4_block": "block-default-width", "avatar_full_5_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_full_6_block": "block-default-width", "top_left": 20, "top_right": 80, "promo_top_left": 33.33, "promo_top_right": 33.33, "promo_bottom_left": 33.33, "promo_bottom_right": 33.33, "left": 23, "right": 23, "inner_left": 23, "inner_right": 23, "footer_left": 33.33, "footer_right": 33.33, "link_color": "", "hover_color": "", "body_font": "", "menu_font": "", "google_font_api": "0", "google_font_api_key": "", "google_font_content": "", "heading_1": "", "heading_2": "", "heading_3": "", "heading_4": "", "heading_5": "", "heading_6": "", "customize_css": "", "go_to_top": "1", "go_to_top_text": "", "go_to_top_css": "", "css3_effect": "1", "css3_effect_scroll": ".avatar-css3-effect-scroll", "optimize": "0"};
+            avatarTemplate.image.initEffects();
+            avatarTemplate.layout.init();
+            avatarTemplate.settingPanel.init();
+            avatarTemplate.menu.init();
+            avatarTemplate.css3effect.init();
 
-        $("#city_start").select2();
-        $("#city_start").on("change",
-            function(e) {
-                $.ajax({
-                    url: "index.php?option=com_data&format=raw",
-                    type: "post",
-                    data: {'request':'SetCity','direction':'Start','city':$(this).select2("data").id},
-                    success: function(msg){
-                        DisplaySuccess(msg);
-                    },
-                    error: function(XMLHttpRequest, textStatus, errorThrown) {
-                        DisplayError("some error " + errorThrown);
-                    }
+            $("#city_start").select2();
+            $("#city_start").on("change",
+                function(e) {
+                    $.ajax({
+                        url: "index.php?option=com_data&format=raw",
+                        type: "post",
+                        data: {'request':'SetCity','direction':'Start','city':$(this).select2("data").id},
+                        success: function(msg){
+                            DisplaySuccess(msg);
+                        },
+                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                            DisplayError("some error " + errorThrown);
+                        }
+                    });
                 });
-        });
 
 
-        $("#day_list").on("change", function(e) {
-            previousDay = day;
-            day = parseInt($("#day_list").select2("data").text);
+            $("#day_list").on("change", function(e) {
+                previousDay = day;
+                day = parseInt($("#day_list").select2("data").text);
 
-            recalculateTotalCost(true);
+                recalculateTotalCost(true);
 
-            $.ajax({
-                url: "index.php?option=com_data&format=raw",
-                type: "post",
-                data: {'request':'SetNumOfDay','NumOfDay':day},
-                success: function(msg){
-                    DisplaySuccess(msg);
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    DisplayError("some error " + errorThrown);
-                }
-            });
-        });
-
-        $("#day_list").select2();
-
-        $("#city_end").select2();
-        $("#city_end").on("change",
-            function(e) {
                 $.ajax({
                     url: "index.php?option=com_data&format=raw",
                     type: "post",
-                    data: {'request':'SetCity','direction':'End','city':$(this).select2("data").id},
+                    data: {'request':'SetNumOfDay','NumOfDay':day},
                     success: function(msg){
                         DisplaySuccess(msg);
                     },
@@ -827,129 +809,147 @@ jQuery.noConflict();
                 });
             });
 
-        $("#day_list").select2("val","<?php echo ($session->get('NumOfDay')); ?>");
-        $("#city_start").select2("val","<?php echo ($session->get('StartCity')); ?>");
-        $("#city_end").select2("val","<?php echo ($session->get('EndCity')); ?>");
+            $("#day_list").select2();
 
-        $('.accordion').accordion({
-            collapsible: true,
-            active: false
-        });
+            $("#city_end").select2();
+            $("#city_end").on("change",
+                function(e) {
+                    $.ajax({
+                        url: "index.php?option=com_data&format=raw",
+                        type: "post",
+                        data: {'request':'SetCity','direction':'End','city':$(this).select2("data").id},
+                        success: function(msg){
+                            DisplaySuccess(msg);
+                        },
+                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                            DisplayError("some error " + errorThrown);
+                        }
+                    });
+                });
 
-        var day = 1;
-        var previousDay = 1;
+            $("#day_list").select2("val","<?php echo ($session->get('NumOfDay')); ?>");
+            $("#city_start").select2("val","<?php echo ($session->get('StartCity')); ?>");
+            $("#city_end").select2("val","<?php echo ($session->get('EndCity')); ?>");
 
-        var cost_name = ['vehicle','accommodation','food','transport','personal_expense','other'];
-
-        function SetCost(category, choice, totalCost){
-            $.ajax({
-                url: "index.php?option=com_data&format=raw",
-                type: "post",
-                data: {'request':'SetCost','TotalCost':totalCost, 'Category':category, 'Choice':choice},
-                success: function(msg){
-                    DisplaySuccess(msg);
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    DisplayError(errorThrown);
-                }
+            $('.accordion').accordion({
+                collapsible: true,
+                active: false
             });
-        }
 
-        function SetClickCost(category, timesDay) {
-            $('#' + category + '_option li').click(function () {
-                $('.' + category + '_active').removeClass(category + '_active');
-                $(this).addClass(category + '_active');
+            var day = 1;
+            var previousDay = 1;
 
-                var amt_to_add = $(this).attr('cost');
+            var cost_name = ['vehicle','accommodation','food','transport','personal_expense','other'];
 
-                if (timesDay) {
-                    amt_to_add = amt_to_add / previousDay * day;
+            function SetCost(category, choice, totalCost){
+                $.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: {'request':'SetCost','TotalCost':totalCost, 'Category':category, 'Choice':choice},
+                    success: function(msg){
+                        DisplaySuccess(msg);
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        DisplayError(errorThrown);
+                    }
+                });
+            }
+
+            function SetClickCost(category, timesDay) {
+                $('#' + category + '_option li').click(function () {
+                    $('.' + category + '_active').removeClass(category + '_active');
+                    $(this).addClass(category + '_active');
+
+                    var amt_to_add = $(this).attr('cost');
+
+                    if (timesDay) {
+                        amt_to_add = amt_to_add / previousDay * day;
+                    }
+
+                    SetCost(category,$(this).attr('type'),amt_to_add);
+                    $('#' + category + '_cost').html(amt_to_add);
+
+                    recalculateTotalCost(false);
+                })
+            }
+
+            SetClickCost('vehicle',false);
+            SetClickCost('accommodation',true);
+            SetClickCost('food',true);
+            SetClickCost('transport',true);
+            SetClickCost('personal_expense',true);
+
+            $('#other_option li').click(function () {
+                var other_cost = parseInt($('#other_cost').html());
+                var value = parseInt($(this).attr('cost'));
+                if ($(this).hasClass('other_active')) {
+                    $(this).removeClass('other_active');
+                    other_cost -= value;
                 }
+                else {
+                    $(this).addClass('other_active');
+                    other_cost += value;
+                }
+                $('#other_cost').html(other_cost);
 
-                SetCost(category,$(this).attr('type'),amt_to_add);
-                $('#' + category + '_cost').html(amt_to_add);
+                SetCost('other',$(this).attr('type'),other_cost);
+                $('#other_cost').html(other_cost);
 
                 recalculateTotalCost(false);
             })
-        }
 
-        SetClickCost('vehicle',false);
-        SetClickCost('accommodation',true);
-        SetClickCost('food',true);
-        SetClickCost('transport',true);
-        SetClickCost('personal_expense',true);
+            function recalculateTotalCost(update) {
+                var total_cost = 0;
+                var amt_to_add = 0;
 
-        $('#other_option li').click(function () {
-            var other_cost = parseInt($('#other_cost').html());
-            var value = parseInt($(this).attr('cost'));
-            if ($(this).hasClass('other_active')) {
-                $(this).removeClass('other_active');
-                other_cost -= value;
+                for (var i = 0; i < cost_name.length; i++) {
+                    amt_to_add = parseInt(document.getElementById(cost_name[i] + '_cost').innerHTML);
+
+                    if (update) {
+                        if (1 <= i && i <= 4)
+                            amt_to_add = amt_to_add / previousDay * day;
+                        $('#' + cost_name[i] + '_cost').html(amt_to_add);
+                    }
+
+                    total_cost += amt_to_add;
+                }
+                $('#total_cost').html(total_cost);
             }
-            else {
-                $(this).addClass('other_active');
-                other_cost += value;
-            }
-            $('#other_cost').html(other_cost);
 
-            SetCost('other',$(this).attr('type'),other_cost);
-            $('#other_cost').html(other_cost);
+            $('.vote-icon').click(function () {
+                var values = {};
 
-            recalculateTotalCost(false);
-        })
+                if ($(this).hasClass('select')) {
+                    values.source = "select";
+                }
+                else
+                    values.source = "like";
 
-        function recalculateTotalCost(update) {
-            var total_cost = 0;
-            var amt_to_add = 0;
-
-            for (var i = 0; i < cost_name.length; i++) {
-                amt_to_add = parseInt(document.getElementById(cost_name[i] + '_cost').innerHTML);
-
-                if (update) {
-                    if (1 <= i && i <= 4)
-                        amt_to_add = amt_to_add / previousDay * day;
-                    $('#' + cost_name[i] + '_cost').html(amt_to_add);
+                if ($(this).hasClass('unclicked')) {
+                    $(this).removeClass('unclicked');
+                    values.action = "add";
+                }
+                else {
+                    values.action = "remove";
+                    $(this).addClass('unclicked');
                 }
 
-                total_cost += amt_to_add;
-            }
-            $('#total_cost').html(total_cost);
-        }
-
-        $('.vote-icon').click(function () {
-            var values = {};
-
-            if ($(this).hasClass('select')) {
-                values.source = "select";
-            }
-            else
-                values.source = "like";
-
-            if ($(this).hasClass('unclicked')) {
-                $(this).removeClass('unclicked');
-                values.action = "add";
-            }
-            else {
-                values.action = "remove";
-                $(this).addClass('unclicked');
-            }
-
-            values.id = $(this).parent().attr('track');
-            values.type = $(this).parent().attr('type');
-            $.ajax({
-                url: "index.php?option=com_data&format=raw",
-                type: "post",
-                data: values,
-                success: function(msg){
-                    DisplaySuccess(msg);
-                },
-                error:function(){
-                    DisplayError("failure");
-                }
-            });
-        })
-    });
-})(jQuery)
+                values.id = $(this).parent().attr('track');
+                values.type = $(this).parent().attr('type');
+                $.ajax({
+                    url: "index.php?option=com_data&format=raw",
+                    type: "post",
+                    data: values,
+                    success: function(msg){
+                        DisplaySuccess(msg);
+                    },
+                    error:function(){
+                        DisplayError("failure");
+                    }
+                });
+            })
+        });
+    })(jQuery)
 </script>
 
 <script>

@@ -21,7 +21,7 @@ if ($option != "com_data") {
     $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/Button/button.css');
+    $doc->addStyleSheet('templates/' . $this->template . '/css/button/button.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/res-timeline.css');
@@ -53,7 +53,7 @@ if ($option != "com_data") {
     $doc->addScript('./templates/' . $this->template . '/js/dropdown/select2.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.easing.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/tooltip/ipicture-square.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/Accordion/jquery-ui.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
 
     //Dia Diem
     $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');

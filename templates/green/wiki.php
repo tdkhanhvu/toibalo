@@ -11,9 +11,9 @@
           content="ST Green - One Page Portfolio will suit everyone who wants to show their portfolios or introduct their company services">
     <meta name="generator" content="Joomla! - Open Source Content Management">
     <title>Home</title>
-    <link href='css/Wiki/GravitasOne.css' rel='stylesheet' type='text/css'>
-    <link href="css/Wiki/chosen.css" rel="stylesheet" type="text/css" />
-    <link href="css/Wiki/styles.css" rel="stylesheet" type="text/css">
+    <link href='css/wiki/GravitasOne.css' rel='stylesheet' type='text/css'>
+    <link href="css/wiki/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="css/wiki/styles.css" rel="stylesheet" type="text/css">
     <script src="js/Blog/modernizr.custom.79639.js"></script>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -22,7 +22,7 @@
 <body>
 <div id="content">
     <h1>Sài Gòn
-        <img src="Images/Wiki/vietnam_flag.gif" style="width:200px; height:100px"/></h1>
+        <img src="./images/wiki/vietnam_flag.gif" style="width:200px; height:100px"/></h1>
     <hr>
     <h2>Lịch sử</h2>
     <p>
@@ -64,10 +64,10 @@
         Khu vực ngoài trung tâm, Địa đạo Củ Chi, Rừng ngập mặn Cần Giờ, Vườn cò Thủ Đức cũng
         là những địa điểm du lịch quan trọng.</p>
 
-    <img src="Images/Wiki/sai_gon_1.jpg" style="max-width: 100%; max-height: 100%;" />
-    <img src="Images/Wiki/sai_gon_2.jpg" style="max-width: 100%; max-height: 100%;" />
-    <img src="Images/Wiki/sai_gon_3.jpg" style="max-width: 100%; max-height: 100%;" />
-    <img src="Images/Wiki/sai_gon_4.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img src="./images/wiki/sai_gon_1.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img src="./images/wiki/sai_gon_2.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img src="./images/wiki/sai_gon_3.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img src="./images/wiki/sai_gon_4.jpg" style="max-width: 100%; max-height: 100%;" />
     <hr>
     <div class="footer">
         <hr>
@@ -79,16 +79,16 @@
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/Wiki/jquery.backstretch.min.js"></script>
+<script src="./js/wiki/jquery.backstretch.min.js"></script>
 <script>
     // Preload the images
     var images = [
-        "Images/Wiki/background_1.jpg"
-        , "Images/Wiki/background_2.jpg"
-        , "Images/Wiki/background_3.jpg"
+        "./images/wiki/background_1.jpg"
+        , "./images/wiki/background_2.jpg"
+        , "./images/wiki/background_3.jpg"
     ];
 
-    $.backstretch(images, { duration: 3000, fade: 750 });
+    jQuery.backstretch(images, { duration: 3000, fade: 750 });
 </script>
 </html>
 
