@@ -18,18 +18,9 @@ if ($option != "com_data") {
     $doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/font-awesome.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/button/button.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/res-timeline.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/popup.min.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/rating/rating.css');
-
-    //upload file
-    $doc->addStyleSheet('templates/' . $this->template . '/css/upload/croppic.css');
+    //feedback box
+    $doc->addStyleSheet('templates/' . $this->template . '/css/popup.min.css');
 
     $doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
@@ -37,31 +28,50 @@ if ($option != "com_data") {
     $doc->addScript('./media/system/js/tabs-state.js', 'text/javascript');
     $doc->addScript('./media/system/js/caption.js', 'text/javascript');
 
-    $doc->addScript('./templates/' . $this->template . '/js/mootools-core.js', 'text/javascript');//Hinh Anh
-    $doc->addScript('./templates/' . $this->template . '/js/jquery.sequence.js', 'text/javascript');//Am Thuc
-    $doc->addScript('./templates/' . $this->template . '/js/load-images.js', 'text/javascript');//Am Thuc + Le Hoi
     $doc->addScript('./templates/' . $this->template . '/js/shortcodes.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/isotope.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.fancybox-1.3.4.pack.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/bootstrap.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/avatar-template.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.bootstrap-growl.min.js', 'text/javascript');
-
-    //Lich trinh
-    $doc->addScript('./templates/' . $this->template . '/js/date.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/vi-VN.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/dropdown/select2.min.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/jquery.easing.min.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/tooltip/ipicture-square.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
-
-    //Dia Diem
-    $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/jquery.bpopup.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/rating/rating.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.bpopup.min.js', 'text/javascript');
 
-    //Profile
-    $doc->addScript('./templates/' . $this->template . '/js/upload/croppic.js', 'text/javascript');
+    if ($option == "com_profile") {
+        //upload file
+        $doc->addStyleSheet('templates/' . $this->template . '/css/upload/croppic.css');
+        //Profile
+        $doc->addScript('./templates/' . $this->template . '/js/upload/croppic.js', 'text/javascript');
+    }
+
+
+    if ($option == "com_lichtrinh") {
+        $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
+        $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
+        $doc->addStyleSheet('templates/' . $this->template . '/css/tooltip/jQuery.iPicture.css');
+        //button to add attraction to list (copy from tripadvisor)
+        $doc->addStyleSheet('templates/' . $this->template . '/css/button/button.css');
+        //use datepicker
+        $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
+        $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
+
+        //Lich trinh
+        $doc->addScript('./templates/' . $this->template . '/js/date.js', 'text/javascript');
+        $doc->addScript('./templates/' . $this->template . '/js/vi-VN.js', 'text/javascript');
+        $doc->addScript('./templates/' . $this->template . '/js/dropdown/select2.min.js', 'text/javascript');
+        $doc->addScript('./templates/' . $this->template . '/js/jquery.easing.min.js', 'text/javascript');
+        $doc->addScript('./templates/' . $this->template . '/js/tooltip/ipicture-square.js', 'text/javascript');
+        $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
+    }
+
+    if ($option == "com_diadiem") {
+        $doc->addStyleSheet('templates/' . $this->template . '/css/res-timeline.css');
+        //Dia Diem
+        $doc->addScript('./templates/' . $this->template . '/js/mootools-core.js', 'text/javascript');//Hinh Anh
+        $doc->addScript('./templates/' . $this->template . '/js/jquery.sequence.js', 'text/javascript');//Am Thuc
+        $doc->addScript('./templates/' . $this->template . '/js/load-images.js', 'text/javascript');//Am Thuc + Le Hoi
+        $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
+    }
 }
 
 ?>

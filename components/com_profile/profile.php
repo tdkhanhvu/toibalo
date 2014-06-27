@@ -301,38 +301,38 @@
                                 <div class="panel-body" style="text-align: center;">
                                     <div class="col-sm-12">
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/1_saigon_central_post_office.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
                                             <label class="control-label">Bưu Điện Thành Phố</label>
                                         </div>
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/3_ben_thanh_market.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
                                             <label class="control-label">Chợ Bến Thành</label>
                                         </div>
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/4_city_opera_house.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
                                             <label class="control-label">Nhà Hát Thành Phố</label>
                                         </div>
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/5_independence_palace.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
                                             <label class="control-label">Dinh Độc Lập</label>
                                         </div>
 
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/1_saigon_central_post_office.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
                                             <label class="control-label">Bưu Điện Thành Phố</label>
                                         </div>
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/3_ben_thanh_market.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
                                             <label class="control-label">Chợ Bến Thành</label>
                                         </div>
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/4_city_opera_house.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
                                             <label class="control-label">Nhà Hát Thành Phố</label>
                                         </div>
                                         <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/Attraction/Place/5_independence_palace.jpg"/>
+                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
                                             <label class="control-label">Dinh Độc Lập</label>
                                         </div>
 

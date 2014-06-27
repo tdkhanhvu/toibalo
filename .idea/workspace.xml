@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c3cd1b0-99a9-4204-a0dd-dca75b6115bf" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\toibalo\templates\green\css\bootstrap-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\toibalo\templates\green\css\bootstrap-responsivebk.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\toibalo\templates\green\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\toibalo\templates\green\css\bootstrap.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/images/bg_toibalo.png" afterPath="$PROJECT_DIR$/templates/green/images/bg_toibalo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/css/res-timeline.css" afterPath="$PROJECT_DIR$/templates/green/css/res-timeline.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/css/system.css" afterPath="$PROJECT_DIR$/templates/green/css/system.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/blog.php" afterPath="$PROJECT_DIR$/templates/green/blog.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_data/data.php" afterPath="$PROJECT_DIR$/components/com_data/data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/index.php" afterPath="$PROJECT_DIR$/templates/green/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/com_profile/profile.php" afterPath="$PROJECT_DIR$/components/com_profile/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/green/css/Blog/slider.css" afterPath="$PROJECT_DIR$/templates/green/css/Blog/slider.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="green.iws" />
@@ -32,19 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="res-timeline.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/green/css/res-timeline.css">
+      <file leaf-file-name="lichtrinh.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="28" selection-start="731" selection-end="731" vertical-scroll-proportion="0.3642857" vertical-offset="204" max-vertical-offset="5406">
+            <state line="986" column="34" selection-start="46261" selection-end="46261" vertical-scroll-proportion="0.0" vertical-offset="16655" max-vertical-offset="19091">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="system.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/green/css/system.css">
+      <file leaf-file-name="attraction.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_data/attraction.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="918">
+            <state line="52" column="6" selection-start="4939" selection-end="4939" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_data/data.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="38" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="5627">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="35" selection-start="4155" selection-end="4155" vertical-scroll-proportion="-1.3583535" vertical-offset="1683" max-vertical-offset="7463">
               <folding />
             </state>
           </provider>
@@ -71,30 +87,40 @@
       </map>
     </option>
   </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/components/com_data/attraction.json" />
-        <option value="$PROJECT_DIR$/templates/green/wiki.php" />
+        <option value="$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js" />
+        <option value="$PROJECT_DIR$/templates/green/test.php" />
+        <option value="$PROJECT_DIR$/components/com_test/test.php" />
+        <option value="$PROJECT_DIR$/administrator/components/com_data/data.xml" />
+        <option value="$PROJECT_DIR$/administrator/components/com_data/data.php" />
+        <option value="$PROJECT_DIR$/components/com_data/controllers/DataController.php" />
+        <option value="$PROJECT_DIR$/templates/green/data.php" />
+        <option value="$PROJECT_DIR$/components/com_data/city.json" />
+        <option value="$PROJECT_DIR$/components/com_data/transport.json" />
+        <option value="$PROJECT_DIR$/components/com_data/month_info.json" />
+        <option value="$PROJECT_DIR$/components/com_data/food.json" />
+        <option value="$PROJECT_DIR$/administrator/templates/hathor/html/com_banners/tracks/default.php" />
+        <option value="$PROJECT_DIR$/components/com_data/cost.json" />
+        <option value="$PROJECT_DIR$/templates/green/js/Accordion/jquery-ui.js" />
+        <option value="$PROJECT_DIR$/templates/green/js/vi-VN.js" />
+        <option value="$PROJECT_DIR$/templates/green/css/res-timeline.css" />
         <option value="$PROJECT_DIR$/templates/green/css/template.css" />
         <option value="$PROJECT_DIR$/components/com_content/content.php" />
-        <option value="$PROJECT_DIR$/components/com_data/data.php" />
         <option value="$PROJECT_DIR$/templates/green/signup.php" />
-        <option value="$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php" />
         <option value="$PROJECT_DIR$/components/com_thongtin/thongtin.php" />
         <option value="$PROJECT_DIR$/components/com_video/video.php" />
-        <option value="$PROJECT_DIR$/components/com_profile/profile.php" />
-        <option value="$PROJECT_DIR$/templates/green/blog.php" />
+        <option value="$PROJECT_DIR$/templates/green/wiki.php" />
         <option value="$PROJECT_DIR$/components/com_diadiem/diadiem.php" />
+        <option value="$PROJECT_DIR$/templates/green/css/tooltip/jQuery.iPicture.css" />
+        <option value="$PROJECT_DIR$/components/com_data/attraction.json" />
+        <option value="$PROJECT_DIR$/templates/green/blog.php" />
+        <option value="$PROJECT_DIR$/templates/green/css/Blog/slider.css" />
+        <option value="$PROJECT_DIR$/components/com_profile/profile.php" />
+        <option value="$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php" />
+        <option value="$PROJECT_DIR$/components/com_data/data.php" />
         <option value="$PROJECT_DIR$/templates/green/index.php" />
-        <option value="$PROJECT_DIR$/templates/green/css/res-timeline.css" />
-        <option value="$PROJECT_DIR$/templates/green/css/system.css" />
-        <option value="$PROJECT_DIR$/templates/green/css/font-awesome.css" />
       </list>
     </option>
   </component>
@@ -102,8 +128,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -145,7 +171,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -155,7 +181,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -169,7 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -187,7 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -209,11 +235,117 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="toibalo" />
+              <option name="myItemId" value="green" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tooltip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_lichtrinh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="green" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,25 +355,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
-    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-  </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="69bfe28f-d84a-4f03-927c-edfb58acaa81">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -424,19 +545,28 @@
       <created>1403241531023</created>
       <updated>1403241531023</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix logo not being centered when resize the page">
+      <created>1403243376874</created>
+      <updated>1403243376874</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix image size">
+      <created>1403799931999</created>
+      <updated>1403799931999</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22601625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22528364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40487805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.6720554" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2185129" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33873582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -444,12 +574,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32794458" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -486,8 +615,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="add maximize/minimize button to video page&#10;&#10;add the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page" />
-    <MESSAGE value="fix the next/prev button + pagination for dactrung/thamquan/camnghi section in diadiem page" />
     <MESSAGE value="fix thongtin page: resize browser width will render the content properly" />
     <MESSAGE value="fix lichtrinh page" />
     <MESSAGE value="fix cursor in video page" />
@@ -511,7 +638,9 @@
     <MESSAGE value="implement feedback button for&#10;   - video&#10;   - lichtrinh&#10;   - thongtin&#10;   - profile" />
     <MESSAGE value="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi" />
     <MESSAGE value="fix logo not being centered when resize the page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix logo not being centered when resize the page" />
+    <MESSAGE value="fix image size" />
+    <MESSAGE value="add thumbnail classes to images&#10;&#10;fix the folder structure to lower case&#10;&#10;reorganize css/js to load for each page that requires them only" />
+    <option name="LAST_COMMIT_MESSAGE" value="add thumbnail classes to images&#10;&#10;fix the folder structure to lower case&#10;&#10;reorganize css/js to load for each page that requires them only" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -519,86 +648,265 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/green/blog.php">
+    <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="7055" />
+        <state line="75" column="73" selection-start="2926" selection-end="2926" vertical-scroll-proportion="0.0" vertical-offset="1068" max-vertical-offset="1462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_profile/profile.php">
+    <entry file="file://$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="604" column="51" selection-start="33033" selection-end="33033" vertical-scroll-proportion="0.0" vertical-offset="9845" max-vertical-offset="10438" />
+        <state line="83" column="41" selection-start="3069" selection-end="3088" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="457" column="50" selection-start="33771" selection-end="33771" vertical-scroll-proportion="0.0" vertical-offset="7769" max-vertical-offset="18972" />
+        <state line="741" column="20" selection-start="43282" selection-end="43282" vertical-scroll-proportion="0.0" vertical-offset="12125" max-vertical-offset="15215" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="78" selection-start="7018" selection-end="7018" vertical-scroll-proportion="0.0" vertical-offset="2346" max-vertical-offset="7293" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="741" column="20" selection-start="43282" selection-end="43282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="191" selection-start="1429" selection-end="1464" vertical-scroll-proportion="0.20099875" vertical-offset="604" max-vertical-offset="2074" />
+        <state line="66" column="15" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1241" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_thongtin/thongtin.php">
+    <entry file="file://$PROJECT_DIR$/templates/green/js/jquery.tubular.1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="372" column="107" selection-start="9556" selection-end="9556" vertical-scroll-proportion="0.6017478" vertical-offset="5842" max-vertical-offset="8041" />
+        <state line="83" column="41" selection-start="3069" selection-end="3088" vertical-scroll-proportion="0.0" vertical-offset="1156" max-vertical-offset="2703" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
+    <entry file="file://$PROJECT_DIR$/components/com_video/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="484" column="222" selection-start="25211" selection-end="25211" vertical-scroll-proportion="0.43820226" vertical-offset="7877" max-vertical-offset="19091" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/system/css/system.css">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="366" selection-end="366" vertical-scroll-proportion="0.5503597" vertical-offset="0" max-vertical-offset="1275" />
+        <state line="372" column="18" selection-start="8459" selection-end="8459" vertical-scroll-proportion="0.4770798" vertical-offset="6043" max-vertical-offset="10132" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/Blog/slider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2911" selection-end="2911" vertical-scroll-proportion="0.53038675" vertical-offset="1378" max-vertical-offset="1921" />
+    <entry file="file://$PROJECT_DIR$/templates/green/images/tbl_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/rating/rating.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.12230216" vertical-offset="0" max-vertical-offset="884" />
+    <entry file="file://$PROJECT_DIR$/templates/green/images/tbl_icon_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/weather/weather.css">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4607" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/wiki/styles.css">
+    <entry file="file://$PROJECT_DIR$/templates/green/plan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="4" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.33333334" vertical-offset="295" max-vertical-offset="5338" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1039.8077" vertical-offset="27035" max-vertical-offset="27642" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/wiki/GravitasOne.css">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_thongtin/thongtin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="543" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.60714287" vertical-offset="306" max-vertical-offset="952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_data/data.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="639" selection-end="639" vertical-scroll-proportion="0.3130755" vertical-offset="0" max-vertical-offset="26724" />
+        <state line="29" column="0" selection-start="1142" selection-end="1173" vertical-scroll-proportion="0.4722222" vertical-offset="255" max-vertical-offset="952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/green/css/system.css">
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_data/data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_ajax/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/templates/hathor/html/com_banners/tracks/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="18" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.3478261" vertical-offset="590" max-vertical-offset="2210" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/js/Accordion/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8449" column="16" selection-start="252048" selection-end="252052" vertical-scroll-proportion="2.915009" vertical-offset="142021" max-vertical-offset="255153" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="5" selection-start="3124" selection-end="3124" vertical-scroll-proportion="0.07445008" vertical-offset="3186" max-vertical-offset="15929" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/js/vi-VN.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="68" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3264" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="291" selection-end="291" vertical-scroll-proportion="0.47058824" vertical-offset="0" max-vertical-offset="46410" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/green/css/res-timeline.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="28" selection-start="731" selection-end="731" vertical-scroll-proportion="0.3642857" vertical-offset="204" max-vertical-offset="5406">
+        <state line="12" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.34517765" vertical-offset="0" max-vertical-offset="5406" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_content/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="86" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.34375" vertical-offset="714" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="18" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.33333334" vertical-offset="1010" max-vertical-offset="13838" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="836" selection-end="836" vertical-scroll-proportion="-4.576923" vertical-offset="102" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_thongtin/thongtin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="372" column="107" selection-start="9556" selection-end="9556" vertical-scroll-proportion="0.0" vertical-offset="5842" max-vertical-offset="8041" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_video/video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="191" selection-start="1429" selection-end="1464" vertical-scroll-proportion="0.0" vertical-offset="604" max-vertical-offset="2074" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/wiki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="24" selection-start="3560" selection-end="3560" vertical-scroll-proportion="3.7567568" vertical-offset="1247" max-vertical-offset="1751" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/tooltip/jQuery.iPicture.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="515" column="33" selection-start="10797" selection-end="10797" vertical-scroll-proportion="-0.9293286" vertical-offset="9281" max-vertical-offset="10727" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="12" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/advice.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/city.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="23" selection-start="1859" selection-end="1859" vertical-scroll-proportion="-27.961538" vertical-offset="446" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/cost.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="1105" selection-end="1105" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="2601" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/food.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="38" selection-start="2253" selection-end="2253" vertical-scroll-proportion="-26.807692" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/month_info.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="37" selection-start="4928" selection-end="4928" vertical-scroll-proportion="-54.615383" vertical-offset="926" max-vertical-offset="2567" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/transport.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="2345" selection-end="2357" vertical-scroll-proportion="-13.730769" vertical-offset="85" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/Blog/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4539" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/Blog/bookblock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/Blog/jquery.jscrollpane.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/Blog/slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="42" selection-start="2215" selection-end="2215" vertical-scroll-proportion="0.6407323" vertical-offset="893" max-vertical-offset="1921" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/css/Blog/bjqs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_diadiem/diadiem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="543" column="81" selection-start="38758" selection-end="38758" vertical-scroll-proportion="-7.0392156" vertical-offset="8872" max-vertical-offset="18972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_profile/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="334" column="128" selection-start="16182" selection-end="16182" vertical-scroll-proportion="-2.0082645" vertical-offset="6407" max-vertical-offset="10438" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="315" column="68" selection-start="17010" selection-end="17010" vertical-scroll-proportion="0.21" vertical-offset="5292" max-vertical-offset="7055" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/attraction.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="6" selection-start="4939" selection-end="4939" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_data/data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="38" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="5627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="986" column="34" selection-start="46261" selection-end="46261" vertical-scroll-proportion="0.0" vertical-offset="16655" max-vertical-offset="19091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/green/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="35" selection-start="4155" selection-end="4155" vertical-scroll-proportion="-1.3583535" vertical-offset="1683" max-vertical-offset="7463">
           <folding />
         </state>
       </provider>

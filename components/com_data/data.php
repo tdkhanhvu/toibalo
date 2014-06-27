@@ -101,7 +101,7 @@ function GetAttractionById($id) {
 
     foreach ($arr as $key => $value) {
         if ($key == $id) {
-            echo json_encode($arr[$key], JSON_UNESCAPED_UNICODE);
+            echo json_encode($value, JSON_UNESCAPED_UNICODE);
             return;
         }
     }

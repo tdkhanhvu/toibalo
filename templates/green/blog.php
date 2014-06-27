@@ -11,15 +11,15 @@
       content="ST Green - One Page Portfolio will suit everyone who wants to show their portfolios or introduct their company services">
 <meta name="generator" content="Joomla! - Open Source Content Management">
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="css/Blog/bjqs.css" />
-<link rel="stylesheet" type="text/css" href="css/Blog/jquery.jscrollpane.custom.css" />
-<link rel="stylesheet" type="text/css" href="css/Blog/bookblock.css" />
-<link rel="stylesheet" type="text/css" href="css/Blog/custom.css" />
-<link rel="stylesheet" type="text/css" href="css/Blog/slider.css" />
+<link rel="stylesheet" type="text/css" href="css/blog/bjqs.css" />
+<link rel="stylesheet" type="text/css" href="css/blog/jquery.jscrollpane.custom.css" />
+<link rel="stylesheet" type="text/css" href="css/blog/bookblock.css" />
+<link rel="stylesheet" type="text/css" href="css/blog/custom.css" />
+<link rel="stylesheet" type="text/css" href="css/blog/slider.css" />
 <style>
     img {display: block; margin-left: auto; margin-right: auto;width:100%;}
 </style>
-<script src="js/Blog/modernizr.custom.79639.js"></script>
+<script src="js/blog/modernizr.custom.79639.js"></script>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <!--test comment-->
@@ -47,9 +47,9 @@
         <div class="scroller">
             <h2>Chợ Bến Thành</h2>
             <div id="slides">
-                <img src="./images/Blog/ben_thanh_market_1.jpg">
-                <img src="./images/Blog/ben_thanh_market_2.jpg">
-                <img src="./images/Blog/ben_thanh_market_3.jpg">
+                <img src="./images/blog/ben_thanh_market_1.jpg">
+                <img src="./images/blog/ben_thanh_market_2.jpg">
+                <img src="./images/blog/ben_thanh_market_3.jpg">
             </div>
             <p>
                 Những năm gần đây chợ Bến Thành còn là địa điểm tham quan không thể thiếu
@@ -109,7 +109,7 @@
             </p>
 
             <p>
-                <img src="./images/Blog/ben_thanh_market_flower.jpg">
+                <img src="./images/blog/ben_thanh_market_flower.jpg">
             </p>
 
             <p><em>Trích từ <a href="http://nhakhach.hcmussh.edu.vn/3cms/?cmd=130&art=1359336949070&cat=951325238264343" target="_blank">"Điểm du lịch ở TP.HCM: Chợ Bến Thành"</a>, Doanh nhân Sài Gòn Cuối tuần</em></p>
@@ -131,7 +131,7 @@
                 xã hội đối với toàn vùng Ðông Nam á cũng như trên thế giới.
             </p>
             <p>
-                <img src="./images/Blog/independence_palace_1.jpg">
+                <img src="./images/blog/independence_palace_1.jpg">
             </p>
             <p>
                 Mặt tiền của Dinh Thống Nhất nằm trên ngã ba đường Nam Kỳ Khởi Nghĩa và
@@ -167,7 +167,7 @@
                 một khẩu thần công kiểu cổ càng làm tăng thêm vẻ đẹp oai nghiêm cho công thự.
             </p>
             <p>
-                <img src="./images/Blog/independence_palace_2.jpg">
+                <img src="./images/blog/independence_palace_2.jpg">
             </p>
             <p>
                 Nhiều biến cố chính trị đã xảy ra tại đây suốt gần một thế kỷ dưới sự
@@ -190,7 +190,7 @@
             </p>
 
             <p>
-                <img src="./images/Blog/independence_palace_3.jpg">
+                <img src="./images/blog/independence_palace_3.jpg">
             </p>
 
             <p>
@@ -210,11 +210,11 @@
             </p>
 
             <p>
-                <img src="./images/Blog/independence_palace_4.jpg">
+                <img src="./images/blog/independence_palace_4.jpg">
             </p>
 
             <p>
-                <img src="./images/Blog/independence_palace_5.jpg">
+                <img src="./images/blog/independence_palace_5.jpg">
             </p>
             <p><em>Trích<a href="http://yatlat.com/cam-nang-du-lich/dinh-thong-nhat-dinh-doc-lap-di-du-lich-ho-chi-minh.html" target="_blank"> "Dinh Thống Nhất – Dinh Độc Lập – Đi du lịch Hồ Chí Minh" </a>, Yatlat.com</em></p>
         </div>
@@ -225,7 +225,7 @@
         <div class="scroller">
             <h2>Nhà thờ Đức Bà</h2>
             <p>
-                <img src="./images/Blog/notre_dame_cathedral_1.jpg">
+                <img src="./images/blog/notre_dame_cathedral_1.jpg">
             </p>
 
             <p>
@@ -247,7 +247,7 @@
                 các nhà thờ quanh vùng Sài Gòn – Gia Định lúc ấy và bây giờ.
             </p>
             <p>
-                <img src="./images/Blog/notre_dame_cathedral_2.jpg">
+                <img src="./images/blog/notre_dame_cathedral_2.jpg">
             </p>
             <p>
                 Nội thất thánh đường được thiết kế thành một lòng chính, hai lòng
@@ -265,7 +265,7 @@
                 làm ba ô, mỗi ô là một tác phẩm điêu khắc diễn tả thánh tích.
             </p>
             <p>
-                <img src="./images/Blog/notre_dame_cathedral_3.jpg">
+                <img src="./images/blog/notre_dame_cathedral_3.jpg">
             </p>
             <p>
                 Trên tường nhà thờ Đức Bà được trang trí nổi bật 56 cửa kính mô tả các
@@ -285,13 +285,13 @@
                 Nghĩa là: Thiên Chúa tối cao đã ban cho Đức Trinh Nữ Maria được ơn Vô Nhiễm Nguyên Tội.
             </p>
             <p>
-                <img src="./images/Blog/notre_dame_cathedral_4.jpg">
+                <img src="./images/blog/notre_dame_cathedral_4.jpg">
             </p>
             <p>
-                <img src="./images/Blog/notre_dame_cathedral_5.jpg">
+                <img src="./images/blog/notre_dame_cathedral_5.jpg">
             </p>
             <p>
-                <img src="./images/Blog/notre_dame_cathedral_6.jpg">
+                <img src="./images/blog/notre_dame_cathedral_6.jpg">
             </p>
 
             <p><em>Trích <a href="http://yatlat.com/cam-nang-du-lich/nha-tho-duc-ba-dia-diem-du-lich-ho-chi-minh-sai-gon.html" target="_blank">"Nhà thờ Đức Bà – Địa điểm du lịch Hồ Chí Minh – Sài Gòn"</a> , Yatlat.com</em></p>
@@ -316,7 +316,7 @@
                 thời gian gần đây, nhưng chi phí khá đắt đỏ và bạn sẽ xuất phát từ bến Bạch Đằng.
             </p>
             <p>
-                <img src="./images/Blog/cu_chi_tunnel_1.jpg">
+                <img src="./images/blog/cu_chi_tunnel_1.jpg">
             </p>
             <p>
                 Sau khi mua vé tham quan (15.000–80.000 đồng/người tùy thuộc bạn là trẻ em,
@@ -341,7 +341,7 @@
                 bộ cuộc chiến đấu của nhân dân Củ Chi và mô hình của địa đạo.
             </p>
             <p>
-                <img src="./images/Blog/cu_chi_tunnel_2.jpg">
+                <img src="./images/blog/cu_chi_tunnel_2.jpg">
             </p>
             <p>
                 Hệ thống địa đạo dài khoảng 200 km nhưng hiện chỉ một số ít được mở cho du
@@ -366,7 +366,7 @@
                 của của những người con thành đồng đất thép.
             </p>
             <p>
-                <img src="./images/Blog/cu_chi_tunnel_3.jpg">
+                <img src="./images/blog/cu_chi_tunnel_3.jpg">
             </p>
             <p><em>Trích <a href="http://dulich.vnexpress.net/tin-tuc/cong-dong/tu-van/dia-dao-cu-chi-hap-dan-hon-ban-nghi-2909185.html" target="_blank">"Địa đạo Củ Chi hấp dẫn hơn bạn nghĩ"</a> , Vnexpress.net</em></p>
         </div>
@@ -386,12 +386,12 @@
 </div>
 <!-- /container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/Blog/jquery.mousewheel.js"></script>
-<script src="js/Blog/jquery.jscrollpane.min.js"></script>
-<script src="js/Blog/jquerypp.custom.js"></script>
-<script src="js/Blog/jquery.bookblock.js"></script>
-<script src="js/Blog/page.js"></script>
-<script src="js/Blog/jquery.slides.min.js"></script>
+<script src="js/blog/jquery.mousewheel.js"></script>
+<script src="js/blog/jquery.jscrollpane.min.js"></script>
+<script src="js/blog/jquerypp.custom.js"></script>
+<script src="js/blog/jquery.bookblock.js"></script>
+<script src="js/blog/page.js"></script>
+<script src="js/blog/jquery.slides.min.js"></script>
 <script>
     $(function () {
         $("#slides").slidesjs({
