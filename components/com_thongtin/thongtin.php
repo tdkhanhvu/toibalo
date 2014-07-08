@@ -5,7 +5,7 @@ include JPATH_COMPONENT."/../com_data/data.php";
 $session =& JFactory::getSession();
 ?>
 
-
+<a class="avatar-fix avatar-fix-to-left" href="?option=com_lichtrinh"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
 <!-- search -->
 <style>
     .transport_detail > div > img {
@@ -40,7 +40,7 @@ $session =& JFactory::getSession();
         height:50px;
         width:300px;
         float:left;
-        font-size:300%;
+        font-size:250%;
         border-top-left-radius:15px;
         border-top-right-radius:15px;
         moz-border-top-left-radius:15px;

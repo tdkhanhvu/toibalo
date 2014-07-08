@@ -86,7 +86,8 @@
         </div>
     </div>
     <!-- #wrapper -->
-    <a id="avatar-go-to-top" href="?option=com_diadiem" style="font-family: 'FontAwesome' ;content: '\f0a9' ; display: block;"><span></span></a>
+    <a class="avatar-fix" href="?option=com_diadiem"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+    <a class="avatar-fix avatar-fix-to-left" href="index.php"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
 <script src="./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
 <script>
     jQuery.noConflict();

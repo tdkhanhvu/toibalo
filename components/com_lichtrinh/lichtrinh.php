@@ -4,6 +4,10 @@ defined('_JEXEC') or die;
 include JPATH_COMPONENT."/../com_data/data.php";
 $session =& JFactory::getSession();
 ?>
+
+<a class="avatar-fix" href="?option=com_thongtin"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+<a class="avatar-fix avatar-fix-to-left" href="?option=com_diadiem"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
+
 <style type="text/css">
     .vote-icon {
         width:35px;
@@ -95,7 +99,7 @@ $session =& JFactory::getSession();
         margin-left:0px;
     }
 
-    #dateDepart, #dateReturn { width: 90px; border-radius: 5px; border: 1px solid #ccc; box-shadow: inset 0 0 3px rgba(0,0,0,0.2); padding: 6px 10px; font-size: 14px; background: #fff url(../../img/sprite-home.png) no-repeat 100px -664px; }
+    #dateDepart, #dateReturn { width: 100px; border-radius: 5px; border: 1px solid #ccc; box-shadow: inset 0 0 3px rgba(0,0,0,0.2); padding: 6px 10px; font-size: 14px; background: #fff url(../../img/sprite-home.png) no-repeat 100px -664px; }
 
     .selected {
         background-color:green;
@@ -116,8 +120,8 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading">Thời Điểm <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Thời Điểm');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
                             <div class="span6 offset3">
-                                <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate placeholder" data-placeholder="depart" placeholder="Ngày Đi" autocomplete="off" tabindex="3" />
-                                <input type="text" id="dateReturn" name="" onkeydown="return false" class="inputDate placeholder" data-placeholder="return" placeholder="Ngày Về" autocomplete="off" tabindex="4">
+                                <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate" data-placeholder="depart" autocomplete="off" tabindex="3" />
+                                <input type="text" id="dateReturn" name="" onkeydown="return false" class="inputDate" data-placeholder="return" autocomplete="off" tabindex="4">
 
                                 <div style="clear:both"></div>
                             </div>
@@ -132,14 +136,14 @@ $session =& JFactory::getSession();
                                         echo '   <h4 class="panel-title">';
                                         echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
                                         echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
-                                        echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
+                                        echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -60px"></p></div>';
                                         echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
                                         echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
                                         echo '           <div style="clear:both;"></div>';
                                         echo '       </a>';
                                         echo '   </h4>';
                                         echo '</div>';
-                                        echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
+                                        echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="background-color:'.$month_info[$i]['background_color'].';border:5px groove '.$month_info[$i]['background_border'].';">';
                                         echo '   <div class="panel-body">';
 
                                         for ($j = 1; $j <= 3; $j++) {
@@ -162,14 +166,14 @@ $session =& JFactory::getSession();
                                         echo '   <h4 class="panel-title">';
                                         echo '       <a id="a'.$i.'" data-toggle="collapse" data-parent="#accordion" href="#collapse'.$i.'" class="collapsed">';
                                         echo '           <div style="width:50px;float:left;margin-top:20px;">'.$i.'</div>';
-                                        echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -30px"></p></div>';
+                                        echo '           <div style="width:50px;height:50px;float:left"><p class="'.$month_info[$i]['weather'].' weathericon" style="margin-top: -60px"></p></div>';
                                         echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/crowded/'.$month_info[$i]['crowd'].'\');float:left;"></div>';
                                         echo '           <div style="width:50px;height:50px;background-size:cover;background-image: url(\'./templates/green/images/money/'.$month_info[$i]['money'].'\');float:left;"></div>';
                                         echo '           <div style="clear:both;"></div>';
                                         echo '       </a>';
                                         echo '   </h4>';
                                         echo '</div>';
-                                        echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="width:95%;background-color:'.$month_info[$i]['background_color'].';border:0px groove '.$month_info[$i]['background_border'].';">';
+                                        echo '<div id="collapse'.$i.'" class="panel-collapse collapse" style="background-color:'.$month_info[$i]['background_color'].';border:5px groove '.$month_info[$i]['background_border'].';">';
                                         echo '   <div class="panel-body">';
 
                                         for ($j = 1; $j <= 3; $j++) {
@@ -208,10 +212,10 @@ $session =& JFactory::getSession();
                             <div class="st-sub-heading">Cách Thức Để Đi</div>
 
                             <div class="span6">
-                                <div class="span2" style="margin-bottom:20px;">
+                                <div class="span2">
                                     <h2>Xuất Phát</h2>
                                 </div>
-                                <div class="span2" style="margin-bottom:20px;">
+                                <div class="span2" style="margin-top:20px;">
                                     <select id="city_start" style="width:100%">
                                         <?php
                                         $city = GetStartCityData();
@@ -245,10 +249,10 @@ $session =& JFactory::getSession();
                             </div>
 
                             <div class="span6">
-                                <div class="span2" style="margin-bottom:20px;">
+                                <div class="span2">
                                     <h2>Trở Về</h2>
                                 </div>
-                                <div class="span2" style="margin-bottom:20px;">
+                                <div class="span2" style="margin-top:20px;">
                                     <select id="city_end" style="width:100%">
                                         <?php
                                         $city = GetEndCityData();
@@ -634,14 +638,22 @@ $session =& JFactory::getSession();
              }
 
              }*/
-            $('#dateDepart').datepicker({
+            var startDefault = "<?php echo $session->get('StartDay'); ?>";
+            if (startDefault.indexOf(',') != - 1)
+                startDefault = startDefault.substring(startDefault.indexOf(',')+2);
+
+            var endDefault = "<?php echo $session->get('EndDay'); ?>";
+            if (endDefault.indexOf(',') != - 1)
+                endDefault = endDefault.substring(endDefault.indexOf(',')+2);
+
+                $('#dateDepart').datepicker({
 
                 /*
                  beforeShowDay: highlightDays,
                  */
 
                 dateFormat: "d M yy",
-                defaultDate:new Date(),
+                //defaultDate:Date.parse(startDefault.substring(startDefault.indexOf(',')+2)),
                 numberOfMonths: 2,
                 changeMonth: true,
                 changeYear: true,
@@ -652,8 +664,8 @@ $session =& JFactory::getSession();
                     //jQuery("#dateReturn").datepicker("option", "minDate", jQuery("#dateDepart").datepicker("getDate"));
                     var dd = dateText.split(" ")[0];
                     var month = Date.parse(dateText);
-                    alert(dateText);
-                    alert(month);
+                    //alert(dateText);
+                    //alert(month);
                     startDay = month;
                     var mm = ("0" + (month.getMonth() + 1)).slice(-2);
                     var yyyy = dateText.split(" ")[2];
@@ -663,12 +675,13 @@ $session =& JFactory::getSession();
                 }
             });
 
+            $("#dateDepart").datepicker("setDate",Date.parse(startDefault));
             $('#dateReturn').datepicker({
 
 //            beforeShowDay: highlightDays,
 
                 dateFormat: "dd M yy",
-                defaultDate:new Date(),
+                //defaultDate:Date.parse(startDefault.substring(startDefault.indexOf(',')+2)),
                 numberOfMonths: 2,
                 changeMonth: true,
                 changeYear: true,
@@ -707,6 +720,8 @@ $session =& JFactory::getSession();
                     });
                 }
             });
+
+            $("#dateReturn").datepicker("setDate",Date.parse(endDefault));
         });
     })(jQuery)
 

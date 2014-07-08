@@ -4,8 +4,8 @@ defined('_JEXEC') or die;
 
 ?>
 
-<a id="avatar-go-to-top" href="#top" style="display: block;"><span></span></a>
-
+<a class="avatar-fix" href="?option=com_lichtrinh"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+<a class="avatar-fix avatar-fix-to-left" href="?option=com_video"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
 <style>
     .sequence-canvas {
         padding-left:0px;
@@ -808,10 +808,11 @@ jQuery.noConflict();
             var our_work = $('.st-our-work .category-wall').offset().top,
                 our_work_H = $('.st-our-work .category-wall').height();
 
-            var menuH = $('#avatar-header-inside-block').height();
-
+            //var menuH = $('#avatar-header-inside-block').height();
+            var menuH = $('.container').first().height();
+            //alert(our_work + ' ' + our_work_H + ' ' + menuH);
             var eindex = 0;
-            var offset = -125;
+            var offset = $('#avatar-full-3-block').height() + 140;
             var category = "";
             var cat_all_item = null;
 

@@ -40,8 +40,13 @@ if ($option != "com_data") {
     if ($option == "com_profile") {
         //upload file
         $doc->addStyleSheet('templates/' . $this->template . '/css/upload/croppic.css');
+        //use datepicker
+        $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
+        $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
+
         //Profile
         $doc->addScript('./templates/' . $this->template . '/js/upload/croppic.js', 'text/javascript');
+        $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
     }
 
 
@@ -216,8 +221,10 @@ if ($option != "com_data") {
 								</li><li><a href="#" >Log in</a></li>
 								<li class="signup"><a href="#" >Sign up</a></li>
 							<?php } ?>
-                                 <li><a href="#" id="signUpLink">Đăng Nhập</a></li>
-						</ul>
+                                 <li><a href="?option=com_profile">Profile</a></li>
+<!--                                <li><a href="#" id="signUpLink">Đăng Nhập</a></li>-->
+
+                        </ul>
 					</div>
 					<div class="clearbreak"></div>
 				</div>

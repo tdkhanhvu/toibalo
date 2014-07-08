@@ -124,7 +124,7 @@
 <div class="col-sm-5" style="border: 5px groove rgb(105, 73, 189);">
     <div class="row">
         <div class="col-sm-4" style="padding-right:0px;">
-<!--            <img id="uploader2" class="img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>-->
+            <!--            <img id="uploader2" class="img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>-->
             <div id="cropContainerModal">
                 <img class="croppedImg img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg">
             </div>
@@ -234,317 +234,178 @@
     </div>
 </div>
 <div class="col-sm-7" style="border: 5px groove rgb(105, 73, 189);">
-    <!-- tabs -->
-    <div class="tabbable">
-        <ul class="nav nav-tabs">
-            <li><a href="#info_" data-toggle="tab">Chuyến Đi</a></li>
-            <li><a id="note" href="#note_" data-toggle="tab">Nhật Ký</a></li>
-            <li><a href="#cost_" data-toggle="tab">Chi Phí</a></li>
-            <button type="button" class="btn btn-success" style="margin-top:10px;margin-left:30px;" onclick="GetFeedback();">Phản Hồi</button>
+<!-- tabs -->
+<div class="tabbable">
+<ul class="nav nav-tabs">
+    <li><a href="#info_" data-toggle="tab">Chuyến Đi</a></li>
+    <li><a id="note" href="#note_" data-toggle="tab">Nhật Ký</a></li>
+    <li><a href="#cost_" data-toggle="tab">Chi Phí</a></li>
+    <button type="button" class="btn btn-success" style="margin-top:10px;margin-left:30px;" onclick="GetFeedback();">Phản Hồi</button>
 
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane active" id="info_">
-                <div class="row" style="margin-top: 20px;">
-                    <div class="col-sm-12" style="text-align: center;">
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="info_">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-12" style="text-align: center;">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="./templates/green/images/visa/ho_chi_minh.jpg"/>
+                    <label class="control-label" style="margin-bottom:0px;">Sài Gòn</label>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="control-label">Hà Nội</label>
+                                    <label class="control-label">17/01/2014</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img class="img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="control-label">Hà Nội</label>
+                                    <label class="control-label">22/01/2014</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="control-label" style="margin-bottom:0px;">Một trong những chuyến đi mà tôi tận hưởng nhất. Yêu cảnh vật, ẩm thực, thắng cảnh cũng như những con người hiền lành nơi đây.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Tham Quan
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body" style="text-align: center;">
+                        <div class="col-sm-12">
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
+                                <label class="control-label">Bưu Điện Thành Phố</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
+                                <label class="control-label">Chợ Bến Thành</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
+                                <label class="control-label">Nhà Hát Thành Phố</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
+                                <label class="control-label">Dinh Độc Lập</label>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
+                                <label class="control-label">Bưu Điện Thành Phố</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
+                                <label class="control-label">Chợ Bến Thành</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
+                                <label class="control-label">Nhà Hát Thành Phố</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
+                                <label class="control-label">Dinh Độc Lập</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            Lời Khuyên
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" style="text-align: center;">
+                    <div class="panel-body">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4">
+                                <div class="st-icon-star">&nbsp;</div>
+                                <label class="control-label">Chợ đêm Bến Thành</label>
+                                <p>Bạn nên dành thời gian ghé qua khu chợ đêm nổi tiếng với các món hàng hóa độc đáo và những món ăn vặt tuyệt cú mèo như các loại xôi, phở...</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="st-icon-food">&nbsp;</div>
+                                <label class="control-label">Bánh tráng trộn</label>
+                                <p>Teen Sài Gòn hay ghé góc phố Nguyễn Thái Học và Trần Hưng Đạo để thưởng thức những bịch bánh tráng trôn ngon tuyệt cú mèo</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="st-icon-cup">&nbsp;</div>
+                                <label class="control-label">Phố Tây Phạm Ngũ Lão</label>
+                                <p>Hòa mình vào khu phố của những khách Tây Ba Lô trên đoạn Phạm Ngũ Lão và Bùi Viện. Nơi Tây Ba Lô gặp gỡ Ta Ba Lô</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            Ẩm Thực
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" style="text-align: center;">
+                    <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img class="img-responsive" src="./templates/green/images/visa/ho_chi_minh.jpg"/>
-                                <label class="control-label" style="margin-bottom:0px;">Sài Gòn</label>
+                                <img class="thumbnail img-responsive" src="./templates/green/images/com_tam.jpg"/>
+                                <label class="control-label">Cơm Tấm</label>
                             </div>
-                            <div class="col-sm-8">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <img class="img-responsive" src="./templates/green/images/transport/airplane.png"/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label class="control-label">Hà Nội</label>
-                                                <label class="control-label">17/01/2014</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <img class="img-responsive" src="./templates/green/images/transport/airplane.png"/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <label class="control-label">Hà Nội</label>
-                                                <label class="control-label">22/01/2014</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <label class="control-label" style="margin-bottom:0px;">Một trong những chuyến đi mà tôi tận hưởng nhất. Yêu cảnh vật, ẩm thực, thắng cảnh cũng như những con người hiền lành nơi đây.</label>
-                                </div>
+                            <div class="col-sm-4">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/hu_tieu_nam_vang.jpg"/>
+                                <label class="control-label">Hủ Tiếu Nam Vang</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/sau_rieng.jpg"/>
+                                <label class="control-label">Sầu Riêng</label>
                             </div>
                         </div>
                         <div class="row">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        Tham Quan
-                                    </a>
-                                </h4>
+                            <div class="col-sm-4">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/banh_trang_tron.jpg"/>
+                                <label class="control-label">Bánh Tráng Trộn</label>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body" style="text-align: center;">
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
-                                            <label class="control-label">Bưu Điện Thành Phố</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
-                                            <label class="control-label">Chợ Bến Thành</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
-                                            <label class="control-label">Nhà Hát Thành Phố</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
-                                            <label class="control-label">Dinh Độc Lập</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
-                                            <label class="control-label">Bưu Điện Thành Phố</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
-                                            <label class="control-label">Chợ Bến Thành</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
-                                            <label class="control-label">Nhà Hát Thành Phố</label>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
-                                            <label class="control-label">Dinh Độc Lập</label>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            <div class="col-sm-4">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/tra_chanh.jpg"/>
+                                <label class="control-label">Trà Chanh</label>
                             </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                        Lời Khuyên
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" style="text-align: center;">
-                                <div class="panel-body">
-                                    <div class="col-sm-12">
-                                        <div class="col-sm-4">
-                                            <div class="st-icon-star">&nbsp;</div>
-                                            <label class="control-label">Chợ đêm Bến Thành</label>
-                                            <p>Bạn nên dành thời gian ghé qua khu chợ đêm nổi tiếng với các món hàng hóa độc đáo và những món ăn vặt tuyệt cú mèo như các loại xôi, phở...</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="st-icon-food">&nbsp;</div>
-                                            <label class="control-label">Bánh tráng trộn</label>
-                                            <p>Teen Sài Gòn hay ghé góc phố Nguyễn Thái Học và Trần Hưng Đạo để thưởng thức những bịch bánh tráng trôn ngon tuyệt cú mèo</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="st-icon-cup">&nbsp;</div>
-                                            <label class="control-label">Phố Tây Phạm Ngũ Lão</label>
-                                            <p>Hòa mình vào khu phố của những khách Tây Ba Lô trên đoạn Phạm Ngũ Lão và Bùi Viện. Nơi Tây Ba Lô gặp gỡ Ta Ba Lô</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                        Ẩm Thực
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" style="text-align: center;">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/com_tam.jpg"/>
-                                            <label class="control-label">Cơm Tấm</label>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/hu_tieu_nam_vang.jpg"/>
-                                            <label class="control-label">Hủ Tiếu Nam Vang</label>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/sau_rieng.jpg"/>
-                                            <label class="control-label">Sầu Riêng</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/banh_trang_tron.jpg"/>
-                                            <label class="control-label">Bánh Tráng Trộn</label>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/tra_chanh.jpg"/>
-                                            <label class="control-label">Trà Chanh</label>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/mit.jpg"/>
-                                            <label class="control-label">Mít</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="note_">
-                <iframe id="frame" src="about:blank" height="550px" style="width:100%;">
-                </iframe>
-            </div>
-            <div class="tab-pane" id="cost_">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <label class="control-label">Tổng Chi Phí 5 ngày</label>
-                        <label class="control-label" style="float:right;margin-right:20px;color:red;">4,000,000</label>
-                        <div class="panel-group" id="accordion_cost">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse1">
-                                            Đi Tới <p style="float:right">2,000,000</p>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1" class="panel-collapse collapse in">
-                                    <div class="panel-body" style="text-align: center;">
-                                        <div class="col-sm-12">
-                                            <div class="col-sm-3">
-                                                <img class="thumbnail img-responsive" src="./templates/green/images/transport/airplane.png"/>
-                                                <label class="control-label">Chiều Đi</label>
-                                                <img class="thumbnail img-responsive" src="./templates/green/images/transport/airplane.png"/>
-                                                <label class="control-label">Chiều Về</label>
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <p>Mình canh được vé giá rẻ của Jetstar vào mỗi ngày thứ 6 hàng tuần. Mình mua vé trước nửa năm nên mới rẻ được như thế.</p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse2">
-                                            Nơi Ở <p style="float:right">500,000</p>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse" style="text-align: center;">
-                                    <div class="panel-body">
-                                        <div class="col-sm-12">
-                                            <div class="col-sm-3">
-                                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/hostel.png"/>
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <p>Mình thuê được nhà nghỉ Vàng Anh giá rẻ trên đường Phạm Ngũ Lão ngay trung tâm thành phố. Địa điểm này gần các nơi tham quan. Ngoài ra bạn còn có cơ hội gặp được du khách nước ngoài tới thăm Việt Nam đấy.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse3">
-                                            Ăn Uống <p style="float:right">1,000,000</p>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse" style="text-align: center;">
-                                    <div class="panel-body">
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/budget/food_court.png"/>
-                                        </div>
-                                        <div class="col-sm-9">
-                                            <p>Ăn uống ở các hàng quán xung quanh đường mà cũng khá là mắc. Bù lại mình được ăn cơ man nào là các món ngon như cơm tấm, hủ tiếu nam vang cho tới các món trái cây đặc sắc của Nam Bộ như sầu riêng, chôm chôm, măng cụt.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse4">
-                                            Đi Lại <p style="float:right">100,000</p>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse" style="text-align: center;">
-                                    <div class="panel-body">
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/budget/bus.png"/>
-                                        </div>
-                                        <div class="col-sm-9">
-                                            <p>Chủ yếu mình đi lại bằng xe buýt để tiết kiệm nếu khoảng cách khá xa. Xe buýt Sài Gòn chạy khá dày đặc và tần suất chuyến cũng nhanh. Còn nếu quãng đường ngắn thì mình tranh thủ đi bộ, vừa tiết kiệm thời gian đợi buýt, vừa tiết kiệm được tiền mua ly nước mía.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse5">
-                                            Chi Tiêu Riêng <p style="float:right">400,000</p>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse" style="text-align: center;">
-                                    <div class="panel-body">
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/budget/other_low.png"/>
-                                        </div>
-                                        <div class="col-sm-9">
-                                            <p>Mình rất là tiết kiệm trong việc chi tiêu cá nhân. Bình thường mình không phí tiền cho những thứ thấy không đáng, trừ vé vào cổng mấy khu tham quan chả hạn.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse6">
-                                            Khác <p style="float:right">0</p>
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse6" class="panel-collapse collapse" style="text-align: center;">
-                                    <div class="panel-body">
-                                        <div class="col-sm-3">
-                                            <img class="thumbnail img-responsive" src="./templates/green/images/budget/nocost.png"/>
-                                        </div>
-                                        <div class="col-sm-9">
-                                            <p>May mắn là đi tới Sài Gòn mình không bị phụ thu thêm phí gì cả.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-sm-4">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/mit.jpg"/>
+                                <label class="control-label">Mít</label>
                             </div>
                         </div>
                     </div>
@@ -552,7 +413,146 @@
             </div>
         </div>
     </div>
-    <!-- /tabs -->
+</div>
+<div class="tab-pane" id="note_">
+    <iframe id="frame" src="about:blank" height="550px" style="width:100%;">
+    </iframe>
+</div>
+<div class="tab-pane" id="cost_">
+    <div class="row">
+        <div class="col-sm-12">
+            <label class="control-label">Tổng Chi Phí 5 ngày</label>
+            <label class="control-label" style="float:right;margin-right:20px;color:red;">4,000,000</label>
+            <div class="panel-group" id="accordion_cost">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse1">
+                                Đi Tới <p style="float:right">2,000,000</p>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body" style="text-align: center;">
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <img class="thumbnail img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                    <label class="control-label">Chiều Đi</label>
+                                    <img class="thumbnail img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                    <label class="control-label">Chiều Về</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>Mình canh được vé giá rẻ của Jetstar vào mỗi ngày thứ 6 hàng tuần. Mình mua vé trước nửa năm nên mới rẻ được như thế.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse2">
+                                Nơi Ở <p style="float:right">500,000</p>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" style="text-align: center;">
+                        <div class="panel-body">
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <img class="thumbnail img-responsive" src="./templates/green/images/budget/hostel.png"/>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p>Mình thuê được nhà nghỉ Vàng Anh giá rẻ trên đường Phạm Ngũ Lão ngay trung tâm thành phố. Địa điểm này gần các nơi tham quan. Ngoài ra bạn còn có cơ hội gặp được du khách nước ngoài tới thăm Việt Nam đấy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse3">
+                                Ăn Uống <p style="float:right">1,000,000</p>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" style="text-align: center;">
+                        <div class="panel-body">
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/food_court.png"/>
+                            </div>
+                            <div class="col-sm-9">
+                                <p>Ăn uống ở các hàng quán xung quanh đường mà cũng khá là mắc. Bù lại mình được ăn cơ man nào là các món ngon như cơm tấm, hủ tiếu nam vang cho tới các món trái cây đặc sắc của Nam Bộ như sầu riêng, chôm chôm, măng cụt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse4">
+                                Đi Lại <p style="float:right">100,000</p>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse" style="text-align: center;">
+                        <div class="panel-body">
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/bus.png"/>
+                            </div>
+                            <div class="col-sm-9">
+                                <p>Chủ yếu mình đi lại bằng xe buýt để tiết kiệm nếu khoảng cách khá xa. Xe buýt Sài Gòn chạy khá dày đặc và tần suất chuyến cũng nhanh. Còn nếu quãng đường ngắn thì mình tranh thủ đi bộ, vừa tiết kiệm thời gian đợi buýt, vừa tiết kiệm được tiền mua ly nước mía.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse5">
+                                Chi Tiêu Riêng <p style="float:right">400,000</p>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse" style="text-align: center;">
+                        <div class="panel-body">
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/other_low.png"/>
+                            </div>
+                            <div class="col-sm-9">
+                                <p>Mình rất là tiết kiệm trong việc chi tiêu cá nhân. Bình thường mình không phí tiền cho những thứ thấy không đáng, trừ vé vào cổng mấy khu tham quan chả hạn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion_cost" href="#collapse6">
+                                Khác <p style="float:right">0</p>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse" style="text-align: center;">
+                        <div class="panel-body">
+                            <div class="col-sm-3">
+                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/nocost.png"/>
+                            </div>
+                            <div class="col-sm-9">
+                                <p>May mắn là đi tới Sài Gòn mình không bị phụ thu thêm phí gì cả.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- /tabs -->
 </div>
 
 
@@ -563,10 +563,10 @@
 
     }
 
-    jQuery.noConflict();
+    //jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
-            $('#profileDOB').datepicker({
+            $("#profileDOB").datepicker({
                 dateFormat: "d M y",
                 defaultDate:new Date(),
                 numberOfMonths: 2,
@@ -605,4 +605,3 @@
         PopUpFeedback('Profile', jQuery('.nav-tabs .active a').text());
     }
 </script>
-

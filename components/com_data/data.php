@@ -38,6 +38,21 @@ if (!($session->has('cost'))){
     $session->set('cost', $cost);
 }
 
+if (!($session->has('StartDay'))) {
+    $session->set('StartDay', date("d/m/Y"));
+    $session->set('EndDay', date("d/m/Y", strtotime("+5 days")));
+}
+
+if (!($session->has('StartCity'))) {
+    $session->set('StartCity', 'Ha_Noi');
+    $session->set('EndCity', 'Ha_Noi');
+}
+
+if (!($session->has('transport_start'))) {
+    $session->set('transport_start', 'plane');
+    $session->set('transport_end', 'plane');
+}
+
 function GetData($name) {
     $session =& JFactory::getSession();
     $arr =  GetDataFromJsonFile($name);
