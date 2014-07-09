@@ -233,10 +233,10 @@
         </div>
     </div>
 </div>
-<div class="col-sm-7" style="border: 5px groove rgb(105, 73, 189);">
+<div class="col-sm-7" style="border: 5px groove rgb(105, 73, 189);" id="tripInfo">
 <!-- tabs -->
 <div class="tabbable">
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" id="tabControl">
     <li><a href="#info_" data-toggle="tab">Chuyến Đi</a></li>
     <li><a id="note" href="#note_" data-toggle="tab">Nhật Ký</a></li>
     <li><a href="#cost_" data-toggle="tab">Chi Phí</a></li>
@@ -566,6 +566,8 @@
     //jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
+            $('#frame').attr('height',($(window).height() - $('.container').first().height() - $('#tabControl').height()));
+            $('#tripInfo').css('min-height',($(window).height() - $('.container').first().height()));
             $("#profileDOB").datepicker({
                 dateFormat: "d M y",
                 defaultDate:new Date(),

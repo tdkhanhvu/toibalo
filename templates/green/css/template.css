@@ -2064,6 +2064,7 @@ header .article-tool .article-info {
     font-size: 18px;
     margin-left: 0;
     margin-right: 12px;
+	font-weight: bolder;
 }
 
 .st-our-work .category-wall span:hover,

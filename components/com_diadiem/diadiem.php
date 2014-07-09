@@ -277,7 +277,7 @@ defined('_JEXEC') or die;
 
                 <div class="custom">
                     <div class="st-onepage">
-                        <div class="st-home onepage-disappear" position="item-105">
+                        <div class="st-home onepage-disappear" id="articleSection" position="item-105">
                             <div class="row-fluid">
                                 <div class="span8">
                                     <div class="inner article-content">
@@ -482,15 +482,15 @@ defined('_JEXEC') or die;
                 <div class="custom">
                     <div class="st-onepage">
                         <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
-                            <h1 class="st-heading" style="float:left">Nhật kí<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
-                            <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px">
+                            <h1 class="st-heading" style="float:left;padding-top:0px;">Nhật kí<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
+                            <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px;width:100%;">
                                 <img class="note_select thumbnail img-responsive" src="./templates/green/images/du_khach_1.jpg"/>
                                 <div>Trần Thanh Hùng</div>
                                 <div>Nha Trang</div>
                                 <div>10-15/5/2013</div>
                                 <div id="nhatki_1"></div>
                             </div>
-                            <div style="float:left;font-size: large;color:#ffffff">
+                            <div style="float:left;font-size: large;color:#ffffff;width:100%;">
                                 <img class="note_select thumbnail img-responsive" src="./templates/green/images/du_khach_2.jpg"/>
                                 <div>Nguyễn Thị Diễm Lệ</div>
                                 <div>Hải Phòng</div>
@@ -529,7 +529,7 @@ defined('_JEXEC') or die;
                                     <div class="layout1">
                                         <div class="left"><img class="thumbnail" src="./templates/green/images/tet_duong_lich.jpg" alt="image alt"/></div>
                                         <div class="right">
-                                            <h3>Tết Dương Lịch</h3>
+                                            <h3 style="color: rgb(73, 167, 125);font-weight: bold">Tết Dương Lịch</h3>
                                             <p>Tết Dương lịch hay còn gọi là Tết Tây là một trong những ngày
                                                 lễ quan trọng trong năm của nhiều dân tộc trên thế giới. Tết này là ngày đầu
                                                 tiên hàng năm theo dương lịch, loại lịch hiện được dùng phổ biến tại Việt Nam,
@@ -543,7 +543,7 @@ defined('_JEXEC') or die;
                                     <div class="layout1">
                                         <div class="left"><img class="thumbnail" src="./templates/green/images/tet_nguyen_dan.jpg" alt="image alt"/></div>
                                         <div class="right">
-                                            <h3>Tết Nguyên Đán</h3>
+                                            <h3 style="color: rgb(82, 79, 170);font-weight: bold">Tết Nguyên Đán</h3>
                                             <p>Tết Nguyên Đán (hay còn gọi là Tết Cả, Tết Ta, Tết Âm lịch,
                                                 Tết Cổ truyền hay chỉ đơn giản còn gọi là Tết) là dịp lễ quan trọng nhất của
                                                 Việt Nam, theo ảnh hưởng văn hóa của Tết Âm lịch Trung Hoa và Vòng văn hóa Đông
@@ -554,26 +554,26 @@ defined('_JEXEC') or die;
                                     <span class="date"><i class="icon-calendar"></i>31.01.2014</span>
                                 </div>
                                 <div class="event" data-date="09/08/2014">
-                                    <div class="layout2">
-                                        <div class="left">
-                                            <h3>Tết Trung Thu</h3>
+                                    <div class="layout1">
+                                        <div class="left"><img class="thumbnail" src="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
+                                        <div class="right">
+                                            <h3 style="color: rgb(206, 78, 170);font-weight: bold">Tết Trung Thu</h3>
                                             <p>Trung thu là giữa mùa thu, Tết Trung Thu như tên gọi đến với chúng ta vào đúng giữa mùa thu tức là vào rằm tháng Tám âm lịch. Tết Trung Thu là tết của trẻ em. Ngay từ đầu tháng, Tết đã được sửa soạn với những cỗ đèn muôn mầu sắc, muôn hình thù, với những bánh dẻo, bánh nướng mà ta gọi gồm là bánh trung thu.</p>
                                         </div>
-                                        <div class="right"><img class="thumbnail" src="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
                                     </div>
                                     <span class="date"><i class="icon-calendar"></i>08.09.2014</span>
                                 </div>
                                 <div class="event" data-date="12/25/2014">
-                                    <div class="layout2">
-                                        <div class="left">
-                                            <h3>Giáng Sinh</h3>
+                                    <div class="layout1">
+                                        <div class="left"><img class="thumbnail" src="./templates/green/images/giang_sinh.jpg" alt="image alt"/></div>
+                                        <div class="right">
+                                            <h3 style="color: rgb(206, 124, 78);font-weight: bold">Giáng Sinh</h3>
                                             <p>Lễ Giáng Sinh, còn được gọi là lễ Thiên Chúa giáng sinh, Noel
                                                 hay Christmas là một ngày lễ kỷ niệm Chúa Giêsu sinh ra đời, theo phần lớn các
                                                 tín hữu Kitô giáo. Họ tin là Chúa Giêsu được sinh tại Bethlehem (Bêlem) thuộc xứ
                                                 Judea (Giuđêa) nước Do Thái (ngày nay là 1 thành phố của Palestine), lúc bấy giờ
                                                 thuộc Đế quốc La Mã, khoảng giữa năm 7 TCN và năm 2.</p>
                                         </div>
-                                        <div class="right"><img class="thumbnail" src="./templates/green/images/giang_sinh.jpg" alt="image alt"/></div>
                                     </div>
                                     <span class="date"><i class="icon-calendar"></i>25.12.2014</span>
                                 </div>
@@ -750,6 +750,9 @@ jQuery.noConflict();
     }
 
     $(document).ready(function () {
+        //make the iframe height fit the screen height
+        $('#frame').attr('height',($(window).height() - $('.container').first().height()));
+
         var wrapper = $('#53415ba15888f');
         var contain = wrapper.find('.layout-wall');
 
@@ -812,7 +815,8 @@ jQuery.noConflict();
             var menuH = $('.container').first().height();
             //alert(our_work + ' ' + our_work_H + ' ' + menuH);
             var eindex = 0;
-            var offset = $('#avatar-full-3-block').height() + 140;
+            //var offset = $('#avatar-full-3-block').height() + 100;
+            var offset = 120;
             var category = "";
             var cat_all_item = null;
 
@@ -1028,6 +1032,8 @@ jQuery.noConflict();
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
+            $('#articleSection').css('padding','0px');
+
             avatarTemplate.url.base = "http://www.beautiful-templates.com/demo/templates-joomla/st_green/";
             avatarTemplate.template.name = "st_green";
             avatarTemplate.template.params = {"template_panel_setting": "1", "active_responsive": "1", "load_jquery": "1", "template_showcase": "-1", "template_background": "0", "doctype": "5", "show_main_body": "1", "hide_menu_items": ["101"], "show_message": "1", "404_article": "", "template_width": "1200px", "avatar_header_block": "block-default-width", "avatar_header_inside_block": "block-default-width", "avatar_tool_block": "block-max-width-100", "avatar_body_top_block": "block-default-width", "avatar_body_middle_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_footer_inside_block": "block-default-width", "avatar_footer_block": "block-default-width", "avatar_full_1_block": "block-default-width", "avatar_full_2_block": "block-default-width", "avatar_full_3_block": "block-default-width", "avatar_full_4_block": "block-default-width", "avatar_full_5_block": "block-default-width", "avatar_body_bottom_block": "block-default-width", "avatar_full_6_block": "block-default-width", "top_left": 20, "top_right": 80, "promo_top_left": 33.33, "promo_top_right": 33.33, "promo_bottom_left": 33.33, "promo_bottom_right": 33.33, "left": 23, "right": 23, "inner_left": 23, "inner_right": 23, "footer_left": 33.33, "footer_right": 33.33, "link_color": "", "hover_color": "", "body_font": "", "menu_font": "", "google_font_api": "0", "google_font_api_key": "", "google_font_content": "", "heading_1": "", "heading_2": "", "heading_3": "", "heading_4": "", "heading_5": "", "heading_6": "", "customize_css": "", "go_to_top": "1", "go_to_top_text": "", "go_to_top_css": "", "css3_effect": "1", "css3_effect_scroll": ".avatar-css3-effect-scroll", "optimize": "0"};

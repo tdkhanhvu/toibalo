@@ -373,9 +373,9 @@ $session =& JFactory::getSession();
         <div><button type="button" class="btn btn-success" style="position:relative;top:-15px;z-index:9999;" onclick="PopUpFeedback('Thông Tin','Tham Quan');">Phản Hồi</button></div>
     </div>
 
-    <div style="position:relative">
+    <div style="position:relative" class="col-xs-12">
 <!--        <span class="attraction_point" style="top:335px;left:343px;">1</span>-->
-        <img src="./templates/green/images/Attraction/sai_gon_map.jpg" class="img-responsive"/>
+        <img src="./templates/green/images/Attraction/sai_gon_map.jpg" class="img-responsive thumbnail"/>
         <?php
             $arr = $session -> get('select_attraction');
             $temp = array();
