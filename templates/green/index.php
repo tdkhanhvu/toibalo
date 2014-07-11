@@ -287,7 +287,9 @@ if ($option != "com_data") {
 	<!--Nav Bar -->
 
 	<!-- 3. Content -->
-	<div class='tbl_content'>
+    <?php if ($option != 'com_content'){?>
+
+	    <div class='tbl_content'>
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             <div class='container' id="wrapper">
         <?php } ?>
@@ -307,7 +309,8 @@ if ($option != "com_data") {
             </div>
         <?php } ?>
 	</div> <!-- End Content -->
-	
+	<?php } ?>
+
 	<!-- 4. Footer -->
     <?php if ($option != 'com_content') { ?>
 	<div class='footer'>

@@ -457,12 +457,13 @@ body {
 	opacity: 0;
 	
 }
+
 body#homepage {
-	background: url('../images/bg_toibalo.png'); 
-	background-color: #c3936e;
-	background-size: 120%;
-	background-position: top;
-	background-repeat: no-repeat;
+    background: url('../images/bg_toibalo.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 @media (max-width: 767px) {
