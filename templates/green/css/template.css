@@ -369,43 +369,6 @@ ul.nav.menu,
 .navbar .container {
 	width: 940px;
 }
-@media (max-width: 767px) {
-	.navbar .container {
-		width: auto;
-	}
-}
-@media (min-width: 1200px) {
-	.navbar .container {
-		width: 1170px;
-	}
-}
-@media (max-width: 979px) {
-	.nav-collapse .nav > li > a {
-		float:none;
-		-webkit-border-radius: 0px;
-		-moz-border-radius: 0px;
-		border-radius: 0px;
-	}
-	.nav-collapse .nav > li {
-		float:left;
-	}
-	.navbar-toggle {
-		display: block;
-	}
-	.nav-collapse .dropdown-menu a {
-		-webkit-border-radius: 0px;
-		-moz-border-radius: 0px;
-		border-radius: 0px;
-	}
-/*	.navbar .nav > .active > a, */
-	.navbar .nav > .active > a:hover, 
-	.navbar .nav > .active > a:focus, 
-	.navbar .nav > li > a:focus, 
-	.navbar .nav > li > a:hover {
-		background-color: #009edb;
-		color: #8ed8f8;
-	}
-}
 select, textarea, input[type="text"], 
 input[type="password"], input[type="datetime"], 
 input[type="datetime-local"], input[type="date"], 
@@ -452,27 +415,27 @@ input[type="url"], input[type="search"], input[type="tel"], input[type="color"],
 	height: 200px;
 }
 #tbl_coin, #tbl_coin a:hover {
-	background: url(../images/tbl_coin.png) no-repeat 0px -206px;
-	height: 210px;
-	width: 195px;
+	background: url(../images/tbl_coin.png) no-repeat 0px -168px;
+	height: 168px;
+	width: 160px;
 }
 #tbl_coin a:hover {
-	background-position: 0px 4px;
+	background-position: 0px 0px;
 }
 #tbl_coin a {
-	height: 210px;
+	height: 168px;
 }
 #tbl_picture, #tbl_picture a:hover {
-	background: url(../images/tbl_picture.png) no-repeat 0px -303px;
+	background: url(../images/tbl_picture.png) no-repeat 0px -232px;
 	float: right;
-	height: 320px;
-	width: 420px;
+	height: 230px;
+	width: 300px;
 }
 #tbl_picture a:hover {
-	background-position: 0px 15px;
+	background-position: 0px 0px;
 }
 #tbl_picture a {
-	height: 320px;
+	height: 230px;
 }
 /* -------------------------------------------------Green-------------------------------------------------------- */
 body {
@@ -484,12 +447,73 @@ body {
 	
 }
 body#homepage {
-	background: url('../images/bg_toibalo.png') ;
+	background: url('../images/bg_toibalo.png'); 
+	background-color: #c3936e;
 	background-size: 120%;
 	background-position: top;
 	background-repeat: no-repeat;
 }
 
+@media (max-width: 767px) {
+	.navbar .container {
+		width: auto;
+	}
+}
+@media (min-width: 1200px) {
+	.navbar .container {
+		width: 1170px;
+	}
+}
+@media (max-width: 979px) {
+	.nav-collapse .nav > li > a {
+		float:none;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+	.nav-collapse .nav > li {
+		float:left;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.nav-collapse .dropdown-menu a {
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+/*	.navbar .nav > .active > a, */
+	.navbar .nav > .active > a:hover, 
+	.navbar .nav > .active > a:focus, 
+	.navbar .nav > li > a:focus, 
+	.navbar .nav > li > a:hover {
+		background-color: #009edb;
+		color: #8ed8f8;
+	}
+	#tbl_cover {
+		display:none;
+	}
+	body#homepage {
+	background: url('../images/bg_toibalomini.png') !important ;
+	background-size: 100% !important;
+	}
+	#tbl_search {
+		width: 45%;
+		margin-left: 27%;
+	}
+	.tbl_search_title {
+		font-size: 2.7em;
+	}
+	.tbl_search_form select {
+		width: 70%;
+	}
+	#tbl_search .tbl_button {
+		width: 20%;
+	}
+	#tbl_search .tbl_button input {
+		height: 25px;
+	}
+}
 /***Default**/
 a,
 a:link,
