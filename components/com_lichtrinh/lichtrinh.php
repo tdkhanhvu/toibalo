@@ -986,11 +986,17 @@ $session =& JFactory::getSession();
         }
     }
     function changeAttractionInfo(message){
+        //alert(message);
         attraction_current = message;
         jQuery('#attraction_list li').each(function() {
-            if (jQuery(this).find('a').attr('href').replace('#','') == message)
+            if (jQuery(this).find('a').attr('href').replace('#','') == message) {
                 jQuery(this).addClass('active');
-            else jQuery(this).removeClass('active');
+                //alert(1);
+            }
+            else {
+                jQuery(this).removeClass('active');
+                //alert(jQuery(this).find('a').attr('href').replace('#',''));
+            }
         });
 
         jQuery.ajax({
