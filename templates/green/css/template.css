@@ -320,7 +320,18 @@ ul.nav.menu,
 .box_comment {
 
 }
-
+#loading {
+	height:100%; 
+	width:100%; 
+	background-color: white;  
+	position: fixed;
+	z-index: 99999999;
+}
+#loading_content {
+	position:relative;
+	text-align:center; 
+	top:250px;
+}
 /* -------------------------------------------------Footer-------------------------------------------------------- */
 .footer {
 	background: #009edb;

@@ -103,7 +103,7 @@ if ($option != "com_data") {
 <!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
 </head>
 
-<body id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
+<body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
 <script type="text/javascript">
     function PopUpFeedback(page, section) {
         jQuery('#popup').bPopup({
@@ -119,6 +119,33 @@ if ($option != "com_data") {
         return;
     }
 </script>
+
+<!--Loading Page-->
+	<div id="loading">
+		<div id="loading_content">
+			<img src="templates/green/images/tbl_loadingpage.gif" border=0><br />
+			<p>Đang nạp trang. Vui lòng đợi giây lát!</p>
+		</div>
+	</div>
+	 
+	<script>
+		var ld=(document.all);
+		var ns4=document.layers;
+		var ns6=document.getElementById&&!document.all;
+		var ie4=document.all;
+		if (ns4)
+		ld=document.loading;
+		else if (ns6)
+		ld=document.getElementById("loading").style;
+		else if (ie4)
+		ld=document.all.loading.style;
+		function init()
+		{
+		if(ns4){ld.visibility="hidden";}
+		else if (ns6||ie4) ld.display="none";
+		}
+	</script>
+<!--End Loading Page-->
 
 <!-- Top -->
 <a name="top" id="top"></a>
@@ -438,4 +465,5 @@ if ($option != "com_data") {
 </div>
 
 </body>
+
 </html>
