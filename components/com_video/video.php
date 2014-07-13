@@ -41,41 +41,41 @@
                 Video controls:<br />
                 <a href="#" class="tubular-play">Play</a> | <a href="#" class="tubular-pause">Pause</a> | <a href="#" class="tubular-volume-up">Volume Up</a> | <a href="#" class="tubular-volume-down">Volume Down</a> | <a href="#" class="tubular-mute">Mute</a>
             </p>
-			<div class="span3">
-				<div class="black-50 span3">
+			<div class="span4">
+				<div class="black-50 span4">
 					<h2 style="display:inline;">Thành Phố Về Đêm<button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Video','Thông Tin');">Phản Hồi</button></h2>
-                    <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
+                    <div style="height:40px;width:40px;display:inline-block;" class="toogle up"></div>
                     <div>
 					    <p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>
 					    <p>Bạn nên thử ra chợ Bến Thành vào buổi tối và hòa mình vào những gánh hàng rong với đa dạng các loại đồ ăn vặt</p>
                     </div>
                 </div>
 			
-				<div class="black-50 span3">
+				<div class="black-50 span4">
 					<h2 style="display:inline;">Gánh Hàng Rong</h2>
-                    <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
+                    <div style="height:40px;width:40px;display:inline-block;" class="toogle up"></div>
                     <div>
 					    <p>Sài Gòn nổi bật với những món ăn vặt nổi tiếng như xôi mặn, xôi vò, bánh tráng trộn, mì gõ...</p>
 					    <p>Hãy thử ghé vào một gánh hàng rong bất kì và thương thức thử những món đặc trưng này của Sài Gòn. Giá cả rất là phải chăng</p>
 				    </div>
                 </div>
 			</div>
-            <div class="span3 offset5">
-                <div class="black-50 span3">
-                    <h2 style="display:inline;">Thành Phố Về Đêm</h2>
-                    <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
+            <div class="span3 offset4">
+                <div class="black-50 span4">
+                    <h2 style="display:inline;">Trung tâm kinh tế</h2>
+                    <div style="height:40px;width:40px;display:inline-block;" class="toogle up"></div>
                     <div>
-                        <p>Sài Gòn được mệnh danh là thành phố về đêm với những con đường dọc Quận 1, Quận 3 nhộn nhịp đông vui và từng dòng du khách dạo bước trên đường phố</p>
-                        <p>Bạn nên thử ra chợ Bến Thành vào buổi tối và hòa mình vào những gánh hàng rong với đa dạng các loại đồ ăn vặt</p>
+                        <p>Là đầu tàu kinh tế của cả nước, nơi các công ty quốc tế lớn hoạt động và tạo số lượng lớn việc làm cho công nhân viên chức</p>
+                        <p>Mỗi năm, Sài Gòn thu hút hơn khoảng 100,000 bạn trẻ vừa ra trường và quyết định ổn định cuộc sống ở vùng đât phồn hoa này.</p>
                     </div>
                 </div>
 
-                <div class="black-50 span3">
-                    <h2 style="display:inline;">Gánh Hàng Rong</h2>
-                    <div style="height:50px;width:50px;display:inline-block;" class="toogle up"></div>
+                <div class="black-50 span4">
+                    <h2 style="display:inline;">Mưa</h2>
+                    <div style="height:40px;width:40px;display:inline-block;" class="toogle up"></div>
                     <div>
-                        <p>Sài Gòn nổi bật với những món ăn vặt nổi tiếng như xôi mặn, xôi vò, bánh tráng trộn, mì gõ...</p>
-                        <p>Hãy thử ghé vào một gánh hàng rong bất kì và thương thức thử những món đặc trưng này của Sài Gòn. Giá cả rất là phải chăng</p>
+                        <p>Sài Gòn có hai mùa rõ rệt: Nắng và Mưa</p>
+                        <p>Mưa Sài Gòn rất đặc biệt, có khi vừa nắng đó, rồi lại mưa, rồi lại nắng lại.</p>
                     </div>
                 </div>
             </div>

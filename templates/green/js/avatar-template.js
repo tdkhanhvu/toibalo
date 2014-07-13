@@ -279,9 +279,9 @@
                 ele = $(value);
             }
             ele.click(function (event) {
-                if (!$(this).attr('class')) {
+/*                if (!$(this).attr('class')) {
                     return;
-                }
+                }*/
 
                 selector = $.trim($(this).attr('class').replace('onepage-disappear', '').replace('onepage-appear', ''));
                 ele = $(selector);
@@ -301,6 +301,10 @@
                 });
 
                 $.each($elements, function (index, value) {
+/*                    if (!$(this).attr('class')) {
+                        return;
+                    }*/
+
                     className = $.trim($(this).attr('class').replace('onepage-disappear', '').replace('onepage-appear', ''));
                     $(className).not(selector).removeClass('onepage-appear').addClass('onepage-disappear');
                 });

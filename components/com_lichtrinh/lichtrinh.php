@@ -417,7 +417,7 @@ $session =& JFactory::getSession();
                                 $i = 1;
                                 foreach ($food as $key => $value) {
                                     if ($i % 4 == 1)
-                                        echo '<div class="span12">';
+                                        echo '<div class="span12" style="margin-left:0px;">';
                                     echo '<div class="span3">';
                                     echo '<div><img src="./templates/green/images/'. $food[$key]['image_url'] .'"/></div>';
                                     echo '<div class="title">';

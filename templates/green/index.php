@@ -110,7 +110,7 @@ if ($option != "com_data") {
 <!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
 </head>
 
-<body class='loaded' onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
+<body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear<?php if ($option == 'com_aboutus') { echo " loaded";} ?>" style="opacity: 1;">
 
 <script type="text/javascript">
     function DisplayNotification(msg, type) {
@@ -348,8 +348,9 @@ if ($option != "com_data") {
                     <?php } ?>
 
                     <jdoc:include type="component" />
-                    <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { }?>
+                    <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) {?>
                 </div>
+                <?php } ?>
             </div> <!-- End Content -->
         <?php } ?>
 

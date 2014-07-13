@@ -524,7 +524,7 @@ $session =& JFactory::getSession();
                         </h1>
                         <div class="st-sub-heading">Nét đặc trưng riêng của Sài Gòn</div>
 
-                        <div class="jflatTimeline">
+                        <div class="jflatTimeline" id="festival">
                             <div class="timeline-wrap">
                                 <div class="event" data-date="01/01/2014">
                                     <div class="layout1">
@@ -622,7 +622,7 @@ $session =& JFactory::getSession();
                                             <h3><?php echo $value['name']; ?></h3>
                                             <p><?php echo $value['description']; ?></p>
                                             <div id="amthuc_'<?php echo ($i+1); ?>'"></div>
-                                            <ul class="yt-list type-check">
+                                            <ul class="yt-list type-check" style="list-style-type: none;">
                                                 <?php foreach($value['feature'] as $key1 => $value1) { ?>
                                                 <li><?php echo $value1; ?></li>
                                                     <?php } ?>
@@ -739,6 +739,8 @@ jQuery.noConflict();
     $(document).ready(function () {
         //make the iframe height fit the screen height
         $('#frame').attr('height',($(window).height() - $('.container').first().height()));
+
+        $("#frame").attr("src", "./templates/green/blog.php");
 
         var wrapper = $('#53415ba15888f');
         var contain = wrapper.find('.layout-wall');
