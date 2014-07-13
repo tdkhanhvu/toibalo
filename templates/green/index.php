@@ -331,11 +331,8 @@ if ($option != "com_data") {
     <!--Nav Bar -->
 
     <!-- 3. Content -->
-    <?php if ($option != 'com_aboutus') { ?>
+    <?php if ($option != 'com_content') { ?>
     <div class='tbl_content'>
-        <?php if ($option != 'com_content'){?>
-
-            <div class='tbl_content'>
                 <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
                 <div class='container' id="wrapper">
                     <?php } ?>
@@ -353,7 +350,6 @@ if ($option != "com_data") {
                     <jdoc:include type="component" />
                     <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { }?>
                 </div>
-            <?php } ?>
             </div> <!-- End Content -->
         <?php } ?>
 
