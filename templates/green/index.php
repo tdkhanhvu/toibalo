@@ -105,6 +105,21 @@ if ($option != "com_data") {
 
 <body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
 <script type="text/javascript">
+    function DisplayNotification(msg, type) {
+        if (msg != '')
+            setTimeout(function() {
+                jQuery.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: type, width: 'auto' });
+            }, 1000);
+    }
+
+    function DisplaySuccess(msg){
+        DisplayNotification(msg, 'success');
+    }
+
+    function DisplayError(msg){
+        DisplayNotification(msg, 'error');
+    }
+
     function PopUpFeedback(page, section) {
         jQuery('#popup').bPopup({
             position: ['auto', 100]
@@ -114,7 +129,27 @@ if ($option != "com_data") {
     }
 
     function SubmitFeedback() {
-        alert(jQuery('#inputName').val() + '\n' + jQuery('#inputEmail').val() + '\n' + jQuery('#rating').find('input').val() + '\n' + jQuery('#comment').val());
+        //alert(jQuery('#inputName').val() + '\n' + jQuery('#inputEmail').val() + '\n' + jQuery('#rating').find('input').val() + '\n' + jQuery('#comment').val());
+
+        jQuery.ajax({
+            url: "index.php?option=com_data&format=raw",
+            type: "post",
+            data: {
+                'request':'SetFeedback',
+                'Page':jQuery('#inputPage').val(),
+                'Section':jQuery('#inputSection').val(),
+                'Name':jQuery('#inputName').val(),
+                'Email':jQuery('#inputEmail').val(),
+                'Rating': jQuery('#rating').find('input').val(),
+                'Comment': jQuery('#comment').val()
+            },
+            success: function(msg){
+                DisplaySuccess(msg);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                DisplayError("some error " + errorThrown);
+            }
+        });
 
         return;
     }
@@ -336,7 +371,7 @@ if ($option != "com_data") {
 
 <div id="popup">
     <span class="button b-close"><span>X</span></span>
-    <form role="form" class="form-horizontal">
+    <form role="form" class="form-horizontal" accept-charset="UTF-8">
         <div class="form-group">
             <label for="inputPage" class="col-sm-2 control-label">Trang</label>
             <div class="col-sm-10">

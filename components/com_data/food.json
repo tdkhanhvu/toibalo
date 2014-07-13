@@ -1,44 +1,122 @@
 {
     "1": {
         "name": "Cơm Tấm",
+        "category": "main",
         "image_url" : "com_tam.jpg",
         "description": "Cơm sườn bì chả – món ăn no cơ bản của người Sài Gòn. Cơm tấm từ thuở nào đã có mặt khắp nơi ở đất Sài Gòn này từ những con hẻm bình dân đến các hàng quán tinh tươm. Chỉ là cơm với thịt nướng chan chút nước mắm nhưng đây là món không thể không ăn khi đến Sài Gòn, cũng như người Sài Gòn không bao giờ có thể ngán món này.",
+        "feature": {
+            "1": "Sườn ngon",
+            "2": "Cơm tấm ngon",
+            "3": "Bì chả lại càng ngon"
+        },
         "address":"321 Lê Quang Định, Phường 1 Gò Vấp"
     },
     "2": {
         "name": "Hủ Tiếu Nam Vang",
+        "category": "main",
         "image_url" : "hu_tieu_nam_vang.jpg",
         "description": "Hủ tiếu Nam Vang là món hủ tiếu có nguồn gốc từ Campuchia nhưng do người Hoa chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng.",
+        "feature": {
+            "1": "Hủ Tiếu sợi dai",
+            "2": "Nước lèo tuyệt cú mèo",
+            "3": "Ngon từ thịt, ngọt từ xương"
+        },
         "address": "123 Lý Thái Tổ, Phường 12 Quận 1"
     },
     "3": {
         "name": "Bánh Khọt",
+        "category": "main",
         "image_url" : "banh_khot.jpg",
         "description": "Bánh khọt là loại bánh Việt Nam làm từ bột gạo, có nhân tôm, được rán và ăn kèm với rau sống, ớt tươi, chấm nước sốt mắm tôm (không phải mắm tôm hay mắm tôm chua).",
+        "feature": {
+            "1": "Bột bánh thơm",
+            "2": "Nhân tôm hay mỡ tuyệt hảo",
+            "3": "Rau sống ăn kèm cú mèo"
+        },
         "address": "10 Phan Đình Phùng Phường 6 Quận 3"
     },
     "4": {
         "name": "Sầu Riêng",
+        "category": "fruit",
         "image_url" : "sau_rieng.jpg",
         "description": "Thịt quả có thể ăn được, và tỏa ra một mùi đặc trưng, nặng và nồng, ngay cả khi vỏ quả còn nguyên. Một số người thấy sầu riêng có một mùi thơm ngọt ngào dễ chịu.",
+        "feature": {
+            "1": "Múi thơm và bùi",
+            "2": "Màu vàng quyến rũ",
+            "3": "Đặc sản Nam Bộ"
+        },
         "address": "69 Võ Văn Kiệt, Phường 8 Quận 6"
     },
     "5": {
         "name": "Bánh Tráng Trộn",
+        "category": "junk",
         "image_url" : "banh_trang_tron.jpg",
         "description": "Bánh tráng trộn ngon tuyệt cú mèo, là món hàng bán trước cổng trường của biết bao học sinh",
+        "feature": {
+            "1": "Xuất xứ Sài Gòn",
+            "2": "Món ăn vặt của học sinh",
+            "3": "Đã ăn là thèm"
+        },
         "address": "23 Nguyễn Thái Học, Phường 6, Quận 1"
     },
     "6": {
         "name": "Đá Me",
+        "category": "drink",
         "image_url" : "da_me.jpg",
         "description": "Nước đá me, món giải khát không thể thiếu vào những ngày hè nóng bức. Chỉ nghĩ tới là đã thèm",
+        "feature": {
+            "1": "Me ngon",
+            "2": "Thích hợp ngày hè",
+            "3": "Nước uống bình dân"
+        },
         "address": "123 Hùng Vương, Quận 5"
     },
     "7": {
         "name": "Măng Cụt",
+        "category": "fruit",
         "image_url" : "mang_cut.jpg",
         "description": "Món trái cây ưa thích của dân miền Nam. Quả ngon và ngọt, còn vỏ thì có thể dùng làm vị thuốc quí",
+        "feature": {
+            "1": "Vị ngọt thanh tao",
+            "2": "Vỏ có thể làm thuốc",
+            "3": "Đặc sản Nam Bộ"
+        },
         "address": "101 Lê Lai, Quận 1"
+    },
+    "8": {
+        "name": "Trà Chanh",
+        "category": "drink",
+        "image_url" : "tra_chanh.jpg",
+        "description": "Thích uống tao nhã, phù hợp cho các bạn thích ngồi nhâm nhi bên lề đường với một nhúm hạt hướng dương, và bàn về thế thái dân tình",
+        "feature": {
+            "1": "Chanh Đà Lạt",
+            "2": "Giải khát mùa hè",
+            "3": "Đã uống là ghiền"
+        },
+        "address": "307 Nguyễn Thiện Thuật, Quận 7"
+    },
+    "9": {
+        "name": "Mít",
+        "category": "fruit",
+        "image_url" : "mit.jpg",
+        "description": "Các múi mít chín có thể ăn tươi, có vị rất ngọt do có hàm lượng đường như glucoza, fructoza cao (10-15%).Quả mít non có thể sử dụng như rau để nấu canh, kho với cá, xào với thịt, làm gỏi.",
+        "feature": {
+            "1": "Mít tố nữ",
+            "2": "Bao ăn",
+            "3": "Thơm khỏi chê"
+        },
+        "address": "72 Lê Duẩn, Quận 1"
+    },
+    "10": {
+        "name": "Chôm Chôm",
+        "category": "fruit",
+        "image_url" : "chom_chom.jpg",
+        "description": "Chôm chôm là loài cây có quả hoặc để ăn tươi, hoặc đóng hộp dưới nhiều hình thức, để dự trữ hoặc xuất khẩu. Hạt chôm chôm có thành phần dầu cao nên cũng được dùng để sản xuất dầu ăn hay xà phòng. Cây và rễ chôm chôm cũng có thể dùng cho việc sản xuất dược phẩm và màu",
+        "feature": {
+            "1": "Ngọt nhẹ",
+            "2": "Giá thành rẻ",
+            "3": "Xuất xứ Nam Bộ"
+        },
+        "address": "123 Lê Duẩn, Quận 1"
     }
 }

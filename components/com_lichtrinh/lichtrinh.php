@@ -564,21 +564,6 @@ $session =& JFactory::getSession();
     </div>
 </div>
 <script>
-    function DisplayNotification(msg, type) {
-        if (msg != '')
-            setTimeout(function() {
-                jQuery.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: type, width: 'auto' });
-            }, 1000);
-    }
-
-    function DisplaySuccess(msg){
-        DisplayNotification(msg, 'success');
-    }
-
-    function DisplayError(msg){
-        DisplayNotification(msg, 'error');
-    }
-
     var startDay = new Date();
     var endDay = new Date();
     endDay = endDay.setDate(endDay.getDate()+5);

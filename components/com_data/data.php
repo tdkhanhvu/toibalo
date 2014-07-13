@@ -258,6 +258,15 @@ function SetBookingDay($date) {
     echo 'Set booking day to ' . $date;
 }
 
+function SetFeedback($page, $section, $name, $email, $rating, $comment) {
+    //$file = fopen("feedback.csv","w");
+    $bom = "\xEF\xBB\xBF";
+    file_put_contents("feedback.csv", $bom."\n".$page.','.$section.','.$name.','.$email.','.$rating.','.$comment, FILE_APPEND);
+    //fclose($file);
+
+    echo "Your feedback has been recorded";
+}
+
 if (isset($_POST['request'])) {
     if($_POST['request'] == 'GetAttractionById')
         GetAttractionById($_POST['id']);
@@ -268,11 +277,13 @@ if (isset($_POST['request'])) {
     else if ($_POST['request'] == 'SetCost')
         SetCost($_POST['Category'],$_POST['Choice'],$_POST['TotalCost']);
     else if ($_POST['request'] == 'SetNumOfDay')
-            SetNumOfDay($_POST['NumOfDay']);
+        SetNumOfDay($_POST['NumOfDay']);
     else if ($_POST['request'] == 'SetCity')
         SetCity($_POST['city'],$_POST['direction']);
     else if ($_POST['request'] == 'SetBookingDay')
         SetBookingDay($_POST['date']);
+    else if ($_POST['request'] == 'SetFeedback')
+        SetFeedback($_POST['Page'],$_POST['Section'],$_POST['Name'],$_POST['Email'],$_POST['Rating'],$_POST['Comment']);
 }
 
 else if (isset($_POST['type'])) {
