@@ -49,7 +49,6 @@ if ($option != "com_data") {
         $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
     }
 
-
     if ($option == "com_lichtrinh") {
         $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
         $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
@@ -78,7 +77,14 @@ if ($option != "com_data") {
         $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
     }
 }
-
+	if ($option == "com_aboutus") {
+		 $doc->addScript('./templates/' . $this->template . '/js/imagesLoaded.js', 'text/javascript');
+		 $doc->addScript('./templates/' . $this->template . '/js/skrollr.js', 'text/javascript');
+		 $doc->addScript('./templates/' . $this->template . '/js/_main.js', 'text/javascript');
+		
+		
+		 
+	}
 ?>
 
 <!--Vu's comment for testing TaiVT-->
@@ -103,7 +109,7 @@ if ($option != "com_data") {
 <!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
 </head>
 
-<body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
+<body class='loaded' onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
 <script type="text/javascript">
     function PopUpFeedback(page, section) {
         jQuery('#popup').bPopup({
@@ -169,6 +175,7 @@ if ($option != "com_data") {
         });
     })(jQuery)
 </script>
+
 <div class="clearfix">
 	
 		
@@ -287,11 +294,12 @@ if ($option != "com_data") {
 	<!--Nav Bar -->
 
 	<!-- 3. Content -->
+	<?php if ($option != 'com_aboutus') { ?>
 	<div class='tbl_content'>
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             <div class='container' id="wrapper">
         <?php } ?>
-            <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
+            <?php if (($option != 'com_content') && ($option != 'com_video') && ($option != 'com_aboutus')) { ?>
             <div id="tbl_nav" class="container">
                 <ul>
                     <li class="xp"><a href=".">Xuat Phat</a></li>
@@ -306,10 +314,14 @@ if ($option != "com_data") {
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             </div>
         <?php } ?>
-	</div> <!-- End Content -->
+	</div>
+	<?php } else { ?>
+		 <jdoc:include type="component" />
+	<?php } ?>
+	<!-- End Content -->
 	
 	<!-- 4. Footer -->
-    <?php if ($option != 'com_content') { ?>
+    <?php if ($option != 'com_content' && $option != 'com_aboutus') { ?>
 	<div class='footer'>
 		<div class='container'>
 			<div class='row'>
