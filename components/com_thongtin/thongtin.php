@@ -98,6 +98,7 @@ $session =& JFactory::getSession();
     }
     .box_comment {
         font-size:15px;
+        text-align:center;
     }
 
     .box_content {
@@ -375,7 +376,7 @@ $session =& JFactory::getSession();
 
     <div style="position:relative" class="col-xs-12">
 <!--        <span class="attraction_point" style="top:335px;left:343px;">1</span>-->
-        <img src="./templates/green/images/Attraction/sai_gon_map.jpg" class="img-responsive thumbnail"/>
+        <img src="./templates/green/images/attraction/sai_gon_map.jpg" class="img-responsive thumbnail"/>
         <?php
             $arr = $session -> get('select_attraction');
             $temp = array();
@@ -401,7 +402,7 @@ $session =& JFactory::getSession();
         echo '<div class="span5"><p><img src="./templates/green/images/icon/time.png"/> <b id="attraction_hour">'.$attraction["hour"].'</b></p></div>';
         echo '   <div class="span4"><p><img src="./templates/green/images/icon/price.png"> <b id="attraction_price">'.$attraction["price"].'</b></p></div>';
         echo '   <div class="span5"><p><img src="./templates/green/images/icon/address.png"> <b id="attraction_address">'.$attraction["address"].'</b></p></div>';
-        echo '  <div class="span4"><p><img src="/green/./templates/green/images/icon/phone.png"> <b id="attraction_phone">'.$attraction["address"].'</b></p></div>';
+        echo '  <div class="span4"><p><img src="./templates/green/images/icon/phone.png"> <b id="attraction_phone">'.$attraction["address"].'</b></p></div>';
         echo '</div>';
         echo '<div style="clear:both"></div>';
         echo '</div>';

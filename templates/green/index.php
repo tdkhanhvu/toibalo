@@ -49,6 +49,7 @@ if ($option != "com_data") {
         $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
     }
 
+
     if ($option == "com_lichtrinh") {
         $doc->addStyleSheet('templates/' . $this->template . '/css/dropdown/select2.css');
         $doc->addStyleSheet('templates/' . $this->template . '/css/weather/weather.css');
@@ -111,6 +112,21 @@ if ($option != "com_data") {
 
 <body class='loaded' onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear" style="opacity: 1;">
 <script type="text/javascript">
+    function DisplayNotification(msg, type) {
+        if (msg != '')
+            setTimeout(function() {
+                jQuery.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: type, width: 'auto' });
+            }, 1000);
+    }
+
+    function DisplaySuccess(msg){
+        DisplayNotification(msg, 'success');
+    }
+
+    function DisplayError(msg){
+        DisplayNotification(msg, 'error');
+    }
+
     function PopUpFeedback(page, section) {
         jQuery('#popup').bPopup({
             position: ['auto', 100]
@@ -120,7 +136,27 @@ if ($option != "com_data") {
     }
 
     function SubmitFeedback() {
-        alert(jQuery('#inputName').val() + '\n' + jQuery('#inputEmail').val() + '\n' + jQuery('#rating').find('input').val() + '\n' + jQuery('#comment').val());
+        //alert(jQuery('#inputName').val() + '\n' + jQuery('#inputEmail').val() + '\n' + jQuery('#rating').find('input').val() + '\n' + jQuery('#comment').val());
+
+        jQuery.ajax({
+            url: "index.php?option=com_data&format=raw",
+            type: "post",
+            data: {
+                'request':'SetFeedback',
+                'Page':jQuery('#inputPage').val(),
+                'Section':jQuery('#inputSection').val(),
+                'Name':jQuery('#inputName').val(),
+                'Email':jQuery('#inputEmail').val(),
+                'Rating': jQuery('#rating').find('input').val(),
+                'Comment': jQuery('#comment').val()
+            },
+            success: function(msg){
+                DisplaySuccess(msg);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                DisplayError("some error " + errorThrown);
+            }
+        });
 
         return;
     }
@@ -175,7 +211,6 @@ if ($option != "com_data") {
         });
     })(jQuery)
 </script>
-
 <div class="clearfix">
 	
 		
@@ -296,6 +331,9 @@ if ($option != "com_data") {
 	<!-- 3. Content -->
 	<?php if ($option != 'com_aboutus') { ?>
 	<div class='tbl_content'>
+    <?php if ($option != 'com_content'){?>
+
+	    <div class='tbl_content'>
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             <div class='container' id="wrapper">
         <?php } ?>
@@ -314,14 +352,11 @@ if ($option != "com_data") {
         <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
             </div>
         <?php } ?>
-	</div>
-	<?php } else { ?>
-		 <jdoc:include type="component" />
+	</div> <!-- End Content -->
 	<?php } ?>
-	<!-- End Content -->
-	
+
 	<!-- 4. Footer -->
-    <?php if ($option != 'com_content' && $option != 'com_aboutus') { ?>
+    <?php if ($option != 'com_content') { ?>
 	<div class='footer'>
 		<div class='container'>
 			<div class='row'>

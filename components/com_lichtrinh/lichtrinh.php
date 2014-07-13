@@ -564,21 +564,6 @@ $session =& JFactory::getSession();
     </div>
 </div>
 <script>
-    function DisplayNotification(msg, type) {
-        if (msg != '')
-            setTimeout(function() {
-                jQuery.bootstrapGrowl(msg, { offset: {from: 'top', amount: 60}, type: type, width: 'auto' });
-            }, 1000);
-    }
-
-    function DisplaySuccess(msg){
-        DisplayNotification(msg, 'success');
-    }
-
-    function DisplayError(msg){
-        DisplayNotification(msg, 'error');
-    }
-
     var startDay = new Date();
     var endDay = new Date();
     endDay = endDay.setDate(endDay.getDate()+5);
@@ -986,11 +971,17 @@ $session =& JFactory::getSession();
         }
     }
     function changeAttractionInfo(message){
+        //alert(message);
         attraction_current = message;
         jQuery('#attraction_list li').each(function() {
-            if (jQuery(this).find('a').attr('href').replace('#','') == message)
+            if (jQuery(this).find('a').attr('href').replace('#','') == message) {
                 jQuery(this).addClass('active');
-            else jQuery(this).removeClass('active');
+                //alert(1);
+            }
+            else {
+                jQuery(this).removeClass('active');
+                //alert(jQuery(this).find('a').attr('href').replace('#',''));
+            }
         });
 
         jQuery.ajax({

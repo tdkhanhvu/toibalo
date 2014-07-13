@@ -1,7 +1,8 @@
 <?php
 /** Toi Ba Lo */
 defined('_JEXEC') or die;
-
+include JPATH_COMPONENT."/../com_data/data.php";
+$session =& JFactory::getSession();
 ?>
 
 <a class="avatar-fix" href="?option=com_lichtrinh"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
@@ -490,13 +491,13 @@ defined('_JEXEC') or die;
                                 <div>10-15/5/2013</div>
                                 <div id="nhatki_1"></div>
                             </div>
-                            <div style="float:left;font-size: large;color:#ffffff;width:100%;">
+<!--                            <div style="float:left;font-size: large;color:#ffffff;width:100%;">
                                 <img class="note_select thumbnail img-responsive" src="./templates/green/images/du_khach_2.jpg"/>
                                 <div>Nguyễn Thị Diễm Lệ</div>
                                 <div>Hải Phòng</div>
                                 <div>6-9/1/2014</div>
                                 <div id="nhatki_2"></div>
-                            </div>
+                            </div>-->
 
                             <div style="clear:both"></div>
                         </div>
@@ -606,49 +607,31 @@ defined('_JEXEC') or die;
                         <div id="loader"></div>
                         <div class="main-content">
                             <?php
-                            $s_category = array('main', 'drink','fruit','drink','main','fruit','fruit','fruit','junk',);
-                            $s_name = array(
-                                'Cơm tấm',
-                                'Trà chanh đá',
-                                'Mít tố nữ',
-                                'Nước đá me',
-                                'Hủ tiếu nam vang',
-                                'Sầu riêng',
-                                'Chôm chôm',
-                                'Măng cụt',
-                                'Bánh tráng trộn',
-                            );
-                            $s_image = array(
-                                './templates/green/images/com_tam.jpg',
-                                './templates/green/images/tra_chanh.jpg',
-                                './templates/green/images/mit.jpg',
-                                './templates/green/images/da_me.jpg',
-                                './templates/green/images/hu_tieu_nam_vang.jpg',
-                                './templates/green/images/sau_rieng.jpg',
-                                './templates/green/images/chom_chom.jpg',
-                                './templates/green/images/mang_cut.jpg',
-                                './templates/green/images/banh_trang_tron.jpg',
-                            );
                             $s_date = '28 October 2013';
 
-                            for ($i = 0; $i < 9; $i++) {
+                            $food = GetFoodData();
+                            $i = 0;
+                            foreach ($food as $key => $value) {
                                 ?>
-                                <div class="item-content" category="<?php echo $s_category[$i] ?>">
+                                <div class="item-content" category="<?php echo $value['category']; ?>">
                                     <div class="row-fluid">
-                                        <div class="span8"><img class="thumbnail" src="<?php echo $s_image[$i] ?>" alt="<?php echo $s_name[$i] ?>"/></div>
+                                        <div class="span8">
+                                            <img class="thumbnail" src="./templates/green/images/<?php echo $value['image_url']; ?>" alt="<?php echo $value['name']; ?>"/>
+                                        </div>
                                         <div class="span4">
-                                            <h3>Project description</h3>
-                                            <p><?php echo $s_name[$i] ?></p>
-                                            <?php  echo'<div id="amthuc_'.($i+1).'"></div>';?>
-                                            <ul class="yt-list type-check" style="">
-                                                <li>Illustration</li>
-                                                <li>Photoshop</li>
-                                                <li>Html/css</li>
+                                            <h3><?php echo $value['name']; ?></h3>
+                                            <p><?php echo $value['description']; ?></p>
+                                            <div id="amthuc_'<?php echo ($i+1); ?>'"></div>
+                                            <ul class="yt-list type-check">
+                                                <?php foreach($value['feature'] as $key1 => $value1) { ?>
+                                                <li><?php echo $value1; ?></li>
+                                                    <?php } ?>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             <?php
+                                $i++;
                             }
                             ?>
                         </div><!-- End Main Content -->
@@ -660,16 +643,18 @@ defined('_JEXEC') or die;
                     </div><!-- End content-section -->
 
                     <div class="layout-wall">
-                        <?php 	for ($i = 0; $i < 9; $i++) { ?>
-                            <div class="item <?php echo $s_category[$i] ?>">
+                        <?php
+                        $i = 0;
+                        foreach ($food as $key => $value) { ?>
+                            <div class="item <?php echo $value['category'] ?>">
                                 <a class="link" href="#"></a>
                                 <div class="inner">
                                     <div class="media">
-                                        <img class="thumbnail" style="margin-bottom:0px;" src="<?php echo $s_image[$i] ?>" alt="Column image and text"/>
+                                        <img class="thumbnail" style="margin-bottom:0px;" src="./templates/green/images/<?php echo $value['image_url'] ?>" alt="Column image and text"/>
                                     </div>
                                     <div class="info image">
                                         <h3 class="title">
-                                            <?php echo $s_category[$i] ?>
+                                            <?php echo $value['category'] ?>
                                             <?php  echo '<div id="amthuc_current_'.($i+1).'"></div>';?>
                                         </h3>
                                         <div class="date"><?php echo $s_date ?></div>
@@ -677,7 +662,9 @@ defined('_JEXEC') or die;
                                     </div>
                                 </div>
                             </div>
-                        <?php } ?>
+                        <?php
+                            $i++;
+                            } ?>
                     </div> <!-- End layout wall -->
                 </div>
             </div>
