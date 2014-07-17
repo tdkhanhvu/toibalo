@@ -34,7 +34,8 @@
 			onImgDrag: null,
 			onImgZoom: null,
 			onBeforeImgCrop: null,
-			onAfterImgCrop: null
+			onAfterImgCrop: null,
+            uploadOnly: false
 		};
 
 		// OVERWRITE DEFAULT OPTIONS
@@ -165,7 +166,15 @@
 				}).always(function(data){
 					response = jQuery.parseJSON(data);
 					if(response.status=='success'){
-						
+
+                        if (that.options.uploadOnly) {
+                            //alert(response.url);
+                            that.hideLoader();
+                            that.imgUploadControl.show();
+
+                            jQuery('#screenshot_photo').attr('src',response.url);
+                            return;
+                        }
 						that.imgInitW = that.imgW = response.width;
 						that.imgInitH = that.imgH = response.height;
 						

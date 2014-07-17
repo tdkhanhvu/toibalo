@@ -78,14 +78,14 @@ if ($option != "com_data") {
         $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
     }
 }
-	if ($option == "com_aboutus") {
-		 $doc->addScript('./templates/' . $this->template . '/js/imagesLoaded.js', 'text/javascript');
-		 $doc->addScript('./templates/' . $this->template . '/js/skrollr.js', 'text/javascript');
-		 $doc->addScript('./templates/' . $this->template . '/js/_main.js', 'text/javascript');
-		
-		
-		 
-	}
+if ($option == "com_aboutus") {
+    $doc->addScript('./templates/' . $this->template . '/js/imagesLoaded.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/skrollr.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/_main.js', 'text/javascript');
+
+
+
+}
 ?>
 
 <!--Vu's comment for testing TaiVT-->
@@ -93,21 +93,21 @@ if ($option != "com_data") {
 <!-- saved from url=(0066)http://www.beautiful-templates.com/demo/templates-joomla/st_green/ -->
 <html lang="en-gb" dir="ltr" slick-uniqueid="3" xmlns:jdoc="http://www.w3.org/1999/XSL/Transform">
 <head>
-<jdoc:include type="head"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript">jQuery.noConflict();</script>
-<base href=".">
+    <jdoc:include type="head"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">jQuery.noConflict();</script>
+    <base href=".">
 
-<meta name="keywords" content="joomla templates, portfolio, one page, green, orange">
-<meta name="author" content="Super User">
-<meta name="description"
-      content="Tôi Ba Lô">
-<meta name="generator" content="Joomla! - Open Source Content Management">
-<meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="joomla templates, portfolio, one page, green, orange">
+    <meta name="author" content="Super User">
+    <meta name="description"
+          content="Tôi Ba Lô">
+    <meta name="generator" content="Joomla! - Open Source Content Management">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-<title>Home</title>
-<!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="./css/jquery.miniColors.css" type="text/css" media="all"> -->
 </head>
 
 <body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear<?php if ($option == 'com_aboutus') { echo " loaded";} ?>" style="opacity: 1;">
@@ -137,7 +137,15 @@ if ($option != "com_data") {
     }
 
     function SubmitFeedback() {
-        //alert(jQuery('#inputName').val() + '\n' + jQuery('#inputEmail').val() + '\n' + jQuery('#rating').find('input').val() + '\n' + jQuery('#comment').val());
+        var browser = '';
+
+        if(jQuery.browser.chrome) {
+            browser = 'Chrome';
+        } else if (jQuery.browser.mozilla) {
+            browser = 'Firefox';
+        } else if (jQuery.browser.msie) {
+            browser = 'IE';
+        }
 
         jQuery.ajax({
             url: "index.php?option=com_data&format=raw",
@@ -149,7 +157,9 @@ if ($option != "com_data") {
                 'Name':jQuery('#inputName').val(),
                 'Email':jQuery('#inputEmail').val(),
                 'Rating': jQuery('#rating').find('input').val(),
-                'Comment': jQuery('#comment').val()
+                'Comment': jQuery('#comment').val(),
+                'Browser': browser,
+                'Version': jQuery.browser.version
             },
             success: function(msg){
                 DisplaySuccess(msg);
@@ -174,7 +184,7 @@ if ($option != "com_data") {
 <script>
     var ld=(document.all);
     var ns4=document.layers;
-    var ns6=document.getElementById&&!document.all;
+    var ns6=document.getElementById && !document.all;
     var ie4=document.all;
     if (ns4)
         ld=document.loading;
@@ -333,185 +343,210 @@ if ($option != "com_data") {
     <!-- 3. Content -->
     <?php if ($option != 'com_aboutus') { ?>
         <?php if ($option != 'com_content') { ?>
-             <div class='tbl_content'>
-                    <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
-                    <div class='container' id="wrapper">
-                        <?php } ?>
-                        <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
-                            <div id="tbl_nav" class="container">
-                                <ul>
-                                    <li class="xp"><a href=".">Xuat Phat</a></li>
-                                    <li class="kp  <?php if ($option == 'com_diadiem') {echo "active"; } ?>"><a href="?option=com_diadiem">Kham Pha</a></li>
-                                    <li class="kh <?php if ($option == 'com_lichtrinh') {echo "active"; } ?>"><a href="?option=com_lichtrinh">Ke Hoach</a></li>
-                                    <li class="tbl <?php if ($option == 'com_thongtin') {echo "active"; } ?>"><a href="?option=com_thongtin">Toi Ba Lo</a></li>
-                                </ul>
-                            </div>
-                        <?php } ?>
-
-                        <jdoc:include type="component" />
-                        <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) {?>
-                    </div>
+            <div class='tbl_content'>
+                <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
+                <div class='container' id="wrapper">
                     <?php } ?>
-             </div> <!-- End Content -->
+                    <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
+                        <div id="tbl_nav" class="container">
+                            <ul>
+                                <li class="xp"><a href=".">Xuat Phat</a></li>
+                                <li class="kp  <?php if ($option == 'com_diadiem') {echo "active"; } ?>"><a href="?option=com_diadiem">Kham Pha</a></li>
+                                <li class="kh <?php if ($option == 'com_lichtrinh') {echo "active"; } ?>"><a href="?option=com_lichtrinh">Ke Hoach</a></li>
+                                <li class="tbl <?php if ($option == 'com_thongtin') {echo "active"; } ?>"><a href="?option=com_thongtin">Toi Ba Lo</a></li>
+                            </ul>
+                        </div>
+                    <?php } ?>
+
+                    <jdoc:include type="component" />
+                    <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) {?>
+                </div>
+            <?php } ?>
+            </div> <!-- End Content -->
         <?php } ?>
     <?php } else { ?>
         <jdoc:include type="component" />
     <?php } ?>
 
-        <!-- 4. Footer -->
-        <?php if ($option != 'com_content') { ?>
-            <div class='footer'>
-                <div class='container'>
-                    <div class='row'>
-                        <div class='span12'>
-                            <p>Copyright &copy; 2014 Toibalo All rights reserved.</p>
-                            <ul >
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li class='last'><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
+    <!-- 4. Footer -->
+    <?php if ($option != 'com_content') { ?>
+        <div class='footer'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='span12'>
+                        <p>Copyright &copy; 2014 Toibalo All rights reserved.</p>
+                        <ul >
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li class='last'><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div><!-- End Footer -->
-        <?php } ?>
-        <!-- 5. Debug-->
-        <jdoc:include type="modules" name="debug" />
-
-    </div><!-- End Clearfix-->
-
-    <div id="popup">
-        <span class="button b-close"><span>X</span></span>
-        <form role="form" class="form-horizontal">
-            <div class="form-group">
-                <label for="inputPage" class="col-sm-2 control-label">Trang</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputPage" value="" disabled>
-                </div>
             </div>
-            <div class="form-group">
-                <label for="inputSection" class="col-sm-2 control-label">Mục</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputSection" value="" disabled>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputName" class="col-sm-2 control-label">Họ Tên</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputName" placeholder="Họ Tên">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="rating" class="col-sm-2 control-label">Đánh Giá</label>
-                <div class="col-sm-10">
-                    <div id="rating"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="comment" class="col-sm-2 control-label">Nhận Xét</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" id="comment" rows="3"></textarea>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputFile" class="col-sm-2 control-label">Upload</label>
-                <div class="col-sm-10">
-                    <input type="file" id="inputFile">
-                </div>
-            </div>
-            <div class="form-group">
+        </div><!-- End Footer -->
+    <?php } ?>
+    <!-- 5. Debug-->
+    <jdoc:include type="modules" name="debug" />
 
+</div><!-- End Clearfix-->
 
-                <div class="col-sm-offset-5 col-sm-10" style="text-align:center">
-                    <button type="button" class="btn btn-default" onclick="SubmitFeedback();">Gửi</button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div id="signup">
-        <span class="button b-close"><span>X</span></span>
-        <div class="tabbable">
-            <ul class="nav nav-tabs">
-                <li><a href="#signin_" data-toggle="tab">Đăng Nhập</a></li>
-                <li><a id="note" href="#signup_" data-toggle="tab">Đăng Ký</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="signin_">
-                    <form role="form" class="form-horizontal" style="margin-top: 20px;">
-                        <div class="form-group">
-                            <label for="lID" class="col-sm-4 control-label">ID</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="lID" placeholder="ID">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="lPassword" class="col-sm-4 control-label">Mật Khẩu</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="lPassword" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-
-
-                            <div class="col-sm-offset-3 col-sm-10" style="text-align:center">
-                                <button type="button" class="btn btn-primary" onclick="SubmitFeedback();" style="width:200px;">Đăng Nhập</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane" id="signup_">
-                    <form role="form" class="form-horizontal" style="margin-top: 20px;">
-                        <div class="form-group">
-                            <label for="sName" class="col-sm-4 control-label">Họ Tên</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="sName" placeholder="Họ Tên">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sID" class="col-sm-4 control-label">ID</label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="sID" placeholder="ID">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sEmail" class="col-sm-4 control-label">Email</label>
-                            <div class="col-sm-8">
-                                <input type="email" class="form-control" id="sEmail" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sPassword" class="col-sm-4 control-label">Mật Khẩu</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="sPassword" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sPassword2" class="col-sm-4 control-label">Mật Khẩu (lần 2)</label>
-                            <div class="col-sm-8">
-                                <input type="password" class="form-control" id="sPassword2" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-
-
-                            <div class="col-sm-offset-3 col-sm-10" style="text-align:center">
-                                <button type="button" class="btn btn-primary" onclick="SubmitFeedback();" style="width:200px;">Đăng Ký</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
+<div id="popup">
+    <span class="button b-close"><span>X</span></span>
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+            <label for="inputPage" class="col-sm-2 control-label">Trang</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPage" value="" disabled>
             </div>
         </div>
+        <div class="form-group">
+            <label for="inputSection" class="col-sm-2 control-label">Mục</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputSection" value="" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">Họ Tên</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Họ Tên">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rating" class="col-sm-2 control-label">Đánh Giá</label>
+            <div class="col-sm-10">
+                <div id="rating"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="comment" class="col-sm-2 control-label">Nhận Xét</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputFile" class="col-sm-2 control-label">Upload</label>
+<!--            <div class="col-sm-10">
+                <input type="file" id="inputFile">
+            </div>-->
+            <div id="screenshot" class="col-sm-10" style="position:relative;">
+                <img style="width:350px;height:200px;" id="screenshot_photo" class="croppedImg img-responsive" src="./templates/green/images/photo_default.png"/>
+            </div>
+        </div>
+        <div class="form-group">
+
+
+            <div class="col-sm-offset-5 col-sm-10" style="text-align:center">
+                <button type="button" class="btn btn-default" onclick="SubmitFeedback();">Gửi</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="signup">
+    <span class="button b-close"><span>X</span></span>
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li><a href="#signin_" data-toggle="tab">Đăng Nhập</a></li>
+            <li><a id="note" href="#signup_" data-toggle="tab">Đăng Ký</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="signin_">
+                <form role="form" class="form-horizontal" style="margin-top: 20px;">
+                    <div class="form-group">
+                        <label for="lID" class="col-sm-4 control-label">ID</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="lID" placeholder="ID">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lPassword" class="col-sm-4 control-label">Mật Khẩu</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="lPassword" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+
+                        <div class="col-sm-offset-3 col-sm-10" style="text-align:center">
+                            <button type="button" class="btn btn-primary" onclick="SubmitFeedback();" style="width:200px;">Đăng Nhập</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" id="signup_">
+                <form role="form" class="form-horizontal" style="margin-top: 20px;">
+                    <div class="form-group">
+                        <label for="sName" class="col-sm-4 control-label">Họ Tên</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="sName" placeholder="Họ Tên">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sID" class="col-sm-4 control-label">ID</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="sID" placeholder="ID">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sEmail" class="col-sm-4 control-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="sEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sPassword" class="col-sm-4 control-label">Mật Khẩu</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="sPassword" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="sPassword2" class="col-sm-4 control-label">Mật Khẩu (lần 2)</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="sPassword2" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+
+                        <div class="col-sm-offset-3 col-sm-10" style="text-align:center">
+                            <button type="button" class="btn btn-primary" onclick="SubmitFeedback();" style="width:200px;">Đăng Ký</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
     </div>
+</div>
+
+<script>
+    function PopUpSignUp() {
+        jQuery('#signup').bPopup();
+    }
+
+    //jQuery.noConflict();
+    (function ($) {
+        $(document).ready(function () {
+            var screenshotOptions = {
+                uploadUrl:'./templates/green/img_save_to_file.php',
+                cropUrl:'./templates/green/img_crop_to_file.php',
+                croppedImg: './templates/green/images/avatar.jpg',
+                modal:true,
+                imgEyecandyOpacity:0.4,
+                uploadOnly:true,
+                loaderHtml:'<div class="loader bubblingG"><span id="bubblingG1_1"></span><span id="bubblingG1_2"></span><span id="bubblingG1_3"></span></div> '
+            }
+            var screenshotModal = new Croppic('screenshot', screenshotOptions);
+        });
+    })(jQuery)
+</script>
 </body>
 
 </html>

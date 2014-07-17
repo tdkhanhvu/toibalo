@@ -126,7 +126,7 @@
         <div class="col-sm-4" style="padding-right:0px;">
             <!--            <img id="uploader2" class="img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>-->
             <div id="cropContainerModal">
-                <img class="croppedImg img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg">
+                <img class="croppedImg img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>
             </div>
         </div>
         <div class="col-sm-8" style="padding-left:0px;">
@@ -555,12 +555,9 @@
 <!-- /tabs -->
 </div>
 
-
-
 <script>
     function PopUpSignUp() {
         jQuery('#signup').bPopup();
-
     }
 
     //jQuery.noConflict();
