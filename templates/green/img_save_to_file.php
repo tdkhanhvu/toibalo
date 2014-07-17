@@ -22,13 +22,21 @@
 		{
 			
 		  $filename = $_FILES["img"]["tmp_name"];
+          $newName = "";
+          $chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+
+          for ($i = 0; $i < 5; $i++)
+              $newName  .= $chars[mt_rand(0, 36)];
+            $newName .= $_FILES["img"]["name"];
 		  list($width, $height) = getimagesize( $filename );
 
-		  move_uploaded_file($filename,  '../../'.$imagePath . $_FILES["img"]["name"]);
+		  //move_uploaded_file($filename,  '../../'.$imagePath . $_FILES["img"]["name"]);
+            move_uploaded_file($filename,  '../../'.$imagePath . $newName);
 
 		  $response = array(
 			"status" => 'success',
-			"url" => $imagePath.$_FILES["img"]["name"],
+			//"url" => $imagePath.$_FILES["img"]["name"],
+            "url" => $imagePath.$newName,
 			"width" => $width,
 			"height" => $height
 		  );

@@ -258,11 +258,9 @@ function SetBookingDay($date) {
     echo 'Set booking day to ' . $date;
 }
 
-function SetFeedback($page, $section, $name, $email, $rating, $comment,$browser,$version) {
-    //$file = fopen("feedback.csv","w");
+function SetFeedback($page, $section, $name, $email, $rating, $comment,$UrlLink,$browser,$version) {
     $bom = "\xEF\xBB\xBF";
-    file_put_contents("feedback.csv", $bom."\n".$page.','.$section.','.$name.','.$email.','.$rating.','.$comment.','.$browser.','.$version, FILE_APPEND);
-    //fclose($file);
+    file_put_contents("feedback.csv", $bom."\n".$page.','.$section.','.$name.','.$email.','.$rating.','.$comment.','.$UrlLink.','.$browser.','.$version, FILE_APPEND);
 
     echo "Your feedback has been recorded";
 }
@@ -283,7 +281,7 @@ if (isset($_POST['request'])) {
     else if ($_POST['request'] == 'SetBookingDay')
         SetBookingDay($_POST['date']);
     else if ($_POST['request'] == 'SetFeedback')
-        SetFeedback($_POST['Page'],$_POST['Section'],$_POST['Name'],$_POST['Email'],$_POST['Rating'],$_POST['Comment'],$_POST['Browser'],$_POST['Version']);
+        SetFeedback($_POST['Page'],$_POST['Section'],$_POST['Name'],$_POST['Email'],$_POST['Rating'],$_POST['Comment'],$_POST['UrlLink'],$_POST['Browser'],$_POST['Version']);
 }
 
 else if (isset($_POST['type'])) {

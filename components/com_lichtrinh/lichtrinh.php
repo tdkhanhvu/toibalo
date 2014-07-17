@@ -99,7 +99,7 @@ $session =& JFactory::getSession();
         margin-left:0px;
     }
 
-    #dateDepart, #dateReturn { width: 100px; border-radius: 5px; border: 1px solid #ccc; box-shadow: inset 0 0 3px rgba(0,0,0,0.2); padding: 6px 10px; font-size: 14px; background: #fff url(../../img/sprite-home.png) no-repeat 100px -664px; }
+    #dateDepart, #dateReturn { width: 100px; border-radius: 5px; border: 1px solid #ccc; box-shadow: inset 0 0 3px rgba(0,0,0,0.2); padding: 6px 10px; font-size: 14px; /*background: #fff url(../../img/sprite-home.png) no-repeat 100px -664px;*/ }
 
     .selected {
         background-color:green;

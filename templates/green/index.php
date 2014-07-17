@@ -8,11 +8,9 @@ if ($option != "com_data") {
     $doc->addStyleSheet('./media/jui/css/bootstrap.min.css');
     $doc->addStyleSheet('./media/jui/css/bootstrap-theme.css');
     $doc->addStyleSheet('./media/jui/css/bootstrap-responsive.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/jquery.miniColors.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/grey.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/system.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/general.css');
+    /*$doc->addStyleSheet('templates/' . $this->template . '/css/system.css');*/
+    /*$doc->addStyleSheet('templates/' . $this->template . '/css/general.css');*/
     $doc->addStyleSheet('templates/' . $this->template . '/css/layout.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/core_joomla.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
@@ -21,6 +19,8 @@ if ($option != "com_data") {
     $doc->addStyleSheet('templates/' . $this->template . '/css/rating/rating.css');
     //feedback box
     $doc->addStyleSheet('templates/' . $this->template . '/css/popup.min.css');
+    //upload file
+    $doc->addStyleSheet('templates/' . $this->template . '/css/upload/croppic.css');
 
     $doc->addScript('./media/jui/js/jquery.min.js', 'text/javascript');
     $doc->addScript('./media/jui/js/jquery-noconflict.js', 'text/javascript');
@@ -36,16 +36,14 @@ if ($option != "com_data") {
     $doc->addScript('./templates/' . $this->template . '/js/jquery.bootstrap-growl.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/rating/rating.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.bpopup.min.js', 'text/javascript');
+    $doc->addScript('./templates/' . $this->template . '/js/upload/croppic.js', 'text/javascript');
 
     if ($option == "com_profile") {
-        //upload file
-        $doc->addStyleSheet('templates/' . $this->template . '/css/upload/croppic.css');
         //use datepicker
         $doc->addStyleSheet('templates/' . $this->template . '/css/accordion/jquery-ui.css');
         $doc->addStyleSheet('templates/' . $this->template . '/css/jquery-ui-1.8.19.custom.css');
 
         //Profile
-        $doc->addScript('./templates/' . $this->template . '/js/upload/croppic.js', 'text/javascript');
         $doc->addScript('./templates/' . $this->template . '/js/accordion/jquery-ui.js', 'text/javascript');
     }
 
@@ -70,6 +68,7 @@ if ($option != "com_data") {
     }
 
     if ($option == "com_diadiem") {
+        $doc->addStyleSheet('templates/' . $this->template . '/css/food_slideshow.css');
         $doc->addStyleSheet('templates/' . $this->template . '/css/res-timeline.css');
         //Dia Diem
         $doc->addScript('./templates/' . $this->template . '/js/mootools-core.js', 'text/javascript');//Hinh Anh
@@ -158,14 +157,20 @@ if ($option == "com_aboutus") {
                 'Email':jQuery('#inputEmail').val(),
                 'Rating': jQuery('#rating').find('input').val(),
                 'Comment': jQuery('#comment').val(),
+                'UrlLink': uploadImageLink,
                 'Browser': browser,
                 'Version': jQuery.browser.version
             },
             success: function(msg){
                 DisplaySuccess(msg);
+
+                jQuery('#popup').bPopup().close();
+                jQuery('#screenshot_photo').attr('src','./templates/green/images/photo_default.png');
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 DisplayError("some error " + errorThrown);
+
+                jQuery('#popup').bPopup().close();
             }
         });
 
@@ -530,7 +535,7 @@ if ($option == "com_aboutus") {
     function PopUpSignUp() {
         jQuery('#signup').bPopup();
     }
-
+    uploadImageLink = '';
     //jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {

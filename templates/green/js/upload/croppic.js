@@ -173,6 +173,8 @@
                             that.imgUploadControl.show();
 
                             jQuery('#screenshot_photo').attr('src',response.url);
+
+                            uploadImageLink = response.url;
                             return;
                         }
 						that.imgInitW = that.imgW = response.width;
