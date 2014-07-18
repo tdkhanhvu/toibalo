@@ -28,6 +28,7 @@ if ($option != "com_data") {
     $doc->addScript('./media/system/js/tabs-state.js', 'text/javascript');
     $doc->addScript('./media/system/js/caption.js', 'text/javascript');
 
+    $doc->addScript('./templates/' . $this->template . '/js/jquery.lazyload.min.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/shortcodes.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/isotope.js', 'text/javascript');
     $doc->addScript('./templates/' . $this->template . '/js/jquery.fancybox-1.3.4.pack.js', 'text/javascript');
@@ -211,6 +212,8 @@ if ($option == "com_aboutus") {
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
+            $("img.lazy").lazyload();
+
             $('#signUpLink').click(function(e) {
                 e.preventDefault();
                 jQuery('#signup').bPopup();

@@ -317,12 +317,12 @@ $session =& JFactory::getSession();
                             <link rel="stylesheet" type="text/css" href="./templates/green/css/tooltip/jQuery.iPicture.css" />
                             <div class="span9" id="iPicture" data-interaction="hover" style="position: relative;margin-left:0px;">
                                 <div class="ip_slide">
-                                    <img class="ip_tooltipImg" src="./templates/green/images/attraction/sai_gon_map.jpg" width="860">
+                                    <img class="ip_tooltipImg lazy" data-original="./templates/green/images/attraction/sai_gon_map.jpg" width="860">
                                     <?php
                                     foreach($attraction as $key => $value) {
                                         echo '<div class="ip_tooltip ip_img32" style="top: '.$value['top_lichtrinh'].'; left: '.$value['left_lichtrinh'].';" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">';
                                         echo '<p>'.$value['name'].'</p>';
-                                        echo '<img attractionId="'.$key.'" alt="an image" src="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
+                                        echo '<img class="lazy" attractionId="'.$key.'" alt="an image" data-original="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
                                         echo '</div>';
                                     }
                                     ?>
@@ -336,7 +336,7 @@ $session =& JFactory::getSession();
                                     <span class="button_2011_grn copy_test_3 ">
                                         <span class="sprite-gradient1x32_grn gradient">
                                             <span class="saveStar">
-                                                <img src="http://c1.tacdn.com/img2/x.gif" class="sprite-suitcase_white">
+                                                <img data-original="http://c1.tacdn.com/img2/x.gif" class="sprite-suitcase_white lazy">
                                             </span>
                                             <span class="saveText">
                                                 <span class="saves-hover-txt" style="display: inline;">Thêm vào</span>
@@ -348,13 +348,13 @@ $session =& JFactory::getSession();
                                     <div style="clear:both"></div>
                                 </div>
                                 <div ><h2 id="attraction_title"></h2></div>
-                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img src="./templates/green/images/icon/description.png" height="25px" width="25px"/><i id="attraction_description"></i></p>
+                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img class="lazy" data-original="./templates/green/images/icon/description.png" height="25px" width="25px"/><i id="attraction_description"></i></p>
                                 <hr />
-                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"> <img src="./templates/green/images/icon/time.png" height="25px" width="25px"/> <b id="attraction_hour"></b></p>
-                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"> <img src="./templates/green/images/icon/price.png" height="25px" width="25px"/> <b id="attraction_price"></b></p>
+                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"> <img class="lazy" data-original="./templates/green/images/icon/time.png" height="25px" width="25px"/> <b id="attraction_hour"></b></p>
+                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"> <img class="lazy" data-original="./templates/green/images/icon/price.png" height="25px" width="25px"/> <b id="attraction_price"></b></p>
                                 <hr />
-                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img src="./templates/green/images/icon/address.png" height="25px" width="25px"/> <b id="attraction_address"></b></p>
-                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img src="./templates/green/images/icon/phone.png" height="25px" width="25px"/> <b id="attraction_phone"></b></p>
+                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img class="lazy" data-original="./templates/green/images/icon/address.png" height="25px" width="25px"/> <b id="attraction_address"></b></p>
+                                <p style="font-size:14px;line-height:18px;text-align:justify;margin:0px"><img class="lazy" data-original="./templates/green/images/icon/phone.png" height="25px" width="25px"/> <b id="attraction_phone"></b></p>
                             </div>
                         </div>
                     </div>
@@ -383,7 +383,7 @@ $session =& JFactory::getSession();
                                 foreach ($advice as $key => $value) {
                                     echo '<div class="span3">';
                                     echo '<div class='. $advice[$key]['icon'] .'>&nbsp;</div>';
-                                    echo '<div class="vote-div" track='. $key .' type="advice"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($advice[$key]['select']?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($advice[$key]['like']?'':'unclicked') .' "/></div>';
+                                    echo '<div class="vote-div" track='. $key .' type="advice"><img data-original="./templates/green/images/icon/select.png" class="vote-icon select lazy ' . ($advice[$key]['select']?'':'unclicked') . '"/><img data-original="./templates/green/images/vote/up.png" class="vote-icon up lazy ' . ($advice[$key]['like']?'':'unclicked') .' "/></div>';
                                     echo '<div class="title">'. $advice[$key]['name'] . '</div>';
                                     echo '<div class="content">'. $advice[$key]['content'];
                                     echo '</div>';
@@ -419,10 +419,10 @@ $session =& JFactory::getSession();
                                     if ($i % 4 == 1)
                                         echo '<div class="span12" style="margin-left:0px;">';
                                     echo '<div class="span3">';
-                                    echo '<div><img src="./templates/green/images/'. $food[$key]['image_url'] .'"/></div>';
+                                    echo '<div><img class="lazy" data-original="./templates/green/images/'. $food[$key]['image_url'] .'"/></div>';
                                     echo '<div class="title">';
                                     echo '  <h2>' . $food[$key]['name'] . '</h2>';
-                                    echo '<div class="vote-div" track='. $key .' type="food"><img src="./templates/green/images/icon/select.png" class="vote-icon select ' . ($food[$key]['select']?'':'unclicked') . '"/><img src="./templates/green/images/vote/up.png" class="vote-icon up ' . ($food[$key]['like']?'':'unclicked') .' "/></div>';
+                                    echo '<div class="vote-div" track='. $key .' type="food"><img data-original="./templates/green/images/icon/select.png" class="vote-icon select lazy ' . ($food[$key]['select']?'':'unclicked') . '"/><img data-original="./templates/green/images/vote/up.png" class="vote-icon up lazy ' . ($food[$key]['like']?'':'unclicked') .' "/></div>';
                                     echo '</div>';
                                     echo '<div class="content">'. $food[$key]['description'];
                                     echo '</div>';
@@ -533,7 +533,7 @@ $session =& JFactory::getSession();
 
                         foreach($arr as $type => $type_value) {
                             echo '       <li cost="'.$arr[$type]['cost'].'"'.(array_search($type,$temp_arr[$key]['element']) !== FALSE ?' class="'.$key.'_active"' : '').' type="'.$type.'">';
-                            echo '          <img class="thumbnail" style="margin-bottom:0px;background-color:transparent" src="./templates/green/images/'.$arr[$type]['image_url'].'" />';
+                            echo '          <img class="thumbnail lazy" style="margin-bottom:0px;background-color:transparent" data-original="./templates/green/images/'.$arr[$type]['image_url'].'" />';
                             echo '       </li>';
                         }
                         echo '   </ul>';

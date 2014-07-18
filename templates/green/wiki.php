@@ -22,7 +22,7 @@
 <body>
 <div id="content">
     <h1>Sài Gòn
-        <img src="./images/wiki/vietnam_flag.gif" style="width:200px; height:100px"/></h1>
+        <img class="lazy" data-original="./images/wiki/vietnam_flag.gif" style="width:200px; height:100px"/></h1>
     <hr>
     <h2>Lịch sử</h2>
     <p>
@@ -64,10 +64,10 @@
         Khu vực ngoài trung tâm, Địa đạo Củ Chi, Rừng ngập mặn Cần Giờ, Vườn cò Thủ Đức cũng
         là những địa điểm du lịch quan trọng.</p>
 
-    <img src="./images/wiki/sai_gon_1.jpg" style="max-width: 100%; max-height: 100%;" />
-    <img src="./images/wiki/sai_gon_2.jpg" style="max-width: 100%; max-height: 100%;" />
-    <img src="./images/wiki/sai_gon_3.jpg" style="max-width: 100%; max-height: 100%;" />
-    <img src="./images/wiki/sai_gon_4.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img class="lazy" data-original="./images/wiki/sai_gon_1.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img class="lazy" data-original="./images/wiki/sai_gon_2.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img class="lazy" data-original="./images/wiki/sai_gon_3.jpg" style="max-width: 100%; max-height: 100%;" />
+    <img class="lazy" data-original="./images/wiki/sai_gon_4.jpg" style="max-width: 100%; max-height: 100%;" />
     <hr>
     <div class="footer">
         <hr>
@@ -79,8 +79,11 @@
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
 <script src="./js/wiki/jquery.backstretch.min.js"></script>
 <script>
+    $("img.lazy").lazyload();
+
     // Preload the images
     var images = [
         "./images/wiki/background_1.jpg"

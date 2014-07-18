@@ -126,7 +126,7 @@
         <div class="col-sm-4" style="padding-right:0px;">
             <!--            <img id="uploader2" class="img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>-->
             <div id="cropContainerModal">
-                <img class="croppedImg img-responsive" src="./templates/green/images/nguoi_ho_chi_minh.jpg"/>
+                <img class="croppedImg img-responsive lazy" data-original="./templates/green/images/nguoi_ho_chi_minh.jpg"/>
             </div>
         </div>
         <div class="col-sm-8" style="padding-left:0px;">
@@ -198,34 +198,34 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="./templates/green/images/visa/ho_chi_minh.jpg"/>
+                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/visa/ho_chi_minh.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Sài Gòn</label>
                     <label class="control-label">17/01/14</label>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="./templates/green/images/visa/ha_noi.jpg"/>
+                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/visa/ha_noi.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Hà Nội</label>
                     <label class="control-label">27/02/14</label>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="./templates/green/images/visa/hue.jpg"/>
+                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/visa/hue.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Huế</label>
                     <label class="control-label">15/03/14</label>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="./templates/green/images/visa/da_nang.jpg"/>
+                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/visa/da_nang.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Đà Nẵng</label>
                     <label class="control-label">26/03/14</label>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="./templates/green/images/visa/hai_phong.jpg"/>
+                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/visa/hai_phong.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Hải Phòng</label>
                     <label class="control-label">15/04/14</label>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="./templates/green/images/visa/nha_trang.jpg"/>
+                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/visa/nha_trang.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Nha Trang</label>
                     <label class="control-label">30/04/14</label>
                 </div>
@@ -249,7 +249,7 @@
         <div class="col-sm-12" style="text-align: center;">
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="./templates/green/images/visa/ho_chi_minh.jpg"/>
+                    <img class="img-responsive lazy" data-original="./templates/green/images/visa/ho_chi_minh.jpg"/>
                     <label class="control-label" style="margin-bottom:0px;">Sài Gòn</label>
                 </div>
                 <div class="col-sm-8">
@@ -257,7 +257,7 @@
                         <div class="col-sm-6">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img class="img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                    <img class="img-responsive lazy" data-original="./templates/green/images/transport/airplane.png"/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label class="control-label">Hà Nội</label>
@@ -268,7 +268,7 @@
                         <div class="col-sm-6">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img class="img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                    <img class="img-responsive lazy" data-original="./templates/green/images/transport/airplane.png"/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label class="control-label">Hà Nội</label>
@@ -301,38 +301,38 @@
                     <div class="panel-body" style="text-align: center;">
                         <div class="col-sm-12">
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
                                 <label class="control-label">Bưu Điện Thành Phố</label>
                             </div>
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
                                 <label class="control-label">Chợ Bến Thành</label>
                             </div>
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
                                 <label class="control-label">Nhà Hát Thành Phố</label>
                             </div>
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
                                 <label class="control-label">Dinh Độc Lập</label>
                             </div>
 
                         </div>
                         <div class="col-sm-12">
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/1_saigon_central_post_office.jpg"/>
                                 <label class="control-label">Bưu Điện Thành Phố</label>
                             </div>
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/3_ben_thanh_market.jpg"/>
                                 <label class="control-label">Chợ Bến Thành</label>
                             </div>
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/4_city_opera_house.jpg"/>
                                 <label class="control-label">Nhà Hát Thành Phố</label>
                             </div>
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/attraction/place/5_independence_palace.jpg"/>
                                 <label class="control-label">Dinh Độc Lập</label>
                             </div>
 
@@ -382,29 +382,29 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-4">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/com_tam.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/com_tam.jpg"/>
                                 <label class="control-label">Cơm Tấm</label>
                             </div>
                             <div class="col-sm-4">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/hu_tieu_nam_vang.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/hu_tieu_nam_vang.jpg"/>
                                 <label class="control-label">Hủ Tiếu Nam Vang</label>
                             </div>
                             <div class="col-sm-4">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/sau_rieng.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/sau_rieng.jpg"/>
                                 <label class="control-label">Sầu Riêng</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-4">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/banh_trang_tron.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/banh_trang_tron.jpg"/>
                                 <label class="control-label">Bánh Tráng Trộn</label>
                             </div>
                             <div class="col-sm-4">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/tra_chanh.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/tra_chanh.jpg"/>
                                 <label class="control-label">Trà Chanh</label>
                             </div>
                             <div class="col-sm-4">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/mit.jpg"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/mit.jpg"/>
                                 <label class="control-label">Mít</label>
                             </div>
                         </div>
@@ -436,9 +436,9 @@
                         <div class="panel-body" style="text-align: center;">
                             <div class="col-sm-12">
                                 <div class="col-sm-3">
-                                    <img class="thumbnail img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/transport/airplane.png"/>
                                     <label class="control-label">Chiều Đi</label>
-                                    <img class="thumbnail img-responsive" src="./templates/green/images/transport/airplane.png"/>
+                                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/transport/airplane.png"/>
                                     <label class="control-label">Chiều Về</label>
                                 </div>
                                 <div class="col-sm-9">
@@ -461,7 +461,7 @@
                         <div class="panel-body">
                             <div class="col-sm-12">
                                 <div class="col-sm-3">
-                                    <img class="thumbnail img-responsive" src="./templates/green/images/budget/hostel.png"/>
+                                    <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/budget/hostel.png"/>
                                 </div>
                                 <div class="col-sm-9">
                                     <p>Mình thuê được nhà nghỉ Vàng Anh giá rẻ trên đường Phạm Ngũ Lão ngay trung tâm thành phố. Địa điểm này gần các nơi tham quan. Ngoài ra bạn còn có cơ hội gặp được du khách nước ngoài tới thăm Việt Nam đấy.</p>
@@ -481,7 +481,7 @@
                     <div id="collapse3" class="panel-collapse collapse" style="text-align: center;">
                         <div class="panel-body">
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/food_court.png"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/budget/food_court.png"/>
                             </div>
                             <div class="col-sm-9">
                                 <p>Ăn uống ở các hàng quán xung quanh đường mà cũng khá là mắc. Bù lại mình được ăn cơ man nào là các món ngon như cơm tấm, hủ tiếu nam vang cho tới các món trái cây đặc sắc của Nam Bộ như sầu riêng, chôm chôm, măng cụt.</p>
@@ -500,7 +500,7 @@
                     <div id="collapse4" class="panel-collapse collapse" style="text-align: center;">
                         <div class="panel-body">
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/bus.png"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/budget/bus.png"/>
                             </div>
                             <div class="col-sm-9">
                                 <p>Chủ yếu mình đi lại bằng xe buýt để tiết kiệm nếu khoảng cách khá xa. Xe buýt Sài Gòn chạy khá dày đặc và tần suất chuyến cũng nhanh. Còn nếu quãng đường ngắn thì mình tranh thủ đi bộ, vừa tiết kiệm thời gian đợi buýt, vừa tiết kiệm được tiền mua ly nước mía.</p>
@@ -519,7 +519,7 @@
                     <div id="collapse5" class="panel-collapse collapse" style="text-align: center;">
                         <div class="panel-body">
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/other_low.png"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/budget/other_low.png"/>
                             </div>
                             <div class="col-sm-9">
                                 <p>Mình rất là tiết kiệm trong việc chi tiêu cá nhân. Bình thường mình không phí tiền cho những thứ thấy không đáng, trừ vé vào cổng mấy khu tham quan chả hạn.</p>
@@ -538,7 +538,7 @@
                     <div id="collapse6" class="panel-collapse collapse" style="text-align: center;">
                         <div class="panel-body">
                             <div class="col-sm-3">
-                                <img class="thumbnail img-responsive" src="./templates/green/images/budget/nocost.png"/>
+                                <img class="thumbnail img-responsive lazy" data-original="./templates/green/images/budget/nocost.png"/>
                             </div>
                             <div class="col-sm-9">
                                 <p>May mắn là đi tới Sài Gòn mình không bị phụ thu thêm phí gì cả.</p>

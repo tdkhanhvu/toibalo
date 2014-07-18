@@ -225,7 +225,7 @@ $session =& JFactory::getSession();
 </style>
 
     <div class="span12">
-        <div class="span2" style="text-align:left;margin-left:0px;"><img width="145px" src="./templates/green/images/logo.png"/></div>
+        <div class="span2" style="text-align:left;margin-left:0px;"><img class="lazy" width="145px" data-original="./templates/green/images/logo.png"/></div>
     </div>
 
     <!--    Lịch Trình-->
@@ -268,7 +268,7 @@ $session =& JFactory::getSession();
             $transport_start = $transport_info[$session -> get('transport_start')];
             ?>
             <div>
-                <img src="./templates/green/images/transport/<?php echo $transport_start['image_url']?>"/>
+                <img class="lazy" data-original="./templates/green/images/transport/<?php echo $transport_start['image_url']?>"/>
             </div>
             <div>
                 <p><?php echo $transport_start['description']?></p>
@@ -303,7 +303,7 @@ $session =& JFactory::getSession();
             $transport_end = $transport_info[$session -> get('transport_end')];
             ?>
             <div>
-                <img src="./templates/green/images/transport/<?php echo $transport_end['image_url']?>"/>
+                <img class="lazy" data-original="./templates/green/images/transport/<?php echo $transport_end['image_url']?>"/>
             </div>
             <div>
                 <p><?php echo $transport_end['description']?></p>
@@ -331,7 +331,7 @@ $session =& JFactory::getSession();
             echo '<div class="box_title">'.$temp["name"].'</div>';
             echo '<div class="box_content">';
             echo '<div class="box_image">';
-            echo '   <img class="img-responsive" src="./templates/green/images/'.$temp["image_url"].'"/>';
+            echo '   <img class="img-responsive lazy" data-original="./templates/green/images/'.$temp["image_url"].'"/>';
             echo '</div>';
             echo '<div class="box_comment">'.$temp["address"].'</div>';
             echo '</div>';
@@ -376,7 +376,7 @@ $session =& JFactory::getSession();
 
     <div style="position:relative" class="col-xs-12">
 <!--        <span class="attraction_point" style="top:335px;left:343px;">1</span>-->
-        <img src="./templates/green/images/attraction/sai_gon_map.jpg" class="img-responsive thumbnail"/>
+        <img data-original="./templates/green/images/attraction/sai_gon_map.jpg" class="img-responsive thumbnail lazy"/>
         <?php
             $arr = $session -> get('select_attraction');
             $temp = array();
@@ -395,14 +395,14 @@ $session =& JFactory::getSession();
     $i = 1;
     foreach($temp as $attraction) {
         echo '<div class="span12 attraction">';
-        echo '<div class="span2"><img class="img-responsive" src="./templates/green/images/'.$attraction["image_url"].'"/></div>';
+        echo '<div class="span2"><img class="img-responsive lazy" data-original="./templates/green/images/'.$attraction["image_url"].'"/></div>';
         echo '<div class="span10">';
         echo '  <p>'.$i.') '.$attraction["name"].'</p>';
         echo '   <p>'.$attraction["description"].'</p>';
-        echo '<div class="span5"><p><img src="./templates/green/images/icon/time.png"/> <b id="attraction_hour">'.$attraction["hour"].'</b></p></div>';
-        echo '   <div class="span4"><p><img src="./templates/green/images/icon/price.png"> <b id="attraction_price">'.$attraction["price"].'</b></p></div>';
-        echo '   <div class="span5"><p><img src="./templates/green/images/icon/address.png"> <b id="attraction_address">'.$attraction["address"].'</b></p></div>';
-        echo '  <div class="span4"><p><img src="./templates/green/images/icon/phone.png"> <b id="attraction_phone">'.$attraction["address"].'</b></p></div>';
+        echo '<div class="span5"><p><img class="lazy" data-original="./templates/green/images/icon/time.png"/> <b id="attraction_hour">'.$attraction["hour"].'</b></p></div>';
+        echo '   <div class="span4"><p><img class="lazy" data-original="./templates/green/images/icon/price.png"> <b id="attraction_price">'.$attraction["price"].'</b></p></div>';
+        echo '   <div class="span5"><p><img class="lazy" data-original="./templates/green/images/icon/address.png"> <b id="attraction_address">'.$attraction["address"].'</b></p></div>';
+        echo '  <div class="span4"><p><img class="lazy" data-original="./templates/green/images/icon/phone.png"> <b id="attraction_phone">'.$attraction["address"].'</b></p></div>';
         echo '</div>';
         echo '<div style="clear:both"></div>';
         echo '</div>';

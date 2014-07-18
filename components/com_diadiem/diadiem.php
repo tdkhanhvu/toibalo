@@ -49,8 +49,8 @@ $session =& JFactory::getSession();
                                     <div class="column-inner">
                                         <div class="image">
                                             <a href="<?php echo $slide_img_link[$i] ?>">
-                                                <img style="width:1600px;height:700px"
-                                                     src="<?php echo $slide_img[$i] ?>"
+                                                <img class="lazy" style="width:1600px;height:700px"
+                                                     data-original="<?php echo $slide_img[$i] ?>"
                                                      alt="<?php echo $slide_alt[$i] ?>">
                                             </a>
                                         </div>
@@ -180,8 +180,8 @@ $session =& JFactory::getSession();
                               -->
                                         <div class="row-fluid">
                                             <div class="span3" style="margin-bottom:80px;">
-                                                <div class="attraction-content"><img class="circular"
-                                                                          src="./templates/green/images/nha_tho_duc_ba.jpg"
+                                                <div class="attraction-content"><img class="circular lazy"
+                                                                          data-original="./templates/green/images/nha_tho_duc_ba.jpg"
                                                                           border="0"
                                                                           alt=""><br>
                                                     <div id="thamquan_1"></div>
@@ -193,8 +193,8 @@ $session =& JFactory::getSession();
                                                 </div>
                                             </div>
                                             <div class="span3" style="margin-bottom:80px;"">
-                                                <div class="attraction-content"><img class="circular"
-                                                                          src="./templates/green/images/dinh_doc_lap.jpg" border="0"
+                                                <div class="attraction-content"><img class="circular lazy"
+                                                                          data-original="./templates/green/images/dinh_doc_lap.jpg" border="0"
                                                                           alt=""><br>
                                                     <div id="thamquan_2"></div>
                                                     <div class="detail">
@@ -205,8 +205,8 @@ $session =& JFactory::getSession();
                                                 </div>
                                             </div>
                                             <div class="span3" style="margin-bottom:80px;"">
-                                                <div class="attraction-content"><img class="circular"
-                                                                          src="./templates/green/images/cho_ben_thanh.jpg"
+                                                <div class="attraction-content"><img class="circular lazy"
+                                                                          data-original="./templates/green/images/cho_ben_thanh.jpg"
                                                                           border="0"
                                                                           alt=""><br>
                                                     <div id="thamquan_3"></div>
@@ -218,8 +218,8 @@ $session =& JFactory::getSession();
                                                 </div>
                                             </div>
                                             <div class="span3" style="margin-bottom:80px;"">
-                                                <div class="attraction-content"><img class="circular"
-                                                                          src="./templates/green/images/ben_nha_rong.jpg" border="0"
+                                                <div class="attraction-content"><img class="circular lazy"
+                                                                          data-original="./templates/green/images/ben_nha_rong.jpg" border="0"
                                                                           alt=""><br>
                                                     <div id="thamquan_4"></div>
                                                     <div class="detail">
@@ -293,8 +293,8 @@ $session =& JFactory::getSession();
                                 </div>
                                 <div class="span4">
                                     <div class="inner phone" style="width:100%">
-                                        <img src="./templates/green/images/tong_hop.jpg" border="0" alt="" class="img-responsive">
-                                        <img src="./templates/green/images/hang_rong_sai_gon.jpg" border="0" alt="" class="img-responsive">
+                                        <img data-original="./templates/green/images/tong_hop.jpg" border="0" alt="" class="img-responsive lazy">
+                                        <img data-original="./templates/green/images/hang_rong_sai_gon.jpg" border="0" alt="" class="img-responsive lazy">
 
                                     </div>
                                 </div>
@@ -331,8 +331,8 @@ $session =& JFactory::getSession();
                                         <div class="row-fluid">
                                             <div class="span3">
                                                 <div class="inner">
-                                                    <div class="avatar"><img class="circular"
-                                                                             src="./templates/green/images/dan_ha_noi.jpg"
+                                                    <div class="avatar"><img class="circular lazy"
+                                                                             data-original="./templates/green/images/dan_ha_noi.jpg"
                                                                              border="0"
                                                                              alt=""></div>
                                                     <h3 class="title">Nguyễn Duy Long</h3>
@@ -353,8 +353,8 @@ $session =& JFactory::getSession();
                                             </div>
                                             <div class="span3">
                                                 <div class="inner">
-                                                    <div class="avatar"><img class="circular"
-                                                                             src="./templates/green/images/nguoi_hue.jpg" border="0"
+                                                    <div class="avatar"><img class="circular lazy"
+                                                                             data-original="./templates/green/images/nguoi_hue.jpg" border="0"
                                                                              alt=""></div>
                                                     <h3 class="title">Trần Nhật Trung</h3>
 
@@ -374,8 +374,8 @@ $session =& JFactory::getSession();
                                             </div>
                                             <div class="span3">
                                                 <div class="inner">
-                                                    <div class="avatar"><img class="circular"
-                                                                             src="./templates/green/images/nguoi_da_nang.jpg"
+                                                    <div class="avatar"><img class="circular lazy"
+                                                                             data-original="./templates/green/images/nguoi_da_nang.jpg"
                                                                              border="0"
                                                                              alt=""></div>
                                                     <h3 class="title">Mai Đình Anh</h3>
@@ -396,8 +396,8 @@ $session =& JFactory::getSession();
                                             </div>
                                             <div class="span3">
                                                 <div class="inner">
-                                                    <div class="avatar"><img class="circular"
-                                                                             src="./templates/green/images/nguoi_ho_chi_minh.jpg"
+                                                    <div class="avatar"><img class="circular lazy"
+                                                                             data-original="./templates/green/images/nguoi_ho_chi_minh.jpg"
                                                                              border="0"
                                                                              alt=""></div>
                                                     <h3 class="title">Trần Đoàn Khánh Vũ</h3>
@@ -485,7 +485,7 @@ $session =& JFactory::getSession();
                         <div class="st-blog" style="width:18%;float:left;margin-right:2%;">
                             <h1 class="st-heading" style="float:left;padding-top:0px;">Nhật kí<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Nhật Kí');">Phản Hồi</button></h1>
                             <div style="float:left;font-size: large;color:#ffffff;margin-bottom: 20px;width:100%;">
-                                <img class="note_select thumbnail img-responsive" src="./templates/green/images/du_khach_1.jpg"/>
+                                <img class="note_select thumbnail img-responsive lazy" data-original="./templates/green/images/du_khach_1.jpg"/>
                                 <div>Trần Thanh Hùng</div>
                                 <div>Nha Trang</div>
                                 <div>10-15/5/2013</div>
@@ -528,7 +528,7 @@ $session =& JFactory::getSession();
                             <div class="timeline-wrap">
                                 <div class="event" data-date="01/01/2014">
                                     <div class="layout1">
-                                        <div class="left"><img class="thumbnail" src="./templates/green/images/tet_duong_lich.jpg" alt="image alt"/></div>
+                                        <div class="left"><img class="thumbnail lazy" data-original="./templates/green/images/tet_duong_lich.jpg" alt="image alt"/></div>
                                         <div class="right">
                                             <h3 style="color: rgb(73, 167, 125);font-weight: bold">Tết Dương Lịch</h3>
                                             <p>Tết Dương lịch hay còn gọi là Tết Tây là một trong những ngày
@@ -542,7 +542,7 @@ $session =& JFactory::getSession();
                                 </div>
                                 <div class="event selected" data-date="01/31/2014">
                                     <div class="layout1">
-                                        <div class="left"><img class="thumbnail" src="./templates/green/images/tet_nguyen_dan.jpg" alt="image alt"/></div>
+                                        <div class="left"><img class="thumbnail lazy" data-original="./templates/green/images/tet_nguyen_dan.jpg" alt="image alt"/></div>
                                         <div class="right">
                                             <h3 style="color: rgb(82, 79, 170);font-weight: bold">Tết Nguyên Đán</h3>
                                             <p>Tết Nguyên Đán (hay còn gọi là Tết Cả, Tết Ta, Tết Âm lịch,
@@ -556,7 +556,7 @@ $session =& JFactory::getSession();
                                 </div>
                                 <div class="event" data-date="09/08/2014">
                                     <div class="layout1">
-                                        <div class="left"><img class="thumbnail" src="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
+                                        <div class="left"><img class="thumbnail lazy" data-original="./templates/green/images/trung_thu.jpg" alt="image alt"/></div>
                                         <div class="right">
                                             <h3 style="color: rgb(206, 78, 170);font-weight: bold">Tết Trung Thu</h3>
                                             <p>Trung thu là giữa mùa thu, Tết Trung Thu như tên gọi đến với chúng ta vào đúng giữa mùa thu tức là vào rằm tháng Tám âm lịch. Tết Trung Thu là tết của trẻ em. Ngay từ đầu tháng, Tết đã được sửa soạn với những cỗ đèn muôn mầu sắc, muôn hình thù, với những bánh dẻo, bánh nướng mà ta gọi gồm là bánh trung thu.</p>
@@ -566,7 +566,7 @@ $session =& JFactory::getSession();
                                 </div>
                                 <div class="event" data-date="12/25/2014">
                                     <div class="layout1">
-                                        <div class="left"><img class="thumbnail" src="./templates/green/images/giang_sinh.jpg" alt="image alt"/></div>
+                                        <div class="left"><img class="thumbnail lazy" data-original="./templates/green/images/giang_sinh.jpg" alt="image alt"/></div>
                                         <div class="right">
                                             <h3 style="color: rgb(206, 124, 78);font-weight: bold">Giáng Sinh</h3>
                                             <p>Lễ Giáng Sinh, còn được gọi là lễ Thiên Chúa giáng sinh, Noel
@@ -616,7 +616,7 @@ $session =& JFactory::getSession();
                                 <div class="item-content" category="<?php echo $value['category']; ?>">
                                     <div class="row-fluid">
                                         <div class="span8">
-                                            <img class="thumbnail" src="./templates/green/images/<?php echo $value['image_url']; ?>" alt="<?php echo $value['name']; ?>"/>
+                                            <img class="thumbnail lazy" data-original="./templates/green/images/<?php echo $value['image_url']; ?>" alt="<?php echo $value['name']; ?>"/>
                                         </div>
                                         <div class="span4">
                                             <h3><?php echo $value['name']; ?></h3>
@@ -650,7 +650,7 @@ $session =& JFactory::getSession();
                                 <a class="link" href="#"></a>
                                 <div class="inner">
                                     <div class="media">
-                                        <img class="thumbnail" style="margin-bottom:0px;" src="./templates/green/images/<?php echo $value['image_url'] ?>" alt="Column image and text"/>
+                                        <img class="thumbnail lazy" style="margin-bottom:0px;" data-original="./templates/green/images/<?php echo $value['image_url'] ?>" alt="Column image and text"/>
                                     </div>
                                     <div class="info image">
                                         <h3 class="title">
@@ -1082,7 +1082,7 @@ jQuery.noConflict();
                 cancel:true
             });
 
-            for(i = 0; i < 9; i++) {
+            for(i = 0; i < 10; i++) {
                 $('#amthuc_' + (i+1)).raty({
                     cancel:true
                 });
@@ -1096,10 +1096,10 @@ jQuery.noConflict();
                 readOnly: true,
                 score: 4.9
             });
-            $('#nhatki_2').raty({
+/*            $('#nhatki_2').raty({
                 readOnly: true,
                 score: 4.4
-            });
+            });*/
         });
     })(jQuery)
 </script>
