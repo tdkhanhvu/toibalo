@@ -93,27 +93,6 @@ defined('_JEXEC') or die('Restricted access');
 				</div>
 			</div>
 		</div>
-	</section>
-	
-	<!-- Section 4 
-	<section id="slide-5" class="homeSlide">
-		<div class="bcg"
-			data-center="background-position: 50% 0px;"
-			data-top-bottom="background-position: 50% -100px;"
-			data-bottom-top="background-position: 50% 100px;"
-			data-anchor-target="#slide-5"
-		>
-			<div class="hsContainer">
-				<div class="hsContent"
-					data-bottom-top="opacity: 0"
-					data-25p-top="opacity: 0"
-					data-top="opacity: 1" 
-					data-anchor-target="#slide-5"
-				>
-					<h2></h2>
-				</div>
-			</div>
-		</div>
-	</section>-->
+	</section> 
 </main>
 </div>

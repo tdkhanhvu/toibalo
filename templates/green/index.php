@@ -8,15 +8,8 @@ if ($option != "com_data") {
     $doc->addStyleSheet('./media/jui/css/bootstrap.min.css');
     $doc->addStyleSheet('./media/jui/css/bootstrap-theme.css');
     $doc->addStyleSheet('./media/jui/css/bootstrap-responsive.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
-    /*$doc->addStyleSheet('templates/' . $this->template . '/css/system.css');*/
-    /*$doc->addStyleSheet('templates/' . $this->template . '/css/general.css');*/
-    $doc->addStyleSheet('templates/' . $this->template . '/css/layout.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/core_joomla.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/responsive.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
     $doc->addStyleSheet('templates/' . $this->template . '/css/font-awesome.css');
-    $doc->addStyleSheet('templates/' . $this->template . '/css/rating/rating.css');
     //feedback box
     $doc->addStyleSheet('templates/' . $this->template . '/css/popup.min.css');
     //upload file
