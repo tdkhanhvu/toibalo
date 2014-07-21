@@ -119,6 +119,8 @@ $session =& JFactory::getSession();
                         <div class="st-projects onepage-appear">
                             <h1 class="st-heading">Thời Điểm <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Thời Điểm');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
+<!--                            <div class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
+
                             <div class="span6 offset3">
                                 <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate" data-placeholder="depart" autocomplete="off" tabindex="3" />
                                 <input type="text" id="dateReturn" name="" onkeydown="return false" class="inputDate" data-placeholder="return" autocomplete="off" tabindex="4">
@@ -322,7 +324,7 @@ $session =& JFactory::getSession();
                                     foreach($attraction as $key => $value) {
                                         echo '<div class="ip_tooltip ip_img32" style="top: '.$value['top_lichtrinh'].'; left: '.$value['left_lichtrinh'].';" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="rtl-slide">';
                                         echo '<p>'.$value['name'].'</p>';
-                                        echo '<img class="lazy" attractionId="'.$key.'" alt="an image" data-original="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
+                                        echo '<img attractionId="'.$key.'" alt="an image" src="./templates/green/images/'.$value['image_url'].'" width="256" height="256" />';
                                         echo '</div>';
                                     }
                                     ?>
