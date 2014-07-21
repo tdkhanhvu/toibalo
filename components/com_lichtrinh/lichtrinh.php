@@ -119,7 +119,7 @@ $session =& JFactory::getSession();
                         <div class="st-projects onepage-appear">
                             <h1 class="st-heading">Thời Điểm <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Thời Điểm');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
-<!--                            <div class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
+                            <div class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
                             <div class="span6 offset3">
                                 <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate" data-placeholder="depart" autocomplete="off" tabindex="3" />

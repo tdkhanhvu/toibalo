@@ -108,15 +108,14 @@ if ($option == "com_aboutus") {
 </head>
 
 <body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear<?php if ($option == 'com_aboutus') { echo " loaded";} ?>" style="opacity: 1;">
-<!--<div id="fb-root"></div>
-<div id="fb-root"></div>-->
-<!--<script>(function(d, s, id) {
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=124599625358&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>-->
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <script type="text/javascript">
     function DisplayNotification(msg, type) {
@@ -288,7 +287,7 @@ if ($option == "com_aboutus") {
                                         <a class=".st-projects"	href="#">Thời Điểm</a>
                                     </li>
                                     <li class="item-101">
-                                        <a class="#transportation" href="#">Phương Tiện</a>
+                                        <a class="#transport_section" href="#">Phương Tiện</a>
                                     </li>
                                     <li class="item-105">
                                         <a class=".st-home" href="#">Tham Quan</a>
