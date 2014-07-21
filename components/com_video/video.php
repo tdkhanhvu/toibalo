@@ -36,11 +36,12 @@
                 cursor: pointer;
             }
 		</style>
+    <a id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/tD1U-5v4eL4',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1, showYTLogo:false,showControls:false,loop:false}">My video</a>
         <div id="main">
-            <p id="video-controls" class="black-65">
+<!--            <p id="video-controls" class="black-65">
                 Video controls:<br />
                 <a href="#" class="tubular-play">Play</a> | <a href="#" class="tubular-pause">Pause</a> | <a href="#" class="tubular-volume-up">Volume Up</a> | <a href="#" class="tubular-volume-down">Volume Down</a> | <a href="#" class="tubular-mute">Mute</a>
-            </p>
+            </p>-->
 			<div class="span4">
 				<div class="black-50 span4">
 					<h2 style="display:inline;">Thành Phố Về Đêm<button type="button" class="btn btn-success" style="position:relative;top:-15px;" onclick="PopUpFeedback('Video','Thông Tin');">Phản Hồi</button></h2>
@@ -88,13 +89,19 @@
     <!-- #wrapper -->
     <a class="avatar-fix" href="?option=com_diadiem"><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
     <a class="avatar-fix avatar-fix-to-left" href="index.php"><span class="glyphicon glyphicon-circle-arrow-left"></span></a>
-<script src="./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>
+<!--<script src="./templates/green/js/jquery.tubular.1.0.js" type="text/javascript"></script>-->
+
 <script>
     jQuery.noConflict();
     (function ($) {
         jQuery(document).ready(function () {
-            var options = { videoId: 'tD1U-5v4eL4', start: 3 };
-            $('#wrapper').tubular(options);
+            $(".player").mb_YTPlayer();
+
+            $('#bgndVideo').on("YTPEnd",function(){
+                window.location.replace("?option=com_diadiem");
+            });
+/*            var options = { videoId: 'tD1U-5v4eL4', start: 3 };
+            $('#wrapper').tubular(options);*/
             // f-UGhWj1xww cool sepia hd
             // 49SKbS7Xwf4 beautiful barn sepia
 

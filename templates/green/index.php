@@ -70,6 +70,10 @@ if ($option != "com_data") {
         $doc->addScript('./templates/' . $this->template . '/js/load-images.js', 'text/javascript');//Am Thuc + Le Hoi
         $doc->addScript('./templates/' . $this->template . '/js/res-timeline.js', 'text/javascript');
     }
+
+    if ($option == "com_video") {
+        $doc->addScript('./templates/' . $this->template . '/js/video/jquery.mb.YTPlayer.js', 'text/javascript');
+    }
 }
 if ($option == "com_aboutus") {
     $doc->addScript('./templates/' . $this->template . '/js/imagesLoaded.js', 'text/javascript');
@@ -104,6 +108,15 @@ if ($option == "com_aboutus") {
 </head>
 
 <body onLoad="init()" id="<?php if ($option == 'com_content') { echo "homepage";} else { echo "avatar-template";} ?>" class="avatar-responsive css3-effect  onepage-appear<?php if ($option == 'com_aboutus') { echo " loaded";} ?>" style="opacity: 1;">
+<!--<div id="fb-root"></div>
+<div id="fb-root"></div>-->
+<!--<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=124599625358&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>-->
 
 <script type="text/javascript">
     function DisplayNotification(msg, type) {
@@ -370,7 +383,7 @@ if ($option == "com_aboutus") {
     <?php } ?>
 
     <!-- 4. Footer -->
-    <?php if ($option != 'com_content') { ?>
+    <?php if ($option != 'com_content' && $option != 'com_video') { ?>
         <div class='footer'>
             <div class='container'>
                 <div class='row'>
