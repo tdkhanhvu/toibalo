@@ -226,6 +226,7 @@ $session =& JFactory::getSession();
 
     <div class="span12">
         <div class="span2" style="text-align:left;margin-left:0px;"><img class="lazy" width="145px" data-original="./templates/green/images/logo.png"/></div>
+        <div style="position:relative;right:-600px;top:30px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
     </div>
 
     <!--    Lịch Trình-->

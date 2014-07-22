@@ -27,6 +27,7 @@ $session =& JFactory::getSession();
                         <li class="current"><span></span></li>
                     </ul>
                     <div style="text-align:center"><button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Hình Ảnh');">Phản Hồi</button></div>
+                    <div style="position:absolute;right:-100px;top:0px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                     <ul class="sequence-canvas">
                         <?php
                         $slide_img_link = array('http://www.beautiful-templates.com/demo/templates-joomla/st_green/index.php?option=com_content&view=article&id=7'
@@ -85,6 +86,7 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading">Đặc trưng<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Đặc Trưng');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những điều thú vị về Sài Gòn</p>
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             <div class="st-layer-slider " style="width: 100%;max-height:none;" id="dactrung_slide">
 <!--                                <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
@@ -168,6 +170,7 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading">Tham quan<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Tham Quan');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Những nơi không nên bỏ lỡ</p>
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             <div class="st-layer-slider " style="width: 100%;" id="thamquan_slide">
 <!--                                <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
@@ -319,6 +322,7 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading">Cảm nghĩ<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Cảm Nghĩ');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading" style="margin-bottom:15px;">Sài Gòn trong tim mỗi người là...</p>
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             <div class="st-layer-slider span12" style="width: 100%;margin-left:0px;" id="camnghi_slide">
 <!--                                <div class="sequence-prev"></div>
                                 <div class="sequence-next"></div>
@@ -523,7 +527,7 @@ $session =& JFactory::getSession();
                         <h1 class="st-heading">Lễ hội<button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Địa Điểm','Lễ Hội');">Phản Hồi</button>
                         </h1>
                         <div class="st-sub-heading">Nét đặc trưng riêng của Sài Gòn</div>
-
+                        <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                         <div class="jflatTimeline" id="festival">
                             <div class="timeline-wrap">
                                 <div class="event" data-date="01/01/2014">

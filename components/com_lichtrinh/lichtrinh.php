@@ -119,7 +119,7 @@ $session =& JFactory::getSession();
                         <div class="st-projects onepage-appear">
                             <h1 class="st-heading">Thời Điểm <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Thời Điểm');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Thông Tin Cần Thiết Về Chuyến Đi</div>
-                            <div class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
                             <div class="span6 offset3">
                                 <input type="text" id="dateDepart" name="" onkeydown="return false" class="inputDate" data-placeholder="depart" autocomplete="off" tabindex="3" />
@@ -212,7 +212,7 @@ $session =& JFactory::getSession();
                         <div class="st-projects onepage-appear">
                             <h1 class="st-heading">Phương Tiện <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Phương Tiện');">Phản Hồi</button></h1>
                             <div class="st-sub-heading">Cách Thức Để Đi</div>
-
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             <div class="span6">
                                 <div class="span2">
                                     <h2>Xuất Phát</h2>
@@ -378,6 +378,8 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading">Lời khuyên <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Lời Khuyên');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading">Để chuyến du lịch thú vị hơn</p>
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
                             <div class="row-fluid">
                                 <?php
                                 $advice = GetAdviceData();
@@ -413,6 +415,7 @@ $session =& JFactory::getSession();
                             <h1 class="st-heading" style="color:green">Ẩm Thực <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Ẩm Thực');">Phản Hồi</button></h1>
 
                             <p class="st-sub-heading" style="color:blue">Món ngon không nên bỏ lỡ</p>
+                            <div style="position:relative;right:-440px;top:-100px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             <div class="row-fluid">
                                 <?php
                                 $food = GetFoodData();
@@ -491,6 +494,7 @@ $session =& JFactory::getSession();
                         <h1 class="st-heading" style="color:rgb(223, 59, 59);">Chi phí <button type="button" class="btn btn-success" style="margin-bottom:10px;margin-left:30px;" onclick="PopUpFeedback('Lịch Trình','Chi Phí');">Phản Hồi</button></h1>
 
                         <div class="st-sub-heading" style="margin-bottom:0px;">Hầu bao cần để đi</div>
+                        <div style="position:relative;right:-800px;top:-80px;" class="fb-like" data-href="http://toibalo.vn/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                         <div style="clear:both;"></div>
                     </div>
                 </div>
