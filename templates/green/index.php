@@ -217,8 +217,7 @@ if ($option == "com_aboutus") {
     jQuery.noConflict();
     (function ($) {
         $(document).ready(function () {
-            $("img.lazy").lazyload();
-
+            $("img.lazy").lazyload(500);
             $('#signUpLink').click(function(e) {
                 e.preventDefault();
                 jQuery('#signup').bPopup();

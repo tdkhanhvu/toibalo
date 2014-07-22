@@ -616,7 +616,7 @@ $session =& JFactory::getSession();
                                 <div class="item-content" category="<?php echo $value['category']; ?>">
                                     <div class="row-fluid">
                                         <div class="span8">
-                                            <img class="thumbnail lazy" data-original="./templates/green/images/<?php echo $value['image_url']; ?>" alt="<?php echo $value['name']; ?>"/>
+                                            <img class="thumbnail" src="./templates/green/images/<?php echo $value['image_url']; ?>" alt="<?php echo $value['name']; ?>"/>
                                         </div>
                                         <div class="span4">
                                             <h3><?php echo $value['name']; ?></h3>
@@ -805,7 +805,11 @@ jQuery.noConflict();
             //alert(our_work + ' ' + our_work_H + ' ' + menuH);
             var eindex = 0;
             //var offset = $('#avatar-full-3-block').height() + 100;
-            var offset = 120;
+            var offsetFood = -350;
+
+            if (jQuery.browser.mozilla) {
+                offsetFood += 30
+            }
             var category = "";
             var cat_all_item = null;
 
@@ -824,7 +828,7 @@ jQuery.noConflict();
                 count = cat_all_item.length;
 
                 $('body,html').animate({
-                    scrollTop: our_work - menuH + our_work_H + offset
+                    scrollTop: our_work - menuH + our_work_H + offsetFood
                 }, 1000, function () {
                     $(this).addClass('active');
                     //item_content.removeClass('active');
@@ -845,7 +849,7 @@ jQuery.noConflict();
                 }
 
                 $('body,html').animate({
-                    scrollTop: our_work - menuH + our_work_H + offset
+                    scrollTop: our_work - menuH + our_work_H + offsetFood
                 }, 1000, function () {
                     //list_item.removeClass('active');
                     //list_item.eq(eindex).addClass('active');
