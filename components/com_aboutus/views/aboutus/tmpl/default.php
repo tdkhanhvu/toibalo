@@ -88,8 +88,10 @@ defined('_JEXEC') or die('Restricted access');
 					data-anchor-target="#slide-4"
 				>
 				<div class='tbl_button'>
-					<a href="./?option=com_content" title="Tham Gia">Tham Gia</a>
+					<a href="./?option=com_content" title="Tham Gia" style="margin-left:-50px;margin-right:50px;">Tham Gia</a>
+                    <a href="https://www.facebook.com/toibalo" title="Facebook Page">Facebook Page</a>
 				</div>
+
 				</div>
 			</div>
 		</div>

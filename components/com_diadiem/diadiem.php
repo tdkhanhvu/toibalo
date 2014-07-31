@@ -830,7 +830,7 @@ jQuery.noConflict();
                 item_content = $('div[category="' + category + '"]');
                 eindex = cat_all_item.index(this);
                 count = cat_all_item.length;
-
+                //alert(our_work + ' ' + our_work_H + ' ' + menuH);
                 $('body,html').animate({
                     scrollTop: our_work - menuH + our_work_H + offsetFood
                 }, 1000, function () {

@@ -36,11 +36,11 @@ JHtml::_('behavior.tabstate');
                     </div>
                     <select id="tbl_des" class="" name="option" tabindex="8" onfocus="" onchange="">
                         <option value="com_video" selected="selected">Sai Gon</option>
-                        <option value="com_video">Ha Noi</option>
+<!--                        <option value="com_video">Ha Noi</option>
                         <option value="com_video">Da Nang</option>
                         <option value="com_video">Hue</option>
                         <option value="com_video">Quang Ngai</option>
-                        <option value="com_video">...</option>
+                        <option value="com_video">...</option>-->
                     </select>
                 </form>
                 <div class='clearfix'></div>
