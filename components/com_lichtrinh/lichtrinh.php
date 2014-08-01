@@ -582,10 +582,10 @@ $session =& JFactory::getSession();
                 type: "post",
                 data: {'request':'SetBookingDay','date':(new Date()).toString('dddd, dd MMMM, yyyy')},
                 success: function(msg){
-                    DisplaySuccess(msg);
+                    //DisplaySuccess(msg);
                 },
                 error:function(){
-                    DisplayError("failure");
+                    //DisplayError("failure");
                 }
             });
 
@@ -697,7 +697,7 @@ $session =& JFactory::getSession();
                     $('#a' + curr).addClass('collapsed');
                     $('#collapse' + curr).css('border',$('#collapse' + curr).css('border').replace('0px','5px'));
                     $('#collapse' + curr).addClass('in').height('auto');
-                    DisplaySuccess(startDay + ' ' + endDay);
+                    //DisplaySuccess(startDay + ' ' + endDay);
                     $.ajax({
                         url: "index.php?option=com_data&format=raw",
                         type: "post",

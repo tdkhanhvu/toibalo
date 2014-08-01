@@ -161,7 +161,7 @@ function SetTransport($transport, $direction) {
     $session =& JFactory::getSession();
     $session->set($direction, $transport);
 
-    echo 'Choose ' .  $transport . ' for ' . $direction;
+    //echo 'Choose ' .  $transport . ' for ' . $direction;
 }
 
 function SetDay($startDay, $endDay) {
@@ -169,7 +169,7 @@ function SetDay($startDay, $endDay) {
     $session->set('StartDay', $startDay);
     $session->set('EndDay', $endDay);
 
-    echo 'Choose Start day ' .  $startDay . ' and end day ' . $endDay;
+    //echo 'Choose Start day ' .  $startDay . ' and end day ' . $endDay;
 }
 
 function SetCost($category, $option, $totalCost) {
@@ -181,7 +181,7 @@ function SetCost($category, $option, $totalCost) {
     {
         $cost_object['element'] = array();
         array_push($cost_object['element'],$option);
-        echo "You select " . $option . " total cost is " .$totalCost;
+        //echo "You select " . $option . " total cost is " .$totalCost;
     }
     else
     {
@@ -189,12 +189,12 @@ function SetCost($category, $option, $totalCost) {
 
         if ($index !== FALSE) {
             unset($cost_object['element'][$index]);
-            echo "You deselect " . $option . " total cost is " .$totalCost;
+            //echo "You deselect " . $option . " total cost is " .$totalCost;
         }
         else
         {
             array_push($cost_object['element'],$option);
-            echo "You select " . $option . " total cost is " .$totalCost;
+            //echo "You select " . $option . " total cost is " .$totalCost;
         }
     }
 
@@ -213,20 +213,20 @@ function SetNumOfDay($day){
         if ($category != 'vehicle' && $category != 'other') {
             $cost_object['totalCost'] = $cost_object['totalCost'] / $prevDay * $day;
             $arr[$category] = $cost_object;
-            echo "Change Total cost for " . $category . " to " . $cost_object['totalCost'];
+            //echo "Change Total cost for " . $category . " to " . $cost_object['totalCost'];
         }
     }
     $session->set('cost', $arr);
 
     $session -> set('NumOfDay',$day);
-    echo "You have selected " .$day . " days";
+    //echo "You have selected " .$day . " days";
 }
 
 function SetCity($city, $direction) {
     $session =& JFactory::getSession();
     $session -> set($direction.'City',$city);
 
-    echo 'Set ' . $direction.'City' . ' to ' . $city;
+    //echo 'Set ' . $direction.'City' . ' to ' . $city;
 }
 
 function GetStartCity() {
@@ -255,7 +255,7 @@ function SetBookingDay($date) {
     $session =& JFactory::getSession();
     $session -> set('BookingDay',$date);
 
-    echo 'Set booking day to ' . $date;
+    //echo 'Set booking day to ' . $date;
 }
 
 function SetFeedback($page, $section, $name, $email, $rating, $comment,$UrlLink,$browser,$version) {
@@ -294,7 +294,8 @@ else if (isset($_POST['type'])) {
         case "attraction":
         case "advice":
         case "food":
-            echo ProcessAdvice($type, $source, $action, $id);
+            //echo ProcessAdvice($type, $source, $action, $id);
+            ProcessAdvice($type, $source, $action, $id);
             break;
         default:
             break;
