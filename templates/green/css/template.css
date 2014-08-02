@@ -107,7 +107,7 @@ header .article-tool .article-info {
 .navbar-toggle {
 	position: absolute;
 	top: 0px;
-	left: 10px;
+	left: 30px;
 	padding: 8px 12px;
 	background-color: #009edb;
 	border: none;
@@ -142,8 +142,10 @@ header .article-tool .article-info {
 }
 .collapse.in {
 	background-color: #009edb;
-/* 	margin-top: 10px; */
 	width: 100%;
+	position: absolute;
+	top: 49px;
+	left: 19px;
 }
 /*=== Go to top ===*/
 .avatar-fix {
@@ -3539,6 +3541,14 @@ body .block-max-width-100 {
 	}
 	.navbar-toggle {
 		display: block;
+	}
+	#tbl_nav {
+		display: none;
+	}
+	.navbar-brand {
+		float:none;
+		position: absolute;
+		left: 45%;
 	}
 	.nav-collapse .dropdown-menu a {
 		-webkit-border-radius: 0px;

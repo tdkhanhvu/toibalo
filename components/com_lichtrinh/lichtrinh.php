@@ -452,7 +452,7 @@ $session =& JFactory::getSession();
 </div>
 
 <style>
-    li {
+    #avatar-body-bottom-block li {
         float: left;
         margin-right: 5px;
         cursor: pointer;
