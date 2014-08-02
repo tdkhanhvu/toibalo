@@ -110,9 +110,12 @@ main {
 	font-size: 25px;
 }
 #tbl_aboutus .tbl_button {
-	position: fixed;
+	/*position: fixed;
 	bottom: 20%;
-	left: 45%;
+	left: 45%;*/
+	width:100%;
+	text-align: center;
+	margin-bottom: 50px;
 }
 @media (max-width: 979px) {
 	/*.hsContent h2 {
