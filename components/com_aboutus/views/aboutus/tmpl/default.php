@@ -2,6 +2,12 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 ?>
+<div id="preload">
+	<img src="components/com_aboutus/assets/images/bcg_slide-1.jpg">
+	<img src="components/com_aboutus/assets/images/bcg_slide-2.jpg">
+	<img src="components/com_aboutus/assets/images/bcg_slide-3.jpg">
+	<img src="components/com_aboutus/assets/images/bcg_slide-5.jpg">
+</div>
 <div id="tbl_aboutus">
 
 <main>

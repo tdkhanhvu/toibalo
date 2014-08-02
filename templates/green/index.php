@@ -75,14 +75,6 @@ if ($option != "com_data") {
         $doc->addScript('./templates/' . $this->template . '/js/video/jquery.mb.YTPlayer.js', 'text/javascript');
     }
 }
-if ($option == "com_aboutus") {
-    $doc->addScript('./templates/' . $this->template . '/js/imagesLoaded.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/skrollr.js', 'text/javascript');
-    $doc->addScript('./templates/' . $this->template . '/js/_main.js', 'text/javascript');
-
-
-
-}
 ?>
 
 <!--Vu's comment for testing TaiVT-->
@@ -248,7 +240,7 @@ if ($option == "com_aboutus") {
                             <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" width="75px" style="margin-top:-10px;">
                         </a>
                     </div>
-                    <div class='span10 f_right' style="margin-left:0px;">
+                    <div class='f_right' style="margin-left:0px;">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -305,18 +297,17 @@ if ($option == "com_aboutus") {
                                 <?php } else if ($option == 'com_video') { ?>
                                     <li><a href="#" >Thông Tin</a></li>
                                 <?php } else if ($option == 'com_profile') { ?>
-                                    <li><a href="#" >Profile</a></li>
+                                    <li><a href="?option=com_aboutus" >About Us</a></li>
+									<li><a href="?option=com_content" >Home Page</a></li>
                                 <?php } else if ($option == 'com_data') { ?>
                                 <?php } else { ?>
-                                    <li><a href="#" >About</a></li>
-                                    <li><a href="#" >Blog</a></li>
-                                    <li class="sep" ></li><li>
-                                    </li><li><a href="#" >Log in</a></li>
-                                    <li class="signup"><a href="#" >Sign up</a></li>
+                                    <li><a href="?option=com_aboutus" >About Us</a></li>
+									<li><a href="?option=com_content" >Home Page</a></li>
+									<!--<li><a href="#" >Log in</a></li>
+                                    <li class="signup"><a href="#" >Sign up</a></li>-->
                                 <?php } ?>
                                 <li><a href="?option=com_profile">Profile</a></li>
-                                <!--                                <li><a href="#" id="signUpLink">Đăng Nhập</a></li>-->
-
+                                <!-- <li><a href="#" id="signUpLink">Đăng Nhập</a></li>-->
                             </ul>
                         </div>
                         <div class="clearbreak"></div>
@@ -327,7 +318,7 @@ if ($option == "com_aboutus") {
     <?php } else { ?>
         <div id='tbl_cover'>
             <ul>
-                <li id='tbl_name'><a href='#'></a></li>
+                <li id='tbl_name'><a href='?option=com_profile' alt="Profile"></a></li>
                 <li id='tbl_coin'><a href='#'></a></li>
                 <li id='tbl_picture'><a href='#'></a></li>
             </ul>
@@ -388,7 +379,7 @@ if ($option == "com_aboutus") {
                     <div class='span12'>
                         <p>Copyright &copy; 2014 Toibalo All rights reserved.</p>
                         <ul >
-                            <li><a href="#">About</a></li>
+                            <li><a href="?option=com_aboutus">About Us</a></li>
                             <li><a href="#">Terms of Use</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li class='last'><a href="#">Contact Us</a></li>
@@ -398,6 +389,7 @@ if ($option == "com_aboutus") {
             </div>
         </div><!-- End Footer -->
     <?php } ?>
+	
     <!-- 5. Debug-->
     <jdoc:include type="modules" name="debug" />
 
