@@ -9,7 +9,6 @@ defined('_JEXEC') or die('Restricted access');
 	<img src="components/com_aboutus/assets/images/bcg_slide-5.jpg">
 </div>
 <div id="tbl_aboutus">
-
 <main>
 	<!-- Section 1 -->
 	<section id="slide-1" class="homeSlide">
@@ -22,7 +21,7 @@ defined('_JEXEC') or die('Restricted access');
 				<div class="hsContent"
 					data-center="bottom: 200px; opacity: 1"
 					data-top="bottom: 1200px; opacity: 0"
-					data-anchor-target="#slide-1 h2"
+					data-anchor-target="#slide-1"
 				>
 					<h2>Chào mọi người :)</h2>
 					<h2>Bọn mình là những người thích đi du lịch bụi, xách ba lô lên và tới những thành phố bất kì, hòa mình vào những người dân ở thành phố đó.</h2> 

@@ -231,8 +231,34 @@ if ($option != "com_data") {
 
 
     <!-- 2. Main Menu-->
-    <?php if ($option != 'com_content') { ?>
-        <div class='navbar'>
+	<?php if ($option == 'com_users') { ?>
+    <?php } else if ($option == 'com_content') { ?>
+        <div id='tbl_cover'>
+            <ul>
+                <li id='tbl_name'><a href='?option=com_profile' alt="Profile"></a></li>
+                <li id='tbl_coin'><a href='#'></a></li>
+                <li id='tbl_picture'><a href='#'></a></li>
+            </ul>
+        </div>
+        <div id='tbl_search'>
+            <div class='tbl_search_title'>Plan your perfect trip</div>
+            <form class='tbl_search_form'>
+                <div class='tbl_button'>
+                    <input id='search_des' onclick='?option=com_video' class='' title='Tim Kiem' type='submit' value="Let's go"/>
+                </div>
+                <select id="tbl_des" class="" name="option" tabindex="8" onfocus="" onchange="">
+                    <option value="com_video" selected="selected">Sai Gon</option>
+<!--                    <option value="com_video">Ha Noi</option>
+                    <option value="com_video">Da Nang</option>
+                    <option value="com_video">Hue</option>
+                    <option value="com_video">Quang Ngai</option>
+                    <option value="com_video">...</option>-->
+                </select>
+            </form>
+            <div class='clearfix'></div>
+        </div>
+    <?php } else { ?>
+		<div class='navbar'>
             <div class='container'>
                 <div class='row p_rel'>
                     <div class='span2' >
@@ -297,16 +323,17 @@ if ($option != "com_data") {
                                 <?php } else if ($option == 'com_video') { ?>
                                     <li><a href="#" >Thông Tin</a></li>
                                 <?php } else if ($option == 'com_profile') { ?>
-                                    <li><a href="?option=com_aboutus" >About Us</a></li>
-									<li><a href="?option=com_content" >Home Page</a></li>
+                                    <li><a href="?option=com_aboutus" >Giới Thiệu</a></li>
+									<li><a href="?option=com_content" >Trang Chủ</a></li>
                                 <?php } else if ($option == 'com_data') { ?>
                                 <?php } else { ?>
-                                    <li><a href="?option=com_aboutus" >About Us</a></li>
-									<li><a href="?option=com_content" >Home Page</a></li>
-									<!--<li><a href="#" >Log in</a></li>
-                                    <li class="signup"><a href="#" >Sign up</a></li>-->
+                                    <li><a href="?option=com_aboutus" >Giới Thiệu</a></li>
+									<li><a href="?option=com_content" >Trang Chủ</a></li>
+									<li><a href="www.facebook.com/toibalo" >Facebook</a></li>
+									<!--<li><a href="?option=com_users&view=registration" >Tham Gia</a></li>
+                                    <li class="signup"><a href="?option=com_users&view=login" >Đăng Nhập</a></li>-->
                                 <?php } ?>
-                                <li><a href="?option=com_profile">Profile</a></li>
+                                <li><a href="?option=com_profile">Hộ Chiếu</a></li>
                                 <!-- <li><a href="#" id="signUpLink">Đăng Nhập</a></li>-->
                             </ul>
                         </div>
@@ -315,64 +342,40 @@ if ($option != "com_data") {
                 </div>
             </div>
         </div>
-    <?php } else { ?>
-        <div id='tbl_cover'>
-            <ul>
-                <li id='tbl_name'><a href='?option=com_profile' alt="Profile"></a></li>
-                <li id='tbl_coin'><a href='#'></a></li>
-                <li id='tbl_picture'><a href='#'></a></li>
-            </ul>
-        </div>
-        <div id='tbl_search'>
-            <div class='tbl_search_title'>Plan your perfect trip</div>
-            <form class='tbl_search_form'>
-                <div class='tbl_button'>
-                    <input id='search_des' onclick='?option=com_video' class='' title='Tim Kiem' type='submit' value="Let's go"/>
-                </div>
-                <select id="tbl_des" class="" name="option" tabindex="8" onfocus="" onchange="">
-                    <option value="com_video" selected="selected">Sai Gon</option>
-<!--                    <option value="com_video">Ha Noi</option>
-                    <option value="com_video">Da Nang</option>
-                    <option value="com_video">Hue</option>
-                    <option value="com_video">Quang Ngai</option>
-                    <option value="com_video">...</option>-->
-                </select>
-            </form>
-            <div class='clearfix'></div>
-        </div>
+		
     <?php  } ?>
     <!--Nav Bar -->
 
     <!-- 3. Content -->
-    <?php if ($option != 'com_aboutus') { ?>
-        <?php if ($option != 'com_content') { ?>
+    <?php if ($option == 'com_aboutus') { ?>
+		<jdoc:include type="component" />
+    <?php } else { ?>
+         <?php if ($option != 'com_content') { ?>
             <div class='tbl_content'>
                 <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) { ?>
-                <div class='container' id="wrapper">
-                    <?php } ?>
-                    <?php if (($option != 'com_content') && ($option != 'com_video')) { ?>
-                        <div id="tbl_nav" class="container">
-                            <ul>
-                                <li class="xp"><a href=".">Xuat Phat</a></li>
-                                <li class="kp  <?php if ($option == 'com_diadiem') {echo "active"; } ?>"><a href="?option=com_diadiem">Kham Pha</a></li>
-                                <li class="kh <?php if ($option == 'com_lichtrinh') {echo "active"; } ?>"><a href="?option=com_lichtrinh">Ke Hoach</a></li>
-                                <li class="tbl <?php if ($option == 'com_thongtin') {echo "active"; } ?>"><a href="?option=com_thongtin">Toi Ba Lo</a></li>
-                            </ul>
-                        </div>
-                    <?php } ?>
+				<div class='container' id="wrapper">
+				<?php } ?>
+				<?php if (($option != 'com_content') && ($option != 'com_video') && ($option != 'com_users')) { ?>
+					<div id="tbl_nav" class="container">
+						<ul>
+							<li class="xp"><a href="?option=com_content">Xuat Phat</a></li>
+							<li class="kp  <?php if ($option == 'com_diadiem') {echo "active"; } ?>"><a href="?option=com_diadiem">Kham Pha</a></li>
+							<li class="kh <?php if ($option == 'com_lichtrinh') {echo "active"; } ?>"><a href="?option=com_lichtrinh">Ke Hoach</a></li>
+							<li class="tbl <?php if ($option == 'com_thongtin') {echo "active"; } ?>"><a href="?option=com_thongtin">Toi Ba Lo</a></li>
+						</ul>
+					</div>
+				<?php } ?>
 
-                    <jdoc:include type="component" />
-                    <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) {?>
+                <jdoc:include type="component" />
+                <?php if (($option != 'com_diadiem') && ($option != 'com_lichtrinh')) {?>
                 </div>
-            <?php } ?>
+				<?php } ?>
             </div> <!-- End Content -->
         <?php } ?>
-    <?php } else { ?>
-        <jdoc:include type="component" />
     <?php } ?>
 
     <!-- 4. Footer -->
-    <?php if ($option != 'com_content' && $option != 'com_video') { ?>
+    <?php if ($option != 'com_content' && $option != 'com_video'  && $option != 'com_users') { ?>
         <div class='footer'>
             <div class='container'>
                 <div class='row'>

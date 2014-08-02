@@ -16,6 +16,7 @@ a:visited,
 .avatar-main-menu ul li span:hover {
     color: #009edb;
     cursor: pointer;
+	text-decoration: none;
 }
 
 .clearbreak {
@@ -143,9 +144,7 @@ header .article-tool .article-info {
 .collapse.in {
 	background-color: #009edb;
 	width: 100%;
-	position: absolute;
-	top: 49px;
-	left: 19px;
+	margin-top:49px;
 }
 /*=== Go to top ===*/
 .avatar-fix {
@@ -3549,6 +3548,15 @@ body .block-max-width-100 {
 		float:none;
 		position: absolute;
 		left: 45%;
+	}
+	.hsContent h2 {
+		font-size: 12px;
+		padding: 5px 2px;
+		line-height: 20px;
+	}
+	.tbl_button a {
+		font-size: 12px;
+		padding: 5px 20px;
 	}
 	.nav-collapse .dropdown-menu a {
 		-webkit-border-radius: 0px;
