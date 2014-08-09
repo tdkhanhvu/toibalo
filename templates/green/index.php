@@ -333,7 +333,7 @@ if ($option != "com_data") {
 									<!--<li><a href="?option=com_users&view=registration" >Tham Gia</a></li>
                                     <li class="signup"><a href="?option=com_users&view=login" >Đăng Nhập</a></li>-->
                                 <?php } ?>
-                                <li><a href="?option=com_profile">Hộ Chiếu</a></li>
+                                <li><a href="?option=com_profile">Hộ Chiếu Test Heroku</a></li>
                                 <!-- <li><a href="#" id="signUpLink">Đăng Nhập</a></li>-->
                             </ul>
                         </div>
