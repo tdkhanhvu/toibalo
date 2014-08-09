@@ -2,133 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="7c3cd1b0-99a9-4204-a0dd-dca75b6115bf" name="Default" comment="" />
-    <list default="true" id="7c1049cc-3917-4337-a2c0-443f45ea08ff" name="New changelist" comment="fix index.php&#10;&#10;some minor contents">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/place1/1_saigon_central_post_office.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/place1/2_notre_dame_cathedral.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/place1/3_ben_thanh_market.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/place1/4_city_opera_house.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/place1/5_independence_palace.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/place1/6_nha_rong_port.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/font/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/background_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/background_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/background_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/ben_thanh_market_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/ben_thanh_market_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/ben_thanh_market_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/ben_thanh_market_flower.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/biggerdot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/cu_chi_tunnel_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/cu_chi_tunnel_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/cu_chi_tunnel_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/dot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/font/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/font/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/font/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/grad_bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/grad_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/independence_palace_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/independence_palace_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/independence_palace_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/independence_palace_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/independence_palace_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/button/moreblack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/next_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/notre_dame_cathedral_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/notre_dame_cathedral_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/notre_dame_cathedral_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/notre_dame_cathedral_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/notre_dame_cathedral_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/notre_dame_cathedral_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog1/pagination.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/prev_v.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/sai_gon_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/sai_gon_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/sai_gon_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/sai_gon_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction1/sai_gon_map.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki1/vietnam_flag.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/bjqs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/bookblock.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/button1/button.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/font/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/accordion1/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/wiki1/jquery.backstretch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/jquery.bookblock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/dropDownList1/jquery.dropdown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/dropDownList1/jquery.dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/jquery.jscrollpane.custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/jquery.jscrollpane.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/jquery.mousewheel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/jquery.slides.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/jquerypp.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/modernizr.custom.79639.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog1/page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog1/slider.css" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\bjqs.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\bookblock.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\custom.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\font\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\font\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\font\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\font\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\font\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\jquery.jscrollpane.custom.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Blog\slider.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\Button\button.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\DropDownList\jquery.dropdown.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\Place\1_saigon_central_post_office.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\Place\2_notre_dame_cathedral.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\Place\3_ben_thanh_market.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\Place\4_city_opera_house.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\Place\5_independence_palace.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\Place\6_nha_rong_port.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\biggerdot.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\button\moreblack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\dot.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\grad_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\grad_top.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\next_v.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\prev_v.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Attraction\sai_gon_map.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\ben_thanh_market_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\ben_thanh_market_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\ben_thanh_market_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\ben_thanh_market_flower.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\cu_chi_tunnel_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\cu_chi_tunnel_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\cu_chi_tunnel_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\independence_palace_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\independence_palace_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\independence_palace_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\independence_palace_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\independence_palace_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\notre_dame_cathedral_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\notre_dame_cathedral_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\notre_dame_cathedral_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\notre_dame_cathedral_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\notre_dame_cathedral_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\notre_dame_cathedral_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Blog\pagination.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\background_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\background_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\background_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\sai_gon_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\sai_gon_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\sai_gon_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\sai_gon_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\Wiki\vietnam_flag.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Accordion\jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\jquery.bookblock.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\jquery.jscrollpane.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\jquery.mousewheel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\jquery.slides.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\jquerypp.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\modernizr.custom.79639.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Blog\page.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\DropDownList\jquery.dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\Wiki\jquery.backstretch.min.js" afterPath="" />
+    <list default="true" id="7c1049cc-3917-4337-a2c0-443f45ea08ff" name="New changelist" comment="fix uppercase">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/place/1_saigon_central_post_office.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/place/2_notre_dame_cathedral.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/place/3_ben_thanh_market.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/place/4_city_opera_house.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/place/5_independence_palace.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/place/6_nha_rong_port.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/background_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/background_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/background_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/ben_thanh_market_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/ben_thanh_market_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/ben_thanh_market_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/ben_thanh_market_flower.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/biggerdot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/cu_chi_tunnel_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/cu_chi_tunnel_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/cu_chi_tunnel_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/dot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/grad_bottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/grad_top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/independence_palace_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/independence_palace_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/independence_palace_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/independence_palace_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/independence_palace_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/button/moreblack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/next_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/notre_dame_cathedral_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/notre_dame_cathedral_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/notre_dame_cathedral_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/notre_dame_cathedral_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/notre_dame_cathedral_5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/notre_dame_cathedral_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/blog/pagination.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/prev_v.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/sai_gon_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/sai_gon_2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/sai_gon_3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/sai_gon_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/attraction/sai_gon_map.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/images/wiki/vietnam_flag.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/bjqs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/bookblock.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/button/button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/accordion/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/wiki/jquery.backstretch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/jquery.bookblock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/dropDownList/jquery.dropdown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/dropDownList/jquery.dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/jquery.jscrollpane.custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/jquery.jscrollpane.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/jquery.mousewheel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/jquery.slides.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/jquerypp.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/modernizr.custom.79639.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/js/blog/page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/green/css/blog/slider.css" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\bjqs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\bookblock.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\custom.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\font\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\font\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\font\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\font\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\font\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\jquery.jscrollpane.custom.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\blog1\slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\button1\button.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\css\dropDownList1\jquery.dropdown.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\biggerdot.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\button\moreblack.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\dot.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\grad_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\grad_top.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\next_v.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\place1\1_saigon_central_post_office.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\place1\2_notre_dame_cathedral.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\place1\3_ben_thanh_market.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\place1\4_city_opera_house.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\place1\5_independence_palace.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\place1\6_nha_rong_port.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\prev_v.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\attraction1\sai_gon_map.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\ben_thanh_market_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\ben_thanh_market_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\ben_thanh_market_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\ben_thanh_market_flower.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\cu_chi_tunnel_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\cu_chi_tunnel_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\cu_chi_tunnel_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\independence_palace_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\independence_palace_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\independence_palace_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\independence_palace_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\independence_palace_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\notre_dame_cathedral_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\notre_dame_cathedral_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\notre_dame_cathedral_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\notre_dame_cathedral_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\notre_dame_cathedral_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\notre_dame_cathedral_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\blog1\pagination.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\background_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\background_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\background_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\sai_gon_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\sai_gon_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\sai_gon_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\sai_gon_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\images\wiki1\vietnam_flag.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\accordion1\jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\jquery.bookblock.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\jquery.jscrollpane.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\jquery.slides.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\jquerypp.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\modernizr.custom.79639.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\blog1\page.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\dropDownList1\jquery.dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\green\templates\green\js\wiki1\jquery.backstretch.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="green.iws" />
@@ -173,7 +173,7 @@
       <file leaf-file-name="lichtrinh.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="699" column="22" selection-start="35760" selection-end="35760" vertical-scroll-proportion="0.53846157" vertical-offset="11708" max-vertical-offset="19295">
+            <state line="699" column="22" selection-start="35760" selection-end="35760" vertical-scroll-proportion="0.3888889" vertical-offset="11708" max-vertical-offset="19295">
               <folding>
                 <marker date="1407565862555" expanded="false" signature="5438:5449" placeholder="..." />
                 <marker date="1407565862555" expanded="false" signature="6493:6503" placeholder="..." />
@@ -716,19 +716,24 @@
       <created>1407563860395</created>
       <updated>1407563860395</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="fix uppercase">
+      <created>1407570347234</created>
+      <updated>1407570347234</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1314" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21393842" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40458015" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21374045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40458015" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3121019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3121019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33873582" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -738,7 +743,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29268292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -779,7 +783,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="implement feedback button for&#10;   - video&#10;   - lichtrinh&#10;   - thongtin&#10;   - profile" />
     <MESSAGE value="fix responsive for diadiem:&#10;     - dactrung&#10;     - thamquan&#10;     - camnghi" />
     <MESSAGE value="fix logo not being centered when resize the page" />
     <MESSAGE value="fix image size" />
@@ -804,7 +807,8 @@
     <MESSAGE value="Add button to go to Facebook fanpage in aboutus&#10;&#10;comment out other destination in content" />
     <MESSAGE value="comment out alerts" />
     <MESSAGE value="Test Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Heroku" />
+    <MESSAGE value="fix uppercase" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix uppercase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,7 +1063,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/com_lichtrinh/lichtrinh.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="699" column="22" selection-start="35760" selection-end="35760" vertical-scroll-proportion="0.53846157" vertical-offset="11708" max-vertical-offset="19295">
+        <state line="699" column="22" selection-start="35760" selection-end="35760" vertical-scroll-proportion="0.3888889" vertical-offset="11708" max-vertical-offset="19295">
           <folding>
             <marker date="1407565862555" expanded="false" signature="5438:5449" placeholder="..." />
             <marker date="1407565862555" expanded="false" signature="6493:6503" placeholder="..." />
