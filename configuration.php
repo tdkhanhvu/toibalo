@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'Toi Ba Lo';
+	public $sitename = 'thichdibui';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
-	public $host = 'localhost';
-	public $user = 'root';
-	public $password = '';
-	public $db = 'green';
+	public $host = 'us-cdbr-iron-east-01.cleardb.net';
+	public $user = 'b4a15cfddcb22c';
+	public $password = '9b7bf791a459897';
+	public $db = 'heroku_d421714864313cd';
 	public $dbprefix = 'az1y2_';
 	public $live_site = '';
 	public $secret = 'OWqc2TbtS0U0Aras';
