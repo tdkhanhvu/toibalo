@@ -1,0 +1,230 @@
+$xanhnhat: #008ac5;
+$xanhdam: #005177;
+$docam: #cc4d4d;
+$xam: #aaa3a3;
+
+/** Header **/
+header {
+	height: 50px;
+	background-color: $xanhdam;
+	color: white;
+	z-index: 10;
+	position: relative;
+}
+.header-home {
+	width: 50px;
+	float: left;
+}
+.header-place {
+	margin-left: 60px;
+    h3 {
+	margin: 0;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	}
+	.glyphicon  {
+	font-size: 16px ;
+	padding: 17px ;
+	}
+	span.glyphicon:hover {
+		background: $xanhnhat;
+	}
+	:hover ul.dropdown-left {
+		display: block;
+	}
+}
+.open > .dropdown-left {
+	display: block;
+	}
+.open .header-place span.glyphicon {background: $xanhnhat;}
+ul.dropdown-left {
+	background: $xanhnhat;
+	z-index: 100;
+	margin-left: 50px;
+	padding: 10px;
+	background: #008ac5;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: none;
+	li {
+		padding: 5px 0px;
+		}
+		:hover {
+			background: $xanhdam;
+		}
+	}
+
+.header-middle {
+	.glyphicon {
+		font-size: 14px;
+		padding: 0;
+	}
+	.input-group {
+		padding-top: 8px;
+	}
+}
+
+.header-avatar {
+	width: 40px;
+	margin: 5px;
+	float: left;
+}
+.header-hidden {
+	width: 50px;
+	float: right;
+	.glyphicon {
+		font-size: 16px;
+		padding: 17px;
+	}
+}
+.header-right {
+	.input-group {
+		margin-top: 8px;
+	}
+	.btn-default {
+		color: $xanhnhat;
+	}
+}
+/** End Header **/
+
+/** Nav Left **/
+.nav-left {
+	width: 50px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: $xam;
+	position: absolute;
+	z-index: 9;
+	ul {
+		margin:0;
+		padding:50px 0 0 0;
+		li {
+			position: relative;
+			height: 50px;
+		}
+		a {
+			color:white;
+			height: 50px;
+			line-height: 50px;
+			padding-left: 10px;
+			font-size: 30px;
+		}
+		a:hover {
+			text-decoration: none;
+			background-color: $docam;
+		}
+		a:before {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	ul:hover span {
+		display: block;
+	}
+	a:hover span{
+		background-color: $docam;
+	}
+	span {
+		width: 200px;
+		height: 50px;
+		line-height: 50px;
+		margin: 0 0 0 40px;
+		background-color: $xam;
+		color: white;
+		text-align: center;
+		display:none;
+		font-size: 16px;
+	}
+}
+
+/** End Nav Left **/
+
+/** Nav Right **/
+.nav-right {
+	background-color: $xanhnhat;
+	color: white;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	height: 100%; 
+}
+/** End Nav Right **/
+
+/** Content **/
+
+/** End Content **/
+
+/** Footer **/
+footer {
+	height: 90px;
+	background-color: $xanhdam;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	width: 100%;
+	z-index: 10;
+}
+.footer-holder {
+	height: 60px;
+	padding-top: 15px;
+	span {
+		float:left;
+	}
+}
+.footer-text {
+	margin: 5px 0 0 120px;
+}
+.footer-icon {
+	height: 90px;
+	padding: 15px;
+	border-left: 1px solid white;
+	:before {
+		width: 50px;
+		height: 50px;
+		font-size: 30px;
+		color: white;
+		padding: 5px;
+	}
+}
+/** End Footer **/
+
+/** Reponsive customize **/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+/** End Reponsive customize **/
+
+/** Other **/
+ul>li {
+	list-style: none;
+	}
+.img-tbl {
+	display: inline-block;
+}
+.tbl-logo {
+	background: url(../images/toibalo.png) no-repeat 0 0;
+	height: 60px;
+	width: 110px;
+}
+.tbl-logo-mini {
+	background: url(../images/toibalo.png) no-repeat 0 -60px;
+	height: 36px;
+	width: 36px;
+	margin: 8px;
+}
+/* End Other **/

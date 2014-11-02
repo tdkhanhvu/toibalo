@@ -1,0 +1,9 @@
+xanh dam: #005177
+xanh nhat: #008ac5
+do cam: #cc4d4d
+xam: #aaa3a3
+
+C:\wamp\www\toibalo\templates\toibalo\css
+sass --watch path/sass-directory:path/css-directory  
+sass --watch path/sass-directory/styles.css 
+sass --watch template.scss:template.css 

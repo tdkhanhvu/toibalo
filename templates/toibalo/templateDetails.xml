@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN"
+        "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+    <name>toibalo</name>
+    <version>1.0</version>
+    <creationDate>27/10/2014</creationDate>
+    <author>Vo Thanh Tai</author>
+    <authorEmail>starditplay@yahoo.com</authorEmail>
+    <copyright>Copyright (C) 2014 Toi Ba Lo</copyright>
+    <description>A basic template for Toi Ba Lo</description>
+    <files>
+        <filename>index.php</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+    </files>
+    <positions>
+        <position>debug</position>
+        <position>position-0</position>
+        <position>position-1</position>
+        <position>position-2</position>
+        <position>position-3</position>
+        <position>position-4</position>
+        <position>position-5</position>
+        <position>position-6</position>
+        <position>position-7</position>
+        <position>position-8</position>
+        <position>position-9</position>
+        <position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-13</position>
+        <position>position-14</position>
+    </positions>
+    <config>
+    </config>
+</extension>
