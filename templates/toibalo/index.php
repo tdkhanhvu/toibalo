@@ -35,14 +35,18 @@ else
 }
 
 // Add JavaScript Frameworks
-$doc->addScript('templates/' .$this->template. '/js/jquery-ui.js');
+//JHtml::_('bootstrap.framework');
 $doc->addScript('templates/' .$this->template. '/js/bootstrap.js');
+$doc->addScript('templates/' .$this->template. '/js/jquery-ui.js');
+
 
 // Add Stylesheets
+$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.min.css');
 $doc->addStyleSheet('templates/'.$this->template.'/css/template.css');
-$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap.css');
+//JHtml::_('bootstrap.loadCss', false, $this->direction);
+
 $doc->addStyleSheet('templates/'.$this->template.'/css/font-awesome.css');
-//$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
+$doc->addStyleSheet('templates/'.$this->template.'/css/bootstrap-theme.css');
 
 
 // Add current user information
@@ -153,11 +157,11 @@ else
 	</div>
 	<div class="nav-right">	
 		<ul>
-			<li><a href="" class="fa"></a></li>
-			<li><a href="" class="fa"></a></li>
-			<li><a href="" class="fa"></a></li>
-			<li><a href="" class="fa"></a></li>
-			<li><a href="" class="fa"></a></li>
+			<li><a href="" class="fa fa-map-marker"></a></li>
+			<li><a href="" class="fa fa-pencil"></a></li>
+			<li><a href="" class="fa fa-star"></a></li>
+			<li><a href="" class="fa fa-flag-o"></a></li>
+			<li><a href="" class="fa fa-video-camera"></a></li>
 		</ul>		
 	</div>
 	<div id="content" class="container-fluid">
@@ -174,7 +178,39 @@ else
 				  <li><a href="#">&raquo;</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3"></div>
+			<div class="col-md-3 content_right">
+				<div class="box-right lehoi">
+					<div class="box-right-title">
+						<p>Lễ Hội</p>
+					</div>
+					<div class="box-right-content">
+						<ul>
+							<li>
+								<a href="" alt>
+								<span class="bx_avatar"><img src="templates/toibalo/images/sg_lh_01.jpg" alt="avatar" class="img-circle img-responsive"></span>
+								<span class="bx_title">Giáng Sinh</span>
+								<span class="bx_content">Lễ hội đường phố chào đón Giáng sinh. Nằm trên hai tuyến phố đông đúc ... </span>
+								</a>
+							</li>
+							<li>
+								<a href="" alt>
+								<span class="bx_avatar"><img src="templates/toibalo/images/sg_lh_03.jpg" alt="avatar" class="img-circle img-responsive"></span>
+								<span class="bx_title">Halloween</span>
+								<span class="bx_content">Gợi ý 10 địa điểm vui chơi Halloween ở Sài Gòn ... </span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-right comment">
+					<div class="box-right-title">
+						<p>Cảm Nghĩ</p>
+					</div>
+					<div class="box-right-content">
+						Avatar+ Content + Time
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- Footer -->
@@ -202,6 +238,6 @@ else
 			</div>
 		</div>
 	</footer>
-	<jdoc:include type="modules" name="debug" style="none" />
+
 </body>
 </html>
